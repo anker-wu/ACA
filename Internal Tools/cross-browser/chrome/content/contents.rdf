@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+  <RDF:Seq about="urn:mozilla:package:root">
+    <RDF:li resource="urn:mozilla:package:cross-browser"/>
+  </RDF:Seq>
+
+  <!-- package information -->
+  <RDF:Description RDF:about="urn:mozilla:package:cross-browser"
+        chrome:name="cross-browser"
+        chrome:extension="true"
+        chrome:displayName="cross-browser"
+        chrome:author="Daniel Shi"
+        chrome:authorURL="http://kb.mozillazine.org/Getting_started_with_extension_development"
+        chrome:description="The Classical Demo With cross-browser">
+  </RDF:Description>
+
+  <!-- overlay information -->
+  <RDF:Seq about="urn:mozilla:overlays">
+    <RDF:li resource="chrome://browser/content/browser.xul"/>
+  </RDF:Seq>
+
+  <RDF:Seq about="chrome://browser/content/browser.xul">
+    <RDF:li>chrome://cross-browser/content/overlay.xul</RDF:li>
+  </RDF:Seq>
+</RDF:RDF>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACAFormDesigner", "ACAFormDesigner\ACAFormDesigner.csproj", "{7C93914C-5289-4EA6-BD43-72E2CB9D65BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightApplication1.Web", "SilverlightApplication1.Web\SilverlightApplication1.Web.csproj", "{582DF8E8-B0B2-48DF-96B2-7739308EC84E}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ACAFormDesigner.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C93914C-5289-4EA6-BD43-72E2CB9D65BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C93914C-5289-4EA6-BD43-72E2CB9D65BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C93914C-5289-4EA6-BD43-72E2CB9D65BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C93914C-5289-4EA6-BD43-72E2CB9D65BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582DF8E8-B0B2-48DF-96B2-7739308EC84E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582DF8E8-B0B2-48DF-96B2-7739308EC84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582DF8E8-B0B2-48DF-96B2-7739308EC84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582DF8E8-B0B2-48DF-96B2-7739308EC84E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

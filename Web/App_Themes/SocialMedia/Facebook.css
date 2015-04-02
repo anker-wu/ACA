@@ -1,0 +1,446 @@
+﻿/* breadcrumb.css */
+.breadcrump-tt td
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.breadcrump-pagetitle
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+/* calendar.css */
+.ajax__calendar_container
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif; 
+}
+
+/* form.css */
+body 
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;  
+}
+
+A  
+{
+    color: #3b5998;  
+    outline-style: none;  
+    text-decoration: none;  
+}
+
+A:HOVER 
+{ 
+    text-decoration: underline;  
+}
+
+.ACA_Body_Text UL, .ACA_Section_Instruction UL, .ACA_Page_Instruction UL
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;  
+}
+
+INPUT, TEXTAREA, SELECT, P
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif; 
+}
+
+.NormalLabel, .color666, .ACA_RightContent, .ACA_CapCompletion_Content
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif; 
+}
+
+.ACA_Popup_Title 
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif; 
+}
+
+.ACA_NewDiv_Text_TabRow_Color_6
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_New_Head_Label_Bold_11
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_New_Head_Label_Width_90
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_New_Head_Label_Width_100
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;	
+}
+
+.ACA_New_Label
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Label
+{
+	font-family: "lucida grande", tahoma, verdana, sans-serif;
+}
+
+.ACA_FontSize12
+{ 
+	font-family: "lucida grande", tahoma, verdana, sans-serif;
+}
+
+.ACA_Notice
+{ 
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Sub_Label
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Page_Instruction
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Page_Notes
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Section_Instruction
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_SmLabel
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_SmLabelBolder
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_RelatedCap_Highlight
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_RelatedCap_Normal
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Page
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_List
+{
+    font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.pagination_link
+{
+    font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.pagination_text
+{
+	font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_CapDetail_NoRecord
+{
+	font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Collection_RdoButton label
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.aca_expression_required
+{
+	font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Tree_SubNode span
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Customize_Component p
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+/* grid.css */
+
+.ACA_SmallTable_Row_Reset
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_Header
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_AutoHeader
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_Header2
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_Odd 
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_LongOdd
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_Odd_Auto 
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_Even
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+} 
+
+.ACA_TabRow_EvenSmallWidth
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_LongEven
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_Even_Auto
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Table_Pages
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_SmallOdd
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_SmallEven
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_SmallEven2
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_Comment_Even
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_Comment_Odd
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_Single_Line
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_TabRow_Double_Line
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.container_40 .aca_checkbox label 
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+/* layout.css */
+
+.ACA_Admin_LoginBox
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Admin_LoginMsg
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_LoginBox
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Calendar_Prev 
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Calendar_Next 
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Calendar_Current 
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.gs_search_box{
+    font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.aca_checkboxlist label 
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.aca_checkbox label 
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.RegisterLicense_RowEven
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;	
+}
+
+.RegisterLicense_RowOdd
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;	
+}
+
+
+/* navigation.css */
+
+.ACA_Title_Text
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Link_Text
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Message_Error
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_GIS_Message_Error
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Message_Notice
+ {
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_PopUP_Message
+ {
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Accordion_Content 
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Message_Locked 
+{
+   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Message_Hold 
+{
+   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+ }
+ 
+  .ACA_Message_Note 
+ {
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+ }
+ 
+ .ACA_Condition_Required 
+{
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Message_Notice_Link
+ {
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.aca_pagination_PrevNext
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.aca_simple_text{
+     font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.SelectedPageButton
+{
+     font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.ACA_Announcement_Content
+{
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+} 
+
+/* permitdetail.css */
+.div_parent_detail
+{
+    font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+/* splitbutton.css */
+.splitbutton_menuitem
+{
+    font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+.div_social_media_type
+{
+    margin-top:3px;
+}
+
+.fb-login-button
+{
+    margin:1px 0px 0px 3px
+}
+
+.fb_gis_body
+{
+    overflow:hidden;
+}

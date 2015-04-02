@@ -1,0 +1,28 @@
+/*
+ * Ext JS Library 2.0
+ * Copyright(c) 2006-2007, Ext JS, LLC.
+ * licensing@extjs.com
+ * 
+ * http://extjs.com/license
+ */
+
+
+#custom {
+    cursor:move;
+}
+#custom-rzwrap{
+    z-index: 10000;
+}
+#custom-rzwrap .x-resizable-handle{
+    width:11px;
+    height:11px;
+    background:transparent url(../resources/images/sizer/square.gif) no-repeat;
+    margin:0px;
+	 line-height:11px;
+}
+#custom-rzwrap .x-resizable-handle-east, #custom-rzwrap .x-resizable-handle-west{
+    top:45%;
+}
+#custom-rzwrap .x-resizable-handle-north, #custom-rzwrap .x-resizable-handle-south{
+    left:45%;
+}

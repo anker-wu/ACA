@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: aca-build.xml 213247 2012-02-09 06:20:15Z ACHIEVO\gordon.chen $ -->
+<project name="aca-build" default="build" basedir=".">
+	<description>
+		Accela Citizen Access Project.
+	</description>
+
+	<fail message="Requires Ant version 1.7.0 or greater." >
+		<condition>
+			<not>
+				<antversion atleast="1.7.0" />
+			</not>
+		</condition>
+	</fail>
+	
+	<dirname property="project.base.dir" file="${ant.file}"/>
+
+	<property file="${project.base.dir}/project.properties"/>
+	<property file="${project.base.dir}/local.properties"/>
+	
+	<property name="system.conf.file"		value="deploy-systems.xml"/>	<!-- default system configuration file -->
+
+	<property name="dist.dir"		value="${project.base.dir}/dist"/>
+	<property name = "build.script.end"       value ="" />
+	<property name = "build.scrpt.end"     value = "" />
+	
+	<xmlproperty file="${project.dir}/${system.conf.file}"
+	semanticAttributes="true"
+	includeSemanticAttribute="true"
+	keepRoot="false"/>
+
+	
+	<target name="clean">
+		<echo>Cleaning ACA</echo>
+	</target>
+	
+	<target name="build">
+		<echo>Running build.bat file</echo>
+		<exec executable="${project.base.dir}/build.bat" dir="." failonerror="true">
+			<arg value="nopause"/>
+		</exec>
+		<exec executable="${project.base.dir}/writeversion.bat" dir="." failonerror="true">
+			<arg value="nopause"/>
+		</exec>
+		<!--exec executable="cmd" failonerror="true">
+			<arg value="/c"/>
+			<arg value="build.bat"/>
+		</exec-->
+		<!--Copy version info to be packaged with build-->
+		<!--<copy file="${project.dir}/build.main.properties" 
+			tofile=" ${project.dir}/PrecompiledWeb/version.html"
+			overwrite="false" verbose="false">
+		</copy>-->
+		<!--Zip up init scripts to be delivered with the install-->
+		<zip destfile="${project.dir}/PrecompiledWeb/InitScripts.zip">
+			<fileset dir="${project.dir}/InitScripts">
+			</fileset>
+		</zip>
+	</target>
+	
+	<target name="package">
+		<echo>Package ACA</echo>
+		<mkdir dir="${dist.dir}"/>
+		<zip destfile="${dist.dir}/aca.zip" 
+			basedir="${project.dir}/PrecompiledWeb" 
+			update="true"
+		/>		      
+		
+	</target>
+	
+	<target name="deploy" 
+		description="Deploy the package">
+		<parallel>
+			<antcall target="deploy-1"/>
+			<antcall target="deploy-2"/>
+			<antcall target="deploy-3"/>
+		</parallel>
+	</target>
+	
+	<target name="deploy-1"
+		description="Deploy the release a server" 
+		if="system">
+		<remove-bin system="${system}" />
+		<deploy-files system="${system}" />
+	</target>
+	
+	<target name="deploy-2"
+		description="Deploy the release a server" 
+		if="system2">
+		<remove-bin system="${system2}" />
+		<deploy-files system="${system2}" />
+	</target>
+	
+	<target name="deploy-3"
+		description="Deploy the release a server" 
+		if="system3">
+		<remove-bin system="${system3}" />
+		<deploy-files system="${system3}" />
+	</target>
+	
+	<macrodef name="remove-bin">
+        <attribute name="system"/>
+        <sequential>
+			<echo>Remove bin folder \\${@{system}.computer}\${@{system}.home}\bin</echo>
+			<delete dir="\\${@{system}.computer}\${@{system}.home}\bin" />
+		</sequential>
+    </macrodef>
+	
+	<macrodef name="deploy-files">
+        <attribute name="system"/>
+        <sequential>
+			<echo>Deploy ACA to \\${@{system}.computer}\${@{system}.home}</echo>
+			<unzip src="${dist.dir}/aca.zip"
+			   dest="\\${@{system}.computer}\${@{system}.home}" 
+			   overwrite="true" >
+			</unzip>
+		</sequential>
+    </macrodef>
+</project>
+<!--
+$Log: aca-build.xml,v $
+-->
+
+

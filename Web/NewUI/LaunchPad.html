@@ -1,0 +1,265 @@
+﻿
+<div class="container-fluid contentContainer" id="LaunchPadControl" ng-init="init()">
+
+        <div class="lp-button-layout">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default active">
+                    <input type="radio" name="layoutoptions" value="1"><span class="ico-stack-list"></span>
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="layoutoptions" value="2"><span class="ico-tasks"></span>
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="layoutoptions" value="3"><span class="ico-height"></span>
+                </label>
+            </div>
+        </div>
+        <div class="lp-viewContainer" id="slideContainer">
+        </div>
+    </div>
+
+<angulariframe> </angulariframe>
+
+<script id="panel-template" type="text/x-handlebars-template">
+    <div class="lp-panel animation" id="{{id}}" data-step="{{stepNumber}}">
+        <div class="lp-header">
+            <span class="lp-number">{{stepNumber}}</span>
+            <span class="lp-text">{{title}}</span>
+            <span class="lp-back btn btn-default btn-xs fastclick">
+                <i class="ico-arrow-left10"></i>
+                <span>{{aca_newui_launchpad_label_back}}</span>
+            </span>
+        </div>
+        <div class="lp-body">
+        </div>
+    </div>
+</script>
+
+<script id="launchPad-home-template" type="text/x-handlebars-template">
+    <div class="lp-content">
+        <div class="lp-col1">
+            <div class="tile-content flip-container">
+                <div class="flipper">
+                    <div class="front lp-btn fastclick" data-nextlevel="2" data-title="Start">
+                        <span class="h3-text">
+                            <span class="lp-font-icon ico-direction border-circle"></span>
+                            <span>{{aca_newui_launchpad_label_start}}</span>
+                        </span>
+                    </div>
+                    <div class="back lp-btn fastclick" data-nextlevel="2" data-title="Start" ng-if="!isAdmin">
+                        <span class="lp-hed-text">{{aca_newui_launchpad_label_starthere}}</span>
+                        <span class="lp-text">
+                            {{aca_newui_launchpad_label_startdescription}}
+                        </span>
+                        <span class="flipper-footer">
+                            <a>{{aca_newui_launchpad_label_startbutton}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {{#ifvalue isLoggedIn value=true}}
+            <div class="tile-content flip-container signout-section divLogin" >
+                <div class="flipper">
+                    <div class="front">
+                        <span class="h3-text">
+                            <span class="lp-font-icon ico-unlock-alt border-circle"></span>
+                            <span>{{aca_newui_launchpad_label_logout}}</span>
+                        </span>
+                    </div>
+                    <div class="back" data-title="Login" onclick="SignOut()">
+                        <span class="lp-hed-text">{{aca_newui_launchpad_label_logout}} </span>
+                        <span class="lp-text">
+                            {{aca_newui_launchpad_label_logoutdescription}}
+                        </span><span class="flipper-footer">
+                            <a>{{aca_newui_launchpad_label_logoutbutton}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {{else}}
+            <div class="tile-content flip-container fastclick divLogin">
+                <div class="flipper">
+                    <div class="front" onclick="login()">
+                        <span class="h3-text">
+                            <span class="lp-font-icon ico-lock border-circle"></span> <span>{{aca_newui_launchpad_label_login}}</span>
+                        </span>
+                    </div>
+                    <div class="back" data-title="Login" ng-if="!isAdmin" onclick="login()">
+                        <span class="lp-hed-text">{{aca_newui_launchpad_label_login}}</span>
+                        <span class="lp-text">
+                            {{aca_newui_launchpad_label_logindescription}}
+                        </span>
+                        <span class="flipper-footer">
+                            <a>{{aca_newui_launchpad_label_loginbutton}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {{/ifvalue}}
+        </div>
+        <div class="lp-col2">
+            <div class="tile-content flip-container">
+                <div class="flipper">
+                    <div class="front" onclick="ShowMap()">
+                        <span class="h3-text">
+                            <span class="lp-font-icon ico-map3 border-circle"></span>
+                            <span>{{aca_newui_launchpad_label_exploremaps}}</span>
+                        </span>
+                    </div>
+                    <div class="back" data-title="Explore" ng-if="!isAdmin" onclick="ShowMap()">
+                        <span class="lp-hed-text">{{aca_newui_launchpad_label_exploremapshere}}</span>
+                        <span class="lp-text">{{aca_newui_launchpad_label_exploremapsdescription}}</span>
+                        <span class="flipper-footer">
+                            <a>{{aca_newui_launchpad_label_viewmapbutton}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {{#ifvalue isLoggedIn value=true}}
+            <div class="tile-content flip-container" onclick="showDashboard();">
+                <div class="flipper">
+                    <div class="front">
+                        <span class="h3-text">
+                            <span class="lp-font-icon ico-dashboard border-circle"></span>
+                            <span>{{aca_newui_launchpad_label_mydashboard}}</span>
+                        </span>
+                    </div>
+                    <div class="back" data-title="Dashboard">
+                        <span class="lp-hed-text">{{aca_newui_launchpad_label_yourdashboard}}</span>
+                        <span class="lp-text">{{aca_newui_launchpad_label_dashboarddescription}}</span>
+                        <span class="flipper-footer">
+                            <a onclick="showDashboard()">{{aca_newui_launchpad_label_dashboardbutton}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {{else}}
+            <div class="tile-content flip-container divRegister">
+                <div class="flipper">
+                    <div class="front" onclick="register();">
+                        <span class="h3-text">
+                            <span class="lp-font-icon ico-user2 border-circle"></span>
+                            <span>{{aca_newui_launchpad_label_register}}</span>
+                        </span>
+                    </div>
+                    <div class="back" data-title="Register" ng-if="!isAdmin" onclick="register();">
+                        <span class="lp-hed-text">{{aca_newui_launchpad_label_havenoaccount}}</span>
+                        <span class="lp-text">{{aca_newui_launchpad_label_registerdescription}}</span>
+                        <span class="flipper-footer">
+                            <a>{{aca_newui_launchpad_label_registerbutton}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            {{/ifvalue}}
+        </div>
+    </div>
+</script>
+
+  <script id="launchPad-base-template" type="text/x-handlebars-template">
+    <div class="lp-content">
+        <div class="lp-col1">
+            <div class="tile-content flip-container">
+                <div class="flipper">
+                    <div class="front lp-btn fastclick" data-nextlevel="3" data-title="Apply" data-value="Apply">
+                        <span class="h3-text">
+                            <span class="lp-font-icon ico-pencil5 border-circle"></span>
+                            <span>{{aca_newui_launchpad_label_apply}}</span>
+
+                        </span>
+                    </div>
+                    <div class="back lp-btn fastclick" data-nextlevel="3" data-title="Apply" data-value="Apply">
+                        <span class="lp-hed-text">{{aca_newui_launchpad_label_applyhere}}</span>
+                        <span class="lp-text">
+                            {{aca_newui_launchpad_label_applydescription}}
+                        </span>
+                        <span class="flipper-footer">
+                            <a>{{aca_newui_launchpad_label_applybutton}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="tile-content flip-container">
+                <div class="flipper">
+                    <div class="front lp-btn fastclick" data-nextlevel="5" data-title="Request" data-value="Request">
+                        <span class="h3-text">
+                            <span class="lp-font-icon ico-bubble4 border-circle"></span>
+                            <span class="lp-text">
+                                {{aca_newui_launchpad_label_request}}
+                            </span>
+                        </span>
+                    </div>
+                    <!--Update the data-moduleid="M9" to appropriate id
+                    M9 is id for Service Request
+                    -->
+                    <div class="back lp-btn fastclick" data-nextlevel="5" data-title="Request" data-value="Request">
+                        <span class="lp-hed-text">{{aca_newui_launchpad_label_request}}</span>
+                        <span class="lp-text">
+                            {{aca_newui_launchpad_label_requestdescription}}
+                        </span>
+                        <span class="flipper-footer">
+                            <a>{{aca_newui_launchpad_label_startbutton}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lp-col2">
+            <div class="tile-content flip-container">
+                <div class="flipper">
+                    <div class="front lp-btn fastclick" data-nextlevel="3" data-title="ObtainFeeEstimate" data-value="ObtainFeeEstimate">
+                        <span class="h3-text">
+                            <span class="lp-font-icon ico-calculate border-circle"></span>
+                            <span>{{aca_newui_launchpad_label_feeestimates}}</span>
+                        </span>
+                    </div>
+                    <div class="back lp-btn fastclick" data-nextlevel="3" data-title="ObtainFeeEstimate" data-value="ObtainFeeEstimate">
+                        <span class="lp-hed-text">{{aca_newui_launchpad_label_feeestimates}}</span>
+                        <span class="lp-text">{{aca_newui_launchpad_label_feeestimatesdescription}}</span>
+                        <span class="flipper-footer">
+                            <a>{{aca_newui_launchpad_label_startbutton}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile-content flip-container">
+                <div class="flipper">
+                    <div class="front lp-btn fastclick" data-nextlevel="3" data-title="ScheduleAnInspection" data-value="ScheduleAnInspection">
+                        <span class="h3-text">
+                            <span class="lp-font-icon ico-calendar border-circle"></span>
+                            <span>{{aca_newui_launchpad_label_schedule}} </span>
+                        </span>
+                    </div>
+                    <div class="back lp-btn fastclick" data-nextlevel="3" data-title="ScheduleAnInspection" data-value="ScheduleAnInspection">
+                        <span class="lp-hed-text">{{aca_newui_launchpad_label_schedule}}</span>
+                        <span class="lp-text">{{aca_newui_launchpad_label_scheduledescription}}</span>
+                        <span class="flipper-footer">
+                            <a>{{aca_newui_launchpad_label_startbutton}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</script>
+
+<script id="dynamicButtons-template" type="text/x-handlebars-template">
+    <div class="lp-content" data-currentlevel="{{currentLevel}}" {{dynamicparams}}>
+        {{#each control}}
+        <div class="lp-col3" id="{{../pageId}}-{{pagenumber}}" style="display:none;">
+            {{#each pagecotent}}
+            <div class="tile lp-btn fastclick" data-id="{{id}}" data-nextlevel={{level}} data-title="{{text}}" data-value="{{value}}"><span class="titetext" title="{{text}}">{{text}}</span></div>
+            {{/each}}
+        </div>
+        {{/each}}
+    </div>
+    <div id="{{pageId}}" class="pagination"></div>
+</script>
+
+
+<script>
+    aca.launchPad.step = 1;
+    aca.launchPad.init();
+</script>

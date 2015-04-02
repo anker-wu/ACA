@@ -1,0 +1,83 @@
+﻿
+.createMainStyle (@theme-color) {
+
+    .btn-custom {
+        background-color: @theme-color;
+        border-color: darken(@theme-color, 2%);
+
+        .badge {
+            color: @theme-color;
+        }
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            background-color: darken(@theme-color, 5%);
+            border-color: darken(@theme-color, 6%);
+        }
+    }
+
+    .btn-custom.disabled,
+    .btn-custom[disabled],
+    fieldset[disabled] .btn-custom,
+    .btn-custom.disabled:hover,
+    .btn-custom[disabled]:hover,
+    fieldset[disabled] .btn-custom:hover,
+    .btn-custom.disabled:focus,
+    .btn-custom[disabled]:focus,
+    fieldset[disabled] .btn-custom:focus,
+    .btn-custom.disabled:active,
+    .btn-custom[disabled]:active,
+    fieldset[disabled] .btn-custom:active,
+    .btn-custom.disabled.active,
+    .btn-custom[disabled].active,
+    fieldset[disabled] .btn-custom.active {
+        background-color: darken(@theme-color, 30%);
+        border-color: darken(@theme-color, 40%);
+    }
+
+    .res-icon, .res-title {
+        color: @theme-color;
+    }
+
+    .res-sec {
+        .res-content {
+            .res-count {
+                color: @theme-color;
+            }
+            .res-status {
+                color: @theme-color;
+            }
+        }
+    }
+
+    .activity {
+
+        .act-header {
+            .ico-plus {
+                color: @theme-color;
+            }
+        }
+
+        .act-c-header {
+            .ico-folder-open, .ico-warning-sign {
+                color: @theme-color;
+            }
+        }
+
+        .act-content {
+            &.left-selected {
+                .ico-angle-left {
+                    color: @theme-color;
+
+
+                }
+
+                .ico-angle-right {
+                    color: @theme-color;
+                }
+            }
+        }
+    }
+}

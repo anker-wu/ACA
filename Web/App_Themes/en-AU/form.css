@@ -1,0 +1,22 @@
+﻿/* label */
+/* Html label and Common label */
+.ACA_Form
+{
+	display:block;
+}
+
+.ACA_TextArea
+{
+	overflow-y:scroll;
+}
+
+.ShoppingCart_FeeItem
+{
+	word-break:break-all; 
+	padding-right:10px;
+}
+
+.ACA_Collection_RdoButton label
+{
+	color: #999999; 
+}

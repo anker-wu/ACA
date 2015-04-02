@@ -1,0 +1,2 @@
+<%@ Page Language="C#" AutoEventWireup="true" ValidateRequest="false" Inherits="Accela.ACA.Web.Cap.PaymentResult" Codebehind="PaymentResult.aspx.cs" %>
+<noscript><%=LabelUtil.GetGlobalTextByKey("aca_message_noscript")%></noscript>

@@ -1,0 +1,123 @@
+/* label */
+/* Html label and Common label */
+INPUT
+{
+    font-size: 1.15em;
+}
+
+TEXTAREA
+{
+    font-size: 1.15em;
+}
+
+SELECT
+{
+    font-size: 1.25em;
+    height:1.5em;
+}
+
+A
+{
+    font-size: 1.1em;
+}
+
+P
+{
+    font-size: 1.2em;
+}
+
+H1
+{
+    font-size: 1.5em;
+}
+
+H2
+{
+    font-size: 1.4em;
+}
+
+H3
+{
+    font-size: 1.3em;
+}
+
+H4
+{
+    font-size: 1.2em;
+}
+
+H5
+{
+    font-size: 1.4em;
+}
+
+.Header_h2
+{
+    font-size: 1.4em;
+}
+
+.Header_h3
+{
+    font-size: 1.3em;
+}
+
+.Header_h4 
+{
+    font-size: 1.2em;
+}
+
+.ACA_Sub_Label_FontSize,.ACA_Section_Instruction_FontSize, .ACA_Page_Instruction_FontSize,.ACA_Page_FontSize,.ACA_SmLabel_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Page_FontSize_Restore
+{
+    font-size:1.2em;
+}
+
+.ACA_SmLabel_FontSize_Restore
+{
+    font-size:1.2em;
+}
+
+.ACA_Label_FontSize
+{
+    font-size:1.3em;
+}
+
+.ACA_Label_FontSize_Smaller
+{
+    font-size:1.3em;
+}
+
+.pagination_text_fontsize
+{
+    font-size: 1.15em;
+}
+
+
+.ACA_Header_Font_FontSize
+{
+    font-size:1.15em;
+}
+
+.add2collectionlink
+{
+    font-size:1.2em;
+}
+.ACA_Upload_Button_Width
+{
+    *width:54.6em !important;/*for IE7*/
+}
+
+.ACA_CountryCode
+{
+	width: 4.6em;
+	margin-right: 0.23em;
+}
+
+.ACA_Upload_Helper_Width
+{
+	width:34.5em;
+}

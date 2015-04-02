@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="Payment_FirstData_PaymentHandle" Codebehind="PaymentHandle.aspx.cs" %>

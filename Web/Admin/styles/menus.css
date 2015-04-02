@@ -1,0 +1,133 @@
+#container {
+    width:600px;
+    height:300px;
+    border:3px solid #c3daf9;
+}
+
+
+.btnSave {
+    background-image: url(../images/btnSave.gif) !important;
+}
+
+.btnReset {
+    background-image: url(../images/btnReset.gif) !important;
+}
+.btnClose {
+    background-image: url(../images/close.gif) !important;
+}
+.btnHelp {
+    background-image: url(../images/btnHelp.gif) !important;
+}
+
+.btnClearCache {
+    background-image: url(../images/clearcache.png) !important;
+}
+
+.btnCopyTo {
+    background-image: url(../images/btnCopyTo.gif) !important;
+}
+
+.btnPre {
+    background-image: url(../images/btnPre.gif) !important;
+}
+.btnFolder {
+    background-image: url(../images/folder.gif) !important;
+}
+
+
+.menu-title{
+    background: url(../resources/images/default/grid/grid3-hrow.gif) repeat-x;
+    border-bottom:1px solid #99bbe8;
+    color:#15428b;
+    font:bold 10px tahoma,arial,verdana,sans-serif;
+    display:block;
+    padding:3px;
+}
+
+#nav {
+	border:1px #99bbe8 solid;  width:100%; position:relative;
+}
+.navTitle {
+	border-top:0px #99bbe8 solid; 
+	background: #d9e7f8 url(../images/tabBk1.gif) repeat-x;
+	/*width:100%; */
+	padding-top:6px;
+	padding-left:5px;
+	padding-bottom:6px;
+    font-family: tahoma,arial,verdana,sans-serif;
+    font-size: 11px;
+    cursor:pointer;
+    font-weight:normal;
+}
+.navOver {
+	border-top:0px #99bbe8 solid; 
+	background: #d9e7f8 url(../images/tabBk2.gif) repeat-x;
+	/*width:100%;*/ 
+	padding-top:6px;
+	padding-left:5px;
+	padding-bottom:6px;
+    font-family: tahoma,arial,verdana,sans-serif;
+    font-size: 12px;
+    cursor:pointer;
+    font-weight:bold;
+}
+.tabPanel {
+	background:#ff6fb; width:100%;
+    font-family: tahoma,arial,verdana,sans-serif;
+    font-size: 12px;
+} 
+.panelHeader {
+	border-top:0px #99bbe8 solid; 
+	border-bottom:1px #99bbe8 solid; 
+	background: #d9e7f8 url(../images/panelHeader.gif) repeat-x;
+	width:100%; 
+	padding-top:6px;
+	padding-left:5px;
+	padding-bottom:6px;
+    font-family: tahoma,arial,verdana,sans-serif;
+    font-size: 11px;
+    cursor:pointer;
+    font-weight:bold;
+}
+.tabHeader {
+	border-top:0px #99bbe8 solid; 
+	border-bottom:1px #99bbe8 solid; 
+	background:#d9e7f8 url(../images/panelHeader.gif) repeat-x;
+	width:100%; 
+	
+	padding-top:7px;
+	padding-left:10px;
+	padding-bottom:7px;
+    font-family: tahoma,arial,verdana,sans-serif;
+    font-size: 11px;
+} 
+.tabBody {
+	background:#ff6fb; width:100%;
+	padding-top:0px;
+	
+    font-family: tahoma,arial,verdana,sans-serif;
+    font-size: 12px;
+    /*overflow-y:scroll;*/
+} 
+
+.x-tree-node-settings {
+    background-image:url(../images/Setting-option.gif) !important;
+}
+.x-tree-node-pageflow {
+    background-image:url(../images/tool-editor.gif) !important;
+}
+.x-tree-node-toolbar {
+    background-image:url(../images/rearrange_fields.png) !important;
+}
+
+.btnImage {
+    background-image: url(../images/imageIcon.png) !important;
+}
+
+.Content_Option, .Content_SelectAll {
+    background:#D9E7F8;
+    padding:5px;
+    margin:5px;
+    width:87%;
+    border:1px solid #99BBE8;
+}

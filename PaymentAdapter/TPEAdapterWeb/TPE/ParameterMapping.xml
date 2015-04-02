@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParamMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Adapter AdapterName="TPE">
+      <Parameter MappingName="ApplicationID"       ACA="ApplicationID"       ThirdParty="SERVICECODE"></Parameter>
+      <Parameter MappingName="PaymentAmount"       ACA="PaymentAmount"       ThirdParty="AMOUNT"></Parameter>
+      <Parameter MappingName="ConvFee"             ACA="ConvFee"             ThirdParty="CONV_FEE"></Parameter>
+      <Parameter MappingName="PostbackURL"         ACA="PostbackURL"         ThirdParty=""></Parameter>
+      <Parameter MappingName="RedirectURL"         ACA="RedirectURL"         ThirdParty=""></Parameter>
+      <Parameter MappingName="UserID"              ACA="UserID"              ThirdParty=""></Parameter>
+      <Parameter MappingName="FullName"            ACA="FullName"            ThirdParty=""></Parameter>
+      <Parameter MappingName="TransactionID"       ACA="TransactionID"       ThirdParty="UNIQUETRANSID"></Parameter>
+      <Parameter MappingName="ReturnCode"          ACA=""                    ThirdParty=""></Parameter>
+      <Parameter MappingName="SecurityId"          ACA=""                    ThirdParty=""></Parameter>
+      <Parameter MappingName="UserMessage"         ACA="UserMessage"         ThirdParty=""></Parameter>
+      <Parameter MappingName="PaymentType"         ACA="PaymentType"         ThirdParty="PAYTYPE"></Parameter>
+      <Parameter MappingName="CCType"              ACA="ccType"              ThirdParty=""></Parameter>
+      <Parameter MappingName="CCNumber"            ACA=""                    ThirdParty=""></Parameter>
+      <Parameter MappingName="ACATransSuccess"     ACA="success"             ThirdParty=""></Parameter>
+      <Parameter MappingName="ProcTransactionID"   ACA="ProcTransactionID"   ThirdParty="token"></Parameter>
+      <Parameter MappingName="ProcTransStatus"     ACA=""                    ThirdParty=""></Parameter>
+      <Parameter MappingName="ProcTransactionType" ACA="ProcTransactionType" ThirdParty=""></Parameter>
+      <Parameter MappingName="AgencyCode"          ACA="AgencyCode"          ThirdParty=""></Parameter>
+  </Adapter>
+</ParamMapping>

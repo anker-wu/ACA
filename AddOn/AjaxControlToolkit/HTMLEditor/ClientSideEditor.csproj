@@ -1,0 +1,12 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <UsingTask TaskName="AjaxControlToolkit.JavaScriptCommentStripperTask" AssemblyFile="$(MSBuildProjectDirectory)\..\..\Binaries\JavaScriptCommentStripper.dll" />
+  <ItemGroup>
+    <FileToStrip Include="ClientSideEditorTemp.js"/>
+  </ItemGroup>
+  <ItemGroup>
+    <FileToStripTo Include="ClientSideEditorTempNew.js"/>
+  </ItemGroup>
+  <Target Name="StripJavaScriptComments" >
+    <JavaScriptCommentStripperTask SourceFiles="@(FileToStrip)" DestinationFiles="@(FileToStripTo)" />
+  </Target>
+</Project>

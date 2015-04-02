@@ -1,0 +1,7 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" />
+  <Config name="Debug" configfile="Accela.ACA.Test.BLL.dll.config" binpathtype="Auto">
+    <assembly path="Bin\Debug\Accela.ACA.Test.BLL.dll" />
+  </Config>
+  <Config name="Release" binpathtype="Auto" />
+</NUnitProject>

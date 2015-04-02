@@ -1,0 +1,67 @@
+﻿/* Tab, link, button */
+/* Common Backcolor And Button And Table Label*/
+
+/* Start Border and BkColor */
+.ACA_UploadButton_Hover A
+{
+    font-family: MS PGothic;
+    font-size: 1.2em;
+    line-height: 18px;
+}
+
+.ACA_SmButton_FontSize A
+{
+    line-height:14px;
+    font-size:1.2em;
+}
+
+.ACA_SmButton A:hover
+{
+    font-family: MS PGothic;
+}
+
+.ACA_LgButton_FontSize A
+{
+    font-size:1.3em;
+    line-height:27px;
+}
+
+.ACA_Message_Success_FontSize
+{
+    font-size: 1.2em;
+}
+
+.ACA_Link_Text_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Error_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Notice_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Locked_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Hold_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Note_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Notice_Link_FontSize
+{
+    font-size:1.2em;
+}

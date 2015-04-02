@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26BDD206-B122-42C2-9B6B-E3E2A1A0F333}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accela.ACA.WSProxy</RootNamespace>
+    <AssemblyName>Accela.ACA.WSProxy</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>http://localhost/Accela.ACA.WSProxy/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Web\Properties\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\AcaAdminTreeWebService\Reference.cs" />
+    <Compile Include="Web References\ACAInitWebService\Reference.cs" />
+    <Compile Include="Web References\AddressWebService\Reference.cs" />
+    <Compile Include="Web References\AgencyProfWebService\Reference.cs" />
+    <Compile Include="Web References\AnnouncementWebService\Reference.cs" />
+    <Compile Include="Web References\APOWebService\Reference.cs" />
+    <Compile Include="Web References\AppSpecificInfoWebService\Reference.cs" />
+    <Compile Include="Web References\AppStatusGroupWebService\Reference.cs" />
+    <Compile Include="Web References\ASITableDrillDownWebService\Reference.cs" />
+    <Compile Include="Web References\AssetWebService\Reference.cs" />
+    <Compile Include="Web References\BizDomainWebService\Reference.cs" />
+    <Compile Include="Web References\CacheManageWebService\Reference.cs" />
+    <Compile Include="Web References\CalendarWebService\Reference.cs" />
+    <Compile Include="Web References\CapTypeFilterManagerWebService\Reference.cs" />
+    <Compile Include="Web References\CapTypePermissionWebService\Reference.cs" />
+    <Compile Include="Web References\CapTypeWebService\Reference.cs" />
+    <Compile Include="Web References\CapWebService\Reference.cs" />
+    <Compile Include="Web References\CashierWebService\Reference.cs" />
+    <Compile Include="Web References\CommonPaymentWebService\Reference.cs" />
+    <Compile Include="Web References\ConditionWebService\Reference.cs" />
+    <Compile Include="Web References\ContractorLicenseWebService\Reference.cs" />
+    <Compile Include="Web References\CustomComponentWebService\Reference.cs" />
+    <Compile Include="Web References\DataFilterWebService\Reference.cs" />
+    <Compile Include="Web References\DeepLinkWebService\Reference.cs" />
+    <Compile Include="Web References\EDMSDocumentUploadWebService\Reference.cs" />
+    <Compile Include="Web References\EDMSDocumentWebService\Reference.cs" />
+    <Compile Include="Web References\EMSEWebService\Reference.cs" />
+    <Compile Include="Web References\EntityPermissionWebService\Reference.cs" />
+    <Compile Include="Web References\ExaminationWebService\Reference.cs" />
+    <Compile Include="Web References\ExpressionWebService\Reference.cs" />
+    <Compile Include="Web References\FeeValuationWebService\Reference.cs" />
+    <Compile Include="Web References\FeeWebService\Reference.cs" />
+    <Compile Include="Web References\GenericViewWebService\Reference.cs" />
+    <Compile Include="Web References\GFilterViewWebService\Reference.cs" />
+    <Compile Include="Web References\GISWebService\Reference.cs" />
+    <Compile Include="Web References\GlobalSearchWebService\Reference.cs" />
+    <Compile Include="Web References\GUITextWebService\Reference.cs" />
+    <Compile Include="Web References\I18nSettingsWebService\Reference.cs" />
+    <Compile Include="Web References\InspectionRelationWebService\Reference.cs" />
+    <Compile Include="Web References\InspectionTypePermissionWebService\Reference.cs" />
+    <Compile Include="Web References\InspectionTypeWebService\Reference.cs" />
+    <Compile Include="Web References\InspectionWebService\Reference.cs" />
+    <Compile Include="Web References\JAXBUTWebService\Reference.cs" />
+    <Compile Include="Web References\LicenseCertificationWebService\Reference.cs" />
+    <Compile Include="Web References\LicenseProfessionalWebService\Reference.cs" />
+    <Compile Include="Web References\LicenseWebService\Reference.cs" />
+    <Compile Include="Web References\LicensingValidationWebService\Reference.cs" />
+    <Compile Include="Web References\MyCollectionWebService\Reference.cs" />
+    <Compile Include="Web References\OnlinePaymentWebService\Reference.cs" />
+    <Compile Include="Web References\OwnerWebService\Reference.cs" />
+    <Compile Include="Web References\PageFlowConfigWebService\Reference.cs" />
+    <Compile Include="Web References\ParcelWebService\Reference.cs" />
+    <Compile Include="Web References\PaymentGatewayWebService\Reference.cs" />
+    <Compile Include="Web References\PeopleWebService\Reference.cs" />
+    <Compile Include="Web References\PlanWebService\Reference.cs" />
+    <Compile Include="Web References\PolicyWebService\Reference.cs" />
+    <Compile Include="Web References\ProviderWebService\Reference.cs" />
+    <Compile Include="Web References\ProxyUserWebService\Reference.cs" />
+    <Compile Include="Web References\PublicUserWebService\Reference.cs" />
+    <Compile Include="Web References\RefAddressWebService\Reference.cs" />
+    <Compile Include="Web References\RefContinuingEducationWebService\Reference.cs" />
+    <Compile Include="Web References\RefEducationWebService\Reference.cs" />
+    <Compile Include="Web References\RefExaminationWebService\Reference.cs" />
+    <Compile Include="Web References\RegionalWebService\Reference.cs" />
+    <Compile Include="Web References\ReportWebService\Reference.cs" />
+    <Compile Include="Web References\ServerConstantWebService\Reference.cs" />
+    <Compile Include="Web References\ServiceManagementWebService\Reference.cs" />
+    <Compile Include="Web References\ServiceProviderWebService\Reference.cs" />
+    <Compile Include="Web References\ShoppingCartWebService\Reference.cs" />
+    <Compile Include="Web References\SmartChoiceGroupWebService\Reference.cs" />
+    <Compile Include="Web References\SocialMediaWebService\Reference.cs" />
+    <Compile Include="Web References\SpellCheckWebService\Reference.cs" />
+    <Compile Include="Web References\SSOWebService\Reference.cs" />
+    <Compile Include="Web References\TemplateWebService\Reference.cs" />
+    <Compile Include="Web References\TimeZoneWebService\Reference.cs" />
+    <Compile Include="Web References\TrustAccountWebService\Reference.cs" />
+    <Compile Include="Web References\WorkflowWebService\Reference.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>      
+  <ItemGroup>
+	<WebReferenceUrl Include="http://andy-zhong.achievo.com:3080/av-aca-ws/services/APOWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\APOWebService\</RelPath>
+      <UpdateFromURL>http://andy-zhong.achievo.com:3080/av-aca-ws/services/APOWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_APOWebService_APOWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://andy-zhong.achievo.com:3080/av-aca-ws/services/AssetWebservice%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AssetWebService\</RelPath>
+      <UpdateFromURL>http://andy-zhong.achievo.com:3080/av-aca-ws/services/AssetWebservice%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_AssetWebService_AssetWebserviceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://eric-he01.achievo.com:3080/av-aca-ws/services/DataFilterWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DataFilterWebService\</RelPath>
+      <UpdateFromURL>http://eric-he01.achievo.com:3080/av-aca-ws/services/DataFilterWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_DataFilterWebService_DataFilterWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://lore-li:3080/av-aca-ws/services/PaymentGatewayWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PaymentGatewayWebService\</RelPath>
+      <UpdateFromURL>http://lore-li:3080/av-aca-ws/services/PaymentGatewayWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_PaymentGatewayWebService_PaymentGatewayWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.70.39:3080/av-aca-ws/services/InspectionTypePermissionWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\InspectionTypePermissionWebService\</RelPath>
+      <UpdateFromURL>http://10.50.70.39:3080/av-aca-ws/services/InspectionTypePermissionWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.70.77:3080/av-aca-ws/services/SocialMediaWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SocialMediaWebService\</RelPath>
+      <UpdateFromURL>http://10.50.70.77:3080/av-aca-ws/services/SocialMediaWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_SocialMediaWebService_SocialMediaWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://beric-cui:3080/av-aca-ws/services/AnnouncementWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AnnouncementWebService\</RelPath>
+      <UpdateFromURL>http://beric-cui:3080/av-aca-ws/services/AnnouncementWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_AnnouncementWebService_AnnouncementWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>	
+    <WebReferenceUrl Include="http://daniel-shi:3080/av-aca-ws/services/LicenseCertificationWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LicenseCertificationWebService\</RelPath>
+      <UpdateFromURL>http://daniel-shi:3080/av-aca-ws/services/LicenseCertificationWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_LicenseCertificationWebService_LicenseCertificationWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://daniel-shi:3080/av-aca-ws/services/RegionalWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RegionalWebService\</RelPath>
+      <UpdateFromURL>http://daniel-shi:3080/av-aca-ws/services/RegionalWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_RegionalWebService_RegionalWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://Lore-Li:3080/av-aca-ws/services/CommonPaymentWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CommonPaymentWebService\</RelPath>
+      <UpdateFromURL>http://Lore-Li:3080/av-aca-ws/services/CommonPaymentWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_CommonPaymentWebService_CommonPaymentWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ConditionWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ConditionWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ConditionWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/LicensingValidationWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LicensingValidationWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/LicensingValidationWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ACAInitWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ACAInitWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ACAInitWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/GlobalSearchWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GlobalSearchWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/GlobalSearchWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/JAXBUTWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\JAXBUTWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/JAXBUTWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/EDMSDocumentUploadWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EDMSDocumentUploadWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/EDMSDocumentUploadWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/MyCollectionWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\MyCollectionWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/MyCollectionWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ExaminationWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ExaminationWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ExaminationWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ProviderWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ProviderWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ProviderWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://beric-cui:3080/av-aca-ws/services/PublicUserWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PublicUserWebService\</RelPath>
+      <UpdateFromURL>http://beric-cui:3080/av-aca-ws/services/PublicUserWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_PublicUserWebService_PublicUserWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/RefContinuingEducationWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RefContinuingEducationWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/RefContinuingEducationWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/RefExaminationWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RefExaminationWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/RefExaminationWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/AddressWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AddressWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/AddressWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/RefEducationWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RefEducationWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/RefEducationWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/FeeValuationWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FeeValuationWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/FeeValuationWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/SpellCheckWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SpellCheckWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/SpellCheckWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/CapTypePermissionWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CapTypePermissionWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/CapTypePermissionWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/AgencyProfWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AgencyProfWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/AgencyProfWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/PolicyWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PolicyWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/PolicyWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://denis-lin:3080/av-aca-ws/services/ProxyUserWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ProxyUserWebService\</RelPath>
+      <UpdateFromURL>http://denis-lin:3080/av-aca-ws/services/ProxyUserWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_ProxyUserWebService_ProxyUserWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://kay-li.achievo.com:3080/av-aca-ws/services/EntityPermissionWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EntityPermissionWebService\</RelPath>
+      <UpdateFromURL>http://kay-li.achievo.com:3080/av-aca-ws/services/EntityPermissionWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_EntityPermissionWebService_EntityPermissionWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://kay-li.achievo.com:3080/av-aca-ws/services/InspectionRelationWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\InspectionRelationWebService\</RelPath>
+      <UpdateFromURL>http://kay-li.achievo.com:3080/av-aca-ws/services/InspectionRelationWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://kay-li:3080/av-aca-ws/services/ServiceManagementWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ServiceManagementWebService\</RelPath>
+      <UpdateFromURL>http://kay-li:3080/av-aca-ws/services/ServiceManagementWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_ServiceManagementWebService_ServiceManagementWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:1156/WebSite4/UserProfileWS.WSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SSOUserWebService\</RelPath>
+      <UpdateFromURL>http://localhost:1156/WebSite4/UserProfileWS.WSDL</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ShoppingCartWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ShoppingCartWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ShoppingCartWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/I18nSettingsWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\I18nSettingsWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/I18nSettingsWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/LicenseWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LicenseWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/LicenseWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/AppSpecificInfoWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AppSpecificInfoWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/AppSpecificInfoWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/CalendarWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CalendarWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/CalendarWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/AppStatusGroupWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AppStatusGroupWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/AppStatusGroupWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/CapTypeFilterManagerWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CapTypeFilterManagerWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/CapTypeFilterManagerWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.70.121:3080/av-biz-ws/services/LicenseProfessionalWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LicenseProfessionalWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/LicenseProfessionalWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/CapTypeWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CapTypeWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/CapTypeWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://denis-lin.achievo.com:3080/av-aca-ws/services/CapTypeWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CapTypeWebService\</RelPath>
+      <UpdateFromURL>http://denis-lin.achievo.com:3080/av-aca-ws/services/CapTypeWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_CapTypeWebService_CapTypeWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://dylan-liang:3080/av-aca-ws/services/CapWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CapWebService\</RelPath>
+      <UpdateFromURL>http://dylan-liang:3080/av-aca-ws/services/CapWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_CapWebService_CapWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/CashierWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CashierWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/CashierWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ContractorLicenseWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ContractorLicenseWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ContractorLicenseWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/CustomComponentWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CustomComponentWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/CustomComponentWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://QA-Server15.achievo.com:3080/av-aca-ws/services/DeepLinkWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DeepLinkWebService\</RelPath>
+      <UpdateFromURL>http://QA-Server15.achievo.com:3080/av-aca-ws/services/DeepLinkWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/EDMSDocumentWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EDMSDocumentWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/EDMSDocumentWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/FeeWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FeeWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/FeeWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/EMSEWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\EMSEWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/EMSEWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/GISWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GISWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/GISWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.70.39:3080/av-aca-ws/services/InspectionTypeWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\InspectionTypeWebService\</RelPath>
+      <UpdateFromURL>http://10.50.70.39:3080/av-aca-ws/services/InspectionTypeWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/InspectionWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\InspectionWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/InspectionWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/AcaAdminTreeWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AcaAdminTreeWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/AcaAdminTreeWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/BizDomainWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\BizDomainWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/BizDomainWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/GFilterViewWebService%3fwsdl">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\GFilterViewWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/GFilterViewWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ExpressionWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ExpressionWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ExpressionWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://Lore-Li:3080/av-aca-ws/services/OnlinePaymentWebService%3fwsdl">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\OnlinePaymentWebService\</RelPath>
+      <UpdateFromURL>http://Lore-Li:3080/av-aca-ws/services/OnlinePaymentWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/PeopleWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PeopleWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/PeopleWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/PlanWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PlanWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/PlanWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://jackie-yu.achievo.com:3080/av-aca-ws/services/CacheManageWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CacheManageWebService\</RelPath>
+      <UpdateFromURL>http://jackie-yu.achievo.com:3080/av-aca-ws/services/CacheManageWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_CacheManageWebService_CacheManageWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://kay-li.achievo.com:3080/av-aca-ws/services/RefAddressWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RefAddressWebService\</RelPath>
+      <UpdateFromURL>http://kay-li.achievo.com:3080/av-aca-ws/services/RefAddressWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_RefAddressWebService_RefAddressWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ServerConstantWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ServerConstantWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ServerConstantWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ServiceProviderWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ServiceProviderWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ServiceProviderWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/SmartChoiceGroupWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SmartChoiceGroupWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/SmartChoiceGroupWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/SSOWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SSOWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/SSOWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/TimeZoneWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TimeZoneWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/TimeZoneWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/WorkflowWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WorkflowWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/WorkflowWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/GUITextWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GUITextWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/GUITextWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://beric-cui.achievo.com:3080/av-aca-ws/services/TrustAccountWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TrustAccountWebService\</RelPath>
+      <UpdateFromURL>http://beric-cui.achievo.com:3080/av-aca-ws/services/TrustAccountWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_TrustAccountService_TrustAccountWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/GenericViewWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\GenericViewWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/GenericViewWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/PageFlowConfigWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\PageFlowConfigWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/PageFlowConfigWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ReportWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ReportWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ReportWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/ASITableDrillDownWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ASITableDrillDownWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/ASITableDrillDownWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/OwnerWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OwnerWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/OwnerWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://denis-lin.achievo.com:3080/av-aca-ws/services/ParcelWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ParcelWebService\</RelPath>
+      <UpdateFromURL>http://denis-lin.achievo.com:3080/av-aca-ws/services/ParcelWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Accela_ACA_WSProxy_ParcelWebService_ParcelWebServiceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.50.0.106:3080/av-aca-ws/services/TemplateWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TemplateWebService\</RelPath>
+      <UpdateFromURL>http://10.50.0.106:3080/av-aca-ws/services/TemplateWebService%3fwsdl</UpdateFromURL>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{83D0F8CA-5844-43A6-874E-F529D1FE07BF}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSModel\WSModel.csproj">
+      <Project>{2574E894-BCF0-429C-A7D8-09C022041A81}</Project>
+      <Name>WSModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>C:\WINDOWS\system32\xcopy /r/y "$(TargetPath)" "$(SolutionDir)Web\Bin"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

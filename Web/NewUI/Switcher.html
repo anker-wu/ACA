@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Switcher</title>     
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="karjmohan">
+    <meta name="viewport" id="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="Content/animation.css" />
+    <link rel="stylesheet" type="text/css" href="Content/font-icon.css" />
+    <link rel="stylesheet" type="text/css" href="Content/override.css" />
+    <!--Color Picker-->
+    <link href="Scripts/plugin/switchery/switchery.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="Content/ThemeDesigner.css" />
+</head>
+<body class="fixed-layout">
+    <section id="main" class="main-container" role="main">
+        <div class="theme-website-continer">
+            <div id="tc_theme">
+                <iframe src="home.aspx?isAdmin=Y&isColorTheme=Y" id="iframe-website"> </iframe>
+            </div>
+        </div>
+        <div class="switcher">
+            <ul id="switcher-tab" class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#theme" role="tab" data-toggle="tab">Theme</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id="theme">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+    <!-- Library script : mandatory -->
+    <script type="text/javascript" src="Scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/fastclick.min.js"></script>
+    <script type="text/javascript" src="Scripts/handlebars-v1.3.0.js"></script>
+    <!--/ Library script -->
+    <!-- App and page level script -->
+    <!--/ App and page level scrip -->
+    <script id="theme-imagebg-template" type="text/x-handlebars-template">
+        <input class="color-cont" type="text" style="display:none;" />
+        {{#each ImageBg}}
+        <div class="color-image-background" data-bgurl="url({{ImageUrl}})" style="background-image: url({{ImageUrl}});"> &nbsp;</div>
+        {{/each}}
+    </script>
+
+    <script id="theme-tile-template" type="text/x-handlebars-template">
+        {{#each theme}}
+        <div class="theme-style" id="{{ThemeId}}">
+            <div class="t-welcome" style="background-color:{{Headlines}}">
+                <div class="t-welcome-text" style="background-color:{{HeadlinesText}}"></div>
+            </div>
+            <div class="t-banner" style="background-color:{{Banner}};border-bottom: Solid 2px {{BannerSecondary}}">
+                <div class="t-logo" style="background-color:{{BannerText}}"></div>
+                <div class="t-logo-text">
+                    <div class="text1" style="background-color:{{BannerText}}"></div>
+                    <div class="text2" style="background-color:{{BannerText}}"></div>
+                </div>
+                <div class="t-profile" style="background-color:{{BannerSecondary}}">
+                </div>
+                <div class="t-profile-dot" style="background-color:{{PrimaryButton}}">
+                </div>
+            </div>
+            <div class="t-content" style="background-color:{{Background}}">
+                <div class="t-row">
+                    <div class="t-tile" style="background-color:{{BannerSecondary}}">
+                        <div class="t-ico" style="background-color:{{PrimaryButton}}"></div>
+                        <div class="t-txt" style="background-color:{{BannerText}}"></div>
+                    </div>
+                    <div class="t-tile" style="background-color:{{BannerSecondary}}">
+                        <div class="t-ico" style="background-color:{{PrimaryButton}}"></div>
+                        <div class="t-txt" style="background-color:{{BannerText}}"></div>
+                    </div>
+                    <div class="t-tile" style="background-color:{{BannerSecondary}}">
+                        <div class="t-ico" style="background-color:{{PrimaryButton}}"></div>
+                        <div class="t-txt" style="background-color:{{BannerText}}"></div>
+                    </div>
+                    <div class="t-tile" style="background-color:{{BannerSecondary}}">
+                        <div class="t-ico" style="background-color:{{PrimaryButton}}"></div>
+                        <div class="t-txt" style="background-color:{{BannerText}}"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-footer" style="background-color:{{Footer}}">
+                <div class="t-footer-left" style="background-color:{{FooterText}}">
+                </div>
+                <div class="t-footer-right" style="background-color:{{FooterText}}">
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    
+    <!--Color Picker-->
+    <script type="text/javascript" src="Scripts/plugin/colorpicker/spectrum.js"></script>
+    <script type="text/javascript" src="Scripts/plugin/switchery/switchery.min.js"></script>
+    <script type="text/javascript" src="Scripts/app/styleswitcher.js"></script>
+    
+    <script>
+    </script>
+</body>
+</html>

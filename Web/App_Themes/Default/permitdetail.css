@@ -1,0 +1,105 @@
+﻿.CustomTable{
+    width:300px;
+    color:#666666;
+}
+.BlankCell{
+    width:20px;
+    vertical-align:top;
+}
+.MainCell{
+    width:288px;
+    vertical-align:top;
+}
+.trHide{
+    display:none;
+}
+.aLink{
+}
+.LableTitleSize{
+    margin-left:6px;
+}
+.RightLableTitleSize
+{
+    margin-left:2px;
+}
+.ValueSize
+{
+    margin-left:6px;
+}
+
+.ValueSize_FontSize
+{
+    font-size:1.1em;
+}
+
+.RightValueSize
+{
+    margin-left:2px;
+}
+
+.RightValueSize_FontSize
+{
+    font-size:1.1em;
+}
+
+.div_parent_detail
+{
+    padding-left: 4px;
+    font-family:Arial;
+    color:#666666;
+}
+.table_parent_detail
+{
+    border-collapse: collapse;
+    width:70em;
+    table-layout:fixed;
+}
+.td_parent_left
+{
+    width: 34.6em;
+    vertical-align:top;
+    
+}
+.td_parent_right
+{
+    width: 35.4em;
+    padding-left:10px;
+    vertical-align:top;
+}
+.table_child
+{
+    table-layout:fixed;
+    border-collapse: collapse;
+    width:32em;
+    margin-bottom:0px;
+
+}
+.table_child tr
+{
+    height: 1.6em;
+    line-height: 1.6em;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.td_child_left
+{
+    width:22px;
+    vertical-align:top;
+}
+.td_child_right
+{
+    width:298px;
+    vertical-align:top;
+}
+.moredetail_td
+{
+    width:12px;
+}
+*html .moredetail_td
+{
+    width:4px;
+}
+*+html .moredetail_td
+{
+    width:4px;
+}

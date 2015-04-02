@@ -1,0 +1,44 @@
+﻿.breadcrump
+{
+    background:url(assets/breadcrump.gif) no-repeat;
+}
+
+.breadcrump-collapsed
+{
+    background:url(assets/breadcrump-collapsed.gif) no-repeat;
+}
+
+.breadcrump-selected
+{
+    background:url(assets/breadcrump-selected.gif) no-repeat;
+}
+
+.breadcrump-disable
+{
+    background:url(assets/breadcrump-disable.gif) no-repeat;
+}
+
+.breadcrump-collapsed-disable
+{
+    background:url(assets/breadcrump-collapsed-disable.gif) no-repeat;
+}
+
+.breadcrump-number
+{
+    float:right;
+}
+.breadcrump-tt
+{
+    float:right;
+}
+.breadcrumb_number_padding{
+    padding-right:8px;
+}
+.breadcrump
+{
+    width:12.5em;
+}
+.breadcrump-disable
+{
+    width:12.5em;
+}

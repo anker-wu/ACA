@@ -1,0 +1,220 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dialog.master.cs" Inherits="Accela.ACA.Web.Dialog" %>
+<%@ Import Namespace="Accela.ACA.Common.Common" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%=Accela.ACA.Common.Util.I18nCultureUtil.UserPreferredCulture %>" xml:lang="<%=Accela.ACA.Common.Util.I18nCultureUtil.UserPreferredCulture %>">
+<head id="Head1" runat="server">
+    <title><%=ScriptFilter.RemoveHTMLTag(LabelUtil.GetTextByKey(TitleKey, ModuleName))%></title>
+</head>
+<body>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/jquery.js")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/jquery.corner.js")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/GlobalConst.aspx")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/global.js")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/ProcessLoading.js")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/GlobalSearch.js")%>"></script>
+    <script type="text/javascript">
+        var firstErrorMsgId;
+        var needInitControlLoading = true;
+        var defaultFrameHeight = 500;
+        var minHeight = '<%=MinHeight %>';
+        var maxHeight = '<%=MaxHeight %>';
+
+        function iframeAutoFit(isAutoHeight) {
+            if (parent.ACADialog == null || parent == window) {
+                return;
+            }
+
+            if (isAutoHeight) {
+                var opts = {};
+                if (minHeight != '') {
+                    opts.minHeight = minHeight;
+                }
+                if (maxHeight != '') {
+                    opts.maxHeight = maxHeight;
+                }
+
+                opts.isAutoHeight = isAutoHeight;
+
+                parent.ACADialog.autoHeight(opts);
+            }
+
+            var width = '<%=FixedWidth %>';
+            if (width != '') {
+                parent.ACADialog.fixWidth(width);
+            }
+
+            parent.ACADialog.autoFixLeft();
+        }
+
+        function iframeAutoTitle() {
+            try {
+                var pageTitle = document.getElementById('<%=lblPageTitle.ClientID %>');
+                parent.ACADialog.setTitle(pageTitle.innerHTML);
+            }
+            catch (ex) {
+
+            }
+        }
+
+        function SetParentLastFocus(focusObject) {
+            //Set focus object for Section508.
+            if (focusObject) {
+                var objectID = focusObject;
+
+                if (typeof (focusObject) != 'string') {
+                    objectID = focusObject.id;
+                }
+
+                if (!objectID) {
+                    return;
+                }
+
+                if (parent.theForm.elements["__LASTFOCUS_ID"] == null) {
+                    var _lastFocus = document.createElement('input');
+                    _lastFocus.id = '__LASTFOCUS_ID';
+                    _lastFocus.name = '__LASTFOCUS_ID';
+                    _lastFocus.type = 'hidden';
+                    parent.theForm.appendChild(_lastFocus);
+                }
+
+                parent.theForm.elements["__LASTFOCUS_ID"].value = objectID;
+            }
+        }
+
+        $(document).ready(function () {
+            setInterval("iframeAutoFit(<%=IsAutoHeight.ToString().ToLower()%>);", 300);
+
+            if (parent.ACADialog && parent.ACADialog.autoFixTop) {
+                setTimeout("parent.ACADialog.autoFixTop()", 400);
+            }
+        });
+
+        $.global = { isRTL: false, isAdmin: false, messageCSS: 'ACA_Content', isForPopUp: true };
+        $.global.isRTL = IsTrue('<%=Accela.ACA.Common.Util.I18nCultureUtil.UserPreferredCultureInfo.TextInfo.IsRightToLeft %>');
+
+        //fix the issue that the confirm/alert box should also follows the current culture.
+        if ($.global.isRTL) {
+            document.dir = "rtl";
+        } else {
+            document.dir = "";
+        }
+
+        $.global.isAdmin = IsTrue('<%= AppSession.IsAdmin %>');
+    </script>
+    <form class="ACA_Dialog_Form" id="form1" runat="server">
+    <ACA:AccelaHideLink ID="hlDialogBegin" runat="server" TabIndex="0"/>
+     <span style="display:none">
+        <ACA:AccelaHideLink ID="hlSkipToolBar" runat="server" AltKey="img_alt_modulemenu_skiplink" IsSkippingToAnchor="true" NextControlClientID="FirstAnchorInACAMainContent" TabIndex="-1"/>
+        <a name="FirstAnchorInACAMainContent" id="FirstAnchorInACAMainContent" tabindex="-1"></a>
+     </span>
+     <span id="ErrorList1"></span>
+       <asp:ScriptManager ID="ScriptManager1" EnableScriptGlobalization="true" EnableScriptLocalization="true" runat="server" EnablePageMethods="true" ScriptMode="Release" />
+        <a id="goTOMessage" href="#messageSpan" tabindex="-1"></a>
+        <script type="text/javascript" language="javascript">
+            //Init validation error panel for form validation.
+            if (typeof (InitValidationErrorPanel) == "function") {
+                $(document).bind("ready", InitValidationErrorPanel);
+            }
+        </script>
+        <div id="divMainPage">
+            <!-- The h1 element is only for WCAG2.0 rule 1.1.1 H42 -->
+            <h1 class="ACA_Hide">Message Bar</h1>
+            <div class="ACA_Hide dialog_message">
+                <span id="messageSpan" name="messageSpan"></span>
+            </div>
+            <div id="divTitle" class="ACA_Dialog_Content" runat="server">
+                    <ACA:AccelaLabel ID="lblPageTitle" LabelType="PopUpTitle" runat="server"></ACA:AccelaLabel>
+            </div>
+            <div class="ACA_Page Dialog_PaddingBottom">
+                <div class="ACA_Dialog_Content">
+                    <asp:ContentPlaceHolder ID="phPopup" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <input type="submit" name="Submit" value="Submit" class="HiddenButton" onclick="return false;" />
+        </div>
+        <ACA:AccelaHideLink ID="hlDialogEnd" runat="server" TabIndex="0" />
+        <asp:UpdatePanel ID="UpdatePanel4Expression" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <input type="hidden" id="HDExpressionParam" class="HDExpressionResultCss" runat="server"/>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </form>
+    <script type="text/javascript">
+        with (Sys.WebForms.PageRequestManager.getInstance()) {
+            add_beginRequest(onBeginRequest);
+            add_endRequest(onEndRequest);
+            add_pageLoaded(onPageLoaded);
+        }
+
+        function onBeginRequest(sender, args) {
+            if ($.global.isAdmin) {
+                //1. in admin, if async request, we need record the client id of last selected object.
+                var obj = document.currentSelectedObj;
+
+                if (obj && obj._element) {
+                    parent.document.currentSelectedID = obj._element.id;
+                }
+
+                $('*').css('cursor', 'wait');
+            }
+        }
+
+        var processLoading = new ProcessLoading();
+        function onPageLoaded(sender, args) {
+            if ($.global.isAdmin) {
+                //2. in admin, if async request, use last selected object id to get the object and trigger it select.
+                var selectedId = parent.document.currentSelectedID;
+
+                if (selectedId) {
+                    invokeClick($get(selectedId));
+
+                    //3. when selected completed, clear this.
+                    parent.document.currentSelectedID = null;
+                }
+
+                $('*').css('cursor', '');
+            } else {
+                firstErrorMsgId = ''; 
+                iframeAutoTitle();
+
+                if (needInitControlLoading) {
+                    processLoading.initControlLoading();
+                }
+
+                addPrintErrors2SubmitButton();
+
+                if ($.browser.opera) {
+                    //Make links 'tab-able' in Opera
+                    SetTabIndexForOpera();
+
+                    //For support opera to Tab between iframe content and outside of iframe
+                    $("#ACADialog_closebtn", window.parent.document).keydown(function (e) {
+                        OverrideTabKey2(e, $("#<%=hlDialogBegin.ClientID %>"));
+                    });
+
+                    $("#<%=hlDialogEnd.ClientID %>").keydown(function (e) {
+                        OverrideTabKey2(e, $("#lnkBeginFocus", window.parent.document));
+                    });
+                }
+            }
+        }
+
+        function onEndRequest(sender, arg) {
+            if (!$.global.isAdmin) {
+                processLoading.hideLoading();
+            }
+        }
+        
+        function ShowLoading() {
+            var processLoading = new ProcessLoading();
+            processLoading.showLoading();
+        }
+
+        function HideLoading() {
+            var processLoading = new ProcessLoading();
+            processLoading.hideLoading();
+        }
+    </script>
+</body>
+</html>

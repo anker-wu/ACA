@@ -1,0 +1,305 @@
+﻿@import "mixins.less";
+
+@font-content: 'Lato', Tahoma, Arial, sans-serif;
+@font-header: 'Lato', Tahoma, Arial, sans-serif;
+
+body {
+    font: @font-content;
+    background: #65707a;
+    margin: 0;
+    padding: 0;
+}
+
+.switchery-label {
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+
+.switcher {
+    min-height: 200px;
+    width: 423px;
+    padding: 15px;
+    position: fixed;
+    height: 100%;
+    z-index: 2;
+    background: #ffffff;
+
+    .nav-tabs {
+        background: #d8dbde;
+        border: 0;
+        border-radius: 3px 3px 0 0;
+        box-shadow: -1px 2px 8px rgba(0,0,0,0.25);
+
+        > li.active > a, > li.active > a:hover, > li.active > a:focus {
+            background-color: #fcfcfc;
+            border: 0;
+        }
+
+        > li > a {
+            border: 0;
+            padding: 14px 20px;
+            color: #666;
+            border-radius: 3px 3px 0 0;
+        }
+    }
+
+    .tab-content {
+        background-color: #fcfcfc;
+        padding: 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+        border-radius: 0 0 3px 3px;
+
+        > .active {
+            background-color: #fcfcfc;
+        }
+    }
+    /*.switcher-setting {
+        background: #f7f7f7;
+        position: absolute;
+        right: -27px;
+        padding: 2px 5px 2px 6px;
+        .rounded-corners(3px);
+        cursor: pointer;
+
+        > span {
+            font-size: 22px;
+            color: #000;
+        }
+    }*/
+    .color-sec {
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        font-family: @font-header;
+        font-size: 15px;
+
+        span {
+            position: absolute;
+            left: 0;
+        }
+
+        .color-cont {
+            display: block;
+            float: right;
+            width: 150px;
+            padding: 3px 3px 3px 6px;
+            background-color: #fcfcfc;
+            .rounded-corners(3px);
+            outline: none;
+            border: solid 1px #c9c7c9;
+            height: 31px;
+            margin-top: -6px;
+
+            &.color-validation-error {
+                border: 1px solid red;
+                background: #fdd;
+            }
+        }
+
+        .color-text {
+            outline: none;
+            text-align: center;
+            background-color: transparent;
+            border: 0;
+            width: 90px;
+            height: 25px;
+            position: absolute;
+            .rounded-corners(3px);
+            /*right: 35px;*/
+            left: 270px;
+            color: #fff;
+        }
+    }
+
+    .pattern-scroller {
+        height: 240px;
+        overflow: auto;
+        padding-right: 5px;
+        background-color: #ffffff;
+        padding-top: 4px;
+        padding-left: 4px;
+        margin-top: 10px;
+
+        .color-imagebg, .color-image-background {
+            float: left;
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            margin: 3px !important;
+            border-radius: 3px;
+            .box-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+            opacity: 0.3;
+        }
+
+        .color-imagebg {
+            opacity: 1;
+            cursor: pointer;
+
+            &.selected {
+                .box-shadow(inset 0 2px 3px rgba(0, 0, 0, 0.5));
+            }
+        }
+    }
+
+    .color-sec-button {
+        padding: 10px 0 10px 0;
+        width: 100%;
+    }
+
+    #theme {
+        height: 300px;
+    }
+
+    .theme-style {
+        margin: 5px 10px 10px 5px;
+        width: 45%;
+        font-family: @font-header;
+        font-size: 15px;
+        float: left;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+        cursor: pointer;
+
+        .t-welcome {
+            height: 7px;
+            padding: 3px;
+
+            .t-welcome-text {
+                height: 2px;
+                width: 40px;
+            }
+        }
+
+        .t-banner {
+            height: 25px;
+            padding: 5px;
+
+            .t-logo {
+                float: left;
+                width: 13px;
+                height: 13px;
+            }
+
+            .t-logo-text {
+                float: left;
+                margin-left: 5px;
+                width: 25px;
+
+                > .text1 {
+                    height: 7px;
+                }
+
+                > .text2 {
+                    height: 3px;
+                    margin-top: 2px;
+                }
+            }
+
+            .t-profile-dot {
+                float: right;
+                width: 5px;
+                height: 5px;
+                margin: 4px 8px 0 0;
+            }
+
+            .t-profile {
+                float: right;
+                width: 13px;
+                height: 13px;
+            }
+        }
+
+        .t-content {
+            height: 70px;
+            text-align: center;
+
+            .t-row {
+                padding: 10px 8px 8px 8px;
+                width: 90px;
+                margin-left: 40px;
+
+                .t-tile {
+                    margin-left: 2px;
+                    margin-bottom: 2px;
+                    width: 30px;
+                    height: 22px;
+                    float: left;
+                    padding: 8px 6px 6px 6px;
+
+                    .t-ico {
+                        width: 5px;
+                        height: 5px;
+                        float: left;
+                    }
+
+                    .t-txt {
+                        width: 12px;
+                        height: 5px;
+                        margin-left: 7px;
+                    }
+                }
+            }
+        }
+
+        .t-footer {
+            height: 10px;
+            padding: 4px;
+
+            .t-footer-left {
+                float: left;
+                height: 2px;
+                width: 40px;
+            }
+
+            .t-footer-right {
+                float: right;
+                height: 2px;
+                width: 40px;
+            }
+        }
+    }
+}
+
+.holder {
+    padding: 10px;
+
+    img {
+        margin-left: 8px;
+        margin-right: 8px;
+        cursor: pointer;
+        opacity: 0.5;
+
+        &:hover, &.active {
+            opacity: 1;
+        }
+    }
+}
+
+
+.theme-website-continer {
+    overflow: hidden;
+    margin-left: 423px;
+    padding: 0;
+}
+
+#tc_theme {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    max-height: 100%;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    .box-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+    overflow: hidden;
+
+    iframe {
+        width: 100%;
+        height: 99%;
+        border: 0;
+        overflow: hidden;
+    }
+}

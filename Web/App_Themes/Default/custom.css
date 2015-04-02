@@ -1,0 +1,344 @@
+﻿html 
+{
+    direction:ltr;
+}
+
+.ACA_AlignLeftOrRight 
+{
+    text-align:left;
+}
+
+.ACA_AlignLeftOrRightNoBreakLine 
+{
+    white-space:nowrap;
+    text-align:left;
+    padding-left:2px;
+}
+
+.ACA_AlignRightOrLeft 
+{
+    text-align:right;
+}
+
+.ACA_AlignLeftOrRightTop
+{
+    text-align:left;
+    vertical-align:top;
+    padding-left:2px;
+}
+
+.ACA_TDAlignLeftOrRightTop TD
+{
+    text-align:left;
+    vertical-align:top;
+}
+
+.ACA_TDAlignLeftOrRightTopNoBorder
+{
+	margin-left:2px;
+	border:0px;
+	border-collapse:collapse;
+}
+
+.ACA_TDAlignLeftOrRightTopNoBorder TD
+{
+    text-align:left;
+    vertical-align:top;
+    padding:0px;
+}
+
+.ACA_AlignLeftOrRightUpdatePanel /*6.6i*/
+{
+    float: left;
+    clear: both;
+}
+
+.ACA_LeftOrRightForParcel
+{
+	float:left; 
+	width:50%;
+}
+
+.ACA_LeftOrRightForParcelWithMiniMap
+{
+	float:left; 
+	width:100%;
+}
+
+.ACA_ForRight
+{
+	float:right;
+	margin-top: -18px;
+}
+.ACA_ForPrint
+{
+	float: right;
+	margin-bottom: 0.4em;
+	width:12em;	
+}
+
+.DisclaimerContainerStyle
+{
+    width: 48.4em; 
+    height: 15em; 
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    border-style: inset; 
+    border: 2px;
+    padding-left:10px; 
+    padding-top:10px; 
+    padding-right:20px
+}
+.CertificationContentContainer
+{
+    height: 15em; 
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    border-style: inset; 
+    border: 2px;
+    padding-left: 10px; 
+    padding-top: 10px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.CertificationContentContainer table {
+    width: 100%;
+    border: 0px;
+}
+.CertificationContainer {
+    margin-top: 16px;
+}
+.CertificationContent {
+    padding-top: 5px;
+    clear: both;
+    width: 100%;
+    margin-bottom:5px;
+}
+.CertificationContainer .CheckContainer{
+    float: left;
+    width: 75%;
+}
+.CertificationContainer .DateContainer {
+    float: right;
+    width: 25%;
+}
+.CertificationContainer .DateContainer table {
+    width: 100%;
+}
+.CertificationContainer .DateContainer .DateLabelContainer
+{
+    vertical-align: top;
+    text-align: right;
+}
+.CertificationContainer .DateContainer .DateValueContainer 
+{
+    vertical-align: top;
+    width: 45%;
+}
+.ACA_PaddingStyle
+{
+	padding-left: 16px;
+}
+.ACA_PaddingStyle20
+{
+	padding-left: 20px;
+}
+.ACA_UploadNewAttachmentStyle
+{
+    padding-left: 15px;
+}
+.ACA_CapFeesStyle
+{
+	padding-left:15px;
+}
+
+.ACA_CapListStyle
+{
+	padding-left:5px;	
+}
+.ACA_ParcelDetailStyle
+{
+	float:left; 
+	width:50%;	
+}
+.ACA_ParcelDetailStyleWithMinaMap
+{
+    float:left; 
+	width:100%;	
+}
+
+.ACA_SearchVEMapStyle
+{
+    position:relative;
+	left: 0px; 
+	top: 0px; 
+	width: 770px; 
+	height: 400px;	
+}
+
+.ACA_InspectionListStyle
+{
+	position:relative;
+	left:-3px;	
+}
+
+.ACA_MyCollapseChkBox 
+{
+    text-align:left;
+}
+
+.ACA_NoticeTitle
+{
+    font-weight: bold; 
+	text-decoration:underline;
+}
+
+.ACA_NoticeChangedFee
+{
+	margin-left:30px;
+	list-style-type:disc;
+}
+
+.ACA_NoticeEndChangedFee
+{
+	margin-left:1px;
+	list-style-type:disc;
+}
+
+.ACA_MutipleContactNewLine
+{
+	clear:both;
+}
+
+.ACA_Padding_Top_5
+{
+    padding-top:5px;
+}
+
+.ACA_Area_CapHome .SearchResultInfo
+{
+    font-weight:bold;
+}
+
+.ACA_Area_CapHome .SearchResultPromptInfo
+{}
+
+.ACA_Area_CapHome .SearchResultSelectedPrompt
+{
+    height:auto;
+    font-weight:bold;
+}
+
+.ACA_Area_CapHome #divMap2
+{
+    bottom:-10px;
+}
+.ACA_Area_CapHome #PageResult
+{
+    text-decoration:none;
+}
+.ACA_Area_CapHome #iframeExport
+{
+    visibility:hidden;
+}
+.InspectionResultComment
+{
+    line-height:1.1;
+}
+
+/*fee estimate tree view begin*/
+.FeeEstimateCondition_TreeView
+{
+}
+
+.FeeEstimateCondition_TreeView_RootNode
+{
+}
+
+.FeeEstimateCondition_TreeView_ParentNode
+{
+}
+
+.FeeEstimateCondition_TreeView_LeafNode
+{
+}
+
+.FeeEstimateCondition_TreeView_Level1
+{
+}
+
+.FeeEstimateCondition_TreeView_Level2
+{
+   color: #4D4F53;
+   font-size: 1.3em;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.FeeEstimateCondition_TreeView_Level3
+{
+   color: #4D4F53;
+   font-size: 1.2em;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.FeeEstimateCondition_TreeView_Level4
+{
+}
+
+.TreeView_IconAlign .FeeEstimateCondition_TreeView_RootNode
+{
+    vertical-align:middle;
+}
+
+.TreeView_IconAlign .FeeEstimateCondition_TreeView_ParentNode
+{
+    vertical-align:middle;
+}
+
+.TreeView_IconAlign table td
+{
+   vertical-align:top;
+}
+
+.aca_form_designer_frame
+{
+    visibility: hidden; 
+    height: 0px; 
+    width: 0px;
+    border: 0px
+}
+
+.module_setting_amendment_margin
+{
+    margin-bottom:10px;
+}
+
+/*fee estimate tree view end*/
+
+.socialmedia_bar
+{
+    margin:5px 0px 0px 0px;
+}
+
+.socialmedia_bar .socialmedia_item
+{
+    width:85px;
+}
+
+/* for IE10, this style can disabled the clear button of a text input control. */
+input.maskedfields::-ms-clear {
+    display: none;
+}
+
+.mask_iframe
+{
+    left: 0px; 
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: Alpha(Opacity=0);
+    opacity: 0;
+}

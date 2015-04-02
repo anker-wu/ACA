@@ -1,0 +1,16 @@
+<!ENTITY cross-browser.label "Your localized menuitem">
+<!ENTITY cross-browserContext.label "Your Menuitem">
+<!ENTITY cross-browserContext.accesskey "Y">
+<!ENTITY cross-browserToolbarButton.label "Your Toolbar Button">
+<!ENTITY cross-browserToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY cross-browserSidebar.label "Your Sidebar">
+<!ENTITY cross-browserToolbar.name  "cross-browser">
+<!ENTITY cross-browserToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &cross-browserToolbar.name;">
+<!ENTITY cross-browserToolbarButton.button.label "ALL">
+<!ENTITY cross-browserToolbarButton.buttonie7.label "IE7">
+<!ENTITY cross-browserToolbarButton.buttonie8.label "IE8">
+<!ENTITY cross-browserToolbarButton.buttonie9.label "IE9">
+<!ENTITY cross-browserToolbarButton.buttonfirefox.label "firefox">
+<!ENTITY cross-browserToolbarButton.buttonsafari.label "safari">
+<!ENTITY cross-browserToolbarButton.buttonchrome.label "chrome">
+<!ENTITY cross-browserToolbarButton.buttonoptions.label "options">

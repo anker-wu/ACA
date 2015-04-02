@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckModel4WS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <accelaFee>10</accelaFee>
+  <accountNbr>56780439085000</accountNbr>
+  <balance>50</balance>
+  <callerID>Unit Tester</callerID>
+  <checkNbr>1001</checkNbr>
+  <city>Buffalos</city>
+  <email>dylan.liang@achievo.com</email>
+  <licenseNbr>CA123456</licenseNbr>
+  <module>Building</module>
+  <name>Sally</name>
+  <phoneNbr>(504) 654-3210</phoneNbr>
+  <pos>false</pos>
+  <postalCode>95050</postalCode>
+  <routingNbr>1234</routingNbr>
+  <servProvCode>@SERV_PROV_CODE@</servProvCode>
+  <ssNbr />
+  <state>CA</state>
+  <streetAddress>1234Main</streetAddress>
+</CheckModel4WS>

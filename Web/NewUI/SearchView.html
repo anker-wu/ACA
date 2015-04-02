@@ -1,0 +1,231 @@
+﻿<div class="container-fluid" id="SearchResult" ng-init="initSearchView()">
+    <div class="search-menu-switch">
+        <ul class="nav nav-tabs" id="SearchResultTab">
+            <li ng-class="{true: 'active', false: ''}[isShowSearchMap]">
+                <a class="hand-cursor" ng-click="locationShowMapView()">
+                    <span class="search-tab-icon ico-map3"></span>{{SearchViewData.aca_newui_searchview_label_mapview}}
+                </a>
+            </li>
+            <li ng-class="{false: 'active', true: ''}[isShowSearchMap]">
+                <a class="hand-cursor" ng-click="showMapView(false)">
+                    <span class="search-tab-icon ico-list"></span>{{SearchViewData.aca_newui_searchview_label_listview}}
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content" ng-init="isShowSearchMap=false">
+        <div class="tab-pane active" id="search-list-view" >
+            <div class="tab-header">
+                <div class="tab-title" ng-labelkey="SearchViewData.aca_newui_searchview_label_result">
+                   
+                </div>
+                <div class="tab-filter dropdown">
+                    <span class="ico-menu5 dropdown-toggle" data-toggle="dropdown"></span>
+                    <ul class="dropdown-menu arrow dropdown-menu-right text-left" role="menu">
+                        <li><a role="menuitem" tabindex="-1" href="" ng-click="FilterGlobalSearchView('')" ng-labelkey="SearchViewData.aca_newui_searchview_label_all"></a></li>
+                        <li><a role="menuitem" tabindex="-1" href="" ng-click="FilterGlobalSearchView('LP')" ng-labelkey="SearchViewData.aca_newui_searchview_label_professionals"></a></li>
+                        <li><a role="menuitem" tabindex="-1" href="" ng-click="FilterGlobalSearchView('APO')" ng-labelkey="SearchViewData.aca_newui_searchview_label_properties"></a></li>
+                        <li><a role="menuitem" tabindex="-1" href="" ng-click="FilterGlobalSearchView('CAP')" ng-labelkey="SearchViewData.aca_newui_searchview_label_record"></a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li><a role="menuitem" tabindex="-1" href="" ng-click="SortGlobalSearchView('ID')" ng-labelkey="SearchViewData.aca_newui_searchview_label_id"></a></li>
+                        <li><a role="menuitem" tabindex="-1" href="" ng-click="SortGlobalSearchView('Address')" ng-labelkey="SearchViewData.aca_newui_searchview_label_address"></a></li>
+                        <li><a role="menuitem" tabindex="-1" href="" ng-click="SortGlobalSearchView('Type')" ng-labelkey="SearchViewData.aca_newui_searchview_label_type"></a></li>
+
+                    </ul>
+                </div>
+                <div class="tab-result-sum">
+                    {{globalSearchDesc}}
+                </div>
+                <div class="tab-result-exceed notifiy" ng-show="true==resultWarning">
+                    <div class="alert alert-warning">
+                        <h3><span class="ico-warning-sign"></span> {{format(SearchViewData.aca_newui_searchview_label_searchmsg,"100 +")}} </h3><span>  {{SearchViewData.aca_newui_searchview_label_searchmsg2}}</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content-result" id="Search-View-List">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="res-sec" ng-repeat="resultType in resultTypes ">
+                            <div class="res-header">
+                                <span class="res-icon {{globalSearchStyle(resultType)}}"></span><span class="res-title">
+                                                                                                    {{resultType}}
+                                                                                                </span>
+                                <div class="tab-filter dropdown" ng-if="GetEnableExportCSV() || resultType!='Professionals'">
+                                    <span class="ico-menu5 dropdown-toggle" data-toggle="dropdown"></span>
+                                    <ul class="dropdown-menu arrow dropdown-menu-right text-left" role="menu">
+                                         <li ng-if="resultType=='Record'"><a role="menuitem" tabindex="-1" href="" ng-click="addtocollection('SearchView',resultType)" ng-labelkey="SearchViewData.aca_newui_searchview_label_addcollection"></a></li>
+                                        <li>
+                                            <a role="menuitem" tabindex="-1" href="" ng-if="GetEnableExportCSV() && !CheckCacheRecordType(resultType)" ng-click="DownloadResult(resultType)" ng-labelkey="SearchViewData.aca_newui_searchview_label_download"></a>
+                                            <a role="menuitem" tabindex="-1" href="" ng-if="GetEnableExportCSV() && CheckCacheRecordType(resultType)" ng-click="DownloadResult(resultType)" ng-labelkey="SearchViewData.aca_newui_searchview_label_downloadselected"></a>
+                                        </li>
+                                        <li ng-show="resultType!='Professionals'"><a role="menuitem" tabindex="-1" href="" ng-click="multipleLocateOnMap(resultType)" ng-labelkey="SearchViewData.aca_newui_searchview_label_viewonmap"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="hr-line">
+                                </div>
+                            </div>
+
+                            <div class="res-content" ng-if="resultType=='Professionals'" ng-repeat="result in resultdetail('Professionals')">
+                                <div class="res-row" data-toggle="action">
+                                    <div class="col-xs-12 col-sm-3">
+                                        <div class="float-left  m-n18">
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" ng-click="CheckedRecord(result,'Professionals',$event)" ng-checked='ShowCacheSelectData("SearchView-Professionals{{result.SortID}}")'
+                                                       id="SearchView-Professionals{{result.SortID}}" />
+                                                <label for="SearchView-Professionals{{result.SortID}}">
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <div class="float-left m-p10">
+                                            <span class="res-title-cc">{{result.LicensedProfessionalName}}</span>
+                                            <span>{{result.BusinessName}}</span>
+                                            <span>{{result.LicenseType}}</span>
+                                            <span>{{result.LicenseNumber}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <span>&nbsp;</span> <span>&nbsp;</span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <span>&nbsp;</span> <span>&nbsp;</span>
+                                    </div>
+                                </div>
+                                <!--Action Button Control Start-->
+                                <span class="res-option hidden-xs" data-toggle="action"></span>
+                                <div class="rec-action">
+                                    <ul class="nav nav-pills">
+                                        <li><a href="" ng-click='ShowViewDetail(result.DetailViewUrl)' ng-labelkey="SearchViewData.aca_newui_searchview_label_viewdetail"></a></li>
+                                    </ul>
+                                </div>
+                                <!--Action Button Control Start-->
+                                <div class="hr-line">
+                                </div>
+                            </div>
+
+                            <div class="res-content" ng-if="resultType=='Properties'" ng-repeat="result in resultdetail('Properties')">
+                                <div class="res-row" data-toggle="action">
+
+                                    <div class="col-xs-12 col-sm-3">
+                                        <div class="float-left  m-n18">
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" ng-click="CheckedRecord(result,'Properties',$event)" ng-checked="ShowCacheSelectData('SearchView-Properties{{result.SortID}}')"
+                                                       id="SearchView-Properties{{result.SortID}}">
+                                                <label for="SearchView-Properties{{result.SortID}}">
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <div class="float-left m-p10">
+                                            <span ng-if="result.ParcelNumber!='' && result.ParcelNumber!=null">Parcel# {{result.ParcelNumber}}</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <span class="res-title-cc" title="{{result.AddressDescription}}">{{result.AddressDescription}}</span>
+                                        <span class="res-title-cc"></span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <span ng-if="result.OwnerName!='' && result.OwnerName!=null" title="{{result.OwnerName}}">Owner: {{result.OwnerName}}</span>
+                                    </div>
+
+
+
+                                </div>
+                                <!--Action Button Control Start-->
+                                <span class="res-option hidden-xs"  data-toggle="action"></span>
+                                <div class="rec-action">
+                                    <ul class="nav nav-pills">
+                                        <li><a href="" ng-click='ShowViewDetail(result.DetailViewUrl)' ng-labelkey="SearchViewData.aca_newui_searchview_label_viewdetail"></a></li>
+                                        <li><a ng-click="singleLocateOnMap(result,'apo')" ng-labelkey="SearchViewData.aca_newui_searchview_label_viewonmap"></a></li>
+                                        <li><a href="" ng-click="ApplyFromGlobalSearch('Apply',result.ParcelNumber,result.AddressDescription)" ng-labelkey="SearchViewData.aca_newui_searchview_label_apply"></a></li>
+                                    </ul>
+                                </div>
+                                <!--Action Button Control End-->
+                                <div class="hr-line">
+                                </div>
+                            </div>
+
+                            <div class="res-content" ng-if="resultType=='Record'" ng-repeat="result in resultdetail('Record')">
+                                <div class="res-row" data-toggle="action">
+
+                                    <div class="col-xs-6 col-sm-3">
+                                        <div class="float-left  m-n18">
+                                            <span class="checkbox custom-checkbox">
+                                                <input type="checkbox" ng-click="CheckedRecord(result,'Record',$event)" ng-checked="ShowCacheSelectData('SearchView-Record{{result.PermitNumber}}')"
+                                                       id="SearchView-Record{{result.PermitNumber}}">
+                                                <label for="SearchView-Record{{result.PermitNumber}}">
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <div class="float-left m-p10">
+                                            <span class="res-title-cc">{{result.PermitType}}</span>
+                                            <span class="res-title-cc">{{result.ModuleName}}</span>
+                                            <span>{{result.PermitNumber}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3">
+                                        <span>{{result.Address}}</span>
+                                        <span>{{result.AgencyCode}}</span>
+                                        <span></span>
+                                    </div>
+                                    <div class="col-xs-12 hr-line-padding visible-xs"></div>
+
+                                    <div class="col-xs-6 col-sm-3">
+                                        <span><span class="res-count">{{result.RelatedRecords}}</span> {{SearchViewData.aca_newui_searchview_label_related}}</span>
+                                        <span><span class="res-count">{{result.Inspections}}</span> {{SearchViewData.aca_newui_searchview_label_inspections}}</span>
+
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3">
+                                        <span class="res-status">{{result.Status}}</span>
+                                        <span ng-labelkey="SearchViewData.aca_newui_earchview_label_created"> {{result.CreatedDate | date:'MM/dd/yyyy'}}</span>
+                                    </div>
+                                </div>
+                                <!--Action Button Control Start-->
+                                <span class="res-option hidden-xs" data-toggle="action"></span>
+                                <div class="rec-action actionbutton" ng-controller="ActionButtonCtrl">
+                                    <ul class="nav nav-pills">
+                                        <li ng-if="result.ResumeUrl!=''"><a href="" ng-click='ShowViewDetail(result.ResumeUrl,result.ModuleName)' ng-labelkey="SearchViewData.aca_newui_searchview_label_resume"></a></li>
+                                        <li ng-if="!result.IsPartialCap"><a href="" ng-click='ShowViewDetail(result.DetailViewUrl,result.ModuleName)' ng-labelkey="SearchViewData.aca_newui_searchview_label_viewdetail"></a></li>
+                                        <li ng-if="!result.IsPartialCap"><a ng-click="singleLocateOnMap(result, 'cap')" ng-labelkey="SearchViewData.aca_newui_searchview_label_viewonmap"></a></li>
+                                        <li class="dropdown" ng-if="result.ResumeUrl=='' && ShowCollectionByLogin()">
+                                            <a id="drop4" role="button" data-toggle="dropdown" href="">
+                                                <span class="hidden-xs" ng-labelkey="SearchViewData.aca_newui_searchview_label_addcollection"></span>
+                                                <b class="caret"></b>
+                                            </a>
+                                            <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                                                <li role="presentation" ng-repeat="item in Collecions" ng-click="AddCollection(result.CapID,item.collectionId,result.CapClass,false)">
+                                                    <a role="menuitem" tabindex="-1" href="">  {{item.collectionName}} </a>
+                                                </li>
+                                                <li class="item" ng-click="navToAddCollection(result.CapID,result.CapClass)">
+                                                    <a role="menuitem" tabindex="-1" href="" ng-labelkey="SearchViewData.aca_newui_searchview_label_createcollection"></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <!--Action Button Control Start-->
+                                <div class="hr-line">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div  class="PagingMyRecords pagination" style="position: relative;">
+                </div>
+            </div>
+        </div>
+
+        <!--Map View-->
+        <div class="tab-pane active container-fluid-Map" id="search-map-view" ng-controller="MapViewCtrl">
+            <div class="tab-header">
+                <div class="tab-title" ng-labelkey="SearchViewData.aca_newui_searchview_label_mapresult"></div>
+            </div>
+            <div class="tab-content-result">
+                <div ng-include src="'MapView.html'"></div>
+            </div>
+        </div>
+    </div>
+    <angularcollectionmodaldialog></angularcollectionmodaldialog>
+</div>
+<angulariframe> </angulariframe>

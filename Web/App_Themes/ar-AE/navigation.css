@@ -1,0 +1,166 @@
+﻿/* Tab, link, button */
+/* Common Backcolor And Button And Table Label*/
+
+/* Start Border and BkColor */
+/* End Border and BkColor */
+/*==============================================================*/
+/* Button */
+.ACA_Title_Text
+{
+	float: right;
+}
+.ACA_Title_Button
+{
+	float: left;
+}	
+.ACA_Print_Button a
+{
+	float: left;
+}
+/* End Button */
+/*==============================================================*/
+.ACA_Error_Icon
+{
+	clear: right;
+	float: right;
+}
+
+.asit_listcontent .ACA_Error_Icon
+{
+    margin: 0px 0px 0px 6px;
+}
+
+.ACA_SmallError_Icon
+{
+	clear: right;
+	float: right;
+	margin-right: 4px;
+	margin-left: 0px;
+}
+	
+.ACA_Notice_Icon
+{
+	clear: right;
+	float: right;
+	*margin-top:0px;
+}
+
+.ACA_Success_Icon
+{
+	clear: right;
+	float: right;
+}
+
+.ACA_Line_Content
+{
+    float:right;
+  	background: #999999;  	
+  	height: 1px;
+  	line-height:1px;
+  	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+.ACA_Container
+{
+	float: right;
+	padding-right: 15px;
+}
+
+.ACA_ContainerLong_ShoppingCart
+{
+	padding-right: 15px;
+	width: 77em;
+}
+
+.ACA_Locked_Icon
+{
+	clear: right;
+	float: right;
+	margin-right: 4px;
+	margin-left: 12px;
+}
+
+ .ACA_Hold_Icon
+ {
+	clear: right;
+	float: right;
+	margin-right: 4px;
+	margin-left: 12px;
+}
+ .ACA_Note_Icon
+ {
+	clear: right;
+	float: right;
+	margin-right: 4px;
+	margin-left: 12px;
+ }
+  
+.ACA_Report_Menu
+{
+	float: right;
+}
+
+.ACA_SmButton A
+{
+	float:right;
+}
+
+li .ACA_SmButton A,
+li .ACA_SmButtonHighLight A
+{
+	*float:left;
+}
+
+.ACA_SmButton_Print A
+{
+	float:left;	
+}
+
+.ACA_SmButtonHighLight A
+{
+    background-position: right 0;
+    float:right;
+}
+
+.ACA_SmButtonHighLight A span 
+{
+    margin: 0 14px 0 0;
+    float:right; 
+    padding:0 0 0 14px
+}
+
+.ACA_SmButtonDisable A
+{
+    float:right; 
+}
+
+.ActionMenu_Link a
+{ 
+    text-decoration:none;  
+}
+
+.ActionMenu_Line
+{
+    background: #999999;  	
+  	height: 1px;
+  	line-height:1px;
+  	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+#nav_span_more_link
+{
+    margin-right:10px;
+}
+
+#divLinkMenu
+{
+    text-align:right;
+}
+
+.fee_button_container
+{
+	float: right;
+	padding-right: 15px;
+}

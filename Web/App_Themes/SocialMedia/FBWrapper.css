@@ -1,0 +1,201 @@
+﻿img
+{
+    border:0px;
+}
+
+.gs_container {
+    width: 100%;
+}
+
+.gs_top_table {
+    float: left;
+}
+
+.ACA_Grid_OverFlow {
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto;
+    padding-bottom: 10px;
+    width: 540px;
+    margin-left:10px;
+}
+
+.ACA_Page 
+{
+    color: #999999;
+}
+
+.ACA_Welcome_Block
+{
+    clear: both;
+}
+.ACA_Content 
+{
+    margin-top: 5px;
+    margin-left: 0px;
+}
+
+#gdvSocialMediaList_gdvPermitList a
+{
+    color:#3b5998;
+}
+
+#divContentLink
+{
+    clear:both;
+    margin-top:5px;
+}
+
+.banner
+{
+    background-image:url(../default/assets/banner.png);
+    margin:0 auto;
+    padding:0px;
+    width:775px;
+    height:180px;
+}
+
+.globalsearch-container
+{
+    margin:0 auto;
+    width:775px;
+    
+}
+.globalsearch-wrapper
+{
+    float: right; 
+    padding-right: 1px;
+}
+
+.servicelist-header
+{
+    background:#F2F2F2;
+    height:36px;
+    line-height:36px;
+    width:540px;
+    padding-left:10px;
+    font-style: normal; 
+    color: #333333; 
+    font-size: 13px; 
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.divSpliter
+{
+    background-repeat:repeat-y;
+    background-color:GrayText;
+    left:-3px;
+    width:1px;
+    border: 1px solid #E2E2E2; width: 1px;
+}
+
+.aca_wrapper
+{
+    margin:5px auto 0px auto;
+    width:767px;
+    border-top:1px solid #E2E2E2;
+    border-bottom:1px solid #E2E2E2;
+    border-right:1px solid #E2E2E2;
+}
+
+.profile
+{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:15px;
+    background-image:url(../default/assets/u7_normal.png);
+    width:176px;
+    height:51px;
+}
+
+.profile-settings
+{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-image:url(../default/assets/u17_normal.png);
+    width:60px;
+    height:50px;
+    cursor:pointer;
+}
+
+.profile-spliter
+{
+    background-image:url(../default/assets/u9_line.png);
+    height:45px;
+    width:3px;
+}
+
+.friendlist-header
+{
+    background-color:#F2F2F2;
+    height:36px;
+    line-height:36px;
+    width:200px;
+    padding-left:15px;
+    color: #333333; 
+    font-size: 13px; 
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+.friend-photo
+{
+    background-color:#F2F2F2;
+    width:54px;
+    height:54px;
+}
+
+#div-invitefriend-button
+{
+    padding-left:5px;
+}
+
+.mysharedlist-header
+{
+    background:#F2F2F2;
+    height:36px;
+    line-height:36px;
+    width:540px;
+    padding-left:10px;
+    font-style: normal; 
+    color: #333333; 
+    font-size: 13px; 
+    font-weight: bold; 
+    text-decoration: none;
+}
+.ACA_Control_HighLight
+{
+    color:#000000;
+}
+
+.div_description
+{
+    margin-left:10px
+}
+
+.fb_wrapper_left_td
+{
+    width: 528px; 
+    padding-right: 5px;
+}
+
+.fb_wrapper_right_td
+{
+    width: 203px; vertical-align: top;
+}
+
+.fb_wrapper_friend_list_ul
+{
+    width: 180px; list-style: none; float: left
+}
+
+.fb_wrapper_friend_list_li
+{
+    float: left; width: 50px; margin: 5px 5px
+}
+
+.fb_wrapper_nav_split
+{
+    width: 3px
+}

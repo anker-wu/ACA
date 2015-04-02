@@ -1,0 +1,207 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C35B162-7797-47C8-B515-D3C2E13F4C34}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Brettle.Web.NeatUpload</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Brettle.Web.NeatUpload</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXSSLibrary, Version=3.1.3524.16873, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AntiXSSUtil.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Config.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConfigSectionHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DecoratedWorkerRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DetailsControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DetailsDiv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DetailsSpan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FieldNameTranslator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FilesystemUploadedFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FilesystemUploadStorageProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileUpload.cs" />
+    <Compile Include="FilteringWorkerRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FilterTester.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FormContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InvalidStorageConfigException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MockWorkerRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MoveToOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyLog4net.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Progress-1.0.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProgressPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SizeLimitingWorkerRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UploadContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UploadedFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UploadException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UploadHttpModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UploadStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UploadStorage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UploadStorageConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UploadStorageProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UploadStorageProviderCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UploadTooLargeException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Strings.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

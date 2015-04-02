@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: deploy-systems.xml 172493 2010-05-12 16:06:01Z mark.kendzior $ -->
+<Root>
+	<aca.test>
+		<home>c$\Inetpub\wwwroot\mrk-test</home>
+		<computer>v360-ist-web</computer>
+	</aca.test>
+	<aca.ist>
+		<home>c$\Inetpub\wwwroot\acadev-ist</home>
+		<computer>v360-ist-web</computer>
+	</aca.ist>
+	<aca.beta>
+		<home>c$\Inetpub\wwwroot\acadev-beta</home>
+		<computer>v360-ist-web</computer>
+	</aca.beta>
+	<oregon>
+		<home>c$\Inetpub\wwwroot\oregon-ist</home>
+		<computer>v360-ist-web</computer>
+	</oregon>
+	<addev.ist>
+		<home>c$\Inetpub\wwwroot\addev-ist</home>
+		<computer>v360-ist-web</computer>
+	</addev.ist>
+	<test1.ist>
+		<home>c$\Inetpub\wwwroot\test1-ist</home>
+		<computer>v360-ist-web</computer>
+	</test1.ist>
+	<test2.ist>
+		<home>c$\Inetpub\wwwroot\test2-ist</home>
+		<computer>v360-ist-web</computer>
+	</test2.ist>
+	<eng.ist>
+		<home>c$\Inetpub\wwwroot\eng-ist</home>
+		<computer>v360-ist-web</computer>
+	</eng.ist>
+	<qa.ist>
+		<home>c$\Inetpub\wwwroot\qa-ist</home>
+		<computer>v360-ist-web</computer>
+	</qa.ist>
+	<sac.beta>
+		<home>c$\Inetpub\wwwroot\sac-beta</home>
+		<computer>v360-ist-web</computer>
+	</sac.beta>
+	<oregon.beta>
+		<home>d$\Inetpub\wwwroot\oregon-beta</home>
+		<computer>v360-ist-web</computer>
+	</oregon.beta>
+	<lane.beta>
+		<home>d$\Inetpub\wwwroot\lane-beta</home>
+		<computer>v360-ist-web</computer>
+	</lane.beta>
+	<omega.beta>
+		<home>d$\Inetpub\wwwroot\omega-beta</home>
+		<computer>v360-ist-web</computer>
+	</omega.beta>
+	<springfield.beta>
+		<home>d$\Inetpub\wwwroot\springfield-beta</home>
+		<computer>v360-ist-web</computer>
+	</springfield.beta>
+
+</Root>

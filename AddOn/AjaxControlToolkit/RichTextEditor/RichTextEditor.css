@@ -1,0 +1,85 @@
+.cssDialog {position: absolute;padding: 4px;z-index: 69;text-align: center;visibility: hidden;}
+.cssFont1 {font-family: Verdana, Arial, Helvetica;font-size: 12px;font-weight: bold;margin-top: 0px;margin-bottom: 4px;padding: 2px;background-color: #F0F0F0;border: 2px groove;white-space: nowrap;} 
+.cssFont2 {font-family: Verdana, Arial, Helvetica;font-size: 11px;} 
+.cssFormField {font-family: Courier New, Courier, Monospace;font-size: 12px;border: 2px groove;} 
+.cssButton {font-family: Verdana, Arial, Helvetica;font-size: 11px;font-weight: bold;width: 100px;margin-top: 4px;background-color: buttonface;} 
+                 #mainDivR0{
+                 position: relative;
+                 overflow:auto;
+                 margin: 0px;
+                 padding: 4px;
+                 text-align: left;
+                 }
+                 .cssIFrame0{
+                 margin:2px;
+                 padding:0px;
+                 }
+                 .cssToolBar0{
+                 background-color:buttonface;
+                 border: 1px solid buttonface;
+                 padding: 2px;
+                 }
+                 .cssRaised0{
+                 border-top: 1px solid buttonhighlight;
+                 border-left: 1px solid buttonhighlight;
+                 border-bottom: 1px solid buttonshadow;
+                 border-right: 1px solid buttonshadow;
+                 background-color:buttonface;
+                 padding: 2px;
+                 }
+                 .cssPressed0{
+                 border-top: 1px solid buttonshadow;
+                 border-left: 1px solid buttonshadow;
+                 border-bottom: 1px solid buttonhighlight;
+                 border-right: 1px solid buttonhighlight;
+                 background-color: buttonface;
+                 padding-left: 3px;
+                 padding-top: 3px;
+                 padding-bottom: 1px;
+                 padding-right: 1px;
+                 }
+                 .cssSource0{
+                 position: absolute;
+                 top: 0px;
+                 left: 0px;
+                 margin: 6px;
+                 width:460px;
+                 height:230px;
+                 font-family: Courier New, Courier, Monospace;
+                 font-size: 12px;
+                 background-color:white;
+                 border: 2px groove;
+                 visibility: hidden;
+                 }
+                 .cssPreview0{
+                 position: absolute;
+                 top: 0px;
+                 left: 0px;
+                 margin:2px;
+                 padding:0px;
+                 width:464px;
+                 height:230px;
+                 border:2px groove;
+                 background-color:white;
+                 visibility: hidden;
+                 overflow:auto;
+                 }
+                 #editorButton0{
+                 font-family: Verdana, Arial, Helvetica;
+                 font-size: 11px;
+                 font-weight: bold;
+                 background-color:buttonface;
+                 }
+                 #curBGColor0{
+                 width: 16px;
+                 height: 4px;
+                 font-size: 1px;
+                 background-color:red;
+                 }
+                 #curFontColor0{
+                 width: 16px;
+                 height: 4px;
+                 font-size: 1px;
+                 background-color:blue;
+                 } 
+               

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<User xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserModel4WS>
+    <address>taoyuan</address>
+    <auditDate>01/29/2008 22:47:02</auditDate>
+    <auditID>weiky@achievo.com</auditID>
+    <auditStatus>A</auditStatus>
+    <city>sz</city>
+    <email>weiky@achievo.com</email>
+    <firstName>weiky</firstName>
+    <lastName>chen</lastName>
+    <middleName />
+    <password>c515a803081bf033e9956a32905fcde613cad371</password>
+    <passwordHint>weiky@achievo.com</passwordHint>
+    <passwordRequestAnswer>gpxx</passwordRequestAnswer>
+    <passwordRequestQuestion>Name of Pet</passwordRequestQuestion>
+    <prefContactChannel>E-mail</prefContactChannel>
+    <roleType>0</roleType>
+    <state>AK</state>
+    <userID>weiky@achievo.com</userID>
+    <userSeqNum>8354</userSeqNum>
+    <zip>111111111</zip>
+  </UserModel4WS>
+  <ClientIP>127.0.0.1</ClientIP>
+</User>

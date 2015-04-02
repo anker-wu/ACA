@@ -1,0 +1,80 @@
+﻿.aca_wrapper
+{
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+            
+.uiButton {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 13px;
+    padding: 2px 6px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #EEEEEE;
+    background-image: url("http://static.ak.fbcdn.net/rsrc.php/v2/yz/r/Euzj3HBEdgU.png");
+    background-position: -352px -348px;
+    background-repeat: no-repeat;
+    border-color: #999999 #999999 #888888 #999999;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    color:#333333;
+}
+
+.uiButton span{
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Lucida Grande',Tahoma,Verdana,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 13px;
+    margin: 0;
+    padding: 1px 0 2px;
+    white-space: nowrap;
+}
+
+.uiButtonConfirm {
+    background-image: url(http://static.ak.fbcdn.net/rsrc.php/v2/ym/r/4lZBiQrBAYp.png);
+    background-repeat: no-repeat;
+    background-position: -352px -446px;
+    background-color: #5B74A8;
+    border-color: #29447E #29447E #1A356E;
+    color:#FFFFFF;
+}
+
+.fb_button_container
+{
+}
+
+.fb_button_container a:hover
+{
+    color:#FFFFFF;
+}
+
+.fb_home_frame .ACA_Control_HighLight span,
+.fb_connect_frame .ACA_Control_HighLight span
+{
+    color:#000000;
+	background-color:#FCFBC9;
+}
+
+div.RoundedCorner{background: #eceff6; width:180px; margin-left:10px}
+b.rtop, b.rbottom{display:block;background: #FFF}
+b.rtop b, b.rbottom b{display:block;height: 1px;overflow: hidden; background: #eceff6}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}

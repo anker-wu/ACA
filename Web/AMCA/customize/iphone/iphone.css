@@ -1,0 +1,1131 @@
+﻿/* Note - Blank lines added to help keep all css files in synch. */
+/*        Please do not remove them. */
+
+/** Docmented */
+body
+{
+	width:320;
+	background-color:white; 
+	background-image:url(img/textured_bg.png);
+	background-repeat:no-repeat;
+	color: #222;           
+	font-family: Helvetica; 
+	font-size:10pt; 
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+/** Docmented */
+hr 
+{
+	margin: 4px 0px 4px 0px;
+	line-height:4px;
+}
+
+/** Docmented */
+form 
+{
+	margin: 0 0 0 10px;
+}
+
+/** Docmented */
+#backlink {
+	margin: 10px 0px 0px 0px;
+	background-color: #ccc;
+	background-image: -webkit-gradient(linear, left top, left bottom,from(#ccc), to(#999));
+	border-color: #666;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+
+/** Docmented */
+#backlink a 
+{
+	color: white;
+	margin: 4px 2px 2px 4px;
+	padding: 0px 5px 0px 5px;
+	line-height: 20px;
+	font-weight: normal;
+	font-size: 9pt;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,0.6) 0px 0px 0px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display:inline-block;
+	-webkit-border-image: url(img/backbutton.png) 0 8 0 14;
+}
+
+/** Docmented */
+#breadcrumbs {
+	margin: 5px 0px 10px 10px
+}
+
+/** Docmented */
+#breadcrumbs a 
+{
+	text-decoration:underline;
+	line-height: 20px;
+	color:#333333; 
+	font-size:10pt;
+	margin: 0px 2px 0px 0px;
+}
+
+/** Docmented */
+#breadcrumbElipse
+{
+	text-decoration:underline; 
+	line-height: 20px;
+	color:#333333; 
+	font-size:11pt;
+}
+
+/** Docmented */
+#collectionActions
+{
+	margin: 10px 0px 0px -5px;
+}
+
+/** Docmented */
+#collectionActions input
+{	
+	color:#333333; 
+	font-weight: normal;
+	text-align: center;
+	line-height: 20px;
+	text-decoration: underline;
+	border:0;
+	cursor:hand;
+	white-space: nowrap;
+	font-size: 10pt;
+	margin: 4px 0px 10px 5px;
+	background-color:transparent; 
+}
+
+/** Docmented */
+.collectionActionLink
+{
+	font-size: 10pt;
+	color:#333333; 
+	padding: 0px 0px 0px 0px;
+	line-height: 40px;
+}
+
+
+
+
+
+
+/** Docmented */
+#errorMessage
+{
+	margin: 0 0 10px 0;
+	font-size: 10pt;
+	color:#FF6600; 
+	font-weight:bold;
+}
+
+/** Docmented */
+#globalSearchSection
+{
+	margin: 0 0 10px 0;
+}
+
+/** Docmented */
+#globalSearchTextInput
+{
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+	width:90%;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+
+/** Docmented */
+#inspectionLine
+{
+	width:100%;
+    min-height:40px;
+    line-height:20px;
+	font-size:10pt; 
+	font-weight:normal; 
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+/** Docmented */
+#inspectionLineComment
+{
+	width:100%;
+	font-size:10pt; 
+	font-weight:normal; 
+	margin: 5px 0px 0px 5px;
+	font-style:italic;
+}
+
+/** Docmented */
+#inspectionLineCommentLink
+{
+	font-weight: normal;
+	font-size:10pt;
+	text-align: center;
+	text-decoration: underline;
+	white-space: nowrap;
+	margin: 0px 0px 0px 0px;
+}
+
+/** Docmented */
+#inspectionLineHistory
+{
+	width:100%;
+	font-size:10pt; 
+	font-weight:normal; 
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+/** Docmented */
+#inspectionLineLink
+{
+	font-weight: normal;
+	font-size:10pt;
+	text-decoration: underline;
+	margin: 0px 10px 0px 0px;
+	width:100%;
+	
+}
+
+/** Docmented */
+#inspectionLineTitle
+{
+   font-size:10pt; 
+   font-weight:bold; 
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+
+/** Docmented */
+#inspectionListBottom
+{
+	width:95%;
+	min-height:40px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+/** Docmented */
+#inspectionListBottomEven
+{
+	width:95%;
+	min-height:40px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 5px;
+    /* background-color: #e5f3fd; */
+}
+
+
+/** Docmented */
+#inspectionListBottomOdd
+{
+	width:95%;
+	min-height:40px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+/** Docmented */
+#inspectionListMiddle
+{
+	width:95%;
+	min-height:40px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+/** Docmented */
+#inspectionListMiddleEven
+{
+	width:95%;
+	min-height:40px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+    /* background-color: #e5f3fd; */
+}
+
+
+/** Docmented */
+#inspectionListMiddleOdd
+{
+	width:95%;
+	min-height:40px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+/**  Docmented */
+#inspectionListSingleRow
+{
+	width:95%;
+	min-height:40px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+/** Docmented */
+#inspectionListTop
+{
+	width:95%;
+	min-height:40px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+/** Docmented */
+#inspectionListTopEven
+{
+	width:95%;
+	min-height:40px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+    /* background-color: #e5f3fd; */
+}
+
+
+/** Docmented */
+#inspectionListTopOdd
+{
+	width:95%;
+	min-height:40px;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+/* --------------- */
+/* iPhone CSS Only */
+
+/** Docmented */
+.iPhoneBackLink 
+{
+}
+
+/** Docmented */
+.iPhoneBackLink a
+{
+    top:5px;
+	color: white;
+	font-weight: normal;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,0.6) 0px 0px 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100px;
+	font-size: 9pt;
+	display:inline-block;
+	margin: 2px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	-webkit-border-image: url(img/button.png) 0 8 0 14;
+	border-width: 0 4px 0 14px;
+	-webkit-border-image: url(img/backbutton.png) 0 8 0 14;
+}
+
+/** Docmented */
+.iPhoneCollectionLink 
+{
+}
+
+.iPhoneCollectionLink a
+{
+	top:5px;
+	left:260px;
+	position:absolute;
+	width:20px;
+	height:30px;
+	display:inline-block;
+	-webkit-border-image: url(img/button.png) 0 8 0 14;
+}
+.iPhoneCollectionLink img
+{
+	vertical-align:middle;
+	margin: 8px 0px 0px 2px;
+}
+/** Docmented */
+#iPhoneFooterBar 
+{
+	background-color: #ccc;
+	background-image: -webkit-gradient(linear,left top, left bottom, from(#5B7895), to(#001140));
+	border-color: #666;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	margin:40px 0px 0px 0px
+}
+
+/** Docmented */
+.iPhoneFooterLogoutButton
+{
+	color: white;
+	font-weight: normal;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,0.6) 0px 0px 0px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100px;
+	font-size: 10pt;
+	display:inline-block;
+	padding:0px 5px 0px 5px;
+	margin: 0px 5px 0px 0px;
+	-webkit-border-image: url(img/button.png) 0 8 0 14;
+}
+
+/** Docmented */
+.iPhoneFooterLogoutId
+{
+	 font-size:10pt; 
+	 font-weight:normal; 
+	 text-align:center;
+	 color:White; 
+	 margin: 0px 0px 0px 0px;
+}
+
+/** Docmented */
+.iPhoneGlobalSearchLink 
+{
+}
+
+/** Docmented */
+.iPhoneGlobalSearchLink a
+{
+	top:5px;
+	left:290px;
+	position:absolute;
+	width:20px;
+	height:30px;	
+	display:inline-block;
+	-webkit-border-image: url(img/button.png) 0 8 0 14;
+}
+.iPhoneGlobalSearchLink img
+{
+
+	vertical-align:middle;
+	margin: 7px 0px 0px 4px;
+}
+
+/** Docmented */
+#iPhoneHeaderBar 
+{
+	/* added  */
+	height:45px;
+
+	
+	background-color: #ccc;
+	background-image: -webkit-gradient(linear,left top, left bottom, from(#5B7895), to(#001140));
+	border-color: #666;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	margin:0px 0px 10px 0px;
+}
+
+/** Docmented */
+.iPhoneHeaderPageTitle15
+{
+	line-height:40px;
+	font-size:15pt; 
+	font-weight:normal; 
+	text-align:center;
+	text-shadow: rgba(201,201,201,0.6) 1px 1px 0px;
+	color:White; 
+	white-space: nowrap;
+	margin: 0px 5px 0px 0px;
+}
+
+/** Docmented */
+.iPhoneHeaderPageTitle13
+{	
+	line-height:40px;
+	font-size:13pt; 
+	font-weight:normal; 
+	text-align:center;
+	text-shadow: rgba(201,201,201,0.6) 1px 1px 0px;
+	color:White; 
+	white-space: nowrap;
+	margin: 0px 5px 0px 0px;
+}
+
+/** Docmented */
+.loginControlsWrapper
+{
+    margin: 0px 10px 0px 0px;	
+    padding:10px 10px 10px 10px;
+    background-color:#CCCCCC;
+    border: 1px solid #999999;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+/* end iPhone Only  */
+/* ---------------- */
+
+/** Docmented */
+.loginPageAgencyName
+{
+	padding:10px 0px 0px 10px; 
+	font-weight:bold; 
+	font-size:12pt; 
+	text-align:left;
+	color:#003366;
+}
+
+/** Docmented */
+.loginPageAppName
+{
+	padding:0px 0px 10px 10px; 
+	font-weight:bold; 
+	font-size:10pt; 
+	text-align:left;
+	color:#003366;
+}
+
+/** Docmented */
+.loginPageGreeting
+{
+	font-size:10pt; 
+	font-weight:normal; 
+	font-style:italic;
+	color:#333333; 
+	padding:10px 10px 10px 0px; 
+	text-align:center;
+}
+
+/** Docmented */
+.loginPageInput
+{
+	width:85%; 
+	height:25px; 
+	margin:0px 0px 0px 10px;
+	padding:0px 10px 0px 10px; 
+	font-size:10pt;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+
+/** Docmented */
+.loginPageLinks
+{
+	text-align:center;
+	padding:10px 0px 0px 0px;
+}
+
+/** Docmented */
+.loginPageLinks a
+{
+	color:#333333;
+	text-decoration:underline;
+	font-weight: normal;
+	font-size:10pt;
+}
+
+/** Docmented */
+.pageFooter
+{
+	margin-top:0px; 
+	margin-bottom:0px; 
+	font-size:9pt; 
+	text-align:center; 
+	color:#838383;
+}
+
+/** Docmented */
+.pageFooter hr
+{
+	margin:-2px 0px 0px 0px; 
+}
+
+/** Docmented */
+#pageLineLink
+{
+	color:#333333;
+    font-weight: normal;
+    font-size:10pt;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: underline;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+/* Docmented */
+#pageLineText
+{
+	 font-size:10pt; 
+	 font-weight:normal; 
+	 color:#333333; 
+	 margin: 0px 0px 0px 0px;
+}
+
+/* 
+Borders for each row in a lists 
+*/
+
+/** Docmented */
+#pageListBottom
+{
+    padding: 10px 10px 10px 15px;
+    margin: -1px 10px 20px 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    display: block;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+/** Docmented */
+#pageListBottomEven
+{
+    padding: 10px 10px 10px 15px;
+    margin: -1px 10px 20px 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    display: block;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+/** Docmented */
+#pageListBottomOdd
+{
+    padding: 10px 10px 10px 15px;
+    margin: -1px 10px 20px 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    display: block;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+/* ----------- */
+/* iPhone Only */
+/** Docmented */
+#pageListCellTable
+{
+   width:100%;
+}
+
+/** Docmented */
+#pageListCellTableLeft
+{
+   width:10%;
+   vertical-align:top;
+}
+
+/** Docmented */
+.pageListCellBoldText
+{
+	color:#333333;
+	font-size:11pt;
+    font-weight:bold;
+text-decoration:none;
+}
+
+/** Docmented */
+#pageListCellTableMiddle
+{
+   width:95%;
+   padding:0px 5px 0px 0px;
+}
+
+/** Docmented */
+#pageListCellTableRight
+{
+   width:5%;
+   padding:0px 0px 0px 5px;
+}
+
+/* ----------- */
+
+/** Docmented */
+.pageListLink 
+{
+	font-size:8pt; 
+	font-weight:normal;
+	color:#333333;
+	text-decoration: none;
+	margin: 0px 0px 0px 0px;
+}
+
+
+
+/** Docmented */
+.pageListLinkBold 
+{
+	font-size:11pt; 
+	font-weight:bold;
+	color:#333333;
+	text-decoration: none;
+	margin: 0px 0px 0px 0px;
+}
+
+
+/** Docmented */
+#pageListMiddle
+{
+    padding: 10px 10px 10px 15px;
+    margin: -1px 10px 0px 0px;
+    border: 1px solid #999999;
+    background-color: #FFFFFF;
+    color: #222222;
+    display: block;
+}
+
+/** Docmented */
+#pageListMiddleEven
+{
+    padding: 10px 10px 10px 15px;
+    margin: -1px 10px 0px 0px;
+    border: 1px solid #999999;
+    background-color: #FFFFFF;
+    color: #222222;
+    display: block;
+}
+
+/** Docmented */
+#pageListMiddleOdd
+{
+    padding: 10px 10px 10px 15px;
+    margin: -1px 10px 0px 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    display: block;
+}
+
+/** Docmented */
+.pageListNoLink 
+{
+	font-size:11pt; 
+	font-weight:normal;
+	color:#333333;
+	text-decoration: none;
+	margin: 0px 0px 0px 0px;
+}
+
+
+
+/** Docmented */
+#pageListSingleRow
+{
+    padding: 10px 10px 5px 5px;
+    margin: 0px 10px 20px 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    display: block;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+
+/** Docmented */
+#pageListTop
+{
+    padding: 10px 10px 10px 15px;
+    margin: 10px 10px 0px 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+
+/** Docmented */
+#pageListTopEven 
+{
+    padding: 10px 10px 10px 15px;
+    margin: 10px 10px 0px 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+
+/** Docmented */
+#pageListTopOdd
+{
+    padding: 10px 10px 10px 15px;
+    margin: 10px 10px 0px 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+
+/** Docmented */
+#pageNavigation
+{
+}
+
+/** Docmented */
+#pageNavigationButton
+{
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline;
+    background-color:transparent; 
+    border:none;
+    cursor:hand;
+    font-size: 13pt;
+    padding: 10px 1px 10px 1px;
+    margin: 0px 0px 0px 0px;
+	color:#333333;
+}
+
+/** Docmented */
+#pageNavigationSelected
+{
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color:transparent; 
+    border:none;
+    cursor:hand;
+    font-size: 13pt;
+    padding: 10px 1px 10px 1px;
+    margin: 0px 0px 0px 0px;
+	color:#333333;
+}
+
+/** Docmented */
+#pageSectionTitle
+{
+	 font-size:13pt; 
+	 font-weight:bold; 
+	 margin: 10px 0px 0px 0px;
+	 color:#333333; 
+}
+
+/** Docmented */
+#pageSubmitButton
+{
+    margin: 0px 0px 10px 0px;
+}
+
+/** Docmented */
+#pageSubmitButton input
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
+    float:center;
+    color:black;
+    font-weight: normal;
+    font-size: 10pt;
+    text-align: center;
+    text-shadow: rgba(0,0,0,0.6) 0px 0px 0px;
+    line-height: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor:hand;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+
+/** Docmented */
+#pageText
+{
+	 font-size:10pt; 
+	 font-weight:normal; 
+	 color:#333333; 
+	 margin: 0px 0px 10px 0px;
+}
+
+/* Docmented */
+.pageTextAreaInput
+{
+	height: 41px;
+	width:95%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+
+/** Docmented */
+#pageTextHR 
+{
+    margin: 4px 0px 10px 0px;
+    line-height:4px;
+}
+
+/** Docmented */
+#pageTextIndented
+{
+	 font-size:10pt; 
+	 font-weight:normal; 
+	 color:#333333; 
+	 margin: 0px 0px 10px 0px;
+}
+
+/* Docmented */
+.pageTextInput
+{
+	width:95%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+
+/* Docmented */
+.pageTextInput100
+{
+	width:100%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+
+/* --------------*/
+/* iPhone Only   */
+/** Docmented */
+.pageTextInputWrapper
+{
+    margin: 10px 10px 0px 0px;	
+    padding:10px 10px 10px 10px;
+    background-color:#CCCCCC;
+    border: 1px solid #999999;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+/* --------------*/
+
+/** Docmented */
+.pageTextLink
+{
+	font-size:10pt; 
+	font-weight:Bold; 
+	text-decoration: underscore;
+	color:#333333;
+	margin: 0px 0px 10px 0px;
+}
+
+/** Docmented */
+#pageTextSectionName
+{
+	 font-size:11pt; 
+	 font-weight:normal; 
+	 color:#333333; 
+	 margin: 0px 0px 10px 0px;
+}
+
+/** Docmented */
+#pageTitle
+{
+	 font-size:11pt; 
+	 font-weight:bold; 
+	 color:#333333; 
+	 margin: 5px 0 5px 0;
+}
+
+/** Docmented */
+#pageTitleButton
+{
+    font-weight: normal;
+    font-size:10pt;
+    text-decoration: underline;
+    white-space: nowrap;
+    margin: 0px 10px 2px 5px;
+    float:right;
+	color:#333333;
+}
+
+/* Docmented */
+#pageWithNoForm
+{
+    margin: 0px 5px 10px 5px;
+}
+
+/** Docmented */
+#sortSection
+{
+    margin: 0px 10px 10px 0px;
+	text-align:right;
+
+}
+/** Docmented */
+#sortSection input
+{
+    margin: 0px 5px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: underline;
+    background-color:transparent; 
+    border:none;
+    cursor:hand;
+    text-shadow: rgba(0,0,0,0.6) 0px 0px 0px;
+    white-space: nowrap;
+    font-size: 10pt;
+}
+
+/* ------------ */
+/* iPhone Only  */
+
+/* 
+(iPhone Only) Scrolling pages 
+NOT documented
+*/
+
+div#SlidePage
+{
+	position: absolute;
+	width: 100%;
+}
+
+.RightToLeft 
+{
+	-webkit-animation-name: slideLeft;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timeing-function: linear;
+	-webkit-animation-delay: -2s;
+}
+
+.LeftToRight 
+{
+	-webkit-animation-name: slideRight;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timeing-function: linear;
+	-webkit-animation-delay: -2s;
+}
+
+@-webkit-keyframes slideLeft
+{
+	from {left: 420px;} 
+	to {left: 0px;}
+}
+
+@-webkit-keyframes slideRight
+{
+	from {left: -420px;}
+	to {left: 0px;}
+}
+
+/* ------------ */
+
+/* Version 7.0.5 - patch release */
+.pageTextInputTimeValue
+{
+	width:55px;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+
+}
+
+/* NEW - 7.1 not Docmented */
+.contactTextInput
+{
+	width:80%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+
+
+/* NEW - 7.1 not Docmented */
+.contactPhonePrefixInput
+{
+	width:90%;  
+	padding: 0px 0px 0px 0px;
+	margin:0px 0px 10px 2px; 
+	font-size:10pt;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+
+/* NEW - 7.1 not Docmented */
+.contactPhoneNumberInput
+{
+
+	width:57%;  
+	margin:0px 0px 10px 5px; 
+	font-size:10pt;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+}
+
+/* NEW - 7.1 not Docmented */
+.contactTableLiteralCharacters
+{
+	width:2%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+	vertical-align:top;
+	
+}
+
+.pageListText 
+{
+   color:#040478;
+   font-weight:normal;
+   text-decoration: none;
+   font-size:10pt; 
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}
+
+.workflowRowIcon
+{
+
+  	margin: 0px 0px -15px 0px;
+}
+
+.workflowTaskRow
+{
+	vertical-align:top;	
+}

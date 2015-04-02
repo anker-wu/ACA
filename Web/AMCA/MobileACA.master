@@ -1,0 +1,26 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="CA_MobileACA" Codebehind="MobileACA.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Accela Mobile Citizen Access</title> 
+    <% = styleSheet %>
+</head>
+<body>
+<div id="SlidePage" class="<% = PageDirection %>">
+    <% = PageLogo %>
+    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+    </asp:contentplaceholder>
+    <% = iPhoneLineBreak%>
+    <table width="100%" cellpadding="0" cellspacing="0"  class="pageFooter">
+    <tr>
+       <td>
+            <hr />
+            <% = AgencyCopyright %>
+       </td>
+    </tr>
+    </table>
+  </div>  
+  </body>
+</html>

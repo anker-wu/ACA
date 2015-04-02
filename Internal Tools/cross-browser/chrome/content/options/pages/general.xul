@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://cross-browser/content/options/options.css" type="text/css"?>
+
+<!DOCTYPE page SYSTEM "chrome://cross-browser/locale/options.dtd">
+
+<page onload="parent.crossbrowser_initializeGeneral()"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <groupbox>
+		<caption label="&cross-browser.general.caption;"/>
+		<hbox align="center">
+            <label control="cross-browser.edit.update.service" value="&cross-browser.edit.update.service;"/>
+            <textbox id="cross-browser.edit.update.service" size="4" width="300"/>
+        </hbox>
+        <!--<hbox align="center">
+            <label control="cross-browser.edit.update.frequency" value="&cross-browser.edit.update.frequency;"/>
+            <textbox id="cross-browser.edit.update.frequency" size="4"/>
+        </hbox>-->
+    </groupbox>
+    <separator/>
+</page>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://cross-browser/content/options/options.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://cross-browser/locale/options.dtd">
+
+<dialog buttons="accept, cancel"
+        id="cross-browser-options-dialog"
+        ondialogaccept="crossbrowser_saveOptions()"
+        onload="crossbrowser_initializeOptions(true)"
+        title="&cross-browser.options.title;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript" src="chrome://cross-browser/content/options/options.js"/>
+	<script type="application/x-javascript" src="chrome://cross-browser/content/common/preferences.js"/>
+	<script type="application/x-javascript" src="chrome://cross-browser/content/common/handlevalue.js"/>
+
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="cross-browser-strings" src="chrome://cross-browser/locale/overlay.properties"/>
+	</stringbundleset>
+
+    <hbox flex="1">
+        <listbox id="cross-browser-options-page-list" onselect="crossbrowser_changePage(this)">
+            <listitem class="listitem-iconic" image="chrome://cross-browser/skin/general.png" label="&cross-browser.options.general.label;" selected="true" value="chrome://cross-browser/content/options/pages/general.xul"/>
+        </listbox>
+        <vbox flex="1">
+            <iframe flex="1" id="cross-browser-options-iframe" src="chrome://cross-browser/content/options/pages/general.xul"/>
+        </vbox>
+    </hbox>
+</dialog>

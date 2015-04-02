@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PageFlowGroupModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <pageFlowGrpCode>qwerty</pageFlowGrpCode>
+  <pageFlowType>PERMIT</pageFlowType>
+  <serviceProviderCode>SACCO</serviceProviderCode>
+  <stepList>
+    <m_stepName>Step 1</m_stepName>
+    <pageList>
+      <componentList>
+        <componentID>1</componentID>
+        <componentName>Address</componentName>
+        <customHeading>Address</customHeading>
+        <displayOrder>0</displayOrder>
+        <pageID>850</pageID>
+        <requiredFlag>Y</requiredFlag>
+        <resCustomHeading>Address</resCustomHeading>
+        <validateFlag>N</validateFlag>
+      </componentList>
+      <componentList>
+        <componentID>2</componentID>
+        <componentName>Parcel</componentName>
+        <customHeading>Parcel</customHeading>
+        <displayOrder>1</displayOrder>
+        <pageID>850</pageID>
+        <requiredFlag>Y</requiredFlag>
+        <resCustomHeading>Parcel</resCustomHeading>
+        <validateFlag>N</validateFlag>
+      </componentList>
+      <componentList>
+        <componentID>3</componentID>
+        <componentName>Owner</componentName>
+        <customHeading>Owner</customHeading>
+        <displayOrder>2</displayOrder>
+        <pageID>850</pageID>
+        <requiredFlag>Y</requiredFlag>
+        <resCustomHeading>Owner</resCustomHeading>
+        <validateFlag>N</validateFlag>
+      </componentList>
+      <componentList>
+        <componentID>22</componentID>
+        <componentName>Assets</componentName>
+        <customHeading>Assets</customHeading>
+        <displayOrder>3</displayOrder>
+        <pageID>850</pageID>
+        <resCustomHeading>Asset</resCustomHeading>
+      </componentList>
+      <componentList>
+        <componentID>9</componentID>
+        <componentName>Additional Information</componentName>
+        <customHeading>Additional Information</customHeading>
+        <displayOrder>5</displayOrder>
+        <pageID>850</pageID>
+        <resCustomHeading>Additional Information</resCustomHeading>
+      </componentList>
+      <componentList>
+        <componentID>12</componentID>
+        <componentName>Detail Information</componentName>
+        <customHeading>Detail Information</customHeading>
+        <displayOrder>6</displayOrder>
+        <pageID>850</pageID>
+        <resCustomHeading>Detail Information</resCustomHeading>
+      </componentList>
+      <componentList>
+        <componentID>13</componentID>
+        <componentName>Attachment</componentName>
+        <customHeading>Attachment</customHeading>
+        <displayOrder>8</displayOrder>
+        <pageID>850</pageID>
+        <resCustomHeading>Attachment</resCustomHeading>
+      </componentList>
+      <componentList>
+        <componentID>14</componentID>
+        <componentName>Contact List</componentName>
+        <customHeading>Contact List</customHeading>
+        <displayOrder>7</displayOrder>
+        <pageID>850</pageID>
+        <requiredFlag>N</requiredFlag>
+      </componentList>
+      <componentList>
+        <componentID>15</componentID>
+        <componentName>Education</componentName>
+        <customHeading>Education</customHeading>
+        <displayOrder>9</displayOrder>
+        <pageID>850</pageID>
+        <resCustomHeading>Education</resCustomHeading>
+      </componentList>
+      <componentList>
+        <componentID>16</componentID>
+        <componentName>Continuing Education</componentName>
+        <customHeading>Continuing Education</customHeading>
+        <displayOrder>10</displayOrder>
+        <pageID>850</pageID>
+        <resCustomHeading>Continuing Education</resCustomHeading>
+      </componentList>
+      <componentList>
+          <componentID>17</componentID>
+          <componentName>Examination</componentName>
+          <customHeading>Examination</customHeading>
+          <displayOrder>10</displayOrder>
+          <pageID>850</pageID>
+          <resCustomHeading>Examination</resCustomHeading>
+      </componentList>
+	  <componentList>
+		<componentID>18</componentID>
+		<componentName>Licensed Professional List</componentName>
+		<customHeading>Licensed Professional List</customHeading>
+		<displayOrder>18</displayOrder>
+		<pageID>850</pageID>
+		<requiredFlag>N</requiredFlag>
+		<validateFlag>N</validateFlag>
+		<resCustomHeading>Licensed Professional List</resCustomHeading>
+	  </componentList>
+      <componentList>
+        <componentID>19</componentID>
+        <componentName>Valuation Calculator</componentName>
+        <customHeading>Valuation Calculator</customHeading>
+        <displayOrder>19</displayOrder>
+        <pageID>850</pageID>       
+        <resCustomHeading>Valuation Calculator</resCustomHeading>
+      </componentList>
+      <componentList>
+        <componentID>21</componentID>
+        <componentName>CONDITION DOCUMENT</componentName>
+        <customHeading>CONDITION DOCUMENT</customHeading>
+        <displayOrder>21</displayOrder>
+        <pageID>850</pageID>
+        <resCustomHeading>CONDITION DOCUMENT</resCustomHeading>
+      </componentList>
+      <pageID>850</pageID>
+      <pageName>Page 1</pageName>
+      <pageOrder>0</pageOrder>
+      <resPageName>Page 1</resPageName>
+      <stepID>770</stepID>
+    </pageList>
+    <resStepName>Step 1</resStepName>
+    <stepID>770</stepID>
+    <stepName>Step 1</stepName>
+    <stepOrder>0</stepOrder>
+  </stepList>
+</PageFlowGroupModel>

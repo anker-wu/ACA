@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2574E894-BCF0-429C-A7D8-09C022041A81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accela.ACA.WSProxy</RootNamespace>
+    <AssemblyName>Accela.ACA.Model</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Design#CA1020;-Microsoft.Design#CA1031;-Microsoft.Design#CA1002;-Microsoft.Design#CA1032;-Microsoft.Design#CA1024;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1711;-Microsoft.Performance#CA1822</CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Web\Properties\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common\ContactTypeUIModel.cs" />
+    <Compile Include="ExpressionBuild\ExpressionResultJsModel.cs" />
+    <Compile Include="ExpressionBuild\ExpressionSessionModel.cs" />
+    <Compile Include="ExpressionBuild\ExpressionTypeEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExpressionBuild\ExpressionTypeModel.cs" />
+    <Compile Include="UI\DocumentTypeUIModel.cs" />
+    <Compile Include="Common\ServiceDataFromDeepLink.cs" />
+    <Compile Include="UI\ActionViewModel.cs" />
+    <Compile Include="UI\AnnouncementModel.cs" />
+    <Compile Include="UI\ASITUIField.cs" />
+    <Compile Include="UI\ASITUITable.cs" />
+    <Compile Include="UI\EducationSearchModel.cs" />
+    <Compile Include="UI\FileUploadInfo.cs" />
+    <Compile Include="UI\SelectedContactLicenseCertificationModel.cs" />
+    <Compile Include="UI\UIField.cs" />
+    <Compile Include="UI\UITable.cs" />
+    <Compile Include="UI\UIRow.cs" />
+    <Compile Include="WSModelExtender\AssetMasterModel.cs" />
+    <Compile Include="WSModelExtender\CapModel4WS.cs" />
+    <Compile Include="WSModelExtender\CapTypeModel.cs" />
+    <Compile Include="WSModelExtender\ContactAddressModel.cs" />
+    <Compile Include="WSModelExtender\ContinuingEducationModel4WS.cs" />
+    <Compile Include="WSModelExtender\CapAssociateLicenseCertification4WS.cs" />
+    <Compile Include="WSModelExtender\PublicUserModel4WS.cs" />
+    <Compile Include="WSModelExtender\DocumentModel.cs" />
+    <Compile Include="WSModelExtender\LicenseModel4WS.cs" />
+    <Compile Include="WSModelExtender\LicenseProfessionalModel.cs" />
+    <Compile Include="WSModelExtender\LicenseProfessionalModel4WS.cs" />
+    <Compile Include="WSModelExtender\OwnerModel.cs" />
+    <Compile Include="WSModelExtender\PeopleModel.cs" />
+    <Compile Include="WSModelExtender\PeopleModel4WS.cs" />
+    <Compile Include="WSModel\AssetAttrTableValueModel.cs" />
+    <Compile Include="WSModel\AssetDataModel4WS.cs" />
+    <Compile Include="WSModel\AssetMasterPK.cs" />
+    <Compile Include="WSModel\AssetTemplateAttributeModel.cs" />
+    <Compile Include="WSModel\AssetTypeModel.cs" />
+    <Compile Include="WSModel\AttributeModel.cs" />
+    <Compile Include="WSModel\AttributeValueModel.cs" />
+    <Compile Include="WSModel\AttrTableAttributeModel.cs" />
+    <Compile Include="WSModel\CapAssociateLicenseCertification4WS.cs" />
+    <Compile Include="WSModel\CapTemporaryDataModel.cs" />
+    <Compile Include="WSModel\CapTemporaryDataPKModel.cs" />
+    <Compile Include="WSModel\ContactAttributeModel.cs" />
+    <Compile Include="WSModel\DocumentResultModel.cs" />
+    <Compile Include="WSModel\DataAttributeModel.cs" />
+    <Compile Include="WSModel\ExpressionInputParamterResultModel4WS.cs" />
+    <Compile Include="WSModel\GisRelatedTableModel.cs" />
+    <Compile Include="WSModel\IdentifierModel.cs" />
+    <Compile Include="WSModel\OwnerCompModel.cs" />
+    <Compile Include="WSModel\PeopleAttributeModel.cs" />
+    <Compile Include="WSModel\PeopleTemplateAttributeModel.cs" />
+    <Compile Include="WSModel\PeopleTemplateAttributeModelEntry.cs" />
+    <Compile Include="WSModel\PublicUserModel.cs" />
+    <Compile Include="WSModel\PublicUserModelEntry.cs" />
+    <Compile Include="WSModel\PublicUserQuestionModel.cs" />
+    <Compile Include="WSModel\ResultModel.cs" />
+    <Compile Include="WSModel\WorkOrderAssetModel.cs" />
+    <Compile Include="WSModelExtender\EducationModel4WS.cs" />
+    <Compile Include="WSModelExtender\ExaminationModel.cs" />
+    <Compile Include="WSModelExtender\ServiceModel.cs" />
+    <Compile Include="WSModelExtender\UserRolePrivilegeModel.cs" />
+    <Compile Include="WSModel\ACATemplateConfigModel.cs" />
+    <Compile Include="WSModel\AvailableTimeResultModel.cs" />
+    <Compile Include="WSModel\CalendarTimePeriod.cs" />
+    <Compile Include="WSModel\CapTypePermissionModel.cs" />
+    <Compile Include="WSModel\CapTypePermissionPKModel.cs" />
+    <Compile Include="WSModel\ContactAddressModel.cs" />
+    <Compile Include="WSModel\ContactAddressPKModel.cs" />
+    <Compile Include="WSModel\ContactAddressValidationSettingModel.cs" />
+    <Compile Include="WSModel\ContactModel.cs" />
+    <Compile Include="WSModel\ContractorPeopleModel.cs" />
+    <Compile Include="WSModel\DocumentEntityAssociationModel.cs" />
+    <Compile Include="WSModel\GenericIdentityFieldModel.cs" />
+    <Compile Include="WSModel\GenericIdentityFieldPKModel.cs" />
+    <Compile Include="WSModel\GenericViewElementModel.cs" />
+    <Compile Include="WSModel\GenericViewElementPKModel.cs" />
+    <Compile Include="WSModel\MerchantAccountPKModel.cs" />
+    <Compile Include="WSModel\OnlinePaymentAuditTrailModel.cs" />
+    <Compile Include="WSModel\OnlinePaymentTransactionModel.cs" />
+    <Compile Include="WSModel\PeopleAKAPKModel.cs" />
+    <Compile Include="WSModel\PeopleAKAModel.cs" />
+    <Compile Include="WSModel\GridViewColumnVisible.cs" />
+    <Compile Include="WSModel\GridViewJson.cs" />
+    <Compile Include="WSModel\InspectionScheduleModel.cs" />
+    <Compile Include="WSModel\RefConvenienceFeeFormulaModel.cs" />
+    <Compile Include="WSModel\RefConvenienceFeeFormulaPKModel.cs" />
+    <Compile Include="WSModel\RefMerchantAccountModel.cs" />
+    <Compile Include="WSModel\RefRequiredDocumentModel.cs" />
+    <Compile Include="WSModel\RefRequiredDocumentPKModel.cs" />
+    <Compile Include="WSModel\ServiceGroupModel.cs" />
+    <Compile Include="WSModel\ServiceModel.cs" />
+    <Compile Include="WSModel\XContactAddressTypeSettingModel.cs" />
+    <Compile Include="WSModel\XContactAddressTypeSettingPKModel.cs" />
+    <Compile Include="WSModel\RegionalModel.cs" />
+    <Compile Include="WSModel\RegionalPKModel.cs" />
+    <Compile Include="WSModel\XDataFilterElementModel.cs" />
+    <Compile Include="WSModel\XDataFilterModel.cs" />
+    <Compile Include="WSModel\XpolicyUserRolePrivilegeModel.cs" />
+    <Compile Include="WSModel\EdmsUserModel.cs" />
+    <Compile Include="WSModel\XPolicyModel.cs" />
+    <Compile Include="WSModel\CustomComponentModel.cs" />
+    <Compile Include="WSModel\CustomComponentPKModel.cs" />
+    <Compile Include="WSModel\DelegateUserModel.cs" />
+    <Compile Include="WSModel\DelegateUserPK.cs" />
+    <Compile Include="WSModel\MessageModel.cs" />
+    <Compile Include="WSModel\ExamProviderDetailModel.cs" />
+    <Compile Include="WSModel\ExamScheduleSearchModel.cs" />
+    <Compile Include="WSModel\ExamScheduleViewModel.cs" />
+    <Compile Include="WSModel\ProviderModel.cs" />
+    <Compile Include="WSModel\ProviderPKModel.cs" />
+    <Compile Include="WSModel\RefContinuingEducationModel.cs" />
+    <Compile Include="WSModel\RefContinuingEducationPKModel.cs" />
+    <Compile Include="WSModel\RefContinuingEducationProviderPKModel.cs" />
+    <Compile Include="WSModel\RefEducationModel.cs" />
+    <Compile Include="WSModel\DuplicatedAPOKeyModel.cs" />
+    <Compile Include="WSModel\RefEducationPKModel.cs" />
+    <Compile Include="WSModel\RefEducationProviderPKModel.cs" />
+    <Compile Include="WSModel\RefExaminationModel.cs" />
+    <Compile Include="WSModel\RefExaminationPKModel.cs" />
+    <Compile Include="WSModel\RefExaminationProviderPKModel.cs" />
+    <Compile Include="WSModel\RefFeeDsecVO.cs" />
+    <Compile Include="WSModel\RefLicenseProfessionalModel.cs" />
+    <Compile Include="WSModel\RProviderLocationModel.cs" />
+    <Compile Include="WSModel\RProviderLocationPKModel.cs" />
+    <Compile Include="WSModel\RProviderProctorModel.cs" />
+    <Compile Include="WSModel\RProviderProctorPKModel.cs" />
+    <Compile Include="WSModel\ScheduleExamParamVO.cs" />
+    <Compile Include="WSModel\StudentInfoVO.cs" />
+    <Compile Include="WSModel\XEntityPermissionModel.cs" />
+    <Compile Include="WSModel\XEntityPermissionModelPKModel.cs" />
+    <Compile Include="WSModel\GActivitySpecInfoGroupCodeModel.cs" />
+    <Compile Include="WSModel\DateAndTimesModel.cs" />
+    <Compile Include="WSModel\DateTimeRangePageModel.cs" />
+    <Compile Include="WSModel\EntityPKModel.cs" />
+    <Compile Include="WSModel\GenericTemplateAttribute.cs" />
+    <Compile Include="WSModel\GenericTemplateAttributeEntry.cs" />
+    <Compile Include="WSModel\GenericTemplateFieldPK.cs" />
+    <Compile Include="WSModel\GenericTemplateTableValue.cs" />
+    <Compile Include="WSModel\GenericTemplateTableValuePK.cs" />
+    <Compile Include="WSModel\LicenseModel.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="WSModel\Period.cs" />
+    <Compile Include="WSModel\RecordTypeLicTypePermissionModel.cs" />
+    <Compile Include="WSModel\SearchLicenseModel.cs" />
+    <Compile Include="WSModel\ServiceProviderModel.cs" />
+    <Compile Include="WSModel\EntityModel.cs" />
+    <Compile Include="Inspection\InspectionCategoryDataModel.cs" />
+    <Compile Include="WSModel\ExpressionRunResultModel4WS.cs" />
+    <Compile Include="WSModel\ExpressionRuntimeArgumentPKModel.cs" />
+    <Compile Include="WSModel\SearchResultModel.cs" />
+    <Compile Include="WSModel\InspectionValidationModel.cs" />
+    <Compile Include="WSModel\PageFlowComponentModel.cs" />
+    <Compile Include="WSModel\GenealogyModel.cs" />
+    <Compile Include="WSModel\GenealogyTransactionModel.cs" />
+    <Compile Include="WSModel\GISObjectModel.cs" />
+    <Compile Include="WSModel\I18nLocaleRelevantSettingsModel.cs" />
+    <Compile Include="WSModel\I18nPrimarySettingsModel.cs" />
+    <Compile Include="WSModel\LogoModel.cs" />
+    <Compile Include="WSModel\RangeDateModel.cs" />
+    <Compile Include="WSModel\SupportedLanguageModel.cs" />
+    <Compile Include="WSModel\TemplateGroup.cs" />
+    <Compile Include="WSModel\TemplateModel.cs" />
+    <Compile Include="WSModel\TemplateRow.cs" />
+    <Compile Include="WSModel\TemplateSubgroup.cs" />
+    <Compile Include="WSModel\XInspectionTypeCategoryModel.cs" />
+    <Compile Include="WSModel\XInspectionTypeCategoryPKModel.cs" />
+    <Compile Include="WSModel\XPublicUserSSOModel.cs" />
+    <Compile Include="WSModel\XPublicUserSSOPKModel.cs" />
+    <Compile Include="WSModel\XRefContactAddressTypeModel.cs" />
+    <Compile Include="WSModel\XRefContactAddressTypePKModel.cs" />
+    <Compile Include="WSModel\XRefContinuingEducationAppTypeModel.cs" />
+    <Compile Include="WSModel\XRefContinuingEducationAppTypePKModel.cs" />
+    <Compile Include="WSModel\XRefContinuingEducationProviderModel.cs" />
+    <Compile Include="WSModel\XRefEducationAppTypeModel.cs" />
+    <Compile Include="WSModel\XRefEducationAppTypePKModel.cs" />
+    <Compile Include="WSModel\XRefEducationProviderModel.cs" />
+    <Compile Include="WSModel\XRefExaminationAppTypeModel.cs" />
+    <Compile Include="WSModel\XRefExaminationAppTypePKModel.cs" />
+    <Compile Include="WSModel\XRefExaminationProviderModel.cs" />
+    <Compile Include="WSModel\XServiceGroupModel.cs" />
+    <Compile Include="WSModel\XSocialMediaUserModel.cs" />
+    <Compile Include="WSModel\XSocialMediaUserPKModel.cs" />
+    <Compile Include="Xml\ACAGISModel.cs" />
+    <Compile Include="Inspection\InspectionDataModel.cs" />
+    <Compile Include="Inspection\InspectionEnum.cs" />
+    <Compile Include="Inspection\InspectionTypeDataModel.cs" />
+    <Compile Include="WSModel\AssetContactModel.cs" />
+    <Compile Include="WSModel\ActivityModel.cs" />
+    <Compile Include="WSModel\AppSpecificInfoModel.cs" />
+    <Compile Include="WSModel\AppSpecificTableGroupModel.cs" />
+    <Compile Include="WSModel\AppSpecificTableGroupModelEntry.cs" />
+    <Compile Include="WSModel\AppStatusGroupModel.cs" />
+    <Compile Include="WSModel\AppStatusGroupPKModel.cs" />
+    <Compile Include="WSModel\AssetMasterModel.cs" />
+    <Compile Include="WSModel\AssetOrderModel.cs" />
+    <Compile Include="WSModel\AssetRatingModel.cs" />
+    <Compile Include="WSModel\AssetRatingPK.cs" />
+    <Compile Include="WSModel\B1ExpirationModel.cs" />
+    <Compile Include="WSModel\BCalcValuatnModel.cs" />
+    <Compile Include="WSModel\BizDomainModel.cs" />
+    <Compile Include="Common\ConditionNoticeModel.cs" />
+    <Compile Include="Common\GlobalSearchType.cs" />
+    <Compile Include="Common\TemplateAttribute.cs" />
+    <Compile Include="WSModel\BStructureModel.cs" />
+    <Compile Include="WSModel\BValuatnModel.cs" />
+    <Compile Include="WSModel\CalendarInspectionTypeModel.cs" />
+    <Compile Include="WSModel\CalendarModel.cs" />
+    <Compile Include="WSModel\CapContactModel.cs" />
+    <Compile Include="WSModel\CapModel.cs" />
+    <Compile Include="WSModel\CapParcelModel.cs" />
+    <Compile Include="WSModel\CapWorkDesModel.cs" />
+    <Compile Include="WSModel\CommentModel.cs" />
+    <Compile Include="WSModel\ConditionModel.cs" />
+    <Compile Include="WSModel\CapPaymentResultModel.cs" />
+    <Compile Include="WSModel\ContinuingEducationModel.cs" />
+    <Compile Include="WSModel\ContinuingEducationPKModel.cs" />
+    <Compile Include="WSModel\CostingModel.cs" />
+    <Compile Include="WSModel\CostingPK.cs" />
+    <Compile Include="WSModel\DocumentContentModel.cs" />
+    <Compile Include="WSModel\DocumentModel.cs" />
+    <Compile Include="WSModel\DocumentRelationModel.cs" />
+    <Compile Include="WSModel\EducationModel.cs" />
+    <Compile Include="WSModel\EducationPKModel.cs" />
+    <Compile Include="WSModel\EntityPaymentResultModel.cs" />
+    <Compile Include="WSModel\ExaminationModel.cs" />
+    <Compile Include="WSModel\ExaminationPKModel.cs" />
+    <Compile Include="WSModel\GgsItemASIModel.cs" />
+    <Compile Include="WSModel\GgsItemASISubGroupModel.cs" />
+    <Compile Include="WSModel\GgsItemASITableColumnModel.cs" />
+    <Compile Include="WSModel\GgsItemASITableColumnModelEntry.cs" />
+    <Compile Include="WSModel\GgsItemASITableSubGroupModel.cs" />
+    <Compile Include="WSModel\GgsItemASITableValueModel.cs" />
+    <Compile Include="WSModel\GGuideSheetItemModel.cs" />
+    <Compile Include="WSModel\GGuideSheetModel.cs" />
+    <Compile Include="WSModel\I18NPKModel.cs" />
+    <Compile Include="WSModel\InspectionModel.cs" />
+    <Compile Include="WSModel\InspectionResultModel.cs" />
+    <Compile Include="WSModel\InspectionTreeNodeModel.cs" />
+    <Compile Include="WSModel\LicenseProfessionalModel.cs" />
+    <Compile Include="WSModel\NoticeConditionModel.cs" />
+    <Compile Include="WSModel\PartTransactionModel.cs" />
+    <Compile Include="WSModel\PaymentModel.cs" />
+    <Compile Include="WSModel\PaymentBaseModel.cs" />
+    <Compile Include="WSModel\ProjectModel.cs" />
+    <Compile Include="WSModel\ProviderDetailModel.cs" />
+    <Compile Include="WSModel\RefAppSpecInfoDropDownModel.cs" />
+    <Compile Include="WSModel\RefOwnerBaseModel.cs" />
+    <Compile Include="WSModel\RefOwnerModel.cs" />
+    <Compile Include="WSModel\InspectionActionPermissionModel.cs" />
+    <Compile Include="WSModel\InspectionGroupModel.cs" />
+    <Compile Include="WSModel\InspectionResultGroupModel.cs" />
+    <Compile Include="WSModel\InspectionTypeModel.cs" />
+    <Compile Include="WSModel\OnlinePaymentResultModel.cs" />
+    <Compile Include="WSModel\PaymentResultModel4WS.cs" />
+    <Compile Include="WSModel\SectionTownShipRangeModel.cs" />
+    <Compile Include="WSModel\SimpleAuditModel.cs" />
+    <Compile Include="WSModel\StandardCommentModel.cs" />
+    <Compile Include="WSModel\StrucEstaMasterModel.cs" />
+    <Compile Include="WSModel\StructureEstablishmentModel.cs" />
+    <Compile Include="WSModel\StructureModel.cs" />
+    <Compile Include="WSModel\SysUserModel.cs" />
+    <Compile Include="WSModel\TaskItemModel.cs" />
+    <Compile Include="WSModel\TaskSpecificInfoModel.cs" />
+    <Compile Include="WSModel\TemplateAttributeModel.cs" />
+    <Compile Include="WSModel\TemplateAttrValueModel.cs" />
+    <Compile Include="WSModel\TemplateLayoutConfigI18NModel.cs" />
+    <Compile Include="WSModel\TemplateLayoutConfigModel.cs" />
+    <Compile Include="WSModel\TemplateLayoutConfigPKModel.cs" />
+    <Compile Include="WSModel\AddressBaseModel.cs" />
+    <Compile Include="WSModel\AddressModel.cs" />
+    <Compile Include="WSModel\ASISecurityModelWS.cs" />
+    <Compile Include="WSModel\ASISecurityQueryParam4WS.cs" />
+    <Compile Include="WSModel\AttachmentModel.cs" />
+    <Compile Include="Common\FieldMappingAttribute.cs" />
+    <Compile Include="Common\FieldmappingCompare.cs" />
+    <Compile Include="Education\ContinuingEducationSummary.cs" />
+    <Compile Include="WSModel\AuditModel.cs" />
+    <Compile Include="WSModel\AuditModel4WS.cs" />
+    <Compile Include="Common\DailyEvent.cs" />
+    <Compile Include="Common\InspectionUIRow.cs" />
+    <Compile Include="Common\TabItemCollection.cs" />
+    <Compile Include="Common\UploadModel.cs" />
+    <Compile Include="WSModel\BCalcValuatnModel4WS.cs" />
+    <Compile Include="WSModel\CapDetailModel.cs" />
+    <Compile Include="WSModel\CapIDModel.cs" />
+    <Compile Include="WSModel\CapPage4ACAModel.cs" />
+    <Compile Include="WSModel\CapTypeDetailModel.cs" />
+    <Compile Include="WSModel\CapTypeIconModel.cs" />
+    <Compile Include="WSModel\CapTypeModel.cs" />
+    <Compile Include="WSModel\CapView.cs" />
+    <Compile Include="WSModel\ContactModel4WS.cs" />
+    <Compile Include="WSModel\ContinuingEducationModel4WS.cs" />
+    <Compile Include="WSModel\ContinuingEducationPKModel4WS.cs" />
+    <Compile Include="WSModel\ProxyUserRolePrivilegeModel4WS.cs" />
+    <Compile Include="WSModel\CompactAddressModel.cs" />
+    <Compile Include="WSModel\PersonModel.cs" />
+    <Compile Include="WSModel\PeopleModel.cs" />
+    <Compile Include="WSModel\OwnerModel.cs" />
+    <Compile Include="WSModel\TimeGroupModel.cs" />
+    <Compile Include="WSModel\TimeLogModel.cs" />
+    <Compile Include="WSModel\TimeTypeModel.cs" />
+    <Compile Include="WSModel\TrustAccountTransactionModel.cs" />
+    <Compile Include="WSModel\UserRolePrivilegeModel.cs" />
+    <Compile Include="WSModel\XAssetTypeCapTypeModel.cs" />
+    <Compile Include="WSModel\XParOwnerModel.cs" />
+    <Compile Include="WSModel\RefAddressModel.cs" />
+    <Compile Include="WSModel\ParcelModel.cs" />
+    <Compile Include="WSModel\TrustAccountPeopleModel.cs" />
+    <Compile Include="WSModel\ParcelInfoModel.cs" />
+    <Compile Include="WSModel\GFilterScreenPermissionModel4WS.cs" />
+    <Compile Include="WSModel\GValuationModel4WS.cs" />
+    <Compile Include="WSModel\InfoTableColumnModel4WS.cs" />
+    <Compile Include="WSModel\InfoTableGroupCodeModel4WS.cs" />
+    <Compile Include="WSModel\InfoTableSubgroupModel4WS.cs" />
+    <Compile Include="WSModel\InfoTableValueModel4WS.cs" />
+    <Compile Include="WSModel\JAXBUTModel.cs" />
+    <Compile Include="WSModel\labelValueBean.cs" />
+    <Compile Include="WSModel\LanguageModel.cs" />
+    <Compile Include="WSModel\MapEntry4WS.cs" />
+    <Compile Include="WSModel\MyCollectionModel.cs" />
+    <Compile Include="WSModel\MyCollectionSummaryModel.cs" />
+    <Compile Include="WSModel\PasswordConditionModel.cs" />
+    <Compile Include="WSModel\PasswordResultModel.cs" />
+    <Compile Include="WSModel\QueryFormat.cs" />
+    <Compile Include="WSModel\RefAddressView.cs" />
+    <Compile Include="WSModel\RefLPView.cs" />
+    <Compile Include="WSModel\RefParcelView.cs" />
+    <Compile Include="WSModel\SimpleCapModel.cs" />
+    <Compile Include="WSModel\SimpleViewElementModel4WSExtender.cs" />
+    <Compile Include="WSModel\SimpleViewMode4WS.cs" />
+    <Compile Include="WSModel\spellCheckResultModel.cs" />
+    <Compile Include="WSModel\spellWordSuggestionsModel.cs" />
+    <Compile Include="WSModel\GlobalSearchParam4WS.cs" />
+    <Compile Include="WSModel\GlobalSearchResult4WS.cs" />
+    <Compile Include="WSModel\ProviderPKModel4WS.cs" />
+    <Compile Include="WSModel\RecordTypeLicTypePermissionModel4WS.cs" />
+    <Compile Include="WSModel\RefContinuingEducationModel4WS.cs" />
+    <Compile Include="WSModel\RefContinuingEducationPKModel4WS.cs" />
+    <Compile Include="WSModel\RefEducationModel4WS.cs" />
+    <Compile Include="WSModel\RefEducationPKModel4WS.cs" />
+    <Compile Include="WSModel\RefExaminationModel4WS.cs" />
+    <Compile Include="WSModel\RefExaminationPKModel4WS.cs" />
+    <Compile Include="WSModel\RefLicenseProfessionalModel4WS.cs" />
+    <Compile Include="WSModel\RefLicenseProfessionalPKModel.cs" />
+    <Compile Include="WSModel\RefLicenseProfessionalPKModel4WS.cs" />
+    <Compile Include="WSModel\AcaAdminTreeNodeModel4WS.cs" />
+    <Compile Include="WSModel\ACAModel4WS.cs" />
+    <Compile Include="WSModel\ASITableDrillDownModel4WS.cs" />
+    <Compile Include="WSModel\CapPaymentResultWithAddressModel.cs" />
+    <Compile Include="WSModel\CapPKModel4WS.cs" />
+    <Compile Include="WSModel\EducationModel4WS.cs" />
+    <Compile Include="WSModel\EducationPKModel4WS.cs" />
+    <Compile Include="WSModel\ExpressionRuntimeArgumentsModel.cs" />
+    <Compile Include="WSModel\ProviderDetailModel4WS.cs" />
+    <Compile Include="WSModel\ProviderModel4WS.cs" />
+    <Compile Include="WSModel\ReportDetailModel4WS.cs" />
+    <Compile Include="WSModel\ShoppingCartModel4WS.cs" />
+    <Compile Include="WSModel\ShoppingCartItemModel4WS.cs" />
+    <Compile Include="WSModel\SimpleTaskItemModel4WS.cs" />
+    <Compile Include="WSModel\ReportParameterModel4WS.cs" />
+    <Compile Include="WSModel\EMSEResultBaseModel4WS.cs" />
+    <Compile Include="WSModel\EventModel4WS.cs" />
+    <Compile Include="WSModel\OnLoginParamsModel4WS.cs" />
+    <Compile Include="WSModel\AdditionInfo.cs" />
+    <Compile Include="WSModel\AppSpecificInfoGroupModel4WS.cs" />
+    <Compile Include="WSModel\AppSpecificInfoModel4WS.cs" />
+    <Compile Include="WSModel\AppSpecificTableColumnModel4WS.cs" />
+    <Compile Include="WSModel\AppSpecificTableField4WS.cs" />
+    <Compile Include="WSModel\AppSpecificTableGroupModel4WS.cs" />
+    <Compile Include="WSModel\AppSpecificTableModel4WS.cs" />
+    <Compile Include="WSModel\ASITableDrillDSeriesModel4WS.cs" />
+    <Compile Include="WSModel\ASITableDrillDValMapModel4WS.cs" />
+    <Compile Include="WSModel\B1ExpirationModel4WS.cs" />
+    <Compile Include="WSModel\BizDomainModel4WS.cs" />
+    <Compile Include="WSModel\BStructureModel4WS.cs" />
+    <Compile Include="WSModel\ButtonSettingModel4WS.cs" />
+    <Compile Include="WSModel\BValuatnModel4WS.cs" />
+    <Compile Include="WSModel\CapConditionModel4WS.cs" />
+    <Compile Include="WSModel\CapContactModel4WS.cs" />
+    <Compile Include="WSModel\CapIDModel4WS.cs" />
+    <Compile Include="WSModel\CapModel4WS.cs" />
+    <Compile Include="WSModel\CapTypeFilterModel4WS.cs" />
+    <Compile Include="WSModel\CapWithConditionModel4WS.cs" />
+    <Compile Include="WSModel\CapWorkDesModel4WS.cs" />
+    <Compile Include="WSModel\CheckModel.cs" />
+    <Compile Include="WSModel\CheckModel4WS.cs" />
+    <Compile Include="WSModel\DeepLinkAuditTrailModel.cs" />
+    <Compile Include="WSModel\EMSEOnLoginResultModel4WS.cs" />
+    <Compile Include="WSModel\RecalculateParameterModel4WS.cs" />
+    <Compile Include="WSModel\StandardCommentModel4WS.cs" />
+    <Compile Include="WSModel\StringArray.cs" />
+    <Compile Include="WSModel\TrustAccountBaseModel.cs" />
+    <Compile Include="WSModel\UploadModel4WS.cs" />
+    <Compile Include="WSModel\UploadResult4WS.cs" />
+    <Compile Include="WSModel\UserGroupModel4WS.cs" />
+    <Compile Include="WSModel\EMSEResultModel4WS.cs" />
+    <Compile Include="WSModel\CommentModel4WS.cs" />
+    <Compile Include="Common\ILinkItem.cs" />
+    <Compile Include="Common\LinkItem.cs" />
+    <Compile Include="Common\TabItem.cs" />
+    <Compile Include="WSModel\CompactAddressModel4WS.cs" />
+    <Compile Include="WSModel\ComponentModel.cs" />
+    <Compile Include="WSModel\ContractorLicenseModel4WS.cs" />
+    <Compile Include="WSModel\AdminConfigurationModel4WS.cs" />
+    <Compile Include="WSModel\AppStatusGroupModel4WS.cs" />
+    <Compile Include="WSModel\ProjectTreeNodeModel4WS.cs" />
+    <Compile Include="WSModel\SimpleAppTypModel4WS.cs" />
+    <Compile Include="WSModel\ExpressionFieldModel.cs" />
+    <Compile Include="WSModel\ExpressionDTOModel.cs" />
+    <Compile Include="WSModel\PageFlowGroupModel.cs" />
+    <Compile Include="WSModel\PageModel.cs" />
+    <Compile Include="WSModel\RefDocumentModel.cs" />
+    <Compile Include="WSModel\RefExpressionExecuteFieldModel4WS.cs" />
+    <Compile Include="WSModel\RefExpressionPK.cs" />
+    <Compile Include="WSModel\SimpleViewElementModel4WS.cs" />
+    <Compile Include="WSModel\CreditCardModel.cs" />
+    <Compile Include="WSModel\CreditCardModel4WS.cs" />
+    <Compile Include="WSModel\DeleteContracotrLicensePK.cs" />
+    <Compile Include="WSModel\DepartmentModel4WS.cs" />
+    <Compile Include="WSModel\EDMSEntityIdModel4WS.cs" />
+    <Compile Include="WSModel\EdmsPolicyModel.cs" />
+    <Compile Include="WSModel\EdmsPolicyModel4WS.cs" />
+    <Compile Include="WSModel\F4FeeItemModel4WS.cs" />
+    <Compile Include="WSModel\F4FeeModel4WS.cs" />
+    <Compile Include="WSModel\GFilterLevelModel4WS.cs" />
+    <Compile Include="WSModel\GUITextModel4WS.cs" />
+    <Compile Include="WSModel\LicenseModel4WS.cs" />
+    <Compile Include="WSModel\LicenseProfessionalModel4WS.cs" />
+    <Compile Include="WSModel\OnLinePaymentReturnInfo4WS.cs" />
+    <Compile Include="WSModel\PaymentResultModel.cs" />
+    <Compile Include="WSModel\PayTrail.cs" />
+    <Compile Include="WSModel\PeopleAttributeModel4WS.cs" />
+    <Compile Include="WSModel\PeopleModel4WS.cs" />
+    <Compile Include="WSModel\PostTransactionLogModel4WS.cs" />
+    <Compile Include="WSModel\ProcessRelationModel4WS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WSModel\PublicUserModel4WS.cs" />
+    <Compile Include="WSModel\PublicUserPlanModel4WS.cs" />
+    <Compile Include="WSModel\QueryFormat4WS.cs" />
+    <Compile Include="WSModel\ReceiptModel4WS.cs" />
+    <Compile Include="WSModel\RefAppSpecInfoDropDownModel4WS.cs" />
+    <Compile Include="WSModel\RefAppSpecInfoFieldModel4WS.cs" />
+    <Compile Include="WSModel\RefAppSpecInfoGroupModel4WS.cs" />
+    <Compile Include="WSModel\ReportActionMessageModel4WS.cs" />
+    <Compile Include="WSModel\ReportButtonInfoModel4WS.cs" />
+    <Compile Include="WSModel\ReportButtonPropertyModel4WS.cs" />
+    <Compile Include="WSModel\ReportInfoModel4WS.cs" />
+    <Compile Include="WSModel\ReportResultModel4WS.cs" />
+    <Compile Include="WSModel\RFeeItemModel4WS.cs" />
+    <Compile Include="WSModel\RGuideSheetGroupModel4WS.cs" />
+    <Compile Include="WSModel\RGuideSheetItemModel4WS.cs" />
+    <Compile Include="WSModel\RGuideSheetModel4WS.cs" />
+    <Compile Include="WSModel\SectionTownShipRangeModel4WS.cs" />
+    <Compile Include="WSModel\ServerConstantModel4WS.cs" />
+    <Compile Include="WSModel\SmartChoiceGroupModel4WS.cs" />
+    <Compile Include="WSModel\StepModel.cs" />
+    <Compile Include="WSModel\StructureModel4WS.cs" />
+    <Compile Include="WSModel\StructureTypeModel4WS.cs" />
+    <Compile Include="WSModel\SysUserModel4WS.cs" />
+    <Compile Include="WSModel\TaskItemModel4WS.cs" />
+    <Compile Include="WSModel\TaskSpecificInfoModel4WS.cs" />
+    <Compile Include="WSModel\TransactionModel4WS.cs" />
+    <Compile Include="WSModel\TransactionModel.cs" />
+    <Compile Include="WSModel\TrustAccountModel.cs" />
+    <Compile Include="WSModel\TrustAccountPeopleModel4WS.cs" />
+    <Compile Include="Common\User.cs" />
+    <Compile Include="WSModel\X4FeeItemInvoiceModel4WS.cs" />
+    <Compile Include="WSModel\XButtonFilterModel4WS.cs" />
+    <Compile Include="WSModel\XProxyUserModel.cs" />
+    <Compile Include="WSModel\XProxyUserPermissionModel.cs" />
+    <Compile Include="WSModel\XProxyUserPermissionPKModel.cs" />
+    <Compile Include="WSModel\XProxyUserPKModel.cs" />
+    <Compile Include="WSModel\XRefContinuingEducationAppTypeModel4WS.cs" />
+    <Compile Include="WSModel\XRefContinuingEducationAppTypePKModel4WS.cs" />
+    <Compile Include="WSModel\XRefContinuingEducationProviderModel4WS.cs" />
+    <Compile Include="WSModel\XRefExaminationAppTypeModel4WS.cs" />
+    <Compile Include="WSModel\XRefExaminationAppTypePKModel4WS.cs" />
+    <Compile Include="WSModel\XRefExaminationProviderModel4WS.cs" />
+    <Compile Include="WSModel\XUITextModel.cs" />
+    <Compile Include="WSModel\XRefEducationAppTypeModel4WS.cs" />
+    <Compile Include="WSModel\XRefEducationAppTypePKModel4WS.cs" />
+    <Compile Include="WSModel\XRefEducationProviderModel4WS.cs" />
+    <Compile Include="WSModel\XSocialMediaEntityModel.cs" />
+    <Compile Include="WSModel\XSocialMediaEntityPKModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,289 @@
+﻿<%@ Master Language="C#"%>
+<%@ Register Src="Component/Navigation.ascx" TagName="Navigation"
+    TagPrefix="nav" %>
+<%@ Import Namespace="Accela.ACA.Web.Util" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<%=Accela.ACA.Common.Util.I18nCultureUtil.UserPreferredCulture %>" xml:lang="<%=Accela.ACA.Common.Util.I18nCultureUtil.UserPreferredCulture %>" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head id="Head1" runat="server">
+    <title>
+    <%=LabelUtil.GetGlobalTextByKey("ACA_TopPage_Title")%>
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<script type="text/javascript">
+    var firstErrorMsgId;
+
+    function isSafari(){
+        var ua = window.navigator.userAgent;
+        return ua.indexOf("Safari")>-1;
+    }
+
+    var original=0;
+    function iframeAutoFit()
+    {
+        try
+        {
+            if(window!=parent)
+            {
+                var ifrm = getParentDocument().getElementById("ACAFrame");
+                if(ifrm != null && ifrm.contentWindow==window)
+                {
+                    var h1 = 0, h2 = 0;
+
+                    if(document.documentElement&&document.documentElement.scrollHeight)
+                    {
+                        h1=ifrm.contentWindow.document.documentElement.scrollHeight;
+                    }
+                    if (isSafari()) {
+                        h1=ifrm.contentWindow.document.body.scrollHeight;
+                    }
+                
+                    var h=$(ifrm.contentWindow.document.body).innerHeight();
+                
+                    var temp = h1-60 - h;
+                    var chk = true;
+                    if (temp> 0 && temp<200) {
+                        chk = false;
+                    }
+
+                    var popupHeight = 0;
+                    var popupDialog = $("#dvACADialogLayer");
+                    if ($.exists(popupDialog)) {
+                        popupHeight = popupDialog[0].clientHeight;
+                        if (h < popupHeight) {
+                            h = popupHeight;
+                        }
+                    }
+
+                    if(original != h || !chk){ 
+                        if(isFireFox() == false)
+                        {
+                            if (chk) {
+                                h1 = parseInt(h)+60;
+                            }
+                        
+                            ifrm.style.height = ifrm.parentNode.style.height = h1 +"px";
+                        }
+                        else
+                        {
+                            if (chk) {
+                                if ($.exists(popupDialog)) {
+                                    h1 = parseInt(h) + 60;
+                                } else {
+                                    h1 = ifrm.contentDocument.body.scrollHeight;
+                                    h1 = parseInt(h1) + 60;
+                                }
+                            }
+                            
+                            ifrm.height = h1;
+                        }
+
+                        original = h;
+                    } 
+                }
+            }
+        }
+        catch (ex){}
+    }
+
+</script>
+<script runat="server">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!Page.IsPostBack)
+        {
+            bool isWebkit = Request.UserAgent.IndexOf("webkit", 0, StringComparison.OrdinalIgnoreCase) != -1;
+            bool isOpera = Request.UserAgent.IndexOf("opera", 0, StringComparison.OrdinalIgnoreCase) != -1;
+            int tabIndex4SkiptoolBar = (isWebkit || isOpera) ? 0 : -1;
+            hlSkipToolBar.AccessKey = Accela.ACA.Common.Util.AccessibilityUtil.GetAccessKey(Accela.ACA.Common.AccessKeyType.SkipToolBar);
+            hlSkipToolBar.TabIndex = (short)tabIndex4SkiptoolBar;
+            hlSkipNavigation.AccessKey = Accela.ACA.Common.Util.AccessibilityUtil.GetAccessKey(Accela.ACA.Common.AccessKeyType.SkipNavigation);
+            //to resolve the issue that Safari can't detect accesskey raised from another iframe page.
+            hlSkipNavigation.Visible = Request.UserAgent.ToLowerInvariant().Contains("safari") || isOpera;
+            hlContentEnd.Visible = isOpera;
+            string hideHeader = Request.QueryString["HideHeader"];
+            if (string.Equals( hideHeader,"True", StringComparison.CurrentCultureIgnoreCase))
+            {
+                HeaderNavigation.Visible = false;
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "DialogFixHeight", "setTimeout('parent.ACADialog.fix();',300);", true);
+            }
+        }
+    }
+</script>
+<body>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/jquery.js")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/jquery.corner.js")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/GlobalConst.aspx")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/global.js")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/ProcessLoading.js")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/GlobalSearch.js")%>"></script>
+    <script type="text/javascript" src="<%=FileUtil.AppendApplicationRoot("Scripts/SessionTimeout.js")%>"></script>
+    <script type="text/javascript">
+        $.global.isRTL = IsTrue('<%=Accela.ACA.Common.Util.I18nCultureUtil.UserPreferredCultureInfo.TextInfo.IsRightToLeft %>');
+
+        //fix the issue that the confirm/alert box should also follows the current culture.
+        if ($.global.isRTL) {
+            document.dir = "rtl";
+        } else {
+            document.dir = "";
+        }
+
+        $.global.isAdmin = IsTrue('<%= AppSession.IsAdmin %>');
+        var isWelcomePage = IsTrue('<%=(Request.Url.AbsolutePath.IndexOf("Welcome.aspx")>0) %>');
+        var isLoginPage = IsTrue('<%=(Request.Url.AbsolutePath.IndexOf("Login.aspx")>0) %>');
+        var isAnonymous = IsTrue('<%=(AppSession.User == null || AppSession.User.IsAnonymous) %>');
+        if (GLOBAL_ACCESSIBILITY_ENABLED && !((isWelcomePage || isLoginPage) && isAnonymous) && !$.global.isAdmin) {
+            var opts = {
+                IsAnonymous: isAnonymous,
+                TimeoutTime: <%= Accela.ACA.Web.Util.SessionTimeoutUtil.GetTimeoutTime() %>,
+                WarningTime: <%= Accela.ACA.Web.Util.SessionTimeoutUtil.GetWarningTime() %>,
+                Title: '<%=LabelUtil.GetTextByKey("aca_sessiontimeout_label_title",string.Empty).Replace("'","\\'") %>',
+                Message: '<%=LabelUtil.GetTextByKey("aca_sessiontimeout_msg_content",string.Empty).Replace("'","\\'") %>',
+                MsgHelp: '<%=LabelUtil.GetTextByKey("aca_sessiontimeout_msg_help",string.Empty).Replace("'","\\'") %>',
+                BtnOK: '<%=LabelUtil.GetTextByKey("aca_sessiontimeout_label_ok",string.Empty).Replace("'","\\'") %>',
+                BtnCancel: '<%=LabelUtil.GetTextByKey("aca_sessiontimeout_label_cancel",string.Empty).Replace("'","\\'") %>',
+                UrlWelcome: '<%=FileUtil.AppendApplicationRoot("/Welcome.aspx") %>',
+                UrlLogin: '<%=AuthenticationUtil.LoginUrl %>',
+                UrlRefresh: '<%=FileUtil.AppendApplicationRoot("/Handlers/RefreshSessionHandler.ashx") %>'
+            };
+            $("body").SessionTimeoutTimer(opts);
+        }
+    </script>
+    <ACA:AccelaHideLink ID="hlSkipNavigation" runat="server" AltKey="img_alt_externalmenu_skiplink" OnClientClick="skipToBeginningOfACA();" TabIndex="-1"/>
+    <ACA:AccelaHideLink ID="hlSkipToolBar" runat="server" AltKey="img_alt_modulemenu_skiplink" OnClientClick="skipToMainContent();" IsSkippingToAnchor="true" NextControlClientID="FirstAnchorInACAMainContent"/>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" EnableScriptGlobalization="true" EnableScriptLocalization="true"
+            runat="server" EnablePageMethods="true" ScriptMode="Release" />
+        <div class="aca_wrapper">
+        <div style="width:80em;margin:0 auto;">
+            <nav:Navigation ID="HeaderNavigation" runat="server"/>
+            <a id="goTOMessage" href="#messageSpan" tabindex="-1"></a>
+            <div class="ACA_Content ACA_Hide">
+            <!-- The h1 element is only for WCAG2.0 rule 1.1.1 H42 -->
+            <h1 class="ACA_Hide">Message Bar</h1>
+            <span id="messageSpan" name="messageSpan"></span>
+            </div>
+            <script type="text/javascript" language="javascript">
+                //Init validation error panel for form validation.
+                if (typeof (InitValidationErrorPanel) == "function") {
+                    $(document).bind("ready", InitValidationErrorPanel);
+                }
+            </script>
+            <div>
+                <a name="FirstAnchorInACAMainContent" id="FirstAnchorInACAMainContent" tabindex="-1"></a>
+                <span id="ErrorList1"></span>
+                <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                </asp:ContentPlaceHolder>
+                <!--
+                In Chorme and Opera 15, need add the div,
+                because when content div set float property, not hodler height in container
+                -->
+                <div style="clear:both;"></div>
+            </div>
+            <div id="divLoadingTemplate" class="ACA_Loading_Message" style="width:auto">
+                <img alt="<%=LabelUtil.GetTextByKey("aca_global_msg_loading",string.Empty) %>" src="<%=Accela.ACA.Web.Common.ImageUtil.GetImageURL("loading.gif") %>" />
+                <ACA:AccelaLabel ID="lblLoading" CssClass="ACA_SmLabel ACA_SmLabel_FontSize" runat="server" LabelKey="capdetail_message_loading"></ACA:AccelaLabel> 
+            </div>
+            <ACA:AccelaHideLink ID="hlContentEnd" runat="server" TabIndex="0"/>
+        </div></div>
+        <asp:UpdatePanel ID="UpdatePanel4Expression" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <input type="hidden" id="HDExpressionParam" class="HDExpressionResultCss" runat="server"/>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <script type="text/javascript">
+            setInterval("iframeAutoFit()", 300);
+
+            if (typeof (divAccessibility) != 'undefined')
+            {
+                if (document.getElementById(divAccessibility)!=null && $("#" + divAccessibility).get(0))
+                {
+                    $("#" + divAccessibility).hide();
+                }
+            }
+
+            with (Sys.WebForms.PageRequestManager.getInstance()) {
+                add_beginRequest(onBeginRequest);
+                add_endRequest(onEndRequest);
+                add_pageLoaded(onPageLoaded);
+            }
+            
+            function onBeginRequest(sender, args) {
+                if ($.global.isAdmin) {
+                    //1. in admin, if async request, we need record the client id of last selected object.
+                    var obj = document.currentSelectedObj;
+
+                    if (obj && obj._element) {
+                        parent.document.currentSelectedID = obj._element.id;
+                    }
+
+                    $('*').css('cursor', 'wait');
+                }
+            }
+
+            var processLoading = new ProcessLoading();
+            function onPageLoaded(sender, args) {
+                if ($.global.isAdmin) {
+                    //2. in admin, if async request, use last selected object id to get the object and trigger it select.
+                    var selectedId = parent.document.currentSelectedID;
+
+                    if (selectedId) {
+                        invokeClick($get(selectedId));
+
+                        //3. when it select completed, clear this.
+                        parent.document.currentSelectedID = null;
+                    }
+
+                    $('*').css('cursor', '');
+                } else {
+                    firstErrorMsgId = '';
+                    processLoading.initControlLoading();
+
+                    addPrintErrors2SubmitButton();
+
+                    if ($.browser.opera) {
+                        //Make links 'tab-able' in Opera
+                        SetTabIndexForOpera();
+
+                        //For support opera to Tab between iframe content and outside of iframe
+                        $("#hlSkipToContent", window.parent.document).keydown(function (e) {
+                            OverrideTabKey2(e, $("#<%=hlSkipToolBar.ClientID %>"));
+                        });
+
+                        $("#<%=hlContentEnd.ClientID %>").keydown(function (e) {
+                            OverrideTabKey2(e, $("#hlSkipNavigation", window.parent.document));
+                        });
+                    }
+                }
+            }
+
+            function onEndRequest(sender, arg) {
+                if (!$.global.isAdmin) {
+                    var sourceElement = sender._postBackSettings.sourceElement;
+
+                    if (sourceElement == null || (sourceElement != null && $(sourceElement).hasClass('NotShowLoading') == false)) {
+                        processLoading.hideLoading();
+                    }
+
+                    if (delayShowLoadingTimer) {
+                        window.clearTimeout(delayShowLoadingTimer);
+                    }
+                }
+            }
+
+            function ShowLoading() {
+                var processLoading = new ProcessLoading();
+                processLoading.showLoading();
+            }
+
+            function HideLoading(needHide) {
+                var processLoading = new ProcessLoading();
+                processLoading.hideLoading(needHide);
+            }
+            
+        </script>
+        <input type="submit" name="Submit" value="Submit" class="HiddenButton" onclick="return false;" />
+    </form>
+    <noscript><%=LabelUtil.GetGlobalTextByKey("aca_message_noscript")%></noscript>
+</body>
+</html>

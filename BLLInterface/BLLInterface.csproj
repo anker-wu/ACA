@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69AE03AF-313E-4B26-BF02-B263682AB0F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accela.ACA.BLL</RootNamespace>
+    <AssemblyName>Accela.ACA.BLLInterface</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Design#CA1020;-Microsoft.Design#CA1031;-Microsoft.Design#CA1002;-Microsoft.Design#CA1032;-Microsoft.Design#CA1024;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1711;-Microsoft.Performance#CA1822</CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Web\Properties\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Account\IAccountBll.cs" />
+    <Compile Include="Account\IAuthAdapter.cs" />
+    <Compile Include="Account\ISSOBll.cs" />
+    <Compile Include="Account\ITrustAccountBll.cs" />
+    <Compile Include="AddressBuilder\IAddressBuilderBll.cs" />
+    <Compile Include="Admin\IAdminBll.cs" />
+    <Compile Include="Admin\IAdminCapTypePermissionBll.cs" />
+    <Compile Include="Admin\IAdminConfigurationPreview.cs" />
+    <Compile Include="Admin\IAdminConfigurationSave.cs" />
+    <Compile Include="Admin\ICapTypeFilterBll.cs" />
+    <Compile Include="Admin\ICapTypePermissionBll.cs" />
+    <Compile Include="Announcement\IAnnouncementBll.cs" />
+    <Compile Include="APO\IAddressBll.cs" />
+    <Compile Include="APO\IAPOBll.cs" />
+    <Compile Include="APO\IOwnerBll.cs" />
+    <Compile Include="APO\IParcelBll.cs" />
+    <Compile Include="APO\IRefAddressBll.cs" />
+    <Compile Include="APO\ITemplateBll.cs" />
+    <Compile Include="Asset\IAssetBll.cs" />
+    <Compile Include="Common\IDataFilterBll.cs" />
+    <Compile Include="Common\IRegionalBll.cs" />
+    <Compile Include="Common\IServiceProviderBll.cs" />
+    <Compile Include="Common\IXEntityPermissionBll.cs" />
+    <Compile Include="CustomComponent\ICustomComponentBll.cs" />
+    <Compile Include="DeepLink\IDeepLinkBLL.cs" />
+    <Compile Include="Finance\IOnlinePaymentAuditTrailBll.cs" />
+    <Compile Include="LicenseCertification\ILicenseCertificationBll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Attachment\IEDMSDocumentBll.cs" />
+    <Compile Include="Cap\CAPHelper.cs" />
+    <Compile Include="Cap\IAppSpecificInfoBll.cs" />
+    <Compile Include="Cap\ICapBll.cs" />
+    <Compile Include="Cap\ICapTypeBll.cs" />
+    <Compile Include="Cap\IConditionBll.cs" />
+    <Compile Include="Cap\IExpressionBll.cs" />
+    <Compile Include="Cap\IPageflowBll.cs" />
+    <Compile Include="Common\CacheSettings.cs" />
+    <Compile Include="Common\IProxyUserRoleBll.cs" />
+    <Compile Include="Common\IACAInitBll.cs" />
+    <Compile Include="Common\IBizDomainBll.cs" />
+    <Compile Include="Common\ICacheManager.cs" />
+    <Compile Include="Common\ICommonData.cs" />
+    <Compile Include="Common\IGviewBll.cs" />
+    <Compile Include="Common\II18nSettingsBll.cs" />
+    <Compile Include="Common\ILicensingValidationBll.cs" />
+    <Compile Include="Common\ILogoBll.cs" />
+    <Compile Include="Common\IPolicyBLL.cs" />
+    <Compile Include="Common\IServerConstantBll.cs" />
+    <Compile Include="Common\IServiceManagementBll.cs" />
+    <Compile Include="Common\ITimeZoneBll.cs" />
+    <Compile Include="Common\ITransactionLogBll.cs" />
+    <Compile Include="Common\IUserRoleBll.cs" />
+    <Compile Include="Common\IXPolicyBll.cs" />
+    <Compile Include="Common\IXPolicyWrapper.cs" />
+    <Compile Include="LicenseCertification\IContinuingEducationBll.cs" />
+    <Compile Include="LicenseCertification\IExaminationBll.cs" />
+    <Compile Include="LicenseCertification\IProviderBll.cs" />
+    <Compile Include="LicenseCertification\IRefExaminationBll.cs" />
+    <Compile Include="LicenseCertification\IEducationBll.cs" />
+    <Compile Include="LicenseCertification\IRefContinuingEducationBll.cs" />
+    <Compile Include="LicenseCertification\IRefEducationBll.cs" />
+    <Compile Include="EMSE\IEMSEBll.cs" />
+    <Compile Include="Finance\ICommonPaymentBll.cs" />
+    <Compile Include="Finance\IEPaymentConfigBll.cs" />
+    <Compile Include="Finance\IPaymentBll.cs" />
+    <Compile Include="Finance\ICashierBll.cs" />
+    <Compile Include="Finance\IFeeBll.cs" />
+    <Compile Include="Finance\IOnlinePaymenBll.cs" />
+    <Compile Include="Cap\IASITableDrillDownBLL.cs" />
+    <Compile Include="Finance\IValuationCalculatorBll.cs" />
+    <Compile Include="GlobalSearch\IGlobalSearchBll.cs" />
+    <Compile Include="Inspection\ICalendarBll.cs" />
+    <Compile Include="Inspection\IInspectionBll.cs" />
+    <Compile Include="Inspection\IInspectionPermissionBll.cs" />
+    <Compile Include="Inspection\IInspectionTypeBll.cs" />
+    <Compile Include="Inspection\IInspectionTypePermissionBll.cs" />
+    <Compile Include="MyCollection\IMyCollectionBll.cs" />
+    <Compile Include="People\ILicenseBLL.cs" />
+    <Compile Include="People\ILicenseProfessionalBll.cs" />
+    <Compile Include="People\IPeopleBll.cs" />
+    <Compile Include="Plan\IPlanBll.cs" />
+    <Compile Include="Plan\IUploadAttachmentBll.cs" />
+    <Compile Include="Plan\PlanConstant.cs" />
+    <Compile Include="ProxyUser\IProxyUserBll.cs" />
+    <Compile Include="Report\IReportBll.cs" />
+    <Compile Include="ShoppingCart\IShoppingCartBll.cs" />
+    <Compile Include="SocialMedia\ISocialMediaBll.cs" />
+    <Compile Include="SpellCheck\ISpellCheckBll.cs" />
+    <Compile Include="View\IViewBll.cs" />
+    <Compile Include="WorkFlow\IWorkflowBll.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{83D0F8CA-5844-43A6-874E-F529D1FE07BF}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SSOInterface\SSOInterface.csproj">
+      <Project>{6ADAE8A3-DB90-4E2A-9DA7-6A5CD6153030}</Project>
+      <Name>SSOInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSModel\WSModel.csproj">
+      <Project>{2574E894-BCF0-429C-A7D8-09C022041A81}</Project>
+      <Name>WSModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\StyleCop\v4.3\Microsoft.StyleCop.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

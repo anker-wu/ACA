@@ -1,0 +1,87 @@
+﻿<div id="loginWindow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-init="init()">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">{{LoginData.aca_newui_login_label_login}} <span ng-click="loginClose()" class="ico-close2 float-right modal-close"></span></h4>
+            </div>
+            <div class="modal-body">
+                <div class="custom-control">
+                    <span id="txtLoginMsg" style="color:#ff0000;"></span>
+                </div>
+                <div class="custom-control">
+                    <label for="txtLogin" ng-labelkey="LoginData.aca_newui_login_label_username"></label>
+                    <input type="text" id="txtLogin" class="custom-form-control" ng-keyup = "$event.keyCode == 13 && onLogin()" placeholder="{{LoginData.aca_newui_login_label_username}}">
+                </div>
+
+                <div class="custom-control">
+                    <label for="txtPassword" ng-labelkey="LoginData.aca_newui_login_label_password"></label>
+                    <input type="password" id="txtPassword" class="custom-form-control" ng-keyup = "$event.keyCode == 13 && onLogin()" placeholder="{{LoginData.aca_newui_login_label_password}}">
+                </div>
+                <div id="recaptcha" ng-init="recaptcha=true" ng-hide='recaptcha'>
+                    <div id="recaptcha_widget">
+                        <div class="custom-control">
+                            <label for="recaptcha_response_field" ng-labelkey="LoginData.aca_newui_login_label_verification"></label>
+                            <input type="text" id="recaptcha_response_field" class="custom-form-control" placeholder="Verfication Code">
+                        </div>
+
+                        <table class='NoBorder' role='presentation'>
+                            <tr>
+                                <td>
+                                    <div id="recaptcha_image"></div>
+                                </td>
+                                <td>
+                                    <div class="recaptcha_buttons">
+                                        <div>
+                                            <a class="NotShowLoading" onclick="javascript:void(0);" title="" href="javascript:Recaptcha.reload();">
+                                                <img src="images/recaptcha_refresh.png" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="recaptcha_only_if_image">
+                                            <a class="NotShowLoading" onclick="javascript:void(0);" title="" href="javascript:Recaptcha.switch_type('audio');">
+                                                <img src="images/recaptcha_audio.png" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="recaptcha_only_if_audio">
+                                            <a class="NotShowLoading" onclick="javascript:void(0);" title="" href="javascript:Recaptcha.switch_type('image');">
+                                                <img src="images/recaptcha_text.png" alt="" />
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="NotShowLoading" title="" onclick="javascript:void(0);" href="javascript:Recaptcha.showhelp();">
+                                                <img src="images/recaptcha_help.png" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <span class="checkbox login-custom-checkbox">
+                        <input type="checkbox" name="rememberme" id="rememberme">
+                        <a id="lnkRememberMe" href="" ng-click="rememberMe()"><label for="rememberme">&nbsp;&nbsp;{{LoginData.aca_newui_login_label_rememberme}}</label></a>
+                    </span>
+                    <button class="btn btn-custom pull-right " ng-click="onLogin()">{{LoginData.aca_newui_login_label_login}}</button>
+                </div>
+                <div class="forget-password">
+                    <h4 ng-labelkey="LoginData.aca_newui_login_label_forgotpwd"></h4>
+                    <p>
+                        <span ng-labelkey="LoginData.aca_newui_login_label_forgotpwdmsg"></span>
+                        <a href="" id="forget-password" ng-click="getBackPwd()" ng-labelkey="LoginData.aca_newui_login_label_clickhere">
+                        </a>
+                    </p>
+                </div>
+                <div class="create-account">
+                    <p>
+                        {{LoginData.aca_newui_login_label_msg}}&nbsp;
+                        <a href="javascript:;" id="register-btn" ng-click="register()" ng-labelkey="LoginData.aca_newui_login_label_createone">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<angulariframe> </angulariframe>

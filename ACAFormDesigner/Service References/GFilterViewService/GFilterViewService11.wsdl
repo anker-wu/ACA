@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://model.webservice.accela.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://model.webservice.accela.com" />
+      <s:element name="SaveFilterScreenView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="levelType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="moduleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="simpleViewModel" type="s1:SimpleViewModel4WS" />
+            <s:element minOccurs="0" maxOccurs="1" name="callerid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveFilterScreenViewResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFilterScreenView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="agencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="levelType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="moduleName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="viewID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="screenPermission" type="s1:GFilterScreenPermissionModel4WS" />
+            <s:element minOccurs="0" maxOccurs="1" name="callerid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFilterScreenViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFilterScreenViewResult" type="s1:SimpleViewModel4WS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://model.webservice.accela.com">
+      <s:complexType name="SimpleViewModel4WS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="permissionModel" type="s1:GFilterScreenPermissionModel4WS" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="screenHeight" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="screenWidth" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="sectionID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="unbounded" form="unqualified" name="simpleViewElements" nillable="true" type="s1:SimpleViewElementModel4WS" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="sizeUnit" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="labelLayoutType" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GFilterScreenPermissionModel4WS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="permissionLevel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="permissionValue" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="recFulName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="recStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="servProvCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SimpleViewElementModel4WS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OldStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="acaDisplayFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="displayOrder" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="isEditable" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="elementHeight" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="elementInstruction" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="elementLeft" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="elementTop" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="elementType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="elementWidth" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="inputWidth" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="isOriginalTemplate" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="labelId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="labelValue" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="labelWidth" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="readOnly" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="recStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="required" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="sectionID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="unbounded" form="unqualified" name="selectOptions" nillable="true" type="s1:TemplateAttrValueModel" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="servProvCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="sortOrder" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="standard" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="unitType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="unitWidth" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="viewElementDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="viewElementId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="viewElementName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TemplateAttrValueModel">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="attributeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="attributeValue" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="auditDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="auditID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="auditStatus" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="defaultValueFlag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="resAttributeValue" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="serviceProviderCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" form="unqualified" name="sourceSeqNbr" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="templateName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" form="unqualified" name="templateType" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SaveFilterScreenViewSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveFilterScreenView" />
+  </wsdl:message>
+  <wsdl:message name="SaveFilterScreenViewSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveFilterScreenViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFilterScreenViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFilterScreenView" />
+  </wsdl:message>
+  <wsdl:message name="GetFilterScreenViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFilterScreenViewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GFilterViewServiceSoap">
+    <wsdl:operation name="SaveFilterScreenView">
+      <wsdl:input message="tns:SaveFilterScreenViewSoapIn" />
+      <wsdl:output message="tns:SaveFilterScreenViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilterScreenView">
+      <wsdl:input message="tns:GetFilterScreenViewSoapIn" />
+      <wsdl:output message="tns:GetFilterScreenViewSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GFilterViewServiceSoap" type="tns:GFilterViewServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveFilterScreenView">
+      <soap:operation soapAction="http://tempuri.org/SaveFilterScreenView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilterScreenView">
+      <soap:operation soapAction="http://tempuri.org/GetFilterScreenView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GFilterViewServiceSoap12" type="tns:GFilterViewServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveFilterScreenView">
+      <soap12:operation soapAction="http://tempuri.org/SaveFilterScreenView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilterScreenView">
+      <soap12:operation soapAction="http://tempuri.org/GetFilterScreenView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GFilterViewService">
+    <wsdl:port name="GFilterViewServiceSoap" binding="tns:GFilterViewServiceSoap">
+      <soap:address location="http://localhost/ACAWeb2013/WebService/GFilterViewService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GFilterViewServiceSoap12" binding="tns:GFilterViewServiceSoap12">
+      <soap12:address location="http://localhost/ACAWeb2013/WebService/GFilterViewService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,305 @@
+﻿/* Accessibility Support */
+html
+{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+INPUT, TEXTAREA, SELECT
+{
+    background-color: #ffffff;
+}
+
+.ACA_Title_Bar
+{
+    background-color: #E6E6E6;
+}
+
+INPUT[disabled], TEXTAREA[disabled], SELECT[disabled]
+{
+    background-color: #F5F4E2;
+    color: #6E706B;
+}
+
+A:HOVER { color: #0055EE; }
+A[disabled],
+A[disabled] :HOVER,
+.ACA_CapDetail_NoRecord,
+.watermark,
+.ACA_GrayedOutLink,
+.ACA_GrayedOutLink:hover,
+.ACA_GrayedOutLink:active,
+.ACA_Collection_RdoButton label
+{
+    color: #6D7880;
+}
+
+.ACA_LinkButton A:Hover
+{
+    color: #0055EE !important;
+}
+
+.Notice_Message_Success 
+{ 
+    color: #3B8700;
+}
+
+.ACA_Indicator,
+.fee_tip,
+.ACA_Required_Indicator,
+.ACA_Error_Label,
+.ACA_Error_Email_Label,
+.aca_expression_required,
+.aca_expression_label,
+.CaptchaError,
+.ACA_GIS_Message_Error
+{
+    color: #B60000;
+}
+
+.InspectionTypeStatus
+{
+    color:#6E706B;
+}
+
+.ACA_ReadOnly
+{
+    background-color: #F5F4E2;
+    color: #6E706B;
+}
+
+.ReadonlyShade
+{
+    background-color: #F5F4E2;
+}
+
+.ACA_LoginBox
+{
+    background-color: #E6E6E6;
+}
+
+.CalendarDayInactive
+{
+    font-size:1.1em;
+    background-color: #FFFFFF;
+    color: #6E706B;
+}
+
+.breadcrump-selected,
+.breadcrump-selected td,
+.breadcrump-selected span,
+.breadcrump-selected-end td,
+.breadcrump-selected-end span,
+.breadcrump-selected-end
+{
+    color:#FFFFFF;
+    background-color: #003366;
+}
+
+.breadcrump-disable,
+.breadcrump-disable-end,
+.breadcrump-collapsed-disable,
+.breadcrump-collapsed-disable-end
+{
+    color:#555555;
+}
+
+.breadcrump .breadcrump-tt .namecolumn,
+.breadcrump-end .breadcrump-tt .namecolumn,
+.breadcrump-disable .breadcrump-tt .namecolumn,
+.breadcrump-disable-end .breadcrump-tt .namecolumn
+{
+    color:#555555;
+}
+
+.breadcrump-tt .namecolumn a
+{
+    color:#555555;
+}
+
+.ACA_LgButtonDisable A,
+.ACA_LgButtonDisable A:hover,
+.ACA_LgButtonDisable A:active,
+.ACA_LgButtonDisable A:hover span,
+.ACA_LgButtonDisable A:active span,
+.ACA_SmButtonDisable A,
+.ACA_SmButtonDisable A:hover,
+.ACA_SmButtonDisable A:active,
+.ACA_SmButtonDisable A:hover span
+.ACA_SmButtonDisable A:active span
+{
+    color: #6E706B;
+}
+
+.ACA_Message_Error_Link
+{
+    color: #B60000;
+}
+
+.ACA_Message_Error
+{
+    border: 1px solid #B60000;
+    color: #B60000;
+}
+
+.ACA_Message_Success
+{
+    border: 1px solid #2B8200;
+    color: #2B8200;
+}
+
+.ACA_Message_Notice
+{
+    border: 1px solid #0055EE;
+    color: #0055EE;
+}
+
+.ACA_Message_Notice a
+{
+    color: #0055EE;
+}
+
+.ACA_PopUP_Message
+{
+    color: #0055EE;
+}
+
+.ACA_Message_Locked
+{
+   border: 1px solid #B60000;
+}
+
+.ACA_Message_Locked,
+.ACA_Message_Hold,
+.ACA_Message_Note 
+{
+    color: #555555;
+}
+
+.ACA_Condition_Required 
+{
+    border: 1px solid #B60000;
+    color: #555555;
+}
+
+.ACA_Condition_Required A
+{
+    color: #555555;
+}
+
+.ACA_Condition_Required A:HOVER
+{
+    color: #0055EE;
+}
+
+.ACA_Message_Notice_Link
+{
+    color: #0055EE;
+}
+
+.ButtonDisabled
+{
+    color: #6E706B;
+    text-decoration: none;
+    cursor: default;
+}
+
+.ActionMenu_Line,
+.ACA_BkGray
+{
+    color: #000000; /* This color no useful in fact. Only use it to meet the WCAG 2.0 */
+}
+
+.inputshort { background-color: #ffffff; }
+
+a:focus,
+a:hover,
+a:active,
+input:focus,
+input:hover,
+SELECT:focus,
+SELECT:hover,
+TEXTAREA:focus,
+TEXTAREA:hover
+{background-color: #90FF00}
+
+.breadcrump-tt .namecolumn a:focus,
+.breadcrump-tt .namecolumn a:hover,
+.breadcrump-tt .namecolumn a:active,
+input:hover,
+SELECT:hover,
+TEXTAREA:hover
+{color: #555555}
+
+input[type=radio]:focus,
+input[type=radio]:hover,
+input[type=image]:focus,
+input[type=image]:hover,
+input[type=checkbox]:focus,
+input[type=checkbox]:hover,
+.ACA_LgButton a:focus,
+.ACA_LgButton a:hover,
+.ACA_SmButton a:focus,
+.ACA_SmButton a:hover,
+.ACA_LgButton object:focus,
+.ACA_LgButton object:hover,
+.ACA_Dialog_Close_Div a:focus,
+.ACA_Dialog_Close_Div a:hover,
+.splitbutton .mainbtn a:focus,
+.splitbutton .mainbtn a:hover,
+.splitbutton .dropbtn a:focus,
+.splitbutton .dropbtn a:hover,
+.FileSelect a:focus,
+.FileSelect a:hover,
+.ACA_SaveAndResumeLater_Icon a:focus,
+.ACA_SaveAndResumeLater_Icon a:hover,
+.gs_go:focus,
+.gs_go:hover,
+.gs_history:focus,
+.gs_history:hover,
+.calendar_button:focus,
+.calendar_button:hover,
+.silverlight_button:focus,
+.silverlight_button:hover
+{outline:0.3em solid #90FF00}
+
+.gs_go[disabled],
+.calendar_button[disabled],
+.ACA_LgButtonDisable a[disabled],
+.ACA_SaveAndResumeLater_Icon a[disabled]
+{
+    outline: 0em;
+    background-color: transparent;
+}
+
+.FileSelect a:focus,
+.FileSelect a:hover,
+.FileSelect a:active
+{
+    background-color: transparent;
+}
+
+.ACA_Global_Loading_ImgDiv a:focus,
+.ACA_Global_Loading_ImgDiv a:hover,
+.ACA_Global_Loading_ImgDiv a:active
+{
+    border: 0;
+    outline:none;
+    cursor: default;
+    background-color: transparent;
+    color: transparent;
+}
+
+.ACA_Global_Loading_ImgDiv img 
+{
+    border: 0;
+}
+
+.fileList {
+    border: #404040 1px solid;
+}
+
+.fileList .fileRow
+{
+    border-bottom: #555555 1px solid;
+}

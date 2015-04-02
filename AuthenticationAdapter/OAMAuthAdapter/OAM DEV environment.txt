@@ -1,0 +1,105 @@
+﻿OAM start steps:
+	Start Oracle DB
+	db user account:
+	-----
+	SYS/taotao0426
+	SYSTEM/taotao0426
+	Other related users(all password is taotao0426): DEV115_MDS, DEV115_ORASDPM, DEV116_OIF, DEV115_SOAINFRA, ODS, DEV115_OAM, DEV115_OIM, ODSSM
+	-----
+
+	OEL:
+	login as alan/taotao
+	./startNodeManager.sh
+	Wait a moment for start NodeManager server.
+	./startWebLogic.sh
+
+	cd Oracle/Middleware/asinst_1/bin
+	./opmnctl startall
+	exit
+
+	open http://alan-oel.alanoim.com:7001/console/
+	login as weblogic/taotao0426
+
+	Expand IDMDomain/Environment/Servers
+	Switch to Control tab
+	Select wls_oif1 and wls_ods1, Start them
+
+	Wait all server start success.
+
+	open Enterprise Manager: http://alan-oel.alanoim.com:7001/em
+	login as weblogic/taotao0426
+	Check oid1 if started, if not ,start it.
+	if the oid1 cannot be started, mostly due to the db user account expired or the db server cannot be reached.
+
+	Check the oid1 logs, if you see error "ORA-28001: the password has expired", execute the following steps to enable the db user account.
+	---
+	--Search which user expired:
+	SELECT * FROM DBA_USERS WHERE ACCOUNT_STATUS='EXPIRED'
+
+	--Enable expired users:
+	ALTER USER DEV115_MDS IDENTIFIED BY taotao0426; 
+	ALTER USER DEV115_ORASDPM IDENTIFIED BY taotao0426;
+	ALTER USER DEV116_OIF IDENTIFIED BY taotao0426;
+	ALTER USER DEV115_SOAINFRA IDENTIFIED BY taotao0426;
+	ALTER USER ODS IDENTIFIED BY taotao0426;
+	ALTER USER DEV115_OAM IDENTIFIED BY taotao0426;
+	ALTER USER DEV115_OIM IDENTIFIED BY taotao0426;
+	ALTER USER ODSSM IDENTIFIED BY taotao0426;
+
+	--Also you can change the password setting set the expired time as UNLIMITED:
+	SELECT * FROM dba_profiles WHERE profile='DEFAULT' AND resource_name='PASSWORD_LIFE_TIME';
+	ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;
+	---
+
+	OAM:
+	login as alan/taotao
+	./startNodeManager.sh
+	./startWebLogic.sh
+	exit
+
+	open http://alan-oam.alanoim.com:7001/console/
+	login as weblogic/taotao0426
+
+	Expand OAMDomain/Environment/Servers
+	Switch to Control tab
+	Select oam_server1,oim_server1,soa_server1, Start them
+
+	Wait all server start success.
+
+	If you want to start the embeded HTTP server in OAM, please execute the following steps:
+	Remote to OAM
+	login as alan/taotao
+	cd Oracle/Middleware/Oracle_WT1/instances/instance1/bin
+	./opmnctl startall
+	open Enterprise Manager: http://alan-oam.alanoim.com:7001/em
+	login as weblogic/taotao0426
+	check ohs1 status 
+
+Also, you need to clear the server log termly:
+	OID:
+	rm /home/alan/Oracle/Middleware/asinst_1/diagnostics/logs/OID/oid1/*.log* -f
+
+	rm /home/alan/Oracle/Middleware/user_projects/domains/IDMDomain/servers/AdminServer/logs/*.log* -f
+
+	rm /home/alan/Oracle/Middleware/user_projects/domains/IDMDomain/servers/wls_ods1/logs/*.log* -f
+	rm /home/alan/Oracle/Middleware/user_projects/domains/IDMDomain/servers/wls_ods1/logs/wls_ods*.out* -f
+
+	rm /home/alan/Oracle/Middleware/user_projects/domains/IDMDomain/servers/wls_oif1/logs/*.log* -f
+	rm /home/alan/Oracle/Middleware/user_projects/domains/IDMDomain/servers/wls_oif1/logs/wls_oif*.out* -f
+
+	OAM:
+	rm /home/alan/Oracle/Middleware/user_projects/domains/OAMDomain/servers/AdminServer/logs/*.log* -f
+
+	rm /home/alan/Oracle/Middleware/user_projects/domains/OAMDomain/servers/soa_server1/logs/*.log* -f
+	rm /home/alan/Oracle/Middleware/user_projects/domains/OAMDomain/servers/soa_server1/logs/soa_server*.out* -f
+
+	rm /home/alan/Oracle/Middleware/user_projects/domains/OAMDomain/servers/oim_server1/logs/*.log* -f
+	rm /home/alan/Oracle/Middleware/user_projects/domains/OAMDomain/servers/oim_server1/logs/oim_server*.out* -f
+
+	rm /home/alan/Oracle/Middleware/user_projects/domains/OAMDomain/servers/oam_server1/logs/*.log* -f
+	rm /home/alan/Oracle/Middleware/user_projects/domains/OAMDomain/servers/oam_server1/logs/oam_server*.out* -f
+
+	rm /home/alan/Oracle/Middleware/Oracle_WT1/instances/instance1/diagnostics/logs/OHS/ohs1/*.log* -f
+	rm /home/alan/Oracle/Middleware/Oracle_WT1/instances/instance1/diagnostics/logs/OHS/ohs1/access_log* -f
+	rm /home/alan/Oracle/Middleware/Oracle_WT1/instances/instance1/diagnostics/logs/OPMN/opmn/*.log* -f
+	rm /home/alan/Oracle/Middleware/Oracle_WT1/instances/instance1/diagnostics/logs/OPMN/opmn/*.out* -f

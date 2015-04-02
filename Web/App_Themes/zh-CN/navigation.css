@@ -1,0 +1,65 @@
+﻿/* Tab, link, button */
+/* Common Backcolor And Button And Table Label*/
+
+/* Start Border and BkColor */
+.ACA_DivBorder
+{
+    float: left;
+}
+/* End Border and BkColor */
+/*==============================================================*/
+
+.ACA_Message_Success_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_LgButton_FontSize A
+{
+    font-size:1.2em;
+}
+
+.ACA_UploadButton_Hover A
+{
+    font-size: 1.2em;
+}
+
+.ACA_SmButton_FontSize A
+{
+    font-size:1.2em;
+}
+
+.ACA_Link_Text_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Error_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Notice_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Locked_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Hold_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Note_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Message_Notice_Link_FontSize
+{
+    font-size:1.2em;
+}

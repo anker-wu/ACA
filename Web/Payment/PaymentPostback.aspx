@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="Payment_PaymentPostback" Codebehind="PaymentPostback.aspx.cs" %>

@@ -1,0 +1,332 @@
+﻿html,
+body {
+    direction: rtl !important;
+    unicode-bidi: bidi-override !important;
+}
+
+.float-right {
+    float: left;
+}
+
+.float-left {
+    float: right;
+}
+.textalign-left {
+    text-align: right;
+}
+
+.navbar-right {
+    float: left !important;
+}
+
+.has-icon > .form-control-icon {
+    left: 1px !important;
+}
+
+.m-avatar span.rendering {
+    right: 0 !important;
+}
+
+#ddlLanguage {
+    float: right;
+    padding: 2px 5px;
+    box-shadow: 0px 1px 2px #CCC, inset 0 1px 0 #FFFFFF;
+    direction: initial;
+}
+
+#welcome .close-link {
+    position: absolute;
+    left: 3px !important;
+    right: auto;
+}
+
+.close-link-ico {
+    float: left;
+    line-height: 1.5em;
+}
+
+#welcome .welcome-msg-content {
+    text-align: right !important;
+}
+
+#btnWelcomeClose {
+    margin: 0 auto;
+    display: block;
+}
+
+#header.navbar .navbar-toolbar .navbar-nav .dropdown > .dropdown-menu {
+    left: 30px;
+    right: auto;
+}
+
+    #header.navbar .navbar-toolbar .navbar-nav .dropdown > .dropdown-menu.arrow:before {
+        left: 11px;
+        right: auto;
+    }
+
+.pull-right {
+    float: left !important;
+}
+
+#dropdown-searchform label {
+    right: 43px;
+}
+
+#dropdown-searchform .search-options .search-content > ul > li i.ico-check-sign {
+    float: right;
+}
+
+.flip-container .flipper .front .lp-icon {
+    float: right;
+}
+
+#SearchResult .nav-tabs {
+    width: 320px;
+}
+
+#SearchResultTab {
+    direction: inherit;
+}
+
+#SearchResult .nav-tabs > li > a .search-tab-icon {
+    padding-left: 5px !important;
+    float: right;
+}
+
+#SearchResult .tab-content .tab-pane > .tab-header > .tab-filter {
+    float: left;
+}
+
+.res-sec .res-content .res-option {
+    float: left;
+}
+
+.res-sec .res-content .rec-action {
+    float: right;
+}
+
+.res-header > .tab-filter {
+    float: left;
+}
+
+.res-icon {
+    padding-left: 10px !important;
+    line-height: 1.5;
+    float: right;
+}
+
+.col-md-5 {
+    float: right !important;
+}
+
+
+
+.top-info .m-avatar {
+    float: right;
+}
+
+.collection > h4 {
+    text-align: right;
+}
+
+.activity .act-header .act-header-text {
+    float: left;
+    margin-left: 83%;
+}
+
+.activity .act-c-header .ico-warning-sign {
+    float: right;
+}
+
+.record .record-header > .record-title {
+    direction: initial;
+}
+
+.record .record-header > .record-filter {
+    margin: -5px -5px 0 -5px;
+    display: inline-block;
+    float: left;
+}
+
+.owl-carousel .owl-item {
+    float: right;
+}
+
+#header.navbar .navbar-header {
+    float: right;
+}
+
+#header.navbar .navbar-toolbar {
+    float: left;
+}
+
+.lp-panel .lp-body .lp-content .lp-col2 {
+    float: right;
+}
+
+footer .company {
+    float: right;
+}
+
+footer .brand {
+    float: left;
+}
+
+.res-sec .res-content .res-row .m-n15 {
+    margin-right: -15px;
+}
+
+.res-sec .res-content .res-row .m-p10 {
+    margin-right: 13px;
+}
+
+.activity .act-center {
+    float: right;
+    /*min-height: 220px;*/
+}
+
+.activity .act-right {
+    float: left;
+}
+
+.lp-panel .lp-body .lp-content .lp-col1,
+.lp-panel .lp-body .lp-content .lp-col2 {
+    width: 50%;
+    float: right;
+}
+
+.lp-panel .lp-header .lp-back {
+    float: left;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH();
+}
+
+.tile {
+    float: right;
+}
+
+.has-icon > .form-control-icon {
+    right: auto;
+    left: 1px;
+}
+
+.company {
+    float: right;
+}
+
+.brand {
+    float: left;
+}
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: right;
+}
+
+.nav-pills > li {
+    float: right;
+}
+
+.tab-header {
+    text-align: right;
+}
+
+.ico-search {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH();
+}
+
+#header.navbar .navbar-toolbar .navbar-nav > li {
+    float: right;
+}
+
+    #header.navbar .navbar-toolbar .navbar-nav > li a {
+        text-align: right !important;
+    }
+
+.dropdown-cart, #loginDropMenu {
+    padding-right: 0;
+    padding-left: auto;
+}
+
+#top-navigation .dropdown-header {
+    padding: 0;
+    text-align: right;
+}
+
+.lp-button-layout {
+    left: 20px;
+    right: auto;
+}
+
+.dropdown-menu-right {
+    right: auto;
+    left: 0;
+}
+
+.dropdown > .dropdown-menu.arrow:before {
+    left: 11px;
+    right: auto;
+}
+
+.flip-container .flipper .back .flipper-footer {
+    text-align: left;
+}
+
+.lp-content .back .lp-text {
+    text-align: right;
+}
+
+.checkbox.checkbox-icon, .checkbox-inline.checkbox-icon, .checkbox.custom-checkbox, .checkbox-inline.custom-checkbox, .radio.custom-radio, .radio-inline.custom-radio {
+    margin-right: -10px;
+}
+
+#iframeClose {
+    float: left;
+}
+
+.navbar#header .navbar-toolbar .navbar-nav > li > a.user .caret {
+    margin-right: -10px;
+}
+
+#dropdown-searchform .search-options {
+    left: 40px;
+}
+
+.show-label#dropdown-searchform .form-control {
+    padding-right: 4px;
+}
+
+#dropdown-searchform label {
+    right: 0;
+}
+
+#txtGlobalSearh {
+    padding-right: 0px !important;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: right;
+}
+
+.shop-text {
+    float:right;
+}
+
+.shop-price {
+    float:left
+}
+
+.dropdown-header {
+    min-height: 30px;
+}
+
+.total-text {
+    color: black !important;
+    font-weight: bold; 
+}

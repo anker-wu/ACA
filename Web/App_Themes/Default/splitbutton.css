@@ -1,0 +1,92 @@
+/*
+Split Button
+*/
+.splitbutton
+{
+    display: inline-block;    
+}
+
+/* Main button of Split button */
+.splitbutton .mainbtn
+{
+    float:left;
+}
+
+.splitbutton .mainbtn A
+{
+    font-weight: bold;
+    background:url(assets/button_sm256.gif) left 0;
+    color: #003366;
+    text-decoration:none;
+    line-height:16px;
+    height:16px;
+    vertical-align:middle;
+    text-align:center;
+    cursor:pointer;
+    float:left;
+    white-space: nowrap;
+}
+
+.splitbutton .mainbtn A:hover{background:url(assets/button_sm256.gif) left -16px;height:16px;color: #003366;}
+.splitbutton .mainbtn A:active{height:16px;color: #003366;}
+
+.splitbutton .mainbtn A span{margin: 0 0 0 8px; float:left; height:16px; padding:0 8px 0 0;}
+.splitbutton .mainbtn A:hover span{color: #003366; margin:0 0 0 8px; height:16px; padding:0 8px 0 0;}
+.splitbutton .mainbtn A:active span{color: #003366; margin:0 0 0 8px; height:16px; padding:0 8px 0 0;}
+
+.splitbutton .mainbtn_fontsize A
+{
+    font-size:1em;
+}
+
+/* Drop button of Split button */
+.splitbutton .dropbtn
+{
+    float:left;
+}
+
+.splitbutton .dropbtn A
+{
+    font-weight: bold;
+    background:url(assets/button_split.gif) left 0;
+    text-decoration:none;
+    line-height:16px;
+    height:16px;
+    vertical-align:middle;
+    text-align:center;
+    float:left;
+    cursor:pointer;
+    white-space:nowrap;
+    width:2em;
+    border-left:solid 1px #cccccc;
+}
+
+.splitbutton .dropbtn A:hover{background:url(assets/button_split.gif) left -16px;height:16px;color: #003366;}
+.splitbutton .dropbtn A:active{height:16px;color: #003366;}
+
+/* Menu container of Split button */
+.splitbutton_menu
+{
+    background-color:#EAE8DC;
+    white-space:nowrap;
+    display:none;
+    clear:both;
+    padding-bottom:8px;
+    cursor:pointer;
+    border:solid 1px #cccccc;
+    position:absolute;
+    z-index: 100000;
+}
+
+/* Menu item of Split button */
+.splitbutton_menuitem
+{
+    border-top:solid 1px #cccccc;
+    font-family:Arial, sans-serif;
+    padding-left:8px;
+    padding-right:8px;
+    font-weight: bold;
+    font-size:1.1em;
+    line-height:2em;
+    vertical-align:middle;
+}

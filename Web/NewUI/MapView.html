@@ -1,0 +1,618 @@
+﻿
+
+<div id="map-view" class="tab-content-result contentContainer" ng-init="initMapView()">
+
+    <div id="WorldMap" ng-init="loadMap()"></div>
+    <div id="SearchListInMap-SideBar" class="hidden-xs maplist-sidebar">
+        <span class="arrow-container"><i class="ico-arrow-left2"></i></span>
+    </div>
+    <div id="SearchListInMap" class="hidden-xs">
+        <!--Hidden Detailed View--->
+        <div class="record" id="SearchList-Item-Detail" style="display: none;">
+            <div class="record-header">
+                <div class="record-title" ng-labelkey="MapViewData.aca_newui_mapview_label_detail">
+                </div>
+                <span class="record-back btn btn-default btn-xs fastclick"><i class="ico-arrow-left10"></i> {{MapViewData.aca_newui_mapview_label_back}}</span>
+            </div>
+            <div class="record-content float-left" id="SearchList-Item-Detail-Content">
+                <div class="col-md-12">
+                    <!--view detail: global search and my record-->
+                    <div ng-show="CurrentMapTypeSource==MapTypeSource[1]">
+                        <div class="row" ng-repeat="result in globalSearchDataInMap">
+                            <div class="res-sec">
+                                <div ng-if="globalSearchDataInMapType=='Professionals'">
+                                    <div class="res-header">
+                                        <span class="res-title">{{result.LicenseNumber}} </span>
+                                        <div class="hr-line"></div>
+                                    </div>
+                                    <div class="res-content">
+                                        <div class="res-row">
+                                            <div class="col-xs-12 col-sm-12">
+                                                <span>{{result.LicensedProfessionalName}}</span>
+                                                <span>{{result.BusinessName}}</span>
+                                                <span>{{result.LicenseType}}</span>
+                                                <span>{{result.LicenseNumber}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div ng-if="globalSearchDataInMapType=='Properties'">
+                                    <div class="res-header">
+                                        <span class="res-title">{{MapViewData.aca_newui_mapview_label_parcelnum}}{{result.ParcelNumber}} </span>
+                                        <div class="hr-line"></div>
+                                    </div>
+                                    <div class="res-content">
+                                        <div class="res-row">
+                                            <div class="col-xs-12 col-sm-12">
+                                                <span class="res-title-cc">{{result.OwnerName}}</span>
+                                                <span class="margin-t10">{{result.AddressDescription}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div ng-if="globalSearchDataInMapType=='Record'">
+                                    <div class="res-header">
+                                        <span class="res-title">{{MapViewData.aca_newui_mapview_label_recordnum}} {{result.PermitNumber}}</span>
+                                        <div class="hr-line"></div>
+                                    </div>
+                                    <div class="res-content">
+                                        <div class="res-row">
+                                            <div class="col-xs-12 col-sm-8">
+                                                <span class="res-title-cc">{{result.PermitType}}</span>
+                                                <span class="res-title-cc">{{result.ModuleName}}</span>
+                                                <span class="margin-t10">{{result.Address}}</span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 margin-t10">
+                                                <span class="res-status">{{result.Status}}</span>
+                                                <span>{{MapViewData.aca_newui_mapview_label_created}}  {{result.CreatedDate | date:'MM/dd/yyyy'}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-header" ng-if="globalSearchDataInMapType!='Properties'">
+                                    <span class="res-title" ng-labelkey="MapViewData.aca_newui_mapview_label_document"></span>
+                                    <div class="hr-line"></div>
+                                </div>
+                                <div class="res-content" ng-if="globalSearchDataInMapType!='Properties'">
+                                    <div class="res-row">
+                                        <div class="col-xs-12 col-sm-12">
+                                            <ul class="doc-list" ng-repeat="doc in DocumentList" title="{{doc.fileName}}">
+                                                <li ng-click="DownloadDocument(doc)">
+                                                    <span  ng-class="GetDocumentIcon(doc.postfix)"></span>
+                                                    <span class="doc-name">{{doc.fileName}}</span>
+                                                </li>
+                                            </ul>
+                                            <div ng-hide="DocumentList.length>0" ng-labelkey="MapViewData.aca_newui_mapview_label_nodocument"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-content">
+                                    <div class="res-row">
+                                        <div class="hr-line"></div>
+                                        <!--Action Button Control Start-->
+                                        <div class="rec-action" style="display:block;" ng-controller="ActionButtonCtrl">
+                                            <ul class="nav nav-pills">
+                                                <li ng-if="globalSearchDataInMapType=='Record'&& result.ResumeUrl=='' && result.IsShowUpload"><a href="" ng-click="UpLoad(result.DetailViewUrl)" ng-labelkey="MapViewData.aca_newui_mapview_label_upload"></a></li>
+                                                <li ng-if="globalSearchDataInMapType=='Record'&& result.ResumeUrl!=''"><a href="" ng-click='ResumeApplication(result.ResumeUrl)' ng-labelkey="MapViewData.aca_newui_mapview_label_resume"></a></li>
+                                                <li ng-if="globalSearchDataInMapType=='Properties'&&!result.IsPartialCap"><a href="" ng-click="singleLocateOnMapFormGloble(result,'apo')" ng-labelkey="MapViewData.aca_newui_mapview_label_viewonmap"></a></li>
+                                                <li ng-if="globalSearchDataInMapType=='Properties'"><a href="" ng-click="ApplyFromGlobalSearch('Apply',result.ParcelNumber,result.AddressDescription)" ng-labelkey="MapViewData.aca_newui_mapview_label_apply"></a></li>
+                                                <li ng-if="globalSearchDataInMapType=='Record'&& result.ResumeUrl==''&&!result.IsPartialCap"><a href="" ng-click="singleLocateOnMapFormGloble(result.CapID, 'cap')" ng-labelkey="MapViewData.aca_newui_mapview_label_viewonmap"></a></li>
+                                                <li ng-if="globalSearchDataInMapType=='Record'&& result.IsShowAddToCart"><a href="" ng-click='AddToCart(result.CapID,result.AgencyCode,result.CapClass,result.HasNoPaidFees,result.RenewalStatus)' ng-labelkey="MapViewData.aca_newui_mapview_label_addcart"></a></li>
+                                                <li ng-if="globalSearchDataInMapType=='Record'&& result.ResumeUrl=='' && result.DisplayInspcetion"><a href="" ng-click='Schedule(result.DetailViewUrl)' ng-labelkey="MapViewData.aca_newui_mapview_label_schedule"></a></li>
+                                                <li ng-if="globalSearchDataInMapType=='Record'&& result.PayfeesUrl != ''&& result.ResumeUrl!=''"><a href="" ng-click="PayFeesInDeepLink(result.PayfeesUrl)" ng-labelkey="MapViewData.aca_newui_mapview_label_pay"></a></li>
+                                                <li ng-if="globalSearchDataInMapType=='Record' && result.IsShowCopyRecord" role="presentation"><a role="menuitem" tabindex="-1" href="" ng-click='CopyRecord(result.DetailViewUrl)' ng-labelkey="MapViewData.aca_newui_mapview_label_copyrecord"></a></li>
+                                                <li ng-if="globalSearchDataInMapType=='Record'&& result.ResumeUrl==''&&(result.IsShowPrintPermit || result.IsShowPrintSummary || result.IsShowPrintReceipt)" class="dropdown">
+                                                    <a  role="button" data-toggle="dropdown" href="">
+                                                        <span class="hidden-xs" ng-labelkey="MapViewData.aca_newui_mapview_label_reports"></span> 
+                                                        <b class="caret"></b>
+                                                    </a>
+                                                    <ul  class="dropdown-menu" role="menu" aria-labelledby="drop4">      
+                                                        <li ng-if="result.IsShowPrintPermit" role="presentation" title="{{result.PrintPermitReportName}}" ng-click="generatReportBut(result.ModuleName,result.PrintPermitReportId,result.PrintPermitReportType,result.AgencyCode)">
+                                                            <a role="menuitem" tabindex="-1" href="" ng-labelkey="MapViewData.aca_newui_mapview_label_printviewrecord"></a>
+                                                        </li> 
+                                                        <li ng-if="result.IsShowPrintSummary" class="item" title="{{result.PrintSummaryReportName}}" ng-click="generatReportBut(result.ModuleName,result.PrintSummaryReportId,result.PrintSummaryReportType,result.AgencyCode)">
+                                                            <a role="menuitem" tabindex="-1" href="" ng-labelkey="MapViewData.aca_newui_mapview_label_printviewsummary"></a>
+                                                        </li> 
+                                                        <li ng-if="result.IsShowPrintReceipt" class="item" title="{{result.PrintReceiptReportName}}" ng-click="generatReportBut(result.ModuleName,result.PrintReceiptReportId,result.PrintReceiptReportType,result.AgencyCode)">
+                                                            <a role="menuitem" tabindex="-1" href="" ng-labelkey="MapViewData.aca_newui_mapview_label_printviewreceipt"></a>
+                                                        </li> 
+                                                    </ul>   
+                                                </li>             
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--view detail: data come from map-->
+                    <div ng-show="CurrentMapTypeSource==MapTypeSource[0]">
+                        <div class="row">
+                            <div class="res-sec">
+                                <div ng-hide="isShowCAP">
+                                    <div class="res-header">
+                                        <span class="res-title" ng-labelkey="MapViewData.aca_newui_mapview_label_parcel"></span>
+                                        <div class="hr-line"></div>
+                                    </div>
+                                    <div class="res-content">
+                                        <div class="res-row">
+                                            <div class="col-xs-12 col-sm-12">
+                                                <span ng-labelkey="MapViewData.aca_newui_mapview_label_parcelnum"></span>
+                                                <span ng-if="parceItem.ParcelNumber!=undefined && parceItem.ParcelNumber!=''">{{parceItem.ParcelNumber}}</span>
+                                                <span ng-if="parceItem.Address!=undefined && parceItem.Address!=''" class="margin-t10">{{parceItem.Address}}</span>
+                                                <span ng-if="parceItem.Owner!=undefined && parceItem.Owner!=''" class="res-title-cc">{{unescape(parceItem.Owner)}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div ng-show="isShowCAP">
+                                    <div class="res-header">
+                                        <span class="res-title">{{MapViewData.aca_newui_mapview_label_recordnum}} {{CapDetailInfo.permitNumber}}</span>
+                                        <div class="hr-line"></div>
+                                    </div>
+                                    <div class="res-content">
+                                        <div class="res-row">
+                                            <div class="col-xs-12 col-sm-8">
+                                                <span class="res-title-cc">{{CapDetailInfo.permitType}}</span>
+                                                <span class="res-title-cc">{{CapDetailInfo.moduleName}}</span>
+                                                <span>{{CapDetailInfo.permitNumber}}</span>
+                                                <span class="margin-t10">{{CapDetailInfo.Address}}</span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 margin-t10">
+                                                <span class="res-status">{{CapDetailInfo.status}}</span>
+                                                <span>
+                                                    {{MapViewData.aca_newui_mapview_label_created}}
+                                                    {{CapDetailInfo.created}}
+                                                </span>
+                                                <span>{{MapViewData.aca_newui_mapview_label_validtill}} {{CapDetailInfo.expDate}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-header" ng-if="isShowCAP">
+                                    <span class="res-title" ng-labelkey="MapViewData.aca_newui_mapview_label_document"></span>
+                                    <div class="hr-line"></div>
+                                </div>
+                                <div class="res-content" ng-if="isShowCAP">
+                                    <div class="res-row">
+                                        <div class="col-xs-12 col-sm-12">
+                                            <ul class="doc-list" ng-repeat="doc in DocumentList">
+                                                <li ng-click="DownloadDocument(doc)" title="{{doc.fileName}}">
+                                                    <span ng-class="GetDocumentIcon(doc.postfix)"></span>
+                                                    <span class="doc-name">{{doc.fileName}}</span>
+                                                </li>
+                                            </ul>
+                                            <div ng-hide="DocumentList.length>0" ng-labelkey="MapViewData.aca_newui_mapview_label_nodocument"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-content">
+                                    <div class="res-row">
+                                        <div class="hr-line"></div>
+                                        <!--Action Button Control Start-->
+                                        <div class="rec-action" style="display:block;" ng-controller="ActionButtonCtrl">
+                                            <ul class="nav nav-pills">
+                                                <li ng-if="type == 'cap' && CapDetailInfo.isShowUpload =='True'"><a href="" ng-click="UpLoad(CapDetailInfo.defaultViewUrl)" ng-labelkey="MapViewData.aca_newui_mapview_label_upload"></a></li>
+                                                <li><a href="" ng-click="singleLocateOnMap(number,type)" ng-labelkey="MapViewData.aca_newui_mapview_label_viewonmap"></a></li>
+                                                <li ng-if="type == 'apo'"><a href="" ng-click="ApplyFromGlobalSearch('Apply',parceItem.ParcelNumber,parceItem.Address)" ng-labelkey="MapViewData.aca_newui_mapview_label_apply"></a></li>
+                                                <li ng-if="type == 'cap' && CapDetailInfo.isShowAddToCart =='True' "><a href="" ng-click='AddToCart(CapDetailInfo.capID,CapDetailInfo.agencyCode,CapDetailInfo.capClass,CapDetailInfo.hasNoPaidFees,CapDetailInfo.renewalStatus)' ng-labelkey="MapViewData.aca_newui_mapview_label_addcart"></a></li>
+                                                <li ng-if="type == 'cap' && CapDetailInfo.displayInspcetion =='True' "><a href="" ng-click='Schedule(CapDetailInfo.defaultViewUrl)' ng-labelkey="MapViewData.aca_newui_mapview_label_pay"></a></li>
+                                                <li ng-if="type == 'cap' && CapDetailInfo.payfeesUrl!= '' && CapDetailInfo.resumeUrl!=''"><a href="" ng-click="PayFeesInDeepLink(CapDetailInfo.PayfeesUrl)" ng-labelkey="MapViewData.aca_newui_mapview_label_pay"></a></li>
+                                                <li ng-if="type == 'cap' && CapDetailInfo.isShowCopyRecord =='True'"><a role="menuitem" tabindex="-1" href="" ng-click='CopyRecord(CapDetailInfo.defaultViewUrl)' ng-labelkey="MapViewData.aca_newui_mapview_label_copyrecord"></a></li>
+                                                <li ng-if="type == 'cap' && CapDetailInfo.resumeUrl==''&&(CapDetailInfo.IsShowPrintPermit == 'True' || CapDetailInfo.IsShowPrintSummary == 'True' || CapDetailInfo.IsShowPrintReceipt == 'True')" class="dropdown">
+                                                    <a  role="button" data-toggle="dropdown" href="">
+                                                        <span class="hidden-xs" ng-labelkey="MapViewData.aca_newui_mapview_label_reports"></span> 
+                                                        <b class="caret"></b>
+                                                    </a>
+                                                    <ul  class="dropdown-menu" role="menu" aria-labelledby="drop4">      
+                                                        <li ng-if="CapDetailInfo.IsShowPrintPermit == 'True'" role="presentation" title="{{CapDetailInfo.PrintPermitReportName}}" ng-click="generatReportBut(CapDetailInfo.moduleName,CapDetailInfo.PrintPermitReportId,CapDetailInfo.PrintPermitReportType,CapDetailInfo.agencyCode)">
+                                                            <a role="menuitem" tabindex="-1" href="" ng-labelkey="MapViewData.aca_newui_mapview_label_printviewrecord"></a>
+                                                        </li> 
+                                                        <li ng-if="CapDetailInfo.IsShowPrintSummary == 'True'" class="item" title="{{CapDetailInfo.PrintSummaryReportName}}" ng-click="generatReportBut(CapDetailInfo.moduleName,CapDetailInfo.PrintSummaryReportId,CapDetailInfo.PrintSummaryReportType,CapDetailInfo.agencyCode)">
+                                                            <a role="menuitem" tabindex="-1" href="" ng-labelkey="MapViewData.aca_newui_mapview_label_printviewsummary"></a>
+                                                        </li> 
+                                                        <li ng-if="CapDetailInfo.IsShowPrintReceipt == 'True'" class="item" title="{{CapDetailInfo.PrintReceiptReportName}}" ng-click="generatReportBut(CapDetailInfo.moduleName,CapDetailInfo.PrintReceiptReportId,CapDetailInfo.PrintReceiptReportType,CapDetailInfo.agencyCode)">
+                                                            <a role="menuitem" tabindex="-1" href="" ng-labelkey="MapViewData.aca_newui_mapview_label_printviewreceipt"></a>
+                                                        </li> 
+                                                    </ul>   
+                                                </li>          
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--HIdden Detailed View-->
+        <div class="record" id="SearchList-Item">
+            <!--switch map view: search list show in map view-->
+            <div class="miniView" ng-show="CurrentMapTypeSource==MapTypeSource[1] && !IsShowCheckeRecordData">
+                <div class="record-header">
+                    <span class="record-minimize btn btn-default btn-xs fastclick">
+                        <i class="ico-arrow-right22">
+                        </i>
+                    </span>
+                    <div class="record-title">
+                        {{MapViewData.aca_newui_mapview_label_myrecords}} ({{globalSearchSize}})
+                    </div>
+                    <div class="record-filter dropdown">
+                        <span class="ico-menu5 dropdown-toggle" data-toggle="dropdown"></span>
+                        <ul class="dropdown-menu arrow dropdown-menu-right text-left" role="menu">
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="" ng-click="FilterGlobalSearchView('')">
+                                    All
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="" ng-click="FilterGlobalSearchView('LP')" ng-labelkey="MapViewData.aca_newui_mapview_label_professionals">
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="" ng-click="FilterGlobalSearchView('APO')" ng-labelkey="MapViewData.aca_newui_mapview_label_properties">
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="" ng-click="FilterGlobalSearchView('CAP')" ng-labelkey="MapViewData.aca_newui_mapview_label_record">
+                                </a>
+                            </li>
+                            <li role="presentation" class="divider"></li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="" ng-click="SortGlobalSearchView('ID')" ng-labelkey="MapViewData.aca_newui_mapview_label_id">
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="" ng-click="SortGlobalSearchView('Address')" ng-labelkey="MapViewData.aca_newui_mapview_label_address">
+                                </a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="" ng-click="SortGlobalSearchView('Type')" ng-labelkey="MapViewData.aca_newui_mapview_label_type">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="record-result-sum">
+                        {{globalSearchDesc}}
+                    </div>
+                </div>
+                <div class="SearchList-Item-Content record-content float-left">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="res-sec" ng-repeat="resultType in resultTypes">
+                                <div class="res-header">
+                                    <span class="res-icon {{globalSearchStyle(resultType)}}"></span>
+                                    <span class="res-title">{{resultType}}</span>
+                                    <div class="hr-line">
+                                    </div>
+                                </div>
+                                <div class="res-content" ng-if="resultType=='Professionals'" ng-repeat="result in resultdetail('Professionals')">
+                                    <div class="res-row" data-toggle="action">
+                                        <div class="col-xs-12 col-sm-8">
+                                            <span class="res-title-cc">{{result.LicensedProfessionalName}}</span> <span>{{result.BusinessName}}</span>
+                                            <span>{{result.LicenseType}}</span> <span>{{result.LicenseNumber}} </span>
+                                        </div>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <span class="res-option hidden-xs" data-toggle="action"></span>
+                                    <div class="rec-action">
+                                        <ul class="nav nav-pills">
+                                            <li>
+                                                <a href="" ng-click='searchViewDatail(result.SortID,"Professionals")' ng-labelkey="MapViewData.aca_newui_mapview_label_viewdetail">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <div class="hr-line">
+                                    </div>
+                                </div>
+                                <div class="res-content" ng-if="resultType=='Properties'" ng-repeat="result in resultdetail('Properties')">
+                                    <div data-toggle="action">
+                                        <div class="res-row" ng-click="enlarge(result.ParcelNumber,$event)">
+                                            <div class="col-xs-12 col-sm-8">
+                                                <span ng-if="result.ParcelNumber!='' && result.ParcelNumber!=null">{{MapViewData.aca_newui_mapview_label_parcelnum}}{{result.ParcelNumber}}</span>
+                                                <span class="res-title-cc" title="{{result.AddressDescription}}">{{result.AddressDescription}}</span>
+                                                <span ng-if="result.OwnerName!='' && result.OwnerName!=null" title="{{result.OwnerName}}">
+                                                    {{MapViewData.aca_newui_mapview_label_owner}}  {{result.OwnerName}}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <div data-toggle="action">
+                                        <span class="res-option hidden-xs" ng-click="enlarge(result.ParcelNumber,$event)"></span>
+                                    </div>
+                                    <div class="rec-action actionbutton">
+                                        <ul class="nav nav-pills">
+                                            <li><a href="" ng-click='searchViewDatail(result.SortID,"Properties")' ng-labelkey="MapViewData.aca_newui_mapview_label_viewdetail"></a></li>
+                                        </ul>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <div class="hr-line">
+                                    </div>
+                                </div>
+                                <div class="res-content" ng-if="resultType=='Record'" ng-repeat="result in resultdetail('Record')">
+                                    <div data-toggle="action">
+                                        <div class="res-row" ng-click="enlarge(result.PermitNumber,$event)">
+                                            <div class="col-xs-12 col-sm-8">
+                                                <span class="res-title-cc">{{result.PermitType}}</span>
+                                                <span class="res-title-cc">{{result.ModuleName}}</span>
+                                                <span>{{result.PermitNumber}}</span>
+                                                <span class="margin-t10">{{result.Address}}</span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <span class="res-status">{{result.Status}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <div data-toggle="action">
+                                        <span class="res-option hidden-xs" ng-click="enlarge(result.PermitNumber,$event)"></span>
+                                    </div>
+                                    <div class="rec-action actionbutton" ng-controller="ActionButtonCtrl">
+                                        <ul class="nav nav-pills">
+                                            <li class="dropdown" ng-if="result.ResumeUrl=='' && ShowCollectionByLogin()">
+                                                <a id="drop4" role="button" data-toggle="dropdown" href="">
+                                                    <span class="hidden-xs" ng-labelkey="MapViewData.aca_newui_mapview_label_addcollection"></span>
+                                                    <b class="caret"></b>
+                                                </a>
+                                                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                                                    <li role="presentation" ng-repeat="item in Collecions" ng-click="AddCollection(result.CapID,item.collectionId,result.CapClass,false)">
+                                                        <a role="menuitem" tabindex="-1" href="">{{item.collectionName}} </a>
+                                                    </li>
+                                                    <li class="item" ng-click="navToAddCollection(result.CapID,result.CapClass)">
+                                                        <a role="menuitem" tabindex="-1" href="" ng-labelkey="MapViewData.aca_newui_mapview_label_createcollection">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="" ng-click="searchViewDatail(result.PermitNumber,'Record')" ng-labelkey="MapViewData.aca_newui_mapview_label_viewdetail"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="hr-line">
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="PagingMyRecords pagination map-view-pagination"></div>
+                </div>
+            </div>
+            <!--show record and view property information-->
+            <div ng-show="CurrentMapTypeSource==MapTypeSource[0]">
+                <div class="record-header">
+                    <span class="record-minimize btn btn-default btn-xs fastclick">
+                        <i class="ico-arrow-right22">
+                        </i>
+                    </span>
+                    <div class="record-title">
+                        {{MapViewData.aca_newui_mapview_label_myrecords}} ({{GisRecordsCount}})
+                    </div>
+
+                    <div class="record-filter dropdown">
+                        <span class="btn btn-xs fastclick" ng-click="BackShowRecord()"><i class="ico-arrow-left10"></i> {{MapViewData.aca_newui_mapview_label_back}}</span>
+                    </div>
+                    <div class="record-result-sum">
+                        {{GisDescription}}
+                    </div>
+                </div>
+                <div class="SearchList-Item-Content record-content float-left">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <!--Section-- Record--- Start -->
+                            <div ng-if="isShowParcel" class="res-sec" id="SearchResultListView">
+                                <div class="res-header">
+                                    <span class="res-icon ico-location2"></span><span class="res-title" ng-labelkey="MapViewData.aca_newui_mapview_label_properties"></span>
+                                    <div class="hr-line">
+                                    </div>
+                                </div>
+                                <!--Row Content -- Start-->
+                                <div class="res-content" ng-repeat="item in apoList">
+                                    <div class="res-row" data-toggle="action">
+                                        <div class=" col-xs-12 col-sm-8">
+                                            <span ng-if="item.ParcelNumber!=undefined && item.ParcelNumber!=''" ng-labelkey="MapViewData.aca_newui_mapview_label_parcelnum"></span>
+                                            <span ng-if="item.ParcelNumber!=undefined && item.ParcelNumber!=''" class="res-title-cc">{{item.ParcelNumber}}</span>
+                                            <span class="margin-t10">{{item.Address}}</span>
+                                            <span ng-if="item.Owner!=undefined" class="margin-t10"> {{MapViewData.aca_newui_mapview_label_owner}} {{unescape(item.Owner)}}</span>
+                                        </div>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <span class="res-option hidden-xs" data-toggle="action"></span>
+                                    <div class="rec-action">
+                                        <ul class="nav nav-pills">
+                                            <li class="view-detail-result">
+                                                <a ng-click="viewParcelDetail(item)" ng-labelkey="MapViewData.aca_newui_mapview_label_viewdetail">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <div class="hr-line">
+                                    </div>
+                                </div>
+                                <!--Row Content -- End-->
+                            </div>
+                            <!--Section-- End -->
+                            <!--Section-- Record--- Start -->
+                            <div ng-if="isShowRecord" class="res-sec" id="SearchResultListView" ng-controller="ActionButtonCtrl">
+                                <div class="res-header">
+                                    <span class="res-icon ico-list"></span><span class="res-title" ng-labelkey="MapViewData.aca_newui_mapview_label_record"></span>
+                                    <div class="hr-line">
+                                    </div>
+                                </div>
+                                <!--Row Content -- Start-->
+                                <div class="res-content" ng-repeat="capItem in capList">
+                                    <div class="res-row" data-toggle="action">
+                                        <div class="col-xs-12 col-sm-8">
+                                            <span class="res-title-cc">{{capItem.permitType}}</span>
+                                            <span class="res-title-cc">{{capItem.moduleName}}</span>
+                                            <span>{{capItem.permitNumber}}</span>
+                                            <span class="margin-t10">{{capItem.Address}}</span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4">
+                                            <span class="res-status">{{capItem.status}}</span>
+                                        </div>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <span class="res-option hidden-xs" data-toggle="action"></span>
+                                    <div class="rec-action">
+                                        <ul class="nav nav-pills">
+                                            <li class="dropdown" ng-if="ShowCollectionByLogin()">
+                                                <a id="drop5" role="button" data-toggle="dropdown" href="">
+                                                    <span class="hidden-xs" ng-labelkey="MapViewData.aca_newui_mapview_label_addcollection"></span>
+                                                    <b class="caret"></b>
+                                                </a>
+                                                <ul id="meue2" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                                                    <li role="presentation" ng-repeat="item in Collecions" ng-click="AddCollection(capItem.capId,item.collectionId,capItem.capClass,false)">
+                                                        <a role="menuitem" tabindex="-1" href="">{{item.collectionName}} </a>
+                                                    </li>
+                                                    <li class="item" ng-click="navToAddCollection(capItem.capId,capItem.capClass)">
+                                                        <a role="menuitem" tabindex="-1" href="" ng-labelkey="MapViewData.aca_newui_mapview_label_createcollection">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="view-detail-result">
+                                                <a ng-click="viewCapDetail(capItem.permitNumber)" ng-labelkey="MapViewData.aca_newui_mapview_label_viewdetail"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <div class="hr-line">
+                                    </div>
+                                </div>
+                                <!--Row Content -- End-->
+                            </div>
+                            <!--Section-- End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--view on map command: single and multiple select record from search list and my record-->
+            <div class="miniView" ng-show="CurrentMapTypeSource==MapTypeSource[1] && IsShowCheckeRecordData">
+                <div class="record-header">
+                    <span class="record-minimize btn btn-default btn-xs fastclick">
+                        <i class="ico-arrow-right22">
+                        </i>
+                    </span>
+                    <div class="record-title">
+                        {{MapViewData.aca_newui_mapview_label_myrecords}} ({{RecordsCount}})
+                    </div>
+
+                    <div class="record-filter dropdown" ng-switch on="MyRecordsDataSource()">
+                        <span class="btn btn-xs fastclick" ng-switch-when="false" ng-click="BackShowRecord()"><i class="ico-arrow-left10"></i>   {{MapViewData.aca_newui_mapview_label_back}}</span>
+                        <span class="ico-menu5 dropdown-toggle" ng-switch-when="true"></span>
+                    </div>
+                    <div class="record-result-sum">
+                        {{RecordsDescription}}
+                    </div>
+                </div>
+                <div class="SearchList-Item-Content record-content float-left">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="res-sec" ng-repeat="resultType in locationSelectedDataType">
+                                <div class="res-header">
+                                    <span class="res-icon {{globalSearchStyle(resultType)}}"></span><span class="res-title">
+                                                                                                        {{resultType}}
+                                                                                                    </span>
+                                    <div class="hr-line">
+                                    </div>
+                                </div>
+                                <div class="res-content" ng-if="resultType=='Properties'" ng-repeat="result in AdaptCheckeRecordData['Properties']">
+                                    <div data-toggle="action">
+                                        <div class="res-row" ng-click="enlarge(result.ParcelNumber,$event)">
+                                            <div class=" col-xs-12 col-sm-8">
+                                                <span ng-if="result.ParcelNumber!='' && result.ParcelNumber!=null">
+                                                    {{MapViewData.aca_newui_mapview_label_parcelnum}} {{result.ParcelNumber}}
+                                                </span>
+                                                <span class="res-title-cc" title="{{result.AddressDescription}}">{{result.AddressDescription}}</span>
+                                                <span ng-if="result.OwnerName!='' && result.OwnerName!=null" title="{{result.OwnerName}}">
+                                                    {{MapViewData.aca_newui_mapview_label_owner}} {{result.OwnerName}}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <div data-toggle="action">
+                                        <span class="res-option hidden-xs" ng-click="enlarge(result.ParcelNumber,$event)"></span>
+                                    </div>
+                                    <div class="rec-action actionbutton">
+                                        <ul class="nav nav-pills">
+                                            <li>
+                                                <a href="" ng-click='searchViewDatail(result.SortID,"Properties")' ng-labelkey="MapViewData.aca_newui_mapview_label_viewdetail">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <div class="hr-line">
+                                    </div>
+                                </div>
+                                <div class="res-content" ng-if="resultType=='Record'" ng-repeat="result in AdaptCheckeRecordData['Record']">
+                                    <div data-toggle="action">
+                                        <div class="res-row" ng-click="enlarge(result.PermitNumber,$event)">
+                                            <div class="col-xs-12 col-sm-8">
+                                                <span class="res-title-cc">{{result.PermitType}}</span>
+                                                <span class="res-title-cc">{{result.ModuleName}}</span>
+                                                <span>{{result.PermitNumber}}</span>
+                                                <span class="margin-t10">{{result.Address}}</span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4">
+                                                <span class="res-status">{{result.Status}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                    <div data-toggle="action">
+                                        <span class="res-option hidden-xs" ng-click="enlarge(result.PermitNumber,$event)"></span>
+                                    </div>
+                                    <div class="rec-action actionbutton" ng-controller="ActionButtonCtrl">
+                                        <ul class="nav nav-pills">
+                                            <li class="dropdown" ng-if="result.ResumeUrl=='' && ShowCollectionByLogin()">
+                                                <a id="A2" role="button" data-toggle="dropdown" href="">
+                                                    <span class="hidden-xs" ng-labelkey="MapViewData.aca_newui_mapview_label_addcollection"></span>
+                                                    <b class="caret"></b>
+                                                </a>
+                                                <ul id="Ul2" class="dropdown-menu" role="menu" aria- labelledby="drop4">
+                                                    <li role="presentation" ng-repeat="item in Collecions" ng-click="AddCollection(result.CapID,item.collectionId,result.CapClass,false)">
+                                                        <a role="menuitem" tabindex="-1" href="">{{item.collectionName}} </a>
+                                                    </li>
+                                                    <li class="item" ng-click="navToAddCollection(result.CapID,result.CapClass)">
+                                                        <a role="menuitem" tabindex="-1"
+                                                           href="" ng-labelkey="MapViewData.aca_newui_mapview_label_createcollection"></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="" ng-click="searchViewDatail(result.PermitNumber,'Record')" ng-labelkey="MapViewData.aca_newui_mapview_label_viewdetail">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="hr-line">
+                                    </div>
+                                    <!--Action Button Control Start-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-if="IsMapView()">
+    <angulariframe> </angulariframe>
+</div>
+<script type="text/javascript" src="Scripts/app/searchresult.js"></script>
+<script type="text/javascript" src="Scripts/jquery.slimscroll.min.js"></script>
+<script>
+    aca.ui.initMapTabHeight();
+    aca.ui.initScrollBar();
+</script>

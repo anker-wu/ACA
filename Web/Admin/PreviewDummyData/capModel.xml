@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CapModel4WS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <addressModel>
+    <addressId>60254</addressId>
+    <auditDate>2010-02-03T01:13:49+08:00</auditDate>
+    <auditID>PUBLICUSER8354</auditID>
+    <auditStatus>A</auditStatus>
+    <capID>
+      <id1>08EST</id1>
+      <id2>00000</id2>
+      <id3>02119</id3>
+      <serviceProviderCode>FLAGSTAFF</serviceProviderCode>
+      <trackingID>0</trackingID>
+    </capID>
+    <city />
+    <county />
+    <displayAddress>0 - 0 , FLAGSTAFF, AZ </displayAddress>
+    <distance>0</distance>
+    <houseNumberEnd>0</houseNumberEnd>
+    <houseNumberStart>0</houseNumberStart>
+    <primaryFlag>Y</primaryFlag>
+    <refAddressId>0</refAddressId>
+    <secondaryRoadNumber>0</secondaryRoadNumber>
+    <serviceProviderCode>FLAGSTAFF</serviceProviderCode>
+    <sourceFlag>Adr</sourceFlag>
+    <state />
+    <streetDirection />
+    <streetName />
+    <streetSuffix />
+    <unitStart />
+    <unitType />
+    <xcoordinator></xcoordinator>
+    <xcoordinatorEnd></xcoordinatorEnd>
+    <ycoordinator></ycoordinator>
+    <ycoordinatorEnd></ycoordinatorEnd>
+    <zip />
+  </addressModel>
+  <altID>PRTL-00000-02119</altID>
+  <auditID>PUBLICUSER8354</auditID>
+  <bvaluatnModel>
+    <auditDate>06/12/2008 22:13:33</auditDate>
+    <auditID>PUBLICUSER8354</auditID>
+    <auditStatus>A</auditStatus>
+    <calculatedValue>0</calculatedValue>
+    <capID>
+      <id1>08EST</id1>
+      <id2>00000</id2>
+      <id3>02119</id3>
+      <serviceProviderCode>FLAGSTAFF</serviceProviderCode>
+      <trackingID>0</trackingID>
+    </capID>
+    <estimatedValue>0.00</estimatedValue>
+    <feeFactorFlag>CONT</feeFactorFlag>
+    <planCheckValue>0</planCheckValue>
+    <valuationPeriod>Permit</valuationPeriod>
+  </bvaluatnModel>
+  <capClass>INCOMPLETE CAP</capClass>
+  <capContactModel>
+    <capID>
+      <trackingID>0</trackingID>
+    </capID>
+    <people>
+      <compactAddress />
+    </people>
+  </capContactModel>
+  <capDetailModel>
+    <auditDate>2010-02-03T01:13:49+08:00</auditDate>
+    <auditStatus>A</auditStatus>
+    <auditUser>PUBLICUSER8354</auditUser>
+    <balance>0</balance>
+    <capID>
+      <id1>08EST</id1>
+      <id2>00000</id2>
+      <id3>02119</id3>
+      <serviceProviderCode>FLAGSTAFF</serviceProviderCode>
+      <trackingID>0</trackingID>
+    </capID>
+    <constTypeCode />
+    <createBy>PUBLICUSER8354</createBy>
+    <percentComplete>0</percentComplete>
+    <publicOwned>N</publicOwned>
+    <shortNotes />
+    <totalFee>0</totalFee>
+    <totalJobCost>0</totalJobCost>
+    <totalPay>0</totalPay>
+  </capDetailModel>
+  <capID>
+    <customID>PRTL-00000-02119</customID>
+    <id1>08EST</id1>
+    <id2>00000</id2>
+    <id3>02119</id3>
+    <serviceProviderCode>FLAGSTAFF</serviceProviderCode>
+    <trackingID>206139140524</trackingID>
+  </capID>
+  <capType>
+    <capSubType>A/A</capSubType>
+    <category>A</category>
+    <group>Building</group>
+    <serviceProviderCode>FLAGSTAFF</serviceProviderCode>
+    <subType>A</subType>
+    <type>A</type>
+  </capType>
+  <capWorkDesModel>
+    <auditDate>06/12/2008 22:13:33</auditDate>
+    <auditID>PUBLICUSER8354</auditID>
+    <auditStatus>A</auditStatus>
+    <capID>
+      <id1>08EST</id1>
+      <id2>00000</id2>
+      <id3>02119</id3>
+      <serviceProviderCode>FLAGSTAFF</serviceProviderCode>
+      <trackingID>0</trackingID>
+    </capID>
+    <description />
+  </capWorkDesModel>
+  <contactsGroup>
+    <CapContactModel4WS>
+      <people>
+        <auditID>PUBLICUSER8354</auditID>
+        <auditStatus>A</auditStatus>
+        <businessName />
+        <compactAddress>
+          <addressLine1 />
+          <addressLine2 />
+          <addressLine3 />
+          <city />
+          <state />
+          <zip />
+        </compactAddress>
+        <contactSeqNumber>36354</contactSeqNumber>
+        <contactType>Contact 1</contactType>
+        <email />
+        <fax />
+        <firstName />
+        <lastName />
+        <middleName />
+        <phone1 />
+        <phone2 />
+        <serviceProviderCode>FLAGSTAFF</serviceProviderCode>
+      </people>
+    </CapContactModel4WS>
+    <CapContactModel4WS xsi:nil="true" />
+    <CapContactModel4WS xsi:nil="true" />
+  </contactsGroup>
+  <hasPrivilegeToHandleCap>false</hasPrivilegeToHandleCap>
+  <licenseProfessionalModel>
+    <address1 />
+    <auditID>PUBLICUSER8354</auditID>
+    <auditStatus>A</auditStatus>
+    <businessName />
+    <city />
+    <contactFirstName />
+    <contactLastName />
+    <contactMiddleName />
+    <fax />
+    <licSeqNbr />
+    <licenseNbr />
+    <licenseType />
+    <phone1 />
+    <phone2 />
+    <serDes>Description</serDes>
+    <state />
+    <zip />
+  </licenseProfessionalModel>
+  <moduleName>Building</moduleName>
+  <noPaidFeeFlag>false</noPaidFeeFlag>
+  <ownerModel>
+    <auditDate>2010-02-03T01:13:49+08:00</auditDate>
+    <auditID>PUBLICUSER8354</auditID>
+    <auditStatus>A</auditStatus>
+    <capID>
+      <id1>08EST</id1>
+      <id2>00000</id2>
+      <id3>02119</id3>
+      <serviceProviderCode>FLAGSTAFF</serviceProviderCode>
+      <trackingID>0</trackingID>
+    </capID>
+    <l1OwnerNumber>0</l1OwnerNumber>
+    <mailAddress1 />
+    <mailAddress2 />
+    <mailAddress3 />
+    <mailCountry />
+    <mailState />
+    <mailZip />
+    <ownerFullName />
+    <ownerNumber>41107</ownerNumber>
+  </ownerModel>
+  <parcelModel>
+    <l1ParcelNo />
+    <parcelModel>
+      <auditID>PUBLICUSER8354</auditID>
+      <auditStatus>A</auditStatus>
+      <parcelNumber />
+      <subdivision />
+      <tract />
+    </parcelModel>
+    <parcelNo />
+  </parcelModel>
+  <projectNumber>0</projectNumber>
+  <specialText />
+  <standardPCTime>0</standardPCTime>
+  <trackingNbr>0</trackingNbr>
+</CapModel4WS>

@@ -1,0 +1,254 @@
+﻿<script type="text/javascript" src="Scripts/owl.carousel.min.js"></script>
+<script type="text/javascript" src="Scripts/InitAlonePopovers.js"></script>
+<div class="container-fluid contentContainer" id="Dashboard" ng-init="DashPageInit()">
+    <div class="top-info">
+        <div class="row">
+            <div class="col-md-5">
+                <span class="m-avatar">
+                    <span class="rendering"><span class="inner-cir">{{shortName}}</span></span>
+                    <img class="rendering" style="display: none;" src="Images/avatar.png">
+                </span>
+                <div class="profile-info">
+                    <h4 ng-labelkey="DashboardData.aca_newui_dashboard_label_welcome"></h4>
+                    <h3>
+                        {{loginName}}
+                    </h3>
+                    <button class="btn btn-sm btn-default" ng-if="isEnabledAccountManagement" ng-click="showEditProfile()" ng-labelkey="DashboardData.aca_newui_dashboard_label_editprofile"></button>
+                </div>
+            </div>
+            <div class="col-md-7 collection">
+                <h4>
+                    {{DashboardData.aca_newui_dashboard_label_collection}} <span id="likeCollectionPopover" class="ico-question4" data-toggle="popover"
+                                     selecto="" title="" data-content="Collection description." data-placement="bottom"
+                                     data-container='body'></span>
+                </h4>
+                <div class="owl-carousel-container">
+                    <div id="dash-collection" class="owl-carousel owl-theme">
+                        <div class="item" ng-repeat="item in Collecions | orderBy:item" ng-click="showCollectionDetail(item.collectionId)">
+                            <span>{{item.collectionName}}</span>
+                            <h3>
+                                {{item.capAmount}} <span ng-if="$last||!Collecions" ng-init="owlCarousel()"></span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div ng-controller="ActionRequiredCtrl">
+        <div class="notifiy">
+            <div class="alert alert-warning" ng-if="UrgentRecordList.length > 0">
+                <h3>
+                    <span class="ico-warning-sign"></span>
+                    <span ng-if="UrgentRecordList.length == 1">
+                        <span style="font-size: 24px;" ng-if="UrgentRecordList[0].feeDueExpiration" ng-labelkey="DashboardData.aca_newui_dashboard_label_feedue"> </span>
+                        <span style="font-size: 24px;" class="font24px" ng-if="UrgentRecordList[0].recordExpiration" ng-labelkey="DashboardData.aca_newui_dashboard_label_renewalrecords"></span>
+                        <span style="font-size: 24px;" class="font24px" ng-if="UrgentRecordList[0].inspectionExpiration" ng-labelkey="DashboardData.aca_newui_dashboard_label_inspections"></span>
+                    </span>
+                </h3>
+                <span ng-if="UrgentRecordList.length == 1">
+                    <span ng-if="UrgentRecordList[0].feeDueExpiration" ng-labelkey="format(DashboardData.aca_newui_dashboard_label_expire,DashboardData.aca_newui_dashboard_label_feeduecotent,AllActionRequiredList[0].dueDays,UrgentRecordList[0].type.text,UrgentRecordList[0].customId)"></span>
+                    <span ng-if="UrgentRecordList[0].recordExpiration" ng-labelkey="format(DashboardData.aca_newui_dashboard_label_expire,DashboardData.aca_newui_dashboard_label_renewalduecotent,AllActionRequiredList[0].dueDays,UrgentRecordList[0].type.text,UrgentRecordList[0].customId)"></span>
+                    <span ng-if="UrgentRecordList[0].inspectionExpiration" ng-labelkey="format(DashboardData.aca_newui_dashboard_label_expire,DashboardData.aca_newui_dashboard_label_inspectionduecotent,AllActionRequiredList[0].dueDays,UrgentRecordList[0].type.text,UrgentRecordList[0].customId)"></span>
+                </span>
+                <button ng-if="UrgentRecordList.length == 1 && UrgentRecordList[0].inspectionExpiration" class="btn btn-sm btn-custom min-width75" ng-click="ActionRequiredOperation('detail',UrgentRecordList[0].id, UrgentRecordList[0].module, UrgentRecordList[0].serviceProviderCode)" ng-labelkey="DashboardData.aca_newui_dashboard_label_view"></button>
+                <button ng-if="UrgentRecordList.length == 1 && UrgentRecordList[0].recordExpiration" class="btn btn-sm btn-custom min-width75" ng-click="ActionRequiredOperation('renew',UrgentRecordList[0].id, UrgentRecordList[0].module, UrgentRecordList[0].serviceProviderCode)" ng-labelkey="DashboardData.aca_newui_dashboard_label_renew"></button>
+                <button ng-if="UrgentRecordList.length == 1 && UrgentRecordList[0].feeDueExpiration" class="btn btn-sm btn-custom min-width75" ng-click="ActionRequiredOperation('pay',UrgentRecordList[0].id, UrgentRecordList[0].module, UrgentRecordList[0].serviceProviderCode)" ng-labelkey="DashboardData.aca_newui_dashboard_label_paynow"></button>
+                <span ng-show="UrgentRecordList.length > 1" ng-labelkey="format(DashboardData.aca_newui_dashboard_label_attention,UrgentRecordList.length)">
+                </span>
+            </div>
+        </div>
+        <div class="activity">
+            <div class="act-header" data-toggle="activity">
+                <span class="brc">[</span><span class="ico-plus"></span><span class="brc">]</span>
+                <span class="act-header-text" ng-labelkey="DashboardData.aca_newui_dashboard_label_actionrequired"></span>
+            </div>
+            <div class="act-content">
+                <div class="act-c-header">
+                    <span class="ico-warning-sign"></span>
+                    <h3 ng-labelkey="DashboardData.aca_newui_dashboard_label_actionrequired"></h3>
+                    <span class="act-count">({{AllActionRequiredList.length}})</span> <span id="linkActionsRequiredPopover"
+                                                                                            class="ico-question4 hand-cursor" data-toggle="popover" selecto="" title="" data-content="The items listed in the 'Actions Required' need your attention in next 30 days or less. If you do not take required actions within the specified time period; it may delay your business/ personal activities."
+                                                                                            data-placement="bottom" data-container='body'></span>
+                </div>
+                <div class="act-rec" ng-show="AllActionRequiredList.length==0" ng-labelkey="DashboardData.aca_newui_dashboard_label_actionmsg">
+                </div>
+                <div class="act-rec" ng-repeat="record in ActionRequiredList">
+                    <div class="act-left" ng-show="$index < 5 || isShowMore" >
+                        <span ng-if="record.inspectionExpiration">
+                            {{DashboardData.aca_newui_dashboard_label_upcoming}} {{record.type.text}} | {{record.customId}} 
+                            | {{record.openedDate.replace("00:00:00","")}} | {{DashboardData.aca_newui_dashboard_label_expiresdate}} {{record.inspectionExpirationDate.replace("00:00:00","")}}
+                        </span> 
+                        <span ng-if="record.recordExpiration">
+                            {{DashboardData.aca_newui_dashboard_label_renewal}} : {{record.type.text}} | {{record.customId}} 
+                            | {{record.openedDate.replace("00:00:00","")}} | {{DashboardData.aca_newui_dashboard_label_expiresdate}} {{record.recordExpirationDate.replace("00:00:00","")}}
+                        </span>
+                        <span ng-if="record.feeDueExpiration">
+                            {{DashboardData.aca_newui_dashboard_label_feeduecotent}} : {{record.type.text}} | {{record.customId}} 
+                            | {{record.openedDate.replace("00:00:00","")}} | {{DashboardData.aca_newui_dashboard_label_expiresdate}} {{record.feeDueExpirationDate.replace("00:00:00","")}}
+                        </span>
+                    </div>
+                    <div class="act-right" ng-show="$index < 5 || isShowMore">
+                        <button ng-show="record.inspectionExpiration" class="btn btn-sm btn-custom act-rec-btn"
+                            ng-click="ActionRequiredOperation('detail',record.id, record.module, record.serviceProviderCode)"
+                            ng-labelkey="DashboardData.aca_newui_dashboard_label_view">
+                        </button>
+                        <button ng-show="record.recordExpiration" class="btn btn-sm btn-custom act-rec-btn"
+                            ng-click="ActionRequiredOperation('renew', record.id, record.module, record.serviceProviderCode)"
+                            ng-labelkey="DashboardData.aca_newui_dashboard_label_renew">
+                        </button>
+                        <button ng-show="record.feeDueExpiration" class="btn btn-sm btn-custom act-rec-btn"
+                            ng-click="ActionRequiredOperation('pay', record.id, record.module, record.serviceProviderCode)"
+                            ng-labelkey="DashboardData.aca_newui_dashboard_label_paynow">
+                        </button>
+                    </div>
+                </div>
+                <div id="actionRequiredPagination" ng-show="isShowMore" class="pagination" style="position: relative;">
+                </div>
+                <div class="act-rec hand-cursor" ng-show="ActionRequiredList.length > 5">
+                    <a ng-click="ShowMore()">{{isShowMore==false?'Show more':'Collapse'}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content record" ng-controller="RecordCtrl">
+        <div class="record-header">
+            <div class="record-title">
+                {{DashboardData.aca_newui_dashboard_label_myrecords}} ({{recordsSize}})
+            </div>
+            <div class="record-filter dropdown">
+                <span class="ico-menu5 dropdown-toggle" data-toggle="dropdown"></span>
+                <ul class="dropdown-menu arrow dropdown-menu-right text-left" role="menu">
+                    <li><a role="menuitem" tabindex="-1" ng-click="SearchRecordByModule('')" ng-labelkey="DashboardData.aca_newui_dashboard_label_all"></a></li>
+                    <li ng-repeat="module in Modules"><a role="menuitem" tabindex="-1" ng-click="SearchRecordByModule(module.name)">{{module.name}}</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="menuitem" class="sortBy" tabindex="-1" ng-labelkey="DashboardData.aca_newui_dashboard_label_sortby"></li>
+                    <li><a role="menuitem" tabindex="-1" ng-click="SortPagedRecords('PermitNumber')" ng-labelkey="DashboardData.aca_newui_dashboard_label_recordid"></a></li>
+                    <li><a role="menuitem" tabindex="-1" ng-click="SortPagedRecords('PermitType')" ng-labelkey="DashboardData.aca_newui_dashboard_label_recordtype"></a></li>
+                    <li><a role="menuitem" tabindex="-1" ng-click="SortPagedRecords('auditDate')" ng-labelkey="DashboardData.aca_newui_dashboard_label_createdate"></a></li>
+                    <li><a role="menuitem" tabindex="-1" ng-click="SortPagedRecords('Status')" ng-labelkey="DashboardData.aca_newui_dashboard_label_status"></a></li>
+
+                </ul>
+            </div>
+            <div class="record-result-sum">
+                {{myRecordsdesc}}
+            </div>
+        </div>
+        <div class="tab-content-result  record-content">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="res-sec" ng-repeat="recordType in RecordsTypes">
+                        <div class="res-header">
+                            <span class="res-icon ico-stack3"></span><span class="res-title">{{recordType}}</span>
+                            <div class="tab-filter dropdown">
+                                <span class="ico-menu5 dropdown-toggle" data-toggle="dropdown"></span>
+                                <ul class="dropdown-menu arrow dropdown-menu-right text-left" role="menu">
+                                     <li><a role="menuitem" tabindex="-1" href="" ng-click="add2Collection('Dashboard')" ng-labelkey="DashboardData.aca_newui_dashboard_label_addcollection"></a></li>
+                                    <li>
+                                        <a role="menuitem" tabindex="-1" href="" ng-if="GetEnableExportCSV() && !CheckCacheRecordType(recordType)" ng-click="DownloadResult(recordType)" ng-labelkey="DashboardData.aca_newui_dashboard_label_download"></a>
+                                        <a role="menuitem" tabindex="-1" href="" ng-if="GetEnableExportCSV() && CheckCacheRecordType(recordType)" ng-click="DownloadResult(recordType)" ng-labelkey="DashboardData.aca_newui_dashboard_label_downloadselected"></a>
+                                    
+                                    </li>
+                                    <li><a role="menuitem" tabindex="-1" href="" ng-click="multipleLocateOnMap()" ng-labelkey="DashboardData.aca_newui_dashboard_label_viewonmap"></a></li>
+                                </ul>
+                            </div>
+                            <div class="hr-line">
+                            </div>
+                        </div>
+                        <!--Row Content -- Start-->
+                        <div class="res-content" ng-repeat="record in Recordsdetail(recordType)">
+                            <div class="res-row" data-toggle="action">
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="float-left m-n18">
+                                        <span class="checkbox custom-checkbox">
+                                            <input type="checkbox" ng-click="CheckedRecord(record,recordType,$event)" ng-checked="ShowCacheSelectData('record-{{recordType}}{{record.PermitNumber}}')" id="record-{{recordType}}{{record.PermitNumber}}">
+                                            <label for="record-{{recordType}}{{record.PermitNumber}}"></label>
+                                        </span>
+                                    </div>
+                                    <div class="float-left m-p10">
+                                        <span class="res-title-cc" title="{{record.PermitType}}">{{record.PermitType}}</span>
+                                        <span class="res-title-cc">{{record.ModuleName}}</span>
+                                        <span ng-labelkey="DashboardData.aca_newui_dashboard_label_recordnum"></span>
+                                        <span title="{{record.PermitNumber}}">{{record.PermitNumber}}</span>
+                                    </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-3">
+                                        <span title="{{record.Address}}">{{record.Address}}</span>
+                                        <span title="{{record.AgencyStateZip}}">{{record.AgencyStateZip}}</span>
+                                    </div>
+                                    <div class="col-xs-12 hr-line-padding visible-xs">
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <span><span class="res-count">{{record.RelatedRecords}}</span> {{DashboardData.aca_newui_dashboard_label_related}}</span>
+                                    <span><span class="res-count">{{record.Inspections}}</span> {{DashboardData.aca_newui_dashboard_label_inspections}}</span>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <span class="res-status" title="{{record.Status}}">{{record.Status}}</span>
+                                    <span title="{{record.CreatedBy}}">{{record.CreatedBy}}</span> 
+                                    <span title="{{record.AuditDate}}">{{DashboardData.aca_newui_dashboard_label_created}}  {{record.AuditDate}}</span>
+                                    <span ng-if="record.ExpirationDate!=null && record.ExpirationDate!=''" title="{{record.ExpirationDate}}">{{DashboardData.aca_newui_dashboard_label_validtill}} {{record.ExpirationDate}}</span>
+                                    <span ng-if="record.ExpirationDate==null || record.ExpirationDate==''" ng-labelkey="DashboardData.aca_newui_dashboard_label_validna">
+                                    </span>
+                                </div>
+                            </div>
+                            <!--Action Button Control Start-->
+                            <span class="res-option hidden-xs"  data-toggle="action"></span>
+                            <div class="rec-action actionbutton" ng-controller="ActionButtonCtrl">
+                                <ul class="nav nav-pills">
+                                    <li ng-if="record.ResumeUrl==''"><a href="" ng-click='ShowViewDetail(record.DetailViewUrl)' ng-labelkey="DashboardData.aca_newui_dashboard_label_viewdetail"></a></li>
+                                    <li ng-if="record.ResumeUrl!=''"><a href="" ng-click='ResumeApplication(record.ResumeUrl)' ng-labelkey="DashboardData.aca_newui_dashboard_label_resume"></a></li>
+                                    <li ng-if="record.ResumeUrl==''"><a ng-click="singleLocateOnMap(record.CapID,record)" ng-labelkey="DashboardData.aca_newui_dashboard_label_viewonmap"></a></li>
+                                    <li ng-if="record.ResumeUrl=='' && record.DisplayInspcetion"><a href="" ng-click='Schedule(record.DetailViewUrl)' ng-labelkey="DashboardData.aca_newui_dashboard_label_schedule"></a></li>
+                                    <li ng-if="record.ResumeUrl=='' && record.PayfeesUrl != ''"><a href="" ng-click="PayFeesInDeepLink(record.PayfeesUrl)" ng-labelkey="DashboardData.aca_newui_dashboard_label_pay"></a></li>
+                                    <li ng-if="record.ResumeUrl=='' && record.IsShowUpload"><a href="" ng-click="UpLoad(record.DetailViewUrl)" ng-labelkey="DashboardData.aca_newui_dashboard_label_upload"></a></li>
+                                    <li ng-if="record.IsShowAddToCart"><a href="" ng-click='AddToCart(record.CapID,record.AgencyCode,record.CapClass,record.HasNoPaidFees,record.RenewalStatus)' ng-labelkey="DashboardData.aca_newui_dashboard_label_addcart"></a></li>
+                                    <li ng-if="record.IsShowCopyRecord">
+                                        <a href="" ng-click='CopyRecord(record.DetailViewUrl)' ng-labelkey="DashboardData.aca_newui_dashboard_label_copyrecord"></a>
+                                    </li>
+                                    <li ng-if="record.ResumeUrl==''" class="dropdown">
+                                        <a id="drop4" role="button" data-toggle="dropdown" href="">
+                                            <span class="hidden-xs" ng-labelkey="DashboardData.aca_newui_dashboard_label_addcollection"></span> 
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                                            <li role="presentation" ng-repeat="item in Collecions" ng-click="AddCollection(record.CapID,item.collectionId,record.CapClass,true)">
+                                                <a role="menuitem" tabindex="-1" href="">  {{item.collectionName}} </a>
+                                            </li>
+                                            <li class="item" ng-click="navToAddCollection(record.CapID,record.CapClass)">
+                                                <a role="menuitem" tabindex="-1" href="" ng-labelkey="DashboardData.aca_newui_dashboard_label_createcollection"></a>
+                                            </li> 
+                                        </ul>
+                                    </li>
+                                     <li ng-if="record.ResumeUrl==''&& (record.IsShowPrintPermit || record.IsShowPrintSummary || record.IsShowPrintReceipt)" class="dropdown">
+                                        <a  role="button" data-toggle="dropdown" href="">
+                                            <span class="hidden-xs" ng-labelkey="DashboardData.aca_newui_dashboard_label_report"></span> 
+                                            <b class="caret"></b>
+                                        </a>
+                                         <ul class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                                             <li ng-if="record.IsShowPrintPermit" role="presentation" title="{{record.PrintPermitReportName}}" ng-click="generatReportBut(record.ModuleName,record.PrintPermitReportId,record.PrintPermitReportType,record.AgencyCode)">
+                                                 <a role="menuitem" tabindex="-1" href="" ng-labelkey="DashboardData.aca_newui_dashboard_label_printviewrecord"></a>
+                                             </li>
+                                             <li ng-if="record.IsShowPrintSummary" class="item" title="{{record.PrintSummaryReportName}}" ng-click="generatReportBut(record.ModuleName,record.PrintSummaryReportId,record.PrintSummaryReportType,record.AgencyCode)">
+                                                 <a role="menuitem" tabindex="-1" href="" ng-labelkey="DashboardData.aca_newui_dashboard_label_printviewsummary"></a>
+                                             </li>
+                                             <li ng-if="record.IsShowPrintReceipt" class="item" title="{{record.PrintReceiptReportName}}" ng-click="generatReportBut(record.ModuleName,record.PrintReceiptReportId,record.PrintReceiptReportType,record.AgencyCode)">
+                                                 <a role="menuitem" tabindex="-1" href="" ng-labelkey="DashboardData.aca_newui_dashboard_label_printviewreceipt"></a>
+                                             </li>
+                                         </ul>
+                                    </li>                     
+                                </ul>
+                            </div>
+                            <!--Action Button Control Start-->
+                            <div class="hr-line">
+                            </div>
+                        </div>
+                        <!--Row Content -- End-->
+                        </div>
+                    </div>
+                </div>
+            <div id="PagingMyRecords" class="pagination" style="position: relative;">
+            </div>
+            </div>
+        </div>
+    </div>
+<angulariframe> </angulariframe>

@@ -1,0 +1,83 @@
+﻿/* label */
+/* Html label and Common label */
+INPUT
+{
+    font-size: 1.15em;
+}
+
+TEXTAREA
+{
+    font-size: 1.15em;
+    float: left;
+}
+
+SELECT
+{
+    font-size: 1.15em;
+    float: left;
+}
+
+A
+{
+    font-size: 1.2em;
+}
+
+P
+{
+    font-size: 1.1em;
+}
+
+H1
+{
+    font-size: 1.4em;
+}
+
+H2
+{
+    font-size: 1.3em;
+}
+
+H3
+{
+    font-size: 1.2em;
+}
+
+H4
+{
+    font-size: 1.1em;
+}
+
+H5
+{
+    font-size: 1.3em;
+}
+
+.ACA_Sub_Label_FontSize, .ACA_Section_Instruction_FontSize, .ACA_Page_Instruction_FontSize, .ACA_Page_FontSize, .ACA_SmLabel_FontSize
+{
+    font-size: 1.2em;
+}
+
+.ACA_Page_FontSize_Restore
+{
+    font-size:1.2em;
+}
+
+.ACA_SmLabel_FontSize_Restore
+{
+    font-size:1.2em;
+}
+
+.pagination_text_fontsize
+{
+    font-size:1.15em;
+}
+
+.ACA_Header_Font_FontSize
+{
+    font-size:1.15em;
+}
+
+.add2collectionlink
+{
+    font-size:1.2em;
+}

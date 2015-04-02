@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PaymentCancel.aspx.cs" Inherits="Accela.ACA.PaymentAdapter.ACAOnlinePaymentAdapter.PaymentCancel" %>

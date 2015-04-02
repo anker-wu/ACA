@@ -1,0 +1,10 @@
+﻿/* Accessibility Support default style */
+*:not(font)
+{
+    color: inherit;
+}
+
+*
+{
+    background-color: transparent;
+}

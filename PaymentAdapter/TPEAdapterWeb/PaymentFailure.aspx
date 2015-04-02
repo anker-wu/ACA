@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PaymentFailure.aspx.cs" Inherits="Accela.ACA.PaymentAdapter.TPEAdapterWeb.PaymentFailure" %>

@@ -1,0 +1,1068 @@
+﻿/* Tab, link, button */
+/* Common Backcolor And Button And Table Label*/
+
+/* Start Border and BkColor */
+.ACA_DivBorder
+{
+    border:solid 1px #cccccc; padding:8px;
+}
+.ACA_DashedBorder
+{
+    border:dashed 1px #cccccc;
+}
+.ACA_BkBlue
+{
+    background:#e5f3fd;
+}
+.ACA_BkBlueD
+{
+    background:#e5ffff;
+}
+.ACA_BkGray
+{
+    background:#aaaaaa;
+    height:1px;
+    margin-top:24px;
+    *margin-top:0px;
+    _margin-top:0px;
+    _overflow:hidden;
+}
+.ACA_BkTit
+{
+    background:#ece9d8;
+}
+/* End Border and BkColor */
+/*==============================================================*/
+/* Button */
+.ACA_LgButton A
+{
+    font-weight: bold;
+    background:url(assets/button_lg480.gif) left 0; 
+    color: #003366;
+    text-decoration:none; 
+    line-height:24px;
+    height:24px;
+    vertical-align:middle;
+    text-align:center; 
+    float:left; 
+    cursor:pointer;
+}
+
+.ACA_LgButton_FontSize A
+{
+    font-size:1em;
+}
+
+.ACA_LgButton A:hover{background:url(assets/button_lg480.gif) left -24px;height:24px;color: #003366;}
+.ACA_LgButton A:active{background:url(assets/button_lg480.gif) left -48px;height:24px;color: #003366;}
+.ACA_LgButton A:active{*background:url(assets/button_lg480.gif) left 0px !important;height:24px;color: #003366;}
+.ACA_LgButton A span{background:url(assets/button_lg480.gif) right 0;margin: 0 0 0 8px; float:left; height:24px; padding:0 8px 0 0; min-width: 40px;}
+.ACA_LgButton A:hover span{background:url(assets/button_lg480.gif) right -24px; color: #003366; margin:0 0 0 8px; height:24px; padding:0 8px 0 0}
+.ACA_LgButton A:active span{background:url(assets/button_lg480.gif) right -48px; color: #003366; margin:0 0 0 8px; height:24px; padding:0 8px 0 0}
+.ACA_LgButton A:active span{*background:url(assets/button_lg480.gif) right 0px  !important; color: #003366; margin:0 0 0 8px; height:24px; padding:0 8px 0 0}
+
+.ACA_LgButtonDisable A
+{
+    font-weight: bold;
+    background:url(assets/button_lg480.gif) left 0; 
+    color: Gray;
+    text-decoration:none; 
+    line-height:24px;
+    height:24px;
+    vertical-align:middle;
+    text-align:center; 
+    float:left; 
+    cursor:default;
+}
+
+.ACA_LgButtonDisable_FontSize A
+{
+    font-size:1em;
+}
+
+.ACA_LgButtonDisable A:hover{background:url(assets/button_lg480.gif) left 0;height:24px;color: Gray;}
+.ACA_LgButtonDisable A:active{background:url(assets/button_lg480.gif) left 0;height:24px;color: Gray;}
+.ACA_LgButtonDisable A span{background:url(assets/button_lg480.gif) right 0;margin: 0 0 0 8px; float:left; height:24px;padding: 0 8px 0 0; min-width: 40px;}
+.ACA_LgButtonDisable A:hover span{background:url(assets/button_lg480.gif) right 0; color: Gray; margin:0 0 0 8px; height:24px; padding:0 8px 0 0}
+.ACA_LgButtonDisable A:active span{background:url(assets/button_lg480.gif) right 0; color: Gray; margin:0 0 0 8px; height:24px; padding:0 8px 0 0}
+
+.ACA_LgButtonHighLight A
+{
+    font-weight: bold;
+    background:url(assets/button_lg256_highlight.gif) left 0; 
+    color: #003366;
+    text-decoration:none; 
+    line-height:24px;
+    height:24px;
+    vertical-align:middle;
+    text-align:center; 
+    float:left; 
+    cursor:pointer;
+    border-right: gray 1px dashed; 
+    border-top: gray 1px dashed; 
+    border-left: gray 1px dashed; 
+    border-bottom: gray 1px dashed;
+}
+
+.ACA_LgButtonHighLight_FontSize A
+{
+    font-size:1em;
+}
+
+.ACA_SmButtonHighLight A
+{
+    font-weight: bold;
+    background:url(assets/button_sm48_highlight.gif) left 0; 
+    color: #003366;
+    text-decoration:none; 
+    line-height:16px;
+    height:16px;
+    vertical-align:middle;
+    text-align:center;
+    cursor:pointer;
+    float:left;
+    border-right: gray 1px dashed; 
+    border-top: gray 1px dashed; 
+    border-left: gray 1px dashed; 
+    border-bottom: gray 1px dashed;
+}
+
+.ACA_SmButtonHighLight_FontSize A
+{
+    font-size:1em;
+}
+
+.ACA_SmButtonHighLight A span 
+{
+    margin: 0 0 0 14px;
+    float:left; 
+    height:16px;
+    padding:0 14px 0 0
+}
+
+.ACA_SmButton A
+{
+    font-weight: bold;
+    background:url(assets/button_sm256.gif) left 0; 
+    background-repeat: no-repeat;
+    color: #003366;
+    text-decoration:none; 
+    line-height:16px;
+    height:16px;
+    vertical-align:middle;
+    text-align:center; 
+    float:left; 
+    cursor:pointer;
+    white-space: nowrap;
+}
+
+.ACA_SmButton_FontSize A
+{
+    font-size:1em;
+}
+
+.ACA_SmButton A:hover{background:url(assets/button_sm256.gif) left -16px;height:16px;color: #003366;}
+.ACA_SmButton A:active{background:url(assets/button_sm256.gif) left -32px;height:16px;color: #003366;}
+.ACA_SmButton A span{background:url(assets/button_sm256.gif) right 0;margin: 0 0 0 14px; float:left; height:16px; padding:0 14px 0 0}
+.ACA_SmButton A:hover span{background:url(assets/button_sm256.gif) right -16px; color: #003366; margin:0 0 0 14px; height:16px; padding:0 14px 0 0}
+.ACA_SmButton A:active span{background:url(assets/button_sm256.gif) right -32px; color: #003366; margin:0 0 0 14px; height:16px; padding:0 14px 0 0}
+
+.ACA_SmButton A:hover
+{
+    display: block;
+    cursor: pointer;
+    line-height:16px;
+    height:16px;
+    vertical-align:middle;
+    text-decoration:none;
+}
+
+.ACA_SmButtonDisable A
+{
+    font-weight: bold;
+    background:url(assets/button_sm256.gif) left 0; 
+    color: Gray;
+    text-decoration:none; 
+    line-height:16px;
+    height:16px;
+    vertical-align:middle;
+    text-align:center; 
+    float:left; 
+    cursor:default;
+}
+
+.ACA_SmButtonDisable_FontSize A
+{
+    font-size:0.9em;
+}
+
+.ACA_SmButtonDisable A:hover{background:url(assets/button_sm256.gif) left 0;height:16px;color: Gray;}
+.ACA_SmButtonDisable A:active{background:url(assets/button_sm256.gif) left 0;height:16px;color: Gray;}
+.ACA_SmButtonDisable A span{background:url(assets/button_sm256.gif) right 0;margin: 0 0 0 8px; float:left; height:16px; padding:0 8px 0 0}
+.ACA_SmButtonDisable A:hover span{background:url(assets/button_sm256.gif) right 0; color: Gray; margin:0 0 0 8px; height:16px; padding:0 8px 0 0}
+.ACA_SmButtonDisable A:active span{background:url(assets/button_sm256.gif) right 0; color: Gray; margin:0 0 0 8px; height:16px; padding:0 8px 0 0}
+
+.ACA_Title_Bar 
+{
+    background: #DDDDDD;
+    border: 1px solid #999999;
+    clear: both;
+    height: 1.6em;
+    margin-bottom: 7px;
+    padding: 8px;
+}
+
+.ACA_Title_Text
+{
+    color: #003366;
+    float: left;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.ACA_Title_Button
+{
+    float: right;
+}    
+.ACA_Button_Text
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.ACA_Link_Text
+{
+    font-family: Arial, sans-serif;
+}
+
+.ACA_Link_Text_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_SearchBtn
+{
+    width: 2.4em;
+    background: url(assets/button_search.gif) no-repeat;
+}
+.ACA_Print_Button a
+{
+    display: block;
+    float: right;
+    height: 16px;
+    width: 2.4em;
+}
+.ACA_Print_Button a:hover
+{
+    background-position: 0px -16px;
+}
+    
+.ACA_Print_Button a:active
+{
+    background-position: 0px -32px;
+}
+
+/* End Button */
+/*==============================================================*/
+.ACA_TabTitle
+{
+    border-bottom:solid 1px #999999;
+}
+.ACA_InfoTable
+{
+    clear:both;
+    margin-bottom:8px;
+    overflow:auto;
+    width:74.8em; 
+    height:230px
+}
+.ACA_InfoTable ul
+{
+    width:119em;
+}
+.ACA_InfoTableTitle li
+{
+    float:left;
+    margin-right:3px;
+    padding-left:5px;
+    height:18px;
+    line-height:18px;
+    vertical-align:middle;
+    background:#ece9d8;
+}
+.ACA_ConfigInfo ul
+{
+    width:20em;
+    margin-bottom:5px;
+}
+.ACA_PermitRow li
+{
+    height:32px;    
+    vertical-align:top;
+    padding-left:20px;
+    cursor:pointer;
+}
+.ACA_Height20
+{
+    height:20px;
+    line-height:20px;
+    vertical-align:middle;
+}
+
+.ACA_Message_Error_Link
+{
+    color: #FF6600;
+    text-decoration:none;
+}
+
+.ACA_Message_Error
+{
+    background: #FFFFCC;
+    border: 1px solid #FF6600;
+    color: #FF6600;
+    clear: both;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding:15px;
+    margin:0px;
+    height:100%;
+}
+
+.ACA_Message_Error_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_Message_Icon
+{
+    vertical-align:top;
+    width:25px;
+    padding-top:2px;
+}
+
+.ACA_Message_Content
+{
+    vertical-align:middle;
+}
+
+.ACA_Error_Icon
+{
+    clear: left;
+    float: left;
+    height: 24px;
+    width: 24px;
+    margin:0px;
+}
+
+.asit_listcontent .ACA_Error_Icon
+{
+    margin: 0px 6px 0px 0px;
+}
+
+.ACA_GIS_Message_Error
+{
+    font-size:0.8em;
+    color:#ff3300;
+    clear: both;
+    font-family: Arial, sans-serif;
+    vertical-align:middle; 
+    position:absolute;
+}
+
+.ACA_Message_Success
+ {
+    background: #E5FFCC;
+    border: 1px solid #339900;
+    color: #339900;
+    clear: both;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding:15px;
+    margin:0px;
+    height:100%;
+}
+
+.ACA_Message_Success_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_Success_Icon
+{
+    clear: left;
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+}
+
+.ACA_Message_Notice
+ {
+    background: #E5FFFF;
+    border: 1px solid #0088E9;
+    color: #0088E9;
+    clear: both;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+        padding: 15px;
+        margin: 0px;
+        height:100%;
+}
+
+.ACA_Message_Notice a
+{
+    color: #0088E9;
+}
+
+.ACA_Message_Notice_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_PopUP_Message
+ {
+     background: #E5FFFF;
+    color: #0088E9;
+    clear: both;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    margin: 0px;
+    height:100%;
+}
+
+.ACA_Notice_Icon
+{
+    clear: left;
+    float: left;
+    margin: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.ACA_SmallError_Icon
+{
+    clear: left;
+    float: left;
+    height: 16px;
+    margin-top: 0px;
+    margin-left: 4px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+    width: 16px;
+}
+
+.ACA_Line_Content
+{
+    float:left;
+      background: #999999;      
+      height: 1px;
+      line-height:1px;
+      margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.ACA_Container
+{
+    float: left;
+    padding-left: 15px;
+    width: 47.8em;
+}
+
+.ACA_ContainerLong_ShoppingCart
+{ 
+    margin-bottom: 16px;
+    padding-left: 15px;
+    width: 77em;
+}
+
+.ACA_Active_Icon
+{
+    background: url(assets/active.png) no-repeat;
+    height:24px;
+    width:24px;
+}
+
+.ACA_Complete_Icon
+{
+    background: url(assets/complete.png) no-repeat;
+    height:24px;
+    width:24px;
+}
+
+.ACA_SaveAndResumeLater_Icon
+{
+    cursor:pointer;
+    height:2.4em;
+    width:3.2em;
+}
+
+.ACA_SaveAndResumeLater_Icon a[disabled]
+{
+    cursor:default;
+}
+
+.ACA_SaveAndResumeLater_Hover_Icon
+{
+    cursor:pointer;
+    height:24px;
+    width:32px;
+}
+
+.ACA_SaveAndResumeLater_Down_Icon
+{
+    cursor:pointer;
+    height:24px;
+    width:32px;
+}
+
+.ACA_SaveAndResumeLater_Disable_Icon
+{
+    cursor:default;
+    background:url(assets/save-off.gif) no-repeat;
+    height:24px;
+    width:32px;
+}
+
+.ACA_GIS_Icon
+{
+    cursor:pointer;
+    height:24px;
+    width:32px;
+}
+
+.ACA_Accordion_Content 
+{
+    font-family: Arial, sans-serif;
+    height: 20px;
+    color: #666666;
+    background-color: #ffffff; 
+    margin-bottom:3px; 
+    margin-top:0px;
+    border-style: dashed; 
+    border-width: thin; 
+    border-color: #DDDDDD;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.ACA_Message_Locked 
+{
+   background: #FFCC7F;
+   border: 1px solid #FF6600;
+   color: #666666;
+   clear: both;
+   font-family: Arial, sans-serif;
+   font-weight: bold;
+   padding: 8px;
+}
+
+.ACA_Message_Locked_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_Locked_Icon
+{
+    clear: left;
+    float: left;
+    height: 24px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+    width: 24px;
+}
+
+.ACA_Message_Hold 
+{
+   background: #FFFF99;
+   border: 1px solid #CC9900;
+   color: #666666;
+   clear: both;
+   font-family: Arial, sans-serif;
+   font-weight: bold;
+   padding: 8px;
+ }
+ 
+ .ACA_Message_Hold_FontSize
+ {
+    font-size:1.1em;
+ }
+ 
+ .ACA_Hold_Icon
+ {
+    clear: left;
+    float: left;
+    height: 24px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+    width: 24px;
+}
+ .ACA_Message_Note 
+ {
+    background: #CCE57F;
+    border: 1px solid #339900;
+    color: #666666;
+    clear: both;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 8px;
+ }
+ 
+ .ACA_Message_Note_FontSize
+ {
+    font-size:1.1em;
+ }
+ 
+ .ACA_Note_Icon
+ {
+    clear: left;
+    float: left;
+    height: 24px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+    width: 24px;
+ }
+ 
+.ACA_Condition_Required 
+{
+    background: #FFCC7F;
+    border: 1px solid #FF6600;
+    color: #666666;
+    clear: both;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 8px;
+}
+ 
+.ACA_Condition_Required_FontSize
+{
+    font-size:1.1em;
+}
+ 
+.ACA_Condition_Required_Icon
+{
+    clear: left;
+    float: left;
+    height: 24px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+    width: 24px;
+}
+ 
+.ACA_Welcome_Block
+{
+    width:100%;
+    border: solid 1px #cccccc;
+}
+  
+.ACA_Welcome_Block td
+{
+    padding:8px; 
+    background-color: #e5f3fd;
+    vertical-align:top;
+    width:50%;
+}
+
+.ACA_Welcome_Block a span
+{
+    font-size:1.1em;
+    line-height:1.71em;
+}
+
+.ACA_WorkStatus_Icon
+{
+    cursor: pointer;
+    float: right;
+    width: 30px;
+    background: transparent url(assets/collapse_Open.gif) no-repeat;
+}
+.ACA_Payment_Icon
+{
+    width:309px; 
+    height:159px;
+}
+.ACA_Security_Vmd_Icon
+{
+    width:225px; 
+    height:153px;
+}
+.ACA_Security_Amex_Icon
+{
+    width:250px; 
+    height:252px;
+}
+
+.ACA_Message_Notice_Link
+ {
+    color: #0088E9;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    word-break:break-all;
+}
+
+.ACA_Message_Notice_Link_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_ShoppingCartTitle_Bar 
+{
+    background: #003366;
+    border: 1px solid #999999; 
+    clear: both;
+    height: 1.6em;
+    margin-bottom: 16px;
+    padding: 8px;
+}
+.ACA_ShoppingCartTitle_Bar *
+{
+    color: white;
+    background: #003366;
+}
+
+.ACA_Report_Menu
+{
+    position:relative;
+    margin : 0px;
+    padding: 5px;
+    width: 100%;
+    float: left;
+    border: 1px solid #CCCCCC;
+    background-color : White;
+}
+
+.ACA_Delegate_Action
+{
+    margin : 0px;
+    padding: 5px;
+    width: 100%;
+    float: left;
+    border: 1px solid #CCCCCC;
+    background-color : White;
+}
+
+.ACA_Report_Arrow
+{
+   +margin-bottom:6px;
+}
+
+.ACA_GrayedOutLink 
+{
+    cursor:help;
+    font-weight:bold;
+    color:Gray;
+    text-decoration:none;
+}
+
+.ACA_GrayedOutLink:hover
+{
+    color:Gray;
+    text-decoration:none;
+}
+
+.ACA_GrayedOutLink:active
+{
+    color:Gray;
+    text-decoration:none;
+}
+
+.ACA_Split_Line
+{
+    background: #999999;
+    height: 1px;
+    line-height:1px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.ACA_LgButtonLeft
+{
+    height: 24px;
+    width: 0.7em;
+    background: url(assets/button_lgleft.gif);
+    cursor: pointer;
+}
+.ACA_LgButtonCenter
+{
+    font-weight: bold;
+    background: url(assets/button_lgcenter.gif) repeat-x;
+    color: #003366;
+    text-decoration: none;
+    line-height: 24px;
+    height: 24px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    width: 9em;
+}
+.ACA_LgButtonRight
+{
+    height: 24px;
+    width: 0.7em;
+    background: url(assets/button_lgright.gif);
+    cursor: pointer;
+}
+
+.ACA_LgButtonLeftHover
+{
+    height: 24px;
+    width: 0.7em;
+    background: url(assets/button_lgleft.gif) 0px -24px;
+    cursor: pointer;
+}
+.ACA_LgButtonCenterHover
+{
+    font-weight: bold;
+    background: url(assets/button_lgcenter.gif) repeat-x 0px -24px;
+    color: #003366;
+    text-decoration: none;
+    line-height: 24px;
+    height: 24px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    width: 9em;
+}
+.ACA_LgButtonRightHover
+{
+    height: 24px;
+    width: 0.7em;
+    background: url(assets/button_lgright.gif) 0px -24px;
+    cursor: pointer;
+}
+.ACA_LgButtonHeight
+{
+    height: 24px;
+}
+
+.aca_pagination
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.aca_pagination_td
+{
+     padding-left:3px;
+     padding-right:3px;
+}
+
+.aca_pagination_PrevNext
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    white-space:nowrap;
+}
+
+.aca_pagination_td a
+{
+    font-size:1.1em;
+}
+
+.aca_simple_text{
+     font-family:Arial,sans-serif;
+     color:#666666;
+     margin-left:3px;
+     margin-right:3px;
+}
+.SelectedPageButton
+{
+     font-family:Arial,sans-serif;
+     color:#666666;
+     font-weight:bold;
+}
+
+.ActionMenu_Link a
+{ 
+    text-decoration:none;  
+}
+
+.ActionMenu_Line
+{
+    background: #999999;      
+    height: 1px;
+    line-height:1px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+#tab_item_place_holder,
+#more_tab_place_holder,
+#nav_span_more_link,
+#nav_span_links
+{
+    display:inline-block;
+}
+
+
+#nav_link_place_holder
+{
+    white-space:nowrap;
+    word-wrap:normal;
+    word-break:keep-all;
+}
+
+#nav_span_more_link
+{
+    margin-left:10px;
+    line-height:2em;
+}
+
+#nav_span_more_link img
+{
+    border:0px;
+}
+
+#nav_span_more_link a,
+#nav_span_more_link a:hover,
+#nav_span_more_link a:visited,
+#nav_span_more_link a:active
+{
+    text-decoration:none;
+    color:#666;
+}
+
+#divNavMenu
+{
+    z-index:1;
+}
+
+#divLinkMenu
+{
+    position:absolute;
+    border:1px solid #ccc;
+    padding:0px 5px;
+    background-color:#fff;
+    text-align:left;
+    white-space:nowrap;
+    word-wrap:normal;
+    word-break:keep-all;
+    z-index:0;
+}
+
+.fee_button_container
+{
+    float: left;
+    margin-bottom: 16px;
+    padding-left: 15px;
+}
+
+.ACA_Announcement_Content
+{
+    width:100%;
+    clear:both;
+    margin-top:2px;
+    padding-bottom:10px;
+    color: #666666;
+    font-family: Arial, sans-serif;
+    display:block;
+    font-weight:normal;
+    font-size:1.2em; 
+} 
+
+.ACA_Announcement_Window
+{
+    position:absolute;
+    top:50px;
+    left:180px;
+    width:40em;
+    height:32em;
+    background:#fff; 
+    display:none;
+}
+
+.ACA_Announcement_Window_Detail
+{
+    width:39em;
+    height:28em;
+    overflow:auto; 
+    padding-left:10px; 
+    padding-right:10px
+}
+
+.ACA_Announcement_Window_Detail_Overlayer
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:gray;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    display:none;
+}
+
+.ACA_Announcement_Title_Center
+{
+    text-align:center; 
+}
+
+.ACA_Announcement_Window_Header
+{
+    height:1.2em;
+    text-align:right;  
+    padding:5px;
+    cursor:move;
+}
+
+.ACA_Announcement_Window_Header span
+{
+    cursor:pointer;
+    background:#fff;
+    padding:0 2px;
+}
+
+.ACA_Anouncement_Popup_Window
+{
+    display: none; 
+    position:absolute; 
+    z-index:3; 
+    width:26em; 
+    height:11em; 
+    overflow:auto;
+}
+
+.ACA_Anouncement_Poupu_Window_Part_Height
+{
+    height:9em;
+}
+
+.ACA_Anouncement_Poupu_Window_MarkAsRead
+{
+    float:left; 
+    padding-bottom:0; 
+    margin-bottom:0; 
+    width:100%;
+}
+
+.ButtonDisabled
+{
+    color: gray;
+    text-decoration: none;
+    cursor: default;
+}
+
+.message_error_contact 
+{
+    background: #FFFFCC;
+    border: 1px solid #FF6600;
+    color: #FF6600;
+    clear: both;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding:15px;
+    margin:0px;
+    height:100%;
+    font-size:1.1em;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }

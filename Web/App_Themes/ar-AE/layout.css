@@ -1,0 +1,381 @@
+﻿/* Layout */
+/* Primary Block Layout */
+
+/* Start ACA Page Header */
+/* End ACA Page Header */
+/*==============================================================*/
+/* ACA Page Left Block CSS */
+.ACA_LeftPadding
+{
+	padding-right:15px;
+}
+.ACA_RightPadding
+{
+	padding-left:15px;
+}
+/* End Page Left Block CSS */
+/*==============================================================*/
+/* Start HeaderNavigation CSS */
+.ACA_NaviTitle
+{
+    margin-right:15px;
+}
+
+.ACA_NavBanner
+{
+    clear:right;
+    float:right;
+}
+
+.ACA_TitleIcon
+{
+	clear: left; margin: 3px 0px 16px 8px; background: url(assets/automation_16.gif) no-repeat; float: left; width: 16px; height: 16px
+}
+
+.ACA_TitleMain 
+{
+	font-size: 1.9em; float: right; color: #003366;
+}
+
+.ACA_Title_Font
+{
+	color: #003366; font-weight:bold;
+}
+
+.ACA_RegisterLogin
+{	
+	float:left;
+}
+
+.nav_bar_container
+{
+    margin-right:15px;
+}
+
+.ACA_NaviMenu
+{
+	padding-right:15px;
+	padding-left:15px;
+}
+.ACA_NaviMenu li
+{
+	float:right;
+}
+.ACA_LeftOn
+{
+	background: url(assets/tab_right_on.gif) no-repeat;
+}
+.ACA_LeftOff
+{
+	background: url(assets/tab_right_off.gif) no-repeat;
+}
+.ACA_RightOn
+{
+	background: url(assets/tab_left_on.gif) no-repeat; 	
+}
+.ACA_RightOff
+{
+	background: url(assets/tab_left_off.gif) no-repeat; 
+}
+/* End HeaderNavigation CSS */
+/*==============================================================*/
+/* Start LoginBox Block */
+.ACA_Admin_Div
+{
+	right:50%; 
+	margin-right:-88px;	
+}
+
+.ACA_LoginBox
+{
+	font-family: arial, sans-serif;
+	width:22em;
+	float:left;
+	border:solid 1px #999999;
+	padding:10px;
+	padding-bottom:20px;
+	background: #dddddd; 
+	margin-bottom: 16px;
+	color: #666666; 
+}
+/* End LoginBox Block */
+/*==============================================================*/
+.ACA_Content
+{
+	margin-right: 15px;
+	width: 77em;
+}
+.ACA_Content_Popup
+{
+	margin-right: 15px;
+}
+.ACA_Calendar_Prev 
+{
+	float: right;
+	text-align:right;
+}
+.ACA_Calendar_Next 
+{
+	float: left;
+	text-align: left;
+}
+.ACA_Content_Expand 
+{
+    background-position: right;
+	float: right;
+	margin-right: 2px;
+}
+.ACA_Content_Collapse
+{
+    background-position: right;
+    float: right;
+    margin-right: 1px;
+}
+.ACA_Content_Plus_Expand 
+{
+	float: right;
+}
+.ACA_Content_Minus_Collapse
+{
+	float: right;
+}
+.ACA_Calendar_Container {
+	margin-right: 4px; 
+	margin-left: 4px; 
+}
+.ACA_Calendar_Day_Active {
+	float: right;   
+}
+.ACA_Calendar_Day_Inactive
+{
+	float: right;
+	text-align: right;
+}
+.ACA_Calendar_Day_Header {
+	 padding-right: 4px; 
+	 float: right; 
+}
+.ACA_Calendar_Select_Day
+{
+}
+.ACA_Calendar_Other_Month_Day {
+	 float: right; 
+}
+
+.condition_notice_tr
+{
+	text-align:right;
+}
+.condition_notice_name
+{
+	padding-left:10px;
+
+}
+.condition_notice_comment
+{
+	padding-right:9px;
+	padding-left:8px;
+}
+
+.dropmenu
+{
+	float: right;
+}
+.collection_dropmenu
+{
+	float: right;
+	padding-left:3px;
+	padding-right:10px;
+}
+.ACA_Content_Collection
+{
+	margin-right: 24px;
+}
+.ACA_VerticalAlign
+{
+	vertical-align:top;
+}
+
+/* Start Global Search CSS */
+.gs_container{
+    clear:left;
+    float:left;
+    padding:10px 0px;
+}
+
+.gs_top_table{
+    float:left;
+}
+
+.gs_border_left{
+    border-style: solid solid solid none;
+}
+
+.gs_border_right{
+   border-style: solid none solid solid ;
+}
+
+.gs_search_category_container table tr td
+{
+    padding-left:8px;
+    padding-right:0px;
+}
+
+/* End Global Search CSS */
+
+.aca_checkbox label,
+.aca_checkbox span
+ {
+     margin-right:4px;
+     margin-right:3px\9;
+     margin-left:5px;
+ }
+
+.ACA_Area_CapFees
+{
+    float:right;
+}
+
+.SectionBody
+{
+    padding-left:0px;
+    padding-right:10px;
+}
+
+.ACA_Dialog_Content
+{
+    padding-right:15px;
+    margin-right:0px;
+    padding-left:0px;
+}
+
+.ACA_Dialog_Content_Padding
+{
+    padding-right:15px;
+    margin-left:0px;
+}
+
+.ACAMap_Popup_Div
+{
+    width:0px;
+    height:0px;
+    padding:0px 0px 0px 0px;
+}
+
+.ACAMap_Popup_Content
+{
+    height:19em;
+    width:36.4em;
+    border:gray 1px solid;
+    overflow-y:auto;
+}
+
+.aca_map_select_agency_radio
+{
+    padding-right:5px;
+    padding-left:0px;
+}
+
+.aca_popup_ok_button span
+{
+    width:4em;
+}
+
+.aca_map_popup_button_margin
+{
+    margin-top:5px;    
+}
+
+.welcome_cartlist
+{    
+    margin:0px 10px 10px 0px;
+}
+
+.welcome_instruction
+{
+    margin:0px 10px 10px 0px;
+    float:right;
+}
+
+/*****reCAPTCHA UI begin*****/
+.recaptcha_buttons
+{
+    margin-right:2px;
+}
+/*****reCAPTCHA UI end*****/
+
+.aca_checkboxlist label
+{
+    margin-right:4px;
+    margin-right:3px\9;
+    margin-left:13px;
+}
+
+.tab_bar_table 
+{ 
+    margin-left: 4px;
+    margin-right: 0px;
+}
+
+/* To support opera 12 */
+@media (min-resolution: .001dpcm) {
+    .aca_checkboxlist label {
+        margin-left: 4px;
+    }
+}
+
+.dialog_message {
+    padding-right:15px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-bottom: 10px;
+}
+
+.aca_admin_fieldset .header_outer 
+{
+    margin-left:2px;
+}
+
+.aca_admin_fieldset .header_inner {
+    float:right;
+}
+
+.aca_admin_fieldset .header_innertext 
+{
+    float: right;
+    clear: right;
+    margin-left: 15px;
+}
+
+.aca_admin_fieldset .body {
+    float:right;
+}
+
+.fieldset_globalfeature_item
+{
+    float:right;
+}
+
+.asset_detail .detailfield
+{
+    float: right;
+}
+
+.asset_detail .detailfield .templatetable tr td,
+.asset_detail .detailfield .templatetable tr th
+{
+    padding-left: 2px;
+    padding-right: 0px;
+}
+
+.asset_detail .addresslist
+{
+    float: right;
+}
+
+.caphome_search_icon
+{
+    float: right;
+    margin-left: 0px;
+    margin-right: 2px;
+}

@@ -1,0 +1,69 @@
+﻿.ACA_Help_Frame {width:270px;height:150px;overflow:hidden;position:absolute;z-index:99;background-color:Transparent;}
+
+.ACA_Help_Frame .SafariOverPanel {width:246px;left:12px;position:absolute;height:18px;background-color:#fff;}
+
+.ACA_Help_Frame table,.ACA_Help_Frame tr,.ACA_Help_Frame th,.ACA_Help_Frame td,.ACA_Help_Frame img,.ACA_Help_Frame a {margin:0px;padding:0px;border:0px;overflow:hidden;}
+
+.ACA_Help_Frame table {width:100%;height:100%;}
+
+.ACA_Help_Frame th,.ACA_Help_Frame td {background-color:#fff;}
+
+.ACA_Help_Frame .title {height:18px;font-family:Arial,sans-serif;font-size:1.2em;float:left;color:#003177;padding:0px 1px;margin:0px 8px;font-weight:bold; text-decoration:none; cursor:default}
+
+.ACA_Help_Frame .closebutton {width:8px;height:7px;top:15px;margin:0px;padding:0px;border:0px;cursor:pointer;position:absolute;}
+
+.ACA_Help_Frame .closebutton img {width:8px;height:7px;margin:0px;padding:0px;border:0px;vertical-align:top;}
+
+.ACA_Help_Frame .content {width:246px;height:112px;border:0px;margin:0px;padding:0px;background-color:#fff;cursor:default; color:#666666;
+                            overflow-x:hidden;overflow-y:auto;display:inline;position:absolute;white-space:normal;word-wrap:break-word;word-break:normal;text-decoration:none;}
+
+.ACA_Help_Frame .subcontentlnk,
+.ACA_Help_Frame .subcontent {width:230px;border:0px;margin:0px;padding:0px;
+                            overflow-x:hidden;overflow-y:hidden;display:inline-block;white-space:normal;word-wrap:break-word;word-break:normal;text-decoration:none;}
+
+.ACA_Help_Frame .subcontentlnk:link,
+.ACA_Help_Frame .subcontentlnk:visited,
+.ACA_Help_Frame .subcontentlnk:hover,
+.ACA_Help_Frame .subcontentlnk:active {color:#666666;text-decoration:none;cursor:default;}
+
+.ACA_Help_Frame .subcontentlnk {margin:0px 8px;}
+
+.ACA_Help_Frame .subcontent {margin:0px;}
+
+.ACA_Help_Frame .subcontent,
+.ACA_Help_Frame .subcontent P {font-family:Arial,sans-serif;font-size:1.1em;}
+
+.ACA_Help_Frame .subcontent div {margin:0px;padding:0px;overflow:hidden;}
+
+.ACA_Help_Frame .bgTopLeft {width:12px;height:10px;background:url(<%=WebResource("Accela.Web.Controls.Helper.help-bg-tl.png")%>) no-repeat;}
+
+.ACA_Help_Frame .bgTopMiddle {height:10px;background:url(<%=WebResource("Accela.Web.Controls.Helper.help-bg-tm.png")%>) repeat-x;}
+
+.ACA_Help_Frame .bgTopRight {width:12px;height:10px;background:url(<%=WebResource("Accela.Web.Controls.Helper.help-bg-tr.png")%>) no-repeat;}
+
+.ACA_Help_Frame .bgPointer {width:12px;height:18px;}
+
+.ACA_Help_Frame .bgMiddleLeft {width:12px;height:94px;background:url(<%=WebResource("Accela.Web.Controls.Helper.help-bg-ml.png")%>) repeat-y;}
+
+.ACA_Help_Frame .bgMiddleRight {width:12px;height:94px;background:url(<%=WebResource("Accela.Web.Controls.Helper.help-bg-mr.png")%>) repeat-y;}
+
+.ACA_Help_Frame .bgBottomLeft {width:12px;height:10px;background:url(<%=WebResource("Accela.Web.Controls.Helper.help-bg-bl.png")%>) no-repeat;}
+
+.ACA_Help_Frame .bgBottomMiddle {height:10px;background:url(<%=WebResource("Accela.Web.Controls.Helper.help-bg-bm.png")%>) repeat-x;}
+
+.ACA_Help_Frame .bgBottomRight {width:12px;height:10px;background:url(<%=WebResource("Accela.Web.Controls.Helper.help-bg-br.png")%>) no-repeat;}
+
+.ACA_Help_Frame_LTR UL,
+.ACA_Help_Frame_RTL UL {list-style-type:disc;}
+
+.ACA_Help_Frame_LTR OL,
+.ACA_Help_Frame_RTL OL {list-style-type:decimal;}
+
+.ACA_Help_Frame_LTR UL,
+.ACA_Help_Frame_LTR OL {margin:0px;padding:0px 0px 0px 2.0em;}
+
+.ACA_Help_Frame_RTL UL,
+.ACA_Help_Frame_RTL OL {margin:0px;padding:0px 2.0em 0px 0px;}
+
+.ACA_Help_Frame LI {margin:0px;padding:0px;}
+.ACA_Help_Frame LI DIV {display:inline;}

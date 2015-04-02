@@ -1,0 +1,3522 @@
+﻿/* label */
+/* Html label and Common label */
+body
+{
+	font-family: Arial, sans-serif;
+	font-size:62.5%;
+	margin:0px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+UL
+{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+} 
+
+.ACA_Body_Text UL, .ACA_Section_Instruction UL, .ACA_Page_Instruction UL
+{
+    list-style-type:disc;
+    margin-left: 20px;
+    padding-left:20px;
+    color: #666666; 
+    line-height: 1.6em; 
+    font-family: Verdana, sans-serif;
+}
+
+.ACA_ProxyUserUL
+{
+	list-style-type:disc;
+	list-style-position:inside;
+}
+
+.ACA_Body_Text_FontSize UL, .ACA_Body_Text_FontSize OL
+{
+    font-size:1.1em;
+}
+
+INPUT { font-size: 1em; vertical-align: top; color: #333333;font-family:Verdana, sans-serif; }
+TEXTAREA { font-size: 1em; vertical-align: top; color: #333333; font-family:Verdana, sans-serif; }
+SELECT { font-size: 1em; vertical-align: middle; color: #333333;font-family:Verdana, sans-serif; height:1.9em; height:auto\9; *height:1.9em;}
+/*For firefox*/
+SELECT > optgroup {font-style: normal; font-size: 1em; vertical-align: middle; color: #333333;font-family:Verdana, sans-serif;}
+.LISTBOX { height: auto; }
+A { color: #666666; font-size: 1em; text-decoration: underline }
+A:HOVER { color: #0088e9; text-decoration: underline }
+A[disabled] { color: #a0a0a0; font-size: 1em; text-decoration: underline }
+A[disabled][id*=lnk] :HOVER { color: #a0a0a0; text-decoration: underline }
+
+P { margin-top: 0px; font-size: 1.1em; margin-bottom: 0px; padding-bottom: 0px; color: #666666; line-height: 1.6em; padding-top: 0px; font-family: Verdana, sans-serif; }
+.NormalLabel { padding-bottom: 0px; color: #666666; font-family: Verdana, sans-serif; }
+H1 { margin: 0px; margin-bottom:2px; font-size: 1.4em; padding-bottom: 0px; color: #003366; padding-top: 0px;  }
+H2 { margin: 0px; margin-bottom:2px; font-size: 1.3em; padding-bottom: 0px; color: #003366; padding-top: 0px;  }
+H3 { margin: 0px; margin-bottom:2px; font-size: 1.2em; padding-bottom: 0px; color: #666666; padding-top: 0px;  }
+H4 { margin: 0px; margin-bottom:2px; font-size: 1.1em; padding-bottom: 0px; color: #666666; padding-top: 0px; vertical-align:middle  }
+H5 { margin: 0px; font-size: 1.3em; padding-bottom: 0px; color: #003366; padding-top: 0px;  }
+H6 { margin: 0px; margin-bottom:2px; font-size: 1.5em; padding-bottom: 0px; color: #003366; padding-top: 0px; font-weight: bold;  }  
+
+H1 span.FontSizeRestore{ font-size: 0.71em;}
+H2 span.FontSizeRestore{ font-size: 0.77em;}
+H6 span.FontSizeRestore{font-size: 0.66em;}
+/*==============================================================*/
+
+.color666
+{
+    font-family:Verdana,sans-serif;
+    color:#666;
+}
+
+.ACA_RightItem
+{
+	width: 77em; padding-left: 15px; float: left; margin-bottom: 16px; 
+}
+
+.ACA_RightItem_Popup
+{
+    width: 77em;
+    float: left;
+    margin-bottom: 16px; 
+}
+
+.ACA_RightContent
+{
+	width: 48.6em; padding-left: 15px; float: left; margin-bottom: 16px; font-family: arial, sans-serif;
+}
+
+.ACA_CapCompletion_Content
+{
+	width: 65em; padding-left: 15px; float: left; margin-bottom: 16px; font-family: arial, sans-serif;
+}
+
+
+.ACA_Content .ACA_RightContent
+{
+    padding-left:0px;
+}
+
+.ACA_LinkButton
+{
+	font-weight:bold;
+}
+
+.ProxyUser_Normal_Divide
+{
+	height:5px;
+}
+
+.ProxyUser_Permissions_Divide
+{
+	height:20px;
+}
+
+.ACA_Title_Divide
+{
+	height:8px;
+}
+
+.ProxyUser_PersonNote_Divide
+{
+	height:25px;
+}
+
+.ProxyUser_ViewPermission_Divide
+{
+	height:35px;
+}
+
+.ACA_ActionIMG
+{
+	cursor: pointer; 
+ 	border-width:0px;
+}
+
+.ACA_LinkButton A
+{
+	color: #003366; 
+	text-decoration: underline;
+}
+
+.ACA_LinkButton A:Hover
+{
+    color: #0088e9 !important;
+}
+
+.ACA_LinkButtonDisable A
+{
+	cursor:default;
+	color: Gray;
+}
+
+.ProxyUser_CheckBoxList_Margin
+{
+	margin-top:1px;
+}
+
+.ACA_BlueLable label
+{
+	color: #003366;
+}
+
+.ACA_Popup_Title {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #003366;
+	font-weight: bold;
+	line-height: normal;
+	font-size:1.2em;
+}
+
+.ACA_FullWidthTable
+{
+	width:100%;
+}
+
+.ACA_HalfWidthTable
+{
+	width:50%;
+}
+
+.ACA_FLeft
+{
+	float:left;
+}
+.PopUpDlg
+{
+    background-color: #ffffff;
+    border-width:1px;
+    border-style:solid;
+    border-color:Gray;
+    position: absolute; 
+    display:block;
+    z-index:5;
+    padding-top:10px;
+    padding-left:15px;
+    padding-right:30px;
+    padding-bottom:20px;
+}
+.PopUpDlg .CloseImage
+{
+	margin-right: -20px;
+}
+
+.ACA_Width30em
+{
+	width:30em;
+}
+.ACA_Width45em
+{
+	width:45em;
+}
+.ACA_Width62em
+{
+	width:62em;
+}
+.ProxyUser_Popup_Width
+{
+	width:16em;
+}
+.ACA_FRight
+{
+	float:right;
+}
+.ACA_ALeft
+{
+	text-align:left;
+}
+.ACA_ARight
+{
+	text-align:right;
+}
+
+.ACA_vertical_align
+{
+	vertical-align:bottom;
+}
+
+.ACA_DataListStyle
+{
+	padding-left:0px;
+	margin-left:0px;
+}
+
+.ACA_TabRow
+{
+	 clear:both;
+	 width:100%;
+	 margin-bottom:5px;  
+}
+
+.ACA_TabRow_Line
+{
+	line-height:2em;	
+}
+
+
+.ACA_TabRow_NoMargin
+{
+	 clear:both;
+	 width:100%;
+}
+
+.ACA_TabRow table
+{
+  border-collapse:collapse; 
+}
+
+.ACA_Row
+{
+	 clear:both;
+	 width:100%;
+}
+
+.ACA_TabRow_ASI
+{
+	 clear:both;
+	 width:100%;
+	 margin-bottom:5px;  
+	 margin-left:-3px;
+}
+
+.ACA_ProxyUser_SaveButton
+{
+	 margin-left:-3px;
+}
+
+.ACA_Amendment_Filter
+{
+    width:38.3em;
+    height:2em;
+}
+
+.ACA_TabRow_AutoFill
+{
+	 clear:both;
+	 width:100%;
+	 margin-bottom:5px;  
+	 margin-left:-3px;
+}
+.ACA_DivRow
+{
+	width:100%;
+	height:5px;
+	margin:0px;
+	*padding-top:10px;
+}
+.ACA_Div57P
+{
+	width:57%;padding:8px;
+}
+.ACA_Div37P
+{
+	width:37%;padding:8px;
+}
+.ACA_Form
+{
+	margin-right: 8px;
+}
+
+.Proxy_ViewRecord_Margin
+{
+	margin-right: 12px;
+}
+
+.ACA_Control_HighLight
+{
+	background-color:#FCFBC9;
+	border-right: gray 1px dashed; 
+	border-top: gray 1px dashed; 
+	border-left: gray 1px dashed; 
+	border-bottom: gray 1px dashed;
+}
+
+/*add by levin*/
+
+.ACA_NewDiv_Text
+{
+	border-width: 2px; 
+	border-color: #B6D2E5; 
+	background-color: #ECF5FE;
+    width: 99.5%; 
+    margin-top:5px;
+    margin-right:2px;
+    border-style: solid;
+    overflow:hidden;
+    clear:both;
+}
+
+
+.ACA_NewDiv_Text_TabRow_Margin_Top_3
+{
+	 float:left;
+	 width:99%;
+	 margin-top:3px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Top_5
+{
+	 float:left;
+	 width:99%;
+	 margin-top:5px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Top_8
+{
+	 float:left;
+	 width:99%;
+	 margin-top:8px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Top_10
+{
+	 float:left;
+	 width:99%;
+	 margin-top:10px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Top_15
+{
+	 float:left;
+	 width:99%;
+	 margin-top:15px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Left_8
+{
+	 float:left;
+	 width:99%;
+	 margin-left:8px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Left_15
+{
+	 float:left;
+	 width:99%;
+	 margin-left:15px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Right_8
+{
+	 float:left;
+	 width:99%;
+	 margin-right:8px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Right_15
+{
+	 float:left;
+	 width:99%;
+	 margin-right:15px;
+}
+
+
+.ACA_NewDiv_Text_TabRow_Padding_Bottom_2
+{
+	 float:left;
+	 width:99%;
+	 padding-bottom:2px;
+}
+
+.ACA_NewDiv_Text_TabRow_Padding_Bottom_8
+{
+	 float:left;
+	 width:99%;
+	 padding-bottom:8px;
+}
+
+
+.ACA_NewDiv_Text_TabRow_Color_6
+{
+	 font-family: Arial, sans-serif;
+	 color: #333333;
+}
+
+.ACA_New_Title_Label
+{
+	color: #666666;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.ACA_New_Head_Label_Bold
+{
+	clear: left;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin-bottom: 2px;
+	width:90%;
+}
+
+.ACA_New_Head_Label_Bold_11
+{
+    clear: left;
+	color: #666666;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 2px;
+}
+
+.ACA_New_Head_Label_Width_90
+{
+	clear: left;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	margin-bottom: 2px;
+	width:90%;
+}
+
+.ACA_New_Head_Label_Width_100
+{
+	clear: left;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	margin-bottom: 2px;
+	margin-right: 15px;
+}
+
+.ACA_New_Label
+{
+	color: #666666;
+	font-family: Arial, sans-serif;
+	margin-bottom: 2px;
+}
+
+/*add by levin*/
+
+.ACA_Label
+{
+	color: #666666;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.ACA_Label label
+{
+    font-size:1em;
+}
+
+.ACA_Label_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_Label_FontSize_Smaller
+{
+    font-size:1.1em;
+}
+
+.ACA_Label_FontSize_Restore
+{
+    font-size:1em;
+}
+
+.ACA_FontSize12
+{ 
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.ACA_Notice
+{ 
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	color: #FF3300;
+	padding-left:3px;
+	float: left;
+}
+
+.Notice_Message_Success 
+{ 
+    color: #339900;
+}
+
+.Notice_Message_Failure 
+{ 
+}
+
+.ACA_Hide
+{
+	display:none;
+}
+
+.ACA_Show
+{
+	display:block;
+}
+
+.ACA_Inline_Table
+{
+   display: inline-table;
+}
+
+.ACA_Sub_Label
+{
+	clear: left;
+	color: #666666;
+	/*float: left;*/
+	font-family: Arial, sans-serif;
+	margin-bottom: 2px;
+}
+
+.ACA_Sub_Label_FontSize, .ACA_Section_Instruction_FontSize, .ACA_Page_Instruction_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_Section_Instruction_FontSize p, .ACA_Page_Instruction_FontSize p
+{
+    font-size:1em;
+}
+
+.ACA_Help_Icon
+{
+	width:16px;
+	height:16px;
+	border:0px;
+	margin: 0em 0.2em;
+	padding:0px;
+}
+
+.aca_checkbox .ACA_Help_Icon
+{
+    padding-top:3px;
+}
+
+.ACA_Help_Icon img
+{
+	width:16px;
+	height:16px;
+	border:0px;
+	margin:0px;
+	padding:0px;
+}
+
+.ACA_Help_Icon_Container
+{
+	width:16px;
+	height:16px;
+	padding-left:3px;
+}
+
+.ACA_Page_Instruction
+{
+    width:100%;
+    clear:both;
+    margin-top:2px;
+    padding-bottom:10px;
+    color: #666666;
+	font-family: Arial, sans-serif;
+	display:block;
+	font-weight:normal;
+}
+
+.ACA_Page_Notes
+{
+    width:100%;
+    clear:both;
+    margin-top:2px;
+    padding-bottom:10px;
+    color: #666666;
+	font-family: Arial, sans-serif;
+	display:block;
+	font-weight:normal;
+	font-size:1.3em;
+	text-align:center;
+}
+
+.ACA_Page_Instruction_Watermark
+{
+    color:#aaa;
+    font-style:italic!important;
+    overflow:hidden;
+    font-size:1.2em;
+}
+
+.ACA_Page_NoScrollBar
+{
+	overflow:hidden;
+}
+
+.ACA_Section_Instruction
+{
+    width:100%;
+    clear:both;
+    margin-top:2px;
+    padding-bottom:15px;
+    color: #666666;
+	font-family: Arial, sans-serif;
+	display:block;
+	font-weight:normal;
+}
+
+.section_instruction_record_home
+{
+    width:100%;
+    clear:both;
+    margin-top:-8px;
+    padding-bottom:15px;
+    color: #666666;
+    font-family: Arial, sans-serif;
+    display:block;
+    font-weight:normal;
+}
+
+.ACA_SmLabel
+{
+	margin-top: 3px;
+	color: #666666; 
+	font-family: Verdana, sans-serif;
+	font-weight:normal;
+}
+
+.ACA_Magin_Top_Negative3
+{
+	margin-top: -3px;	
+}
+
+.ACA_SmLabel_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_SmLabel_FontSize_Restore
+{
+    font-size:1em;
+}
+
+.Soundex_Icon
+{
+    margin-top: -1px;
+    margin-left: 5px;
+}
+
+.ACA_Area_CapDetail .action_buttons
+{
+    display: inline-block;
+}
+
+.ACA_SmLabelBolder
+{
+	margin-top: 3px; 
+	color: #666666; 
+	font-weight:bolder;
+	font-family: Verdana, sans-serif;
+}
+.ACA_RelatedCap_Highlight
+{
+	margin-top: 3px;
+	color: #666666; 
+	font-family: Verdana, sans-serif;
+	font-style:italic;
+	font-weight:bolder;
+	height:1.4em;
+}
+.ACA_RelatedCap_Normal
+{
+	margin-top: 3px;
+	color: #666666; 
+	font-family: Verdana, sans-serif;
+	height:1.4em;
+}
+.ACA_LiLeft li
+{
+	float:left;
+	line-height:2em;
+	margin-right:8px;
+}
+
+.ACA_Indicator {
+	display: inline; color: #cc6600
+}
+.ACA_InfoTitle
+{
+	height:1.6em;
+	padding:8px;
+	margin-bottom:15px;
+	border:solid 1px #999999;
+	background-color:#dddddd;
+	clear: both;
+}
+.ACA_InfoTitle a
+{
+	color:#003366;
+	text-decoration:none;
+}
+
+.ACA_InfoTitle_FontSize a
+{
+    font-size:1.1em;
+}
+
+.ACA_InfoTitle a:hover
+{
+	color:#003366;
+	text-decoration:underline;
+}
+
+.ACA_InfoTitle_FontSize a:hover
+{
+    font-size:1.1em;
+}
+
+/* Width */
+.ACA_XxShot
+{
+	width:0.5em;
+}
+.ACA_XShot
+{
+	width:1em;
+}
+.ACA_XShoter
+{
+	width:1.5em;
+}
+.ACA_Shot
+{
+	width:5em;
+}
+.ACA_NShot
+{
+	width:8em;
+}
+.ACA_Medium
+{
+	width:10em;
+}
+.ACA_NLong
+{
+	width:13em;
+}
+.ACA_NMLong
+{
+	width:14em;
+}
+
+.ACA_NLonger
+{
+	width:16em;
+}
+
+.ACA_MLong
+{
+	width:20em;
+}
+.ACA_MLonger
+{
+	width:25em;
+}
+.ACA_HLonger
+{
+    width:30.5em;
+}
+.ACA_XLong
+{
+	width:30em;
+}
+.ACA_RLong
+{
+	width:47.8em;
+}
+.ACA_RLonger
+{
+	width:74.4em;
+}
+.ACA_LLong
+{
+	width:55em;
+}
+.ACA_LLonger
+{
+	width:65em;
+}
+.ACA_Column_Short
+{
+	float: left;
+	width: 5.4em;
+}
+
+.ACA_Column_Phone
+{
+	float: left;
+	width: 7em;
+}
+
+.ACA_Column_NShort
+{
+	float: left;
+	width: 8em;
+}
+
+.ACA_RightColumn_Short{
+	float: right;
+	width: 13em;
+}
+.ACA_Column_Medium
+{
+	float: left;
+	width: 12.8em;
+}
+.ACA_Column_XLong
+{
+	float: left;
+	width: 26.8em;
+}
+.ACA_Float_Base
+{
+	float: left;
+}
+.ACA_Required_Indicator
+{
+	color: #CC6600;
+	display: inline;
+	padding-right:2px;
+}
+
+.ACA_Error_Indicator
+{
+	float: left;
+	height: 16px;
+}	
+
+.ACA_Error_Indicator_In_Same_Row
+{
+    float: left;
+    height: 16px;
+    margin-right: 4px;
+    width: 16px;
+}
+
+.ACA_Error_Label
+{
+	color: #FF3300;
+	display: inline;
+}
+
+.ACA_Error_Email_Label
+{
+	color: #FF3300;
+	font-weight: bold;
+	display: inline;
+}
+
+.ACA_ReadOnly
+{
+	background:#eee none; 
+	color:#222; 
+}
+
+.ACA_Template_Unit
+{
+	margin-top:22px;
+}
+
+.ACA_Title_Color
+{
+	color: #003366; 
+}
+.ACA_Condition_Icon
+{
+	float: left;
+    height: 10px; 
+    width: 10px;
+}
+.ACA_Condition_Line
+{
+	margin-top:5px;
+	margin-left:0px;
+	margin-right:0px;
+	width:470px;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.ACA_Valuation_Line
+{
+	margin-left:5px;
+	margin-top:5px;
+	width:70em;
+}
+
+.ACA_CountryCode_Sign
+{
+	font-family:Courier New;
+	font-style:italic;
+}
+
+.ACA_CountryCode
+{
+	width: 4em; 
+	direction: ltr; 
+	float: left; 
+	margin-right: 0.2em;
+	white-space: nowrap;
+}
+
+.ACA_PhoneNumberLTR
+{
+	direction:ltr;
+}
+
+.ACA_Page
+{
+	margin-top: 0px;
+	margin-bottom: 0px; 
+	padding-bottom: 0px; 
+	color: #666666; 
+	line-height: 1.6em; 
+	padding-top: 0px; 
+	font-family: Verdana, sans-serif;
+}
+
+.ACA_Page_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_Page_FontSize_Restore
+{
+    font-size:1em;
+}
+
+.ACA_List
+{
+    background-color:#ffffff;
+    border-width:1px;
+    border-color:#7f9db9;
+    font-family:Arial,sans-serif;
+    font-weight:700;
+    color:#666666;
+    float:left;
+    text-align:left;
+    margin-top:3px;
+    white-space: nowrap; 
+    width: 99.7%;
+    margin-left:1px;
+    margin-right:1px;
+}
+
+.ServiceListContainer {
+    margin-top: 5px;
+}
+
+.ServiceListContainer .ServiceItemList
+{
+    margin-bottom:12px;
+    margin-left: 12px;
+    width: 95%;
+}
+
+.ServiceListContainer .ServiceListGroupName a, .ServiceListContainer .ServiceListGroupName a:hover {
+    color: #666666; 
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.ACA_ContainerStyle
+{
+	border-top: 2px gray solid;
+    border-left: 2px gray solid;
+    border-bottom: 1px #ECE9D8 solid;
+    border-right: 1px #ECE9D8 solid;
+}
+
+.ACA_List_OverFlow
+{
+    overflow:auto;
+}
+/*inspection list start */
+
+.pagination_link
+{
+	    color:Gray;
+	    padding-left:1px;
+	    padding-right:1px;
+	    font-family:Arial;
+	    font-weight:bold;
+}
+
+.pagination_text
+{
+	    color:Gray;
+	    padding-left:1px;
+	    padding-right:1px;
+	    font-family:Arial;
+}
+
+.pagination_text_fontsize
+{
+    font-size:1.1em;
+}
+
+.subTable
+{
+    width:100%;
+}
+
+.ACA_Header_Font
+{
+	font-weight:bold;
+	color:Gray;
+}
+
+.ACA_Header_Font_FontSize
+{
+    font-size:1.1em;
+}
+
+
+.ACA_Arrow
+{
+	text-align:left;
+    vertical-align:top;
+    padding-left:2px;
+    padding-right:2px;
+    width:15px;
+}
+
+.ACA_TextArea
+{
+	overflow-y:scroll;
+}
+
+.ACA_InsComments
+{
+    font-weight:bold;
+	padding-right:2px;
+	vertical-align:top;
+	padding-left:2px;
+	white-space:nowrap;
+	width:1em;
+}
+
+.ACA_InsContent
+{
+	table-layout:fixed;
+}
+
+.ACA_Comments
+{
+	font-weight:bold;
+	padding-right:2px;
+	Vertical-align:top;
+	padding-left:2px;
+	float:left;
+	white-space:nowrap;
+}
+.aca_condition_comment
+{
+    width:3.3em;
+}
+
+/*inspection list end */
+
+.ACA_CapDetail_NoRecord
+{
+	color:Gray;
+	font-family:Arial;
+}
+
+.caphome_asitsearchform_norecord
+{
+    color:Gray;
+    font-family:Arial;
+    padding-left: 5px;
+    clear:both;
+    width:100%;
+    margin-bottom:5px;
+    font-size:1.2em; 
+}
+
+.caphome_asitsearchform {
+    clear:both;
+    width:100%;
+    margin-bottom:5px; 
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    overflow-x: auto;
+    clear: both;
+}
+
+.ACA_Add2CollectionForm
+{
+	display:none;
+	position:absolute;
+	background-color:#fff;
+	color:Blue;
+	border:1px solid #c7c8b8;
+	padding-left:3px;
+	padding-right:3px;
+	padding-top:3px;
+	padding-bottom:4px;
+}
+.ACA_CapDetail_Add2CollectionLink
+{
+	text-align:right;
+}
+.ACA_Loading_Message
+{
+	position:absolute;
+	display:none;
+	background-color:White;
+	border:1px solid #c7c8b8;
+	width:22em;
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.ACA_Global_Loading
+{
+    position:absolute;
+	display:none;
+	background-color:White;
+	border:1px solid #c7c8b8;
+	width:auto;
+	padding: 5px; 
+	border-bottom: 2px solid silver; 
+	border-right: 2px solid silver;
+}
+
+.ACA_Global_Loading_Title
+{
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.ACA_Tip_Message
+{
+	position:absolute;
+	width:100%;
+	display:none;
+	background-color:White;
+	padding-top:50px;
+	text-align:center;
+	top:0px;
+	left:0px;
+}
+
+.ACA_Image_Loader
+{
+	height:16px;
+	width:1.6em;	
+}
+
+.submenu li a
+{
+	padding-left:4px;
+	padding-right:2px;
+}
+.submenu
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	width:100%;
+}
+.submenu ul
+{
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	background-color: #F5F4E2;
+}
+
+.ACA_Collection_RdoButton
+{
+    color: #003366; 
+    font-weight:bold;
+}
+
+.ACA_Collection_RdoButton input
+{
+	margin-top: 0px; 
+}
+
+.ACA_Collection_RdoButton label
+{
+	color: #003366; 
+	font-weight:bold;
+	font-family: Verdana, sans-serif;
+}
+
+.ACA_Collection_RdoButton_FontSize label
+{
+    font-size:1.1em;
+}
+
+.ACA_Collection_RdoButton
+{
+	vertical-align:middle;
+}
+.ShoppingCart_FeeItem
+{
+	word-break:break-all; 
+	padding-right:10px;
+}
+.ACA_RenameCollectionForm
+{
+	display:none;
+	position:absolute;
+	background-color:#fff;
+	color:Blue;
+	border:1px solid #c7c8b8;
+	padding-left:6px;
+	padding-right:3px;
+	padding-top:3px;
+	padding-bottom:4px;
+}
+
+.ACA_ProxyUser_ScrollX
+{
+	white-space: nowrap; 
+	overflow-x: auto;
+	overflow-y: hidden;
+	height:auto;
+}
+
+.ACA_ProxyUser_ScrollX table td
+{
+	white-space: nowrap;
+}
+
+.ACA_Break_Wrod
+{
+	word-break:break-all;
+}
+
+.more_button
+{
+	height:7px;
+	cursor:pointer;
+	font-weight:lighter;
+	white-space:nowrap;
+}
+
+.more_tab a, .more_tab a:hover
+{
+   text-decoration: none;
+   color: #003366;
+}
+
+.nav_more_arrow
+{
+	width:14px;
+	height:7px;
+	cursor:pointer;
+	background-position: right;
+	margin-left:1px;
+}
+
+.submenu a
+{
+	padding-left:4px;
+	padding-right:2px;
+}
+
+.ACA_ListForm4Education
+{
+	display:none;
+	position:absolute;
+	background-color:#fff;
+	color:Blue;
+	border:1px solid #c7c8b8;
+	padding-left:3px;
+	padding-right:3px;
+	padding-top:3px;
+	padding-bottom:4px;
+	width:24em;
+}
+
+.ACA_SearchListForm4Education
+{
+    border:1px solid #c7c8b8;
+    padding-left:3px;
+    padding-right:3px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height:240px;
+}
+
+.ACA_RefEducation_Font
+{
+	font-weight: bold;
+}
+
+.ACA_DisplaySupservisor_OregonUser
+{
+	position:absolute;
+	display:none;
+	background-color:#fff;
+	border:1px solid #c7c8b8;
+	width:28.5em;
+}
+
+.ACA_RenameCollectionForm1
+{
+	background-color:#fff;
+	color:Blue;
+	border:1px solid #c7c8b8;
+	padding-left:6px;
+	padding-right:3px;
+	padding-top:3px;
+	padding-bottom:4px;
+}
+
+.ACA_ProxyUser_Form
+{
+	border:1px solid #c7c8b8;
+	padding-left:6px;
+	padding-right:3px;
+	padding-top:3px;
+	padding-bottom:4px;
+}
+
+.aca_error_message
+{
+    padding-left:3px;
+}
+
+.ACA_WrodWrap
+{
+	word-wrap:break-word;
+}
+
+.ACA_FloatNone
+{
+	float:none;
+}
+
+ .collapse_table
+ {
+    border-collapse:collapse;
+ }
+ .collapse_table td
+ {
+    padding:0px;
+ }
+
+textarea
+{
+     width:30em;
+     height:7.8em;
+}
+
+.aca_expression_label
+{
+    color:Red;
+    display:inline;
+    padding-left:2px;
+}
+.aca_expression_required
+{
+    color: #CC6600;
+	vertical-align:middle;
+	font-family:Arial,sans-serif;
+}
+
+.asit_required_label_fixed
+{
+    margin-top:20px;
+    margin-top:22px;
+    *margin-top:28px;
+}
+
+.asit_section
+{
+    margin-top: 2px;
+    margin-bottom: 7px;
+    clear:both;
+    width:100%;
+    color: #666666;
+    font-size:1em;
+    font-family: Arial, sans-serif;
+}
+
+*+html .asit_required_label
+{
+    padding-bottom:8px;
+}
+
+/* this is ext built-in css, move it from ext-all.css*/
+.x-small-editor .x-form-field-wrap .x-form-trigger{height:19px;top:-2px\9;}
+@media screen and (-webkit-min-device-pixel-ratio:0) /* for safari */
+{
+   .x-small-editor .x-form-field-wrap .x-form-trigger{height:17px;}
+}
+
+/* Ext ComboBox image */
+.x-form-field-wrap .x-form-trigger
+{
+    top:-1px\9;
+}
+
+body.ext-ie6.x-body-masked select 
+{
+    visibility: visible;
+}
+
+.ACA_LabelHeight
+{
+    min-height:16px;
+}
+
+.ACA_MaskDiv
+{
+	left: 0px; 
+	width: 100%; 
+	background-color: #a9a9a9; 
+	height: 100%;
+	position: absolute; 
+	top: 0px; 
+	filter: Alpha(Opacity=50);
+	opacity: 0.5;
+}
+
+.ACA_MaskDiv_Header
+{
+	left: 0px; 
+	width: 100%; 
+	background-color: #a9a9a9; 
+	height: 25px;
+	position: absolute;
+	top: 0px; 
+	filter: Alpha(Opacity=50);
+	opacity: 0.5;
+	z-index: 999;
+}
+
+.ACA_ReportWindow
+{
+	background-color: rgb(241, 245, 252);
+}
+
+.ACA_ReportWindow .report_body,
+.ACA_ReportWindow .email_list
+{
+    width: 100%;
+}
+
+.ACA_NoBorder
+{
+    border-width:0px;
+}
+
+.ACA_ShoppingAccountHeader
+{
+    padding-right: 230px;
+}
+
+.ACA_ShoppingAccountItem
+{
+    padding-right: 231px;
+}
+
+.ACA_Super_ShoppingAccountHeader
+{
+    padding-right: 377px;
+}
+
+.ACA_Super_ShoppingAccountItem
+{
+    padding-right: 378px;
+}
+
+/* Password Security Bar */
+
+.ACA_Bar_Border
+{ 
+    background: #B3B3B3; 
+}
+
+.ACA_Password_Default .ACA_Bar_Left1 
+{ 
+    background: #E3E3E3; 
+}
+
+.ACA_Password_Default .ACA_Bar_Left2
+{ 
+    background: #E3E3E3; 
+}
+
+.ACA_Password_Default .ACA_Bar_Right1 
+{ 
+    background: #E3E3E3; 
+}
+
+.ACA_Password_Default .ACA_Bar_Right2
+{ 
+    background: #E3E3E3; 
+}
+
+.ACA_Password_Default .Tr_Height1,
+.ACA_Password_Short .Tr_Height1,
+.ACA_Password_Weak .Tr_Height1,
+.ACA_Password_Medium .Tr_Height1,
+.ACA_Password_Strong .Tr_Height1,
+.ACA_Password_Wrong .Tr_Height1
+{
+    height: 1px;    
+}
+
+.ACA_Password_Default .Tr_Height2,
+.ACA_Password_Short .Tr_Height2,
+.ACA_Password_Weak .Tr_Height2,
+.ACA_Password_Medium .Tr_Height2,
+.ACA_Password_Strong .Tr_Height2,
+.ACA_Password_Wrong .Tr_Height2
+{
+    height: 4px;    
+}
+
+.ACA_Password_Short .ACA_Bar_Left1
+{ 
+    background: #FF0000; 
+}
+
+.ACA_Password_Short .ACA_Bar_Left2
+{ 
+    background: #E3E3E3; 
+}
+
+.ACA_Password_Short .ACA_Bar_Right1 
+{ 
+    background: #E3E3E3; 
+}
+
+.ACA_Password_Short .ACA_Bar_Right2 
+{ 
+    background: #E3E3E3; 
+}
+
+.ACA_Password_Weak .ACA_Bar_Left1 
+{ 
+    background: #FFCC00; 
+}
+
+.ACA_Password_Weak .ACA_Bar_Left2 
+{ 
+    background: #FFCC00; 
+}
+
+.ACA_Password_Weak .ACA_Bar_Right1 
+{ 
+    background: #E3E3E3; 
+}
+
+.ACA_Password_Weak .ACA_Bar_Right2 
+{ 
+    background: #E3E3E3; 
+}
+
+.ACA_Password_Medium .ACA_Bar_Left1 
+{ 
+    background: #00FF00; 
+}
+
+.ACA_Password_Medium .ACA_Bar_Left2 
+{ 
+    background: #00FF00; 
+}
+
+.ACA_Password_Medium .ACA_Bar_Right1 
+{ 
+    background: #00FF00; 
+}
+
+.ACA_Password_Medium .ACA_Bar_Right2 
+{ 
+    background: #E3E3E3; 
+}
+
+.ACA_Password_Strong .ACA_Bar_Left1 
+{ 
+    background: #00FF00; 
+}
+
+.ACA_Password_Strong .ACA_Bar_Left2 
+{ 
+    background: #00FF00; 
+}
+
+.ACA_Password_Strong .ACA_Bar_Right1 
+{ 
+    background: #00FF00; 
+}
+
+.ACA_Password_Strong .ACA_Bar_Right2 
+{ 
+    background: #00FF00; 
+}
+
+.ACA_Password_Wrong .ACA_Bar_Left1 
+{ 
+    background: #FF0000; 
+}
+
+.ACA_Password_Wrong .ACA_Bar_Left2 
+{ 
+    background: #FF0000; 
+}
+
+.ACA_Password_Wrong .ACA_Bar_Right1 
+{ 
+    background: #FF0000; 
+}
+
+.ACA_Password_Wrong .ACA_Bar_Right2 
+{ 
+    background: #FF0000; 
+}
+
+.ACA_Password_Requirements
+{
+    display:none;
+    border:1px solid #cccccc; 
+    background:#FFFFFF;
+    width:35em;
+    overflow:auto;
+    padding:5px;
+}
+
+.ACA_Clear_Left
+{
+    clear:left;
+}
+.ACA_RegisterConfirm_Width
+{
+    width:55em;
+}
+
+.ACA_ValuatonTotal_Left
+{
+    float:left; 
+    width:20em;
+}
+
+.ACA_ValuatonTotal_Right
+{
+    padding-left:10px;
+    float:left; 	
+}
+
+.add2collectionlink
+{
+    font-size:1.1em;
+}
+
+.ACA_ValCal_Img
+{
+    float:left;   
+    padding-bottom:5px;
+    padding-right:15px;
+}
+
+.ACA_Logo
+{
+    float:left;
+    padding-right:15px;
+    padding-bottom:5px;
+}
+
+.ACA_Area_CapFees .ACA_Logo
+{
+	 padding-top:5px;
+	 padding-right:0px;
+}
+
+.ACA_Logo img
+{
+    height:32px;
+    border:0px;
+}
+
+.ACA_Upload_Button_Width
+{
+    width:44.8em;
+}
+.ACA_Upload_Helper_Width
+{
+	width:32.5em;
+}
+.ACA_ValCal_Title
+{
+    float:left; 	 
+    padding-top:8px; 
+    padding-bottom:10px;
+}
+.ACA_Unit
+{
+	margin-left: 5px;
+}
+
+.ACA_ErrorMessageLabel, .ACA_Nowrap
+{
+    white-space:nowrap;
+}
+
+.ACA_ExpressionMessageLabel
+{
+    white-space:normal;
+}
+
+.ACA_VerticalExpressionMessageLabel
+{
+    white-space:normal;
+    margin-top:0.2em;
+}
+
+.aca_css_editor
+{
+    width:90% !important;
+    height:20em !important;
+}
+
+.ACA_App_Status_Insepction
+{
+    color:#1F497D;
+    text-decoration :underline;
+}
+
+.Map_Container
+{
+    height:530px;
+    width:765px;
+    overflow: hidden;
+}
+
+.MiniMap_Container
+{
+    margin-top:3px;
+    height:300px;
+    width:350px;
+    overflow: hidden;
+}
+
+.Map_Top
+{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.Map_Bottom
+{
+    margin-top: 5px;
+}
+
+.Proxy_ChangeButton_Margin
+{
+    margin-top: 1px
+}
+
+.Proxy_PopupColseButton
+{
+	margin-top:3px;
+	margin-right:3px;
+}
+
+.Map_Label
+{
+    padding-right:3px;
+}
+
+.SmallPopUpDlg
+{
+    background-color: #ffffff;
+    border-width:1px;
+    border-style:solid;
+    border-color:Gray;
+    z-index:99999;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    width:80%;
+}
+
+.LoadingProcessBar
+{
+	position:absolute;
+	display:none;
+	background-color:White;
+	border:1px solid #c7c8b8;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:2px;
+	padding-bottom:2px;
+	z-index:99999;
+}
+
+.InspectionLocationSubTitle
+{
+	color:#353535;
+	font-weight:bold;
+}
+
+.InspectionChangeContactItem
+{
+	padding-left:18px;
+}
+
+.ActionMenus
+{
+	position:absolute;
+	z-index:2;
+}
+
+.AutoHeightScroll
+{
+	overflow-y:auto;
+}
+
+.InspectionTypeGridView
+{
+	height:24em;
+	width:55em;
+	overflow-y:hidden; 
+}
+
+.InspectionTypeRow
+{
+	height:22px;
+}
+
+.InspectionTypeStatus
+{
+	color:Gray;
+	font-weight:normal;
+}
+
+.InspectionWizardPageWidth
+{
+	width:56em;
+}
+
+.InspectionDetailsPageWidth
+{
+	width:75em;
+}
+
+.InspectionSummary
+{
+	min-width:260px;
+}
+
+.InspectionPopupMinHeight
+{
+	min-height: 42.2em;
+}
+
+.InspectionListRow
+{
+	height:40px;
+}
+
+.Associated_Forms .title
+{
+    font-size:1.3em;
+    padding:8px 0px;
+    color:#555;
+}
+
+.Associated_Forms .desc
+{
+    font-size:1.2em;
+    color:#666;
+}
+
+.Associated_Forms .itemsdesc
+{
+    font-size:1.2em;
+    padding:8px 0px 1px 0px;
+    color:#666;
+}
+
+.Associated_Forms .childcaplist
+{
+    width:77em;
+    border-collapse:collapse;
+    margin-bottom:20px;
+}
+
+.Associated_Forms .childcaptitle
+{
+    width:55em;
+}
+
+.Associated_Forms .childcaptitle p
+{
+    font-size:1.0em;
+}
+
+.Associated_Forms .childcapaction
+{}
+
+.Associated_Forms .patternconfig
+{
+    padding:10px 0px;
+}
+
+.Associated_Forms .patternconfigdesc,
+.Associated_Forms .patternconfigdesc p
+{
+    font-style:italic;
+    color:#999;
+}
+
+.ACA_ASIButtonContainer
+{	
+	padding-right:13px;
+}
+
+.ACA_ASITButtonContainer
+{	
+	padding-right:13px;
+}
+
+.SectionTextDecoration
+{
+	text-decoration:none;
+}
+
+.PopupButtonSpace
+{
+	width:2.5em;
+}
+
+.button_space
+{
+	width:8px;
+}
+
+.td_mini_map_left
+{
+    float:left;
+    vertical-align:top;
+    width:40.4em;
+}
+
+.ACA_Address_Detail_Info
+{
+    width:10em;
+    color: #666666;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom:8px;
+}
+
+.td_mini_map_right
+{
+    float:right;
+    vertical-align:top;
+}
+
+.ACA_Dialog
+{
+    background-color:#ffffff;
+    position:absolute;
+    border-style:solid;            
+    border-color:Gray;
+    border-width:1px;
+    z-index:1000;
+    display:block;
+}
+
+.ACA_Dialog_Title
+{
+    padding-left:15px;
+    padding-top:5px;
+    float:left;
+    font-size:1.5em;
+}
+
+.ACA_Dialog_Instruction
+{
+    padding-left:15px;
+}
+
+.ACA_Dialog_Close_Div
+{
+    padding-top:5px;
+    padding-right:5px;
+    z-index:1001;
+    float:right;
+}
+
+.ACA_Dialog_Close_Image
+{
+    cursor:pointer;
+    border:none;
+}
+
+.ACA_Dialog_Frame_DIV
+{
+    z-index:1000;   
+    width:100%;
+    padding:0px 0px 0px 0px;
+    clear:both;
+}
+
+.ACA_Dialog_Form
+{
+    padding-right:15px;
+}
+
+.ACA_Dialog_Frame
+{
+    padding-right:0px;
+}
+
+.ACA_TwoColumnTable
+{
+	float:left;
+	width:48%;
+	padding-right:15px;
+}
+
+.ACA_Table_Align_Top
+{
+	vertical-align:top;
+}
+
+.ACA_Margin_ContactRelationShips
+{
+	margin-left:15px;
+	margin-top:-5px;
+}
+
+.attachment_section
+{
+    margin-bottom: 7px;
+}
+
+.attachment_edit
+{
+    margin-top: 5px;
+}
+
+.attachment_edit .action_buttons,
+.uploadscore_edit .action_buttons
+{
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.license_edit .action_buttons 
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.contact_edit .action_buttons 
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.contact_edit .conditions {
+    padding-bottom: 5px;
+}
+
+.new_license_edit .action_buttons 
+{
+    margin-top: 10px;
+}
+
+.documenttype_margin
+{
+    margin-left:-5px;
+}
+
+.documenttype_button
+{
+    margin-left:-3px;
+}
+
+.ACA_Header_LinkButton
+{
+    padding-left:3px;
+    font-weight:normal;    
+}
+
+.ACA_Tree_Node
+{
+    color: #666666;
+    font-size:1.1em;
+}
+
+.ACA_Tree_Node a
+{
+	text-decoration:none;
+}
+
+.ACA_Tree_SubNode
+{
+    padding-left:20px;
+}
+
+.ACA_Tree_SubNode span
+{
+    color: #666666;
+    font-family: Arial,sans-serif;
+    padding-bottom:2px;
+}
+
+.ACA_DrillDown_Search
+{
+    float:right;
+    padding-right:40px;
+    padding-top:5px;
+}
+
+.ACA_PopupSelect_Container
+{
+    min-height:260px;
+}
+
+.ACA_DrillDown_Container
+{
+	min-height:260px;
+}
+
+.ACA_NIGPTree_Button
+{
+	float:left;
+	width:2%;
+}
+
+.ACA_NIGPTree_ThreeDigitalClass
+{
+	float:left;
+	width:98%;
+}
+
+.ACA_NIGPTree_FiveDigitalClass
+{
+	float:left;
+	width:100%;
+}
+
+.aca_shoppingcartlist_payment
+{
+    padding-left:18px;
+}
+
+.aca_imagebutton_label
+{
+    margin-right:3px;
+}
+
+.ACA_FLeftForStyle
+{
+	margin-left:0px
+}
+
+.ACA_DivPadding10Margin2
+{
+    padding-left: 10px;
+    margin-left: 2px;
+}
+
+.ACA_DivMargin6
+{
+    margin-right: 6px;
+}
+
+.ACA_DivPadding0
+{
+    padding-left: 0px;
+}
+
+.ACA_Message_Label /*6.6i*/
+{
+    margin-left: 8px;
+}
+
+#divTemplateInfo
+{
+    padding-left:2px
+}
+
+.account_templateview
+{
+    line-height: 2.1em;
+}
+
+.PopUpInspectionRow
+{
+	width: 52em;	
+}
+
+.PopUpInspectionConfirm
+{
+	width: 13em;	
+	vertical-align:top;
+}
+
+.account_contactview
+{
+	min-width:25em;
+}
+
+.Confirm_table
+{
+	border-collapse:collapse;
+	min-width:320px;
+}
+
+.ACA_Customize_Component
+{
+    border-style:solid;
+    border-color:#cccccc;
+    border-width:1px;
+}
+
+.ACA_Customize_Component p
+{
+    font-style:italic;
+    color:#aaa;
+    font-family: Arial, sans-serif;
+    font-size:1.2em;
+    padding-left:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.ACA_RegisterLicense_Lookup
+{
+    width:38%;	
+}
+
+/*** File upload ***/
+.fileupload
+{
+    width:45em;
+    display:inline-block;
+}
+
+.fileupload .uploadcontrol
+{
+    margin:8px 0px;
+}
+
+/*** detail page ***/
+.docdetailpage,.edudetailpage,.contedudetailpage,.userlicensedetailpage
+{
+    margin:0px 0px 5px 0px;
+}
+
+.docdetailpage .detailfield,
+.edudetailpage .detailfield,
+.contedudetailpage .detailfield,
+.userlicensedetailpage .detailfield
+{
+    padding:2px 0px;
+}
+.conditiondetailpage
+{
+    padding:15px 0px 10px 0px;
+}
+
+.conditiondetailpage ul {
+    list-style-type: disc;
+    padding-left: 15px;
+}
+.conditiondetailpage table
+{
+    border: solid 1px;
+    border-spacing: 0px;
+}
+
+.conditiondetailpage table td 
+{
+    border: solid 1px;
+}
+
+.detailfield .fieldlabel
+{
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+.generictemplatedetail .fieldlabel 
+{
+    white-space: normal;
+}
+
+.generictemplatetabledetail .tablename {
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    color: #666666;
+    font-size: 1.1em;
+}
+
+.examdetailpage
+{}
+
+.examdetailpage .generictemplatedetail .fieldlabel
+{
+    font-family: Verdana, sans-serif;
+    color: #003366;
+}
+
+.examdetailpage .generictemplatedetail p
+{
+    font-size: 1em;
+}
+
+.examdetailpage .generictemplatetabledetail .tablename {
+    font-size: 1em;
+    color: #003366;
+}
+
+/*** Examination function ***/
+
+.ExaminationFeeItem
+{
+    width:60.8em;
+}
+
+.ExaminationFeeItem_feeitemdesc
+{
+    width:50.8em;
+}
+.ExaminationFeeItem_totalfee
+{
+    width:50.8em;
+}
+
+.PopupExaminationConfirm
+{
+    vertical-align:middle;
+    width:16em;
+}
+
+/************************/
+
+.NullBlock
+{
+    height:0;
+    width:0;
+    display:block;
+}
+
+.contact td
+{
+    white-space:nowrap;
+}
+
+.servicelist .ACA_Message_Notice
+{
+    margin-top:10px;
+}
+
+.servicelist .search_filter_button {
+    float: left;
+    padding-top: 4px;
+    padding-right: 10px;
+}
+
+.servicelist .searchbox_service_group {
+    display: none;
+    position: absolute;
+    width:260px;
+    background-color:#ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    padding-left:5px;
+    padding-right: 10px;
+    z-index: 999;
+}
+
+.searchbox_service_group .service_group_header, .service_group_body {
+    float:left;
+    width:100%;
+}
+
+.searchbox_service_group .service_group_body td {
+    width: 48%;
+    vertical-align:top;
+}
+
+.searchbox_service_group .service_group_title {
+    float: left;
+    width: 100%;
+    font-size:1.1em;
+    border: 1px solid #ffffff;
+    background: none repeat scroll 0 0 #eeeeee;
+    padding: 2px;
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.searchbox_service_group .service_group_foot {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -12px;
+}
+
+.searchbox_service_group .service_group_foot div{
+    padding-left: 5px;
+}
+
+#divAccountManager .clerksection
+{
+    margin-top:10px;
+}
+
+.actionbar_top 
+{
+    margin-bottom: 5px;
+}
+
+.actionbar_bottom 
+{
+    margin-top: 5px;
+    float: left;
+    width: 100%;
+}
+
+.authagent_setting_body
+{
+    margin-left: 6px;   
+}
+
+.authagent_setting_body .sectionheader
+{
+    float:left;
+    width:99%;
+    margin:5px 15px 8px 15px;
+}
+
+.authagent_setting_body .sectionbody
+{
+    float:left;
+    width:99%;
+    margin-top:10px;
+}
+
+.PageHeader
+{
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #003366;
+}
+
+.PageFlowBar
+{
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.CurrentStep 
+{
+    color: #003366;
+}
+
+.SectionButton 
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.SectionSearchResult
+{
+    padding-top: 15px;
+}
+
+.SectionContactAddress
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.RegisterTitle
+{
+    margin-bottom: 10px;
+}
+
+.AuthorizedDeviceDlg
+{
+    padding:15px;
+}
+
+.AuthorizedDevice .action_buttons
+{
+    margin-top: 20px;
+}
+
+.ReadOnlyPosition {
+    position: relative !important;
+}
+
+.NotBreakWord
+{
+    word-break:normal;
+}
+
+.ACA_TotalFee_Expand
+{
+	 padding-left:15px;
+}
+
+.ExpandImg
+{
+    cursor: pointer; 
+    border-width: 0px; 
+    margin-top:3px;
+}
+
+.MoreDetail_BlockTitle
+{
+    width: 72em;
+    text-align: left;
+}
+
+.MoreDetail_BlockContent
+{
+    width: 72em;
+    text-align: left;
+    vertical-align:top;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.MoreDetail_BlockContent4TradeName
+{
+    width: 72em;
+    padding-left: 17px;
+    text-align: left;
+}
+
+.MoreDetail_BlockContent4TradeName caption
+{
+    display: none;
+}
+
+.MoreDetail_ItemTitle
+{
+    clear: both;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.MoreDetail_ItemCol
+{
+    width: 33.9em;
+    float: left;
+    vertical-align:top;
+    padding-bottom: 3px;
+}
+
+.MoreDetail_ItemColASI
+{
+    float: left;
+    vertical-align:top;
+    padding-bottom: 5px;
+}
+
+.MoreDetail_ItemCol1
+{
+    padding-left: 14px;
+    clear: both;
+}
+
+.MoreDetail_ItemCol2
+{
+    padding-left: 8px;
+}
+
+.MoreDetail_Item
+{
+    margin-top: 7px;
+}
+
+.Account_CertificationList 
+{
+    padding-top: 25px;    
+}
+
+.Account_CertificationList .Section
+{
+    padding-top: 15px;    
+}
+
+.SelectCertifcationList
+{
+    padding-top: 5px;
+}
+
+.SelectCertifcationList .Section
+{
+    padding-top: 15px;
+}
+
+.ACA_PopupSelect_Container .ACA_Section_Instruction 
+{
+    font-size: 1.2em;
+}
+
+.external_link 
+{
+    font-weight: bold;
+    color: #003366;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.inspection_result_button {
+    font-size: 1.2em;
+    margin-bottom:10px; 
+    margin-top:10px;
+}
+
+.inspection_detail .parameter_area {
+    margin-bottom: 15px;
+}
+
+.asset_detail_left_column
+{
+    float:left;
+    width: 50%;
+}
+
+.asset_detail_right_column 
+{
+    float:right;
+    width: 50%;
+}
+
+.asset_attach_result_notice
+{ 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: #FF3300;
+    padding-left: 3px;
+    font-size: 1.2em;
+}
+
+.asset_list_lookupbutton
+{
+    margin: 2px 25px 0px 0px;
+}
+
+.popup_table_border_collapse 
+{
+    border-collapse:collapse;
+}
+
+.available_examination_list,
+.available_examination_schedule_list,
+.examination_schedule_confirm,
+.examination_reschedule_reason,
+.examination_cancellation,
+.ContactInput, .ContactLookUpCriteria, .ContactList, .contact_address_selection, .ContactAddressInput, .new_license_edit, .ValidatedContactAddress {
+    padding-bottom: 30px;
+}
+
+.contact_address_selection .contact_type {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.contact_address_selection .contact_name {
+    margin: 3px 0px 0px 0px;
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.contact_address_selection .contact_type_label {
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.contact_address_selection .contact_type_field {
+    margin-left: 5px;
+}
+
+.available_examination_list .examination_list, 
+.ContactInput .ContactInputForm, 
+.ContactLookUpCriteria .ContactLookUpCriteriaInput, 
+.ContactList .ContactListResults, 
+.contact_address_selection .ContactAddressListResults, 
+.ValidatedContactAddress .ContactAddressInputForm,
+.ContactAddressInput .ContactAddressInputForm{
+    padding-bottom: 7px;
+}
+
+.RefAttachment .RefAttachmentList {
+    padding-bottom: 20px;
+}
+
+.ContactTypeSelection .InputBlock  {
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+
+.available_examination_list .buttons li,
+.available_examination_schedule_list .buttons li,
+.examination_schedule_confirm .buttons li,
+.examination_reschedule_reason .buttons li,
+.examination_cancellation .buttons li,
+.CustomerDetail .CustomerDetailButtons li,
+.ContactInput .ContactInputButton li,
+.ContactLookUpCriteria .ContactLookUpCriteriaButton li,
+.ContactList .ContactListButton li,
+.contact_address_selection .ContactAddressListButton li,
+.ContactTypeSelection .ButtonBlock li,
+.ContactAddressInput .ContactAddressInputButtons li,
+.ValidatedContactAddress .ValidatedContactAddressButtons li,
+.new_license_edit .action_buttons li,
+.ACA_Dialog_Content .Footer li,
+.ACA_Content .Footer li,
+.RefAttachment .RefAttachmentListButtons li,
+.AddressSearchResult .ButtonSection li,
+.ParcelSearchResult .ButtonSection li{
+    line-height: 34px;
+}
+
+.ContactTypeSelection {
+    padding-bottom: 25px;
+}
+
+.ContactTypeSelection .InputBlockAdmin {
+    padding-bottom: 30px;
+}
+
+.licenses_certification_notice_list {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	color: #FF3300;
+	padding-left:3px;
+	font-size:1.2em;
+	float: left;
+}
+
+.ContactAddressListForm {
+    width: 74em;
+}
+
+.RequiredContactType_Indicator 
+{
+    color: #666666; 
+    margin-top: 3px;
+    font-size:1.1em;
+    font-weight:normal;
+    font-family: Verdana, sans-serif;
+}
+
+.RequiredContactType_Indicator caption{
+    display: none;
+}
+
+.RequiredContactType_Indicator .Header {
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.AutoLoginButton_RegisterConfirm 
+{
+    padding-top: 20px;
+}
+
+.RegistrationSetting_Section 
+{
+    padding: 8px; 
+    width: 96%
+}
+
+.RegistrationSetting_Section .RegistrationSetting_Section_Disclaimer 
+{
+    float:left;
+    width:99%;
+    margin-left:15px;
+    margin-top:5px;
+    margin-right:15px;
+    padding-bottom:8px;
+    font-size: 1.1em;
+}
+
+.RegistrationSetting_Section .RegistrationSetting_Section_Item 
+{
+    float:left;
+    width:99%;
+    margin-top:8px;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.module_setting_section_item 
+{
+    float: left;
+    width: 99%;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+.module_setting_section_title 
+{
+    float: left;
+    width: 99%;
+    margin-top: 10px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.Condition_Document_Title
+{
+    color: #666666;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size:1.2em;
+}
+
+.Condition_Document_Body
+{
+    color: #666666;
+    font-size:1.2em;
+}
+
+.Condition_Document_ListItem
+{
+    vertical-align: middle;
+}
+
+.FileSelect .fileInfo
+{
+    padding-top: 5px;
+    width: 50%;
+}
+
+.FileSelect .addInfo
+{
+    padding-top: 5px;
+    width: 5%;
+}
+
+.FileSelect .removeInfo
+{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.UploadFileName
+{
+    display:block;
+    width: 24em;
+    background-color: rgb(221, 221, 221);
+}
+
+.Condition_Document_Remove_Icon
+{
+    cursor: pointer; 
+    border-width:0px;
+}
+
+.ACA_Overflow
+{
+    overflow: auto;
+}
+
+.ASIReview2Columns
+{
+    width: 46%;
+    padding-right: 0px;
+    padding-left: 14px;
+}
+
+.ASIReview2OddColumn 
+{
+    width: 46%;
+    padding-right: 0px;
+    padding-left: 0px;    
+}
+
+.ASIReview2EvenColumn 
+{
+    width: 46%;
+    padding-right: 0px;
+    padding-left: 14px;
+}
+
+.SectionBody .SectionItem
+{
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size:0.9em;
+}
+
+.clear
+{
+    width:0px;
+    height:0px;
+    overflow:hidden;
+    clear: both;
+}
+
+.CaptchaError
+{
+    color: red;
+}
+
+.ReadonlyShade
+{
+    position: absolute;
+    z-index: 999;
+    background-color: gray;
+}
+
+.HiddenButton {
+    display: none; 
+    z-index: -1;
+}
+
+.RangeNumberText_SubControl2_Layout {
+    float: right;
+    width: 45%;
+}
+
+.RangeNumberText_Control_Layout {
+    float: left;
+}
+
+.RangeNumberText_SubControl1_Layout {
+    float: left;
+    width: 45%;
+}
+
+.RangeNumberText_Split_Layout {
+    float: left;
+    padding-left: 4%;
+    padding-top: 3%;
+}
+
+.RangeNumberText_SubControl2_Layout {
+    float: right;
+    width: 45%;
+}
+
+.SectionBottom {
+    padding-bottom: 25px;
+}
+
+.SpellCheck_Button
+{
+    width:10.4em;
+}
+
+.SpellCheck_Button span
+{
+    width:8.8em;
+}
+
+.ACA_Etisalat_CAPType 
+{
+     margin: 0px; 
+     margin-bottom:2px; 
+     font-size: 1.4em; 
+     padding-bottom: 0px; 
+     color: #003366; 
+     padding-top: 0px;
+     font-weight: bold;
+}
+
+.ACA_RightItem .record_detail_status, 
+.ACA_RightItem .record_detail_expirationdate
+{
+    margin-top: 3px;
+    color: #666666; 
+    font-family: Verdana, sans-serif;
+    font-weight:bold;
+    font-size:1.1em;
+}
+
+.ACA_RightContent .RegisterLicense_Title,
+.ACA_RightContent .Welcome_Label 
+{
+     margin: 0px; 
+     margin-bottom:2px; 
+     font-size: 1.4em; 
+     padding-bottom: 0px; 
+     color: #003366; 
+     padding-top: 0px;
+     font-weight: bold;
+}
+
+.Header_h2 
+{
+    margin: 0px;
+    margin-bottom:2px;
+    font-size: 1.3em;
+    padding-bottom: 0px;
+    color: #003366;
+    padding-top: 0px;
+    font-weight: bold;
+}
+
+.Header_h3 
+{    
+    margin: 0px;
+    margin-bottom:2px;
+    font-size: 1.2em;
+    padding-bottom: 0px;
+    color: #666666;
+    padding-top: 0px;
+    font-weight: bold;
+}
+
+.Header_h4 
+{
+    margin: 0px;
+    margin-bottom:2px;
+    font-size: 1.1em;
+    padding-bottom: 0px;
+    color: #666666;
+    padding-top: 0px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.Header_h6 
+{
+    margin: 0px;
+    margin-bottom:2px;
+    font-size: 1.5em;
+    padding-bottom: 0px;
+    color: #003366;
+    padding-top: 0px;
+    font-weight: bold;   
+}
+
+.ACA_Area_CapEdit .ACA_RightItem .required_indicate
+{
+     margin-top: 0px; 
+     font-size: 1.1em; 
+     margin-bottom: 0px; 
+     padding-bottom: 0px; 
+     color: #666666; 
+     line-height: 16px; 
+     padding-top: 0px; 
+     font-family: Verdana, sans-serif;
+}
+
+.ACA_Cap_Description_View, .Inspection_Status_Detail
+{
+     margin-top: 0px; 
+     font-size: 1.1em; 
+     margin-bottom: 0px; 
+     padding-bottom: 0px; 
+     color: #666666; 
+     line-height: 16px; 
+     padding-top: 0px; 
+     font-family: Verdana, sans-serif;
+}
+
+.CustomerDetail .CustomerList
+{
+    margin-bottom: 10px;
+}
+
+.MultipleControl_Vertical .SubLabel {
+    float:left;
+    white-space: nowrap;
+    line-height:20px;
+    clear:both;
+}
+
+.MultipleControl_Vertical .SubControl {
+    width: 100%;
+}
+
+.MultipleControl_Horizontal .SubLabel {
+    float:left;
+    white-space: nowrap;
+    line-height:20px;
+    clear:both;
+}
+
+.MultipleControl_Horizontal .SubControl {
+    width:100%;
+}
+
+.SecurityQuestionUpdate {
+    width: 660px;
+}
+
+.SecurityQuestionUpdate .QuestionAndAnswers {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.SecurityQuestionUpdate .UserName {
+    width: 28em;
+    margin-bottom:0.5em;
+}
+
+.SecurityQuestionUpdate .QuestionForAdmin {
+    width: 28em;
+}
+
+.SecurityQuestionUpdate .AnswerForAdmin {
+    width: 28em;
+}
+
+.CompulsorySecurityQuestion {
+    padding-left: 16px; 
+    padding-right: 5px;
+}
+
+.SecurityQuestionUpdateDisclaimer {
+    padding-bottom: 20px;
+}
+
+.BottomActionButton {
+    padding-top: 16px;
+}
+
+.divSessionTimeoutDialog
+{
+    background-color:#ffffff;
+    position:absolute;
+    border-style:solid;            
+    border-color:Gray;
+    border-width:1px;
+    z-index:9000;
+    display:block;
+}
+.divSessionTimeoutDialog > div{
+    margin-bottom: 1em;
+}
+
+.divSessionTimeoutDialog span{
+    display: inline-block;
+}
+
+.divSessionTimeoutDialog .boxTitle{
+    background: #eee;
+    height: 2.8em;
+    line-height: 2.8em;
+}
+.divSessionTimeoutDialog .boxTitle .titleText{
+    padding-left: 1em;
+    font-size: 1.3em;
+    color: #666;
+}
+
+.divSessionTimeoutDialog .boxEntry{
+    margin: 0px auto;
+    color: #666;
+    text-align: center;
+    overflow:hidden; 
+}
+.divSessionTimeoutDialog .boxEntry .entryContent
+{
+    padding: 1.2em; 
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.divSessionTimeoutDialog .boxEntry .entryBtun {
+    width: 6em;
+    text-align: center;
+}
+.divSessionTimeoutDialog input {
+    width: 6em;
+    margin-bottom: 1.2em; 
+}
+
+.actionMenu_LinkAndArrow {
+    white-space: nowrap;
+}
+
+.topshoppingcart_title,
+.topshoppingcart_emptynote,
+.topshoppingcart_item {
+    font-weight:bold; 
+    margin: 0px; 
+    margin-bottom:2px; 
+    padding-bottom: 0px; 
+    padding-top: 0px;
+}
+
+.topshoppingcart_title {
+    font-size: 1.3em; 
+    color: #003366; 
+}
+
+.topshoppingcart_emptynote {
+    font-size: 1.2em; 
+    color: #666666; 
+}
+
+.topshoppingcart_item {
+    font-size: 1.1em; 
+    color: #666666; 
+    vertical-align:middle
+}
+
+.existing_account_register_title {
+    color: #003366;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.existing_account_register_instruction_text {
+    color: #666666; 
+    line-height: 1.6em; 
+    padding-top: 0px; 
+    font-family: Verdana, sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 18px;
+}
+
+.existing_account_register_buttons {
+    clear:both;
+    width:100%;
+    margin-bottom:5px;
+    float:left;
+    line-height:2em;
+    margin-right:8px;
+}
+
+.existing_account_register_buttons li 
+{
+    float:left;
+    line-height:2em;
+    margin-right:8px;
+    line-height: 3.4em;
+}
+
+.fee_tip {
+    color: red;
+}
+
+.FeeList
+{
+    border-width:0px;
+}
+
+.FeeList caption
+{
+    text-align: left;
+}
+
+.ConditionsTop
+{
+    height: 10px;
+    clear: both;
+    width: 100%;
+}
+
+.AddressSearchResult,
+.ParcelSearchResult
+{
+    padding-bottom: 30px;
+}
+
+.AddressSearchResult .Addresses .Conditions,
+.ParcelSearchResult .Parcels .Conditions
+{
+    padding-bottom: 18px;
+}
+
+.AddressSearchResult .Addresses .Conditions .ConditionsTop,
+.ParcelSearchResult .Parcels .Conditions .ConditionsTop
+{
+    height:0px;
+}
+
+.AddressSearchResult .Associates .Parcels,
+.AddressSearchResult .Associates .Owners,
+.ParcelSearchResult .Associates .Addresses,
+.ParcelSearchResult .Associates .Owners
+{
+}
+
+.AddressSearchResult .ButtonSection,
+.ParcelSearchResult .ButtonSection
+{
+}
+
+.ACA_Global_Loading_ImgDiv a:focus,
+.ACA_Global_Loading_ImgDiv a:hover,
+.ACA_Global_Loading_ImgDiv a:active
+{
+    border: 0;
+    outline:none;
+    cursor: default;
+    background-color: transparent;
+    color: transparent;
+}
+
+.ACA_Global_Loading_ImgDiv img 
+{
+    border: 0;
+}
+
+.document_status_list {
+    font-size:1.1em;
+    font-family:Verdana,sans-serif;
+    color:#666;
+    border-collapse: collapse;
+    border:0px;
+    width: 100%;
+}
+
+.document_status_left {
+    margin-left: 22px;
+}
+
+.btnBrowser_html5 
+{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;    
+}
+
+.btnBrowser_html5 input[type="file"] {
+    cursor: pointer;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0; 
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+.html5FileUpload input[type="file"] {
+    height:24px;
+    line-height: 24px;
+}
+
+.html5FileUploadResubmit input[type="file"] {
+    height:12px;
+    line-height: 12px;
+}
+
+.html5ProgressBar {
+    position:relative;
+    border:1px #CCC solid;
+    height:14px;
+    width:140px;
+    margin:0;
+    padding: 1px;
+}
+
+.html5ProgressBar .bgColor {
+    background:#D6EAFB;
+    height:14px;
+}
+
+.html5ProgressBar font {
+    position:absolute;
+    width:140px;
+    top:0px;
+    text-align:center;
+    overflow:hidden;
+    line-height: 14px;
+}
+
+.fontSize4Condition {
+    font-size: 0.83em;
+}
+
+.fileList {
+    height: 200px;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    padding: 3px;
+    border: #e6e6e6 1px solid;
+    margin-bottom: 30px;
+}
+
+.fileList .fileRow
+{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    overflow: hidden;
+    border-bottom: #d3d3d3 1px solid;
+}
+
+.fileList .fileRow .fileRowLeft 
+{
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-right: 5px;
+    float: left;
+}
+
+.fileList .fileRow .fileRowRight 
+{
+    padding-top: 10px; 
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    overflow: hidden;
+    float: left;
+}
+
+.ACA_Dialog_Content .EduExamlookUp .ACA_TabRow
+{
+    clear:both;
+    width:77em;
+    margin-bottom:5px;  
+}
+
+.document_status_documentname 
+{
+    font-weight:bold;
+}
+
+.addressedit_button_section
+{
+    margin-top: 10px;
+}

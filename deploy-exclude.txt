@@ -1,0 +1,10 @@
+.cs
+.svn
+.user
+.csproj
+.db
+.pdb
+.lastcodeanalysissucceeded
+.CodeAnalysisLog.xml
+.doc
+\obj\

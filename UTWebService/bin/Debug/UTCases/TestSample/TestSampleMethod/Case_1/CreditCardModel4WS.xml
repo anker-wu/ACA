@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CreditCardModel4WS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <accelaFee>20</accelaFee>
+  <accountNumber>4012888888881881</accountNumber>
+  <balance>30</balance>
+  <businessName>Achievo</businessName>
+  <callerID>Unit Tester</callerID>
+  <cardType>Visa</cardType>
+  <city>New Orleans</city>
+  <email>dylan.liang@achievo.com</email>
+  <expirationDate>15</expirationDate>
+  <expirationMonth>12</expirationMonth>
+  <expirationYear>2020</expirationYear>
+  <holderName>John Smith</holderName>
+  <pos>false</pos>
+  <posTransSeq>10000</posTransSeq>
+  <postalCode>70119</postalCode>
+  <securityCode>5689</securityCode>
+  <servProvCode>RENO</servProvCode>
+  <state>LA</state>
+  <streetAddress>1000 Broad Street</streetAddress>
+</CreditCardModel4WS>

@@ -1,0 +1,1315 @@
+﻿/* Layout */
+/* Primary Block Layout */
+
+/* Start ACA Page Header */
+
+.ACA_HeaderRight
+{
+	width:90.3em;
+	height:94px;
+	float:left;
+}
+
+/* End ACA Page Header */
+/*==============================================================*/
+/* ACA Page Left Block CSS */
+.ACA_LeftPadding
+{
+	padding-left:15px;
+}
+.ACA_RightPadding
+{
+	padding-right:15px;
+}
+
+/* End Page Left Block CSS */
+/*==============================================================*/
+/* Start HeaderNavigation CSS */
+
+.ACA_NaviTitle
+{
+	width:77em;
+	margin-left:15px;
+}
+
+.ACA_NavBanner
+{
+    width:50em;
+    min-height:42px;
+    border:0;
+    margin-bottom:10px;
+    clear:left;
+    float:left;
+}
+
+.ACA_Title_Font
+{
+	color: #003366; font-weight:bold; margin-bottom:8px;
+}
+
+.ACA_RegisterLogin
+{	
+	float:right;
+}
+
+.ACA_RegisterLogin img
+{	
+	position:static;
+	top:3px;
+	border:0;
+}
+
+.ACA_RegisterLogin_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_NaviMenu
+{
+	padding-left:15px;
+	line-height: 25px; 
+	height: 25px;
+	padding-right:15px;
+	background-image:url(assets/tab_tiling_base.gif);	
+	background-position:bottom;
+	background-repeat:repeat-x;
+}
+
+.ACA_NaviMenu li
+{
+	float:left;
+	vertical-align:middle;
+	margin-right:2px;
+}
+.ACA_ItemLeft
+{
+	width: 16px; 
+	height: 25px;
+}
+.ACA_LeftOn
+{
+	background: url(assets/tab_left_on.gif) no-repeat;
+}
+.ACA_LeftOff
+{
+	background: url(assets/tab_left_off.gif) no-repeat;
+}
+.ACA_ItemCenter
+{
+	line-height:2.5em;
+	height:2.5em;
+	vertical-align:middle;
+	color: #003366;	
+	font-weight:bold;
+	text-decoration:none;
+}
+.ACA_CenterOn
+{
+	background: url(assets/tab_tiling_on.gif);
+}
+.ACA_CenterOff
+{
+	background: url(assets/tab_tiling_off.gif);	
+}
+.ACA_ItemCenter a
+{
+	FONT-WEIGHT: bold; COLOR: #003366; text-decoration:none ;
+}
+
+.ACA_ItemCenter_FontSize a
+{
+    font-size:1.3em;
+}
+
+.ACA_ItemCenter a:hover
+{
+	FONT-WEIGHT: bold; COLOR: #003366; text-decoration:underline;
+}
+
+.ACA_ItemCenter_FontSize a:hover
+{
+    font-size:1.3em;
+}
+
+.ACA_ItemRight
+{
+	width: 16px;  
+	height: 25px;
+}
+.ACA_RightOn
+{
+	background: url(assets/tab_right_on.gif) no-repeat; 	
+}
+.ACA_RightOff
+{
+	background: url(assets/tab_right_off.gif) no-repeat; 
+}
+.ACA_SubMenuList 
+{
+	height:1.6em;
+	border:solid 1px #cccccc;
+	border-top:none;
+	padding:4px;
+	margin-bottom:15px;
+	top:-1px;
+}
+.AccountContactMainForm, .Account_CertificationList
+{
+    border:solid 1px #cccccc;
+    padding:4px;
+    margin-bottom:1px;
+}
+
+/* End HeaderNavigation CSS */
+/*==============================================================*/
+/* Start LoginBox Block */
+.ACA_Admin_LoginBox
+{
+	font-family: arial, sans-serif;
+	width: 19em;
+	padding:8px;
+	background: #F1F4F9;
+	border: solid 1px #999999; 
+}
+
+.ACA_Admin_LoginBox .content
+{
+    padding:0.5em;
+}
+
+.ACA_Admin_LoginBox .aca_checkbox span,
+.ACA_Admin_LoginBox .aca_checkbox label
+{
+    margin-right:0px;
+}
+
+.ACA_Admin_Div
+{
+	position:absolute; 
+	width:19em; 
+	height:340px; 
+	left:50%; 
+	z-index:1; 
+	margin-left:-88px; 
+	margin-top:10px; 
+}
+
+.ACA_Admin_LoginMsg
+{
+	width:17em;
+	color:#FF792C;
+	font-family: arial, sans-serif;
+}
+.ACA_LoginBox
+{
+	font-family: arial, sans-serif;
+	width:22em;
+	float:right;
+	border:solid 1px #999999;
+	padding:10px;
+	padding-bottom:20px;
+	background: #dddddd; 
+	margin-bottom: 16px;
+	color: #666666; 
+}
+
+.ACA_LoginBox input[type=text],
+.ACA_LoginBox input[type=password]
+{
+    width:18.7em;
+}
+
+.ACA_LoginBoxTitle
+{	
+	font-weight: bold;
+	margin-bottom: 8px;
+	color: #003366;
+}
+/* End LoginBox Block */
+/*==============================================================*/
+
+.ACA_Content
+{
+	clear: both;
+	margin-bottom: 16px;
+	margin-left: 15px;
+	width: 77em;
+}
+
+.ACA_Content .Message_Span
+{
+   margin-bottom:20px; 
+}
+
+.ACA_Content .Body 
+{
+    padding-bottom: 10px;
+}
+
+.ACA_Content .Footer 
+{
+    padding-bottom: 25px;
+}
+
+.ACA_Content_Popup
+{
+	clear: both;
+	margin-bottom: 16px;
+	margin-left: 15px;
+    	margin-top: 2px;
+}
+
+.ACA_Calendar_Prev 
+{
+	color: #003366;
+	float: left;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+.ACA_Calendar_Next 
+{
+	color: #003366;
+	float: right;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-align: right;
+}
+
+.ACA_Calendar_Current 
+{
+	color: #666666;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.ACA_CapTree_Expand 
+{
+	cursor: hand; /* for IE 5.x */
+	cursor: pointer; /* hand-shaped cursor */
+	height: 11px;
+	margin-top: 2px;
+	margin-left: 2px;
+	width: 1.2em;
+    border-width:0px;
+}
+	
+.ACA_CapTree_Collapse
+{
+	cursor: hand; /* for IE 5.x */
+	cursor: pointer; /* hand-shaped cursor */
+	height: 11px;
+	margin-top: 2px;
+	margin-left: 2px;
+	width: 1.2em;
+    border-width:0px;
+}
+
+.ACA_Content_Expand {
+	cursor: hand; /* for IE 5.x */
+	cursor: pointer; /* hand-shaped cursor */
+	float: left;
+	height: 11px;
+	margin-top: 2px;
+	margin-left: 2px;
+	width: 12px;
+	outline-style:none;
+	border: none;
+	}
+	
+.ACA_Content_Collapse
+{
+	cursor: hand; /* for IE 5.x */
+	cursor: pointer; /* hand-shaped cursor */
+	float: left;
+	height: 11px;
+	margin-top: 2px;
+	margin-left: 2px;
+	width: 1.2em;
+	outline-style:none;
+}
+
+.ACA_Content_Collapse_Disable{
+	background: transparent url(assets/caret_collapsed.gif) no-repeat;
+	float: left;
+	height: 11px;
+	margin-top: 2px;
+	margin-left: 2px;
+	width: 12px;
+	outline-style:none;
+}
+	
+.ACA_Calendar_Container {
+	font-weight:bold;
+	margin-left: 4px; 
+	vertical-align: top; 
+	border-top-style: none; 
+	margin-right: 4px; 
+	border-right-style: none; 
+	border-left-style: none; 
+	border-bottom-style: none
+}
+.ACA_Calendar_Day_Active {
+	width:1em;  
+	text-align:center;
+	font-weight:normal;
+	float: left;   
+	color: #0000c6; 
+	line-height:2em;  
+}
+.CalendarDayInactive {
+	width:1em;
+	text-align:center;
+	font-weight:normal;
+	float: left;
+    background-color: #FFFFFF;
+	color: gray;
+	line-height:2em;
+}
+.ACA_Calendar_Day_Header {
+	 padding-right: 4px; 
+	 width:1.4em; 
+	 padding-left: 4px;
+	 background: #dddddd; 
+	 float: left; 
+	 margin-bottom: 4px; 
+	 padding-bottom: 4px; 
+	 color: #3c3c3c; 
+	 padding-top: 4px; 
+	 height: 1em
+}
+.ACA_Calendar_Day
+{
+     color:Blue;
+}
+.ACA_Calendar_Other_Month_Day {
+	 display: block;  
+	 font-weight:normal;
+	 background: #ffffff; 
+	 float: left; 
+	 width: 9em; 
+	 line-height: 0px; 
+	 padding-top: 4px;
+}
+
+fieldset
+{
+	-moz-border-radius:8px;
+	margin-top:15px;
+	margin-bottom:15px;
+	padding:0px 5px 5px 5px;
+}
+
+legend 
+{
+	 height: 2.0em; 
+	 margin-left:5px;
+}
+.fieldset_phonesetting
+{
+	padding-left:8px;
+	padding-right:14px;
+	*padding-right:8px;
+	padding-bottom:8px;
+	padding-top:8px;
+	width:96%;
+}
+.fieldset_globalfeature_item
+{
+    float:left;
+    width:99%;
+    margin-left:8px;
+    margin-right:8px;
+}
+.ACA_MenuItem
+{
+	color: #003366;	
+	font-weight:bold;
+	text-decoration:none;
+	line-height: 2.4em; 
+	height: 2.4em;
+	padding-left:2px;
+	padding-right:5px;
+}
+.tab_bar_menu_item
+{
+    border-top: 1px solid #CCCCCC;
+}
+.ACA_MenuItem a
+{
+	FONT-WEIGHT: bold; COLOR: #003366; text-decoration:none ;
+}
+
+.ACA_MenuItem_FontSize a
+{
+    font-size:1.3em;
+}
+
+.ACA_MenuItem a:hover
+{
+	FONT-WEIGHT: bold; COLOR: #003366; text-decoration:underline;
+}
+
+.ACA_MenuItem_FontSize a:hover
+{
+    font-size:1.3em;
+}
+
+.ACA_MoreItemLeft
+{
+	width: 16px; 
+	height: 25px;
+}
+.ACA_MoreItemCenter
+{
+	line-height:2.5em;
+	height:2.5em;
+	vertical-align:middle;
+	color: #003366;	
+	font-weight:bold;
+	text-decoration:none;
+}
+.ACA_MoreItemRight
+{
+	width: 16px;  
+	height: 25px;
+}
+.nav_bar_container
+{
+	 clear:both;
+	 width:77em;
+	 margin-left:15px;
+	 display:table;
+	 table-layout:fixed;
+}
+
+.nav_bar_separator
+{
+     display:inline-block;
+     padding-left:2px;
+     padding-right:2px;
+}
+.condition_notice_tr
+{
+	text-align:left;
+}
+.condition_notice_name
+{
+	padding-right:10px;
+}
+.condition_notice_comment
+{
+	padding-left:9px;
+	padding-right:8px;
+}
+.tab_bar_table
+{
+	margin-right:4px;
+}
+.tab_tar_separator
+{
+    padding-left:3px;
+    padding-right:3px;
+    color:#666666;
+}
+.dropmenu
+{
+	position:relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	width:100%;
+	border: 1px solid #CCCCCC;
+	background-color: #F5F4E2;
+	float: left;
+}
+.collection_dropmenu
+{
+	position:relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	width:100%;
+	border: 1px solid #CCCCCC;
+	background-color: White;
+	float: left;
+	padding-left:10px;
+	padding-right:3px;
+	padding-top:3px;
+	padding-bottom:5px;
+}
+.ACA_Content_Collection
+{
+	clear: both;
+	margin-left: 24px;
+	width: 74.4em;
+}
+.ACA_VerticalAlign
+{
+	vertical-align:top;
+}
+.ACA_HyperLink {
+	cursor: pointer; 
+	outline-style:none;
+}
+
+/* Start Global Search CSS */
+.gs_container{
+    width:25em;
+    clear:right;
+    float:right;
+    padding:10px 0px;
+}
+
+.gs_top_table{
+    table-layout:fixed;
+    float:right;
+    height:2.2em;
+}
+
+.gs_top_table tr td{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    vertical-align:top;
+}
+
+.gs_border{
+    border-width: 1px;
+    border-color: #cccccc;
+    border-style: solid solid solid solid;
+}
+
+.section_search_border
+{
+    border-width: 1px;
+    border-color: #999999;
+    border-style: solid solid solid solid;
+    background-color: White;
+}
+    
+.gs_border_right{
+    border-width: 1px;
+    border-color: #cccccc;
+    border-style: solid solid solid none;
+    width: 1.2em;
+}
+
+.gs_search_box{
+    height:1.6em;
+    width:16.3em;
+    border-width: 0px;
+    border-style:none;
+    font-family:Arial;
+}
+
+.gs_go_img {
+    cursor:default;
+    border-width: 0px;
+    border-style:none;
+    width:auto;
+    height:auto;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.gs_history_img
+{
+    cursor:default;
+    border-width: 0px;
+    border-style:none;
+    width:auto;
+    height:auto;
+    text-align:center;
+    vertical-align:middle;
+}
+.gs_history_list{
+    background-color:White;
+    padding:2px 4px 2px 4px;
+}
+
+.watermark{
+    color:#ccc;
+    font-style:italic!important;
+    overflow:hidden;
+}
+
+.gs_panel
+{
+    /*background-color:#E3F1FC;*/
+}
+
+.gs_list
+{
+    background-color:white;
+}
+
+.gs_list_width
+{
+    width:77em;
+}
+/* End Global Search CSS */
+
+
+.aca_checkbox
+{
+    line-height:1.4em;
+}
+
+.aca_checkboxlist
+{
+    line-height:1.4em;
+    *margin-bottom:17px;
+}
+
+.aca_checkbox input,.aca_checkboxlist input 
+{   
+    vertical-align:middle;
+    margin: 2px 0px 2px 0px;
+    padding:0px;
+    *margin: -1px -3px -1px -3px;
+}
+
+.aca_checkbox label,.aca_checkbox span,.aca_checkboxlist label   
+{
+    vertical-align:middle;
+    margin:2px 5px 2px 0px;
+    *margin: -1px 5px -1px 0px;
+    padding:0px;
+    margin-left:4px;
+    margin-left:3px\9; 
+}
+
+.aca_checkboxlist label 
+{
+	color: #666666;
+	font-family: Arial, sans-serif;
+	display:inline;
+	margin-right:13px;
+	white-space:nowrap;
+}
+
+.aca_checkbox label 
+{
+    color: #666666;
+	font-family: Arial, sans-serif;
+}
+
+.aca_checkbox_fontsize label
+{
+    font-size:1.2em;
+}
+
+.NAVIGATION_INPUT_CHKBOX
+{
+    margin-bottom:-1px;
+    }
+
+.aca_radio_rtl{}
+
+.aca_radio_rtl label
+{
+    margin-right:4px;
+    margin-right:3px\9;
+	margin-left:13px;
+}
+
+.asi_ddl_width
+{
+    width:14.4em;
+    width:14.6em\9;
+}
+
+.aca_asi_table
+{
+    width:77em;
+}
+
+.ACA_Area_CapHome
+{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    overflow:auto;
+    clear:both;
+}
+
+/* For the special bug#38640 in Facebook */
+.ACA_Area_CapHome:hover
+{
+    height:100%;
+}
+
+.ACA_Area_CapFees
+{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    clear:both;
+    float:left;
+}
+
+.ACA_Area_CapDetail
+{
+    margin:0px;
+    padding:0px;
+    border:0px;
+    overflow-x:hidden;
+    clear:both;
+}
+
+.ACA_Area_CapDetail .ConditionList
+{
+    width:100%;
+}
+
+.ACA_Section
+{}
+
+.ACA_SectionHeader
+{
+}
+
+/*this class will be replaced by ACA_SectionHeader in the future.*/
+.ACA_SectionHeaderTemp
+{
+    margin-top:1.5em;
+}
+
+.ACA_SectionBody
+{}
+
+.SectionBody
+{
+    padding-left:10px;
+}
+
+.ACA_ASI_Container
+{
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    height: auto; 
+    margin-top: 0px; 
+    clear: both;
+    height: 100%;
+    *padding-bottom:20px;
+}
+
+.ACA_ASI_Container .ACA_ErrorMessageLabel
+{
+    white-space:normal;
+}
+
+.ACA_Placeholder_Height
+{
+    min-height:15px;
+}
+
+.SectionTitleArrow
+{
+	cursor:pointer;
+	border-width:0px;
+}
+
+.ACA_Dialog_Content
+{
+    padding-left:15px;
+    margin-left:0px;
+    padding-top:0px;
+}
+
+.ACA_Dialog_Content .Body
+{
+    padding-top: 10px;
+}
+
+.ACA_Dialog_Content .BodyWithBtn
+{
+    padding-top: 10px;
+}
+
+.ACA_Dialog_Content .Footer
+{
+    padding-top: 15px;
+    margin-bottom: 25px;
+}
+
+.ACA_Dialog_Content_NoFontFormat
+{
+    padding-left:15px;
+    margin-left:0px;
+    font-family: sans-serif;
+}
+
+.ACA_Dialog_Content_Padding
+{
+    padding-left:15px;
+    margin-left:0px;
+}
+
+.ACA_Clone_Container_First_TD
+{
+    width:40%
+}
+
+.ACA_Cap_Completions_TD
+{
+    width:12%
+}
+
+.ACA_Image_PlaceHolder
+{
+    text-align:center;
+    vertical-align:baseline;
+}
+
+Table.NoBorder {
+	border-collapse: collapse;
+	border:0px;
+}
+
+Table.NoBorder td, th, tbody {
+	padding: 0px;
+}
+
+.ACAMap_Popup_Div
+{
+    width:0px;
+    height:0px;
+    padding:0px 0px 0px 0px;
+}
+
+.ACAMap_Popup_Content
+{
+    height:19em;
+    width:36.4em;
+    border:gray 1px solid;
+    overflow-y:auto;
+}
+
+.aca_map_select_agency_radio
+{
+    padding-left:5px;
+}
+
+.aca_popup_ok_button span
+{
+    width:4em;
+}
+
+.aca_map_popup_button_margin
+{
+    margin-top:5px;    
+}
+
+.welcome_cartlist
+{
+    margin: 0px 0px 10px 10px;
+    border:solid thin #ccc;
+}
+
+.welcome_instruction
+{
+    width:27em;
+    min-height:160px;
+    border:0px;
+    margin:0px 0px 10px 10px;
+    float:left;
+    overflow:hidden;
+}
+
+.GradeImage
+{
+    width: 7.1em;
+    height:9em;
+    border-spacing:0;
+    border-width:0px;
+    border-style:none;
+}
+
+.Dialog_PaddingBottom
+{
+    padding-bottom:10px;
+}
+
+/**--ASIT (list / edit form / drill down) layout customization **/
+.asit_listcontent
+{
+    margin:0px 0px 20px 0px;
+    overflow-y:hidden;
+}
+
+.asit_listcontent .action_buttons
+{
+    margin:5px 0px 0px 0px;
+}
+
+.asit_drilldown .breadcrumb 
+{
+    color: #666666;
+    font-family: Arial, sans-serif;
+    margin-bottom: 2px;
+    font-size:1.1em;
+}
+
+.asit_drilldown .columnName 
+{
+     margin: 0px; 
+     margin-bottom:2px; 
+     font-size: 1.4em; 
+     padding-bottom: 0px; 
+     color: #003366; 
+     padding-top: 0px;
+     font-weight: bold;
+}
+
+.asit_editform
+{
+    margin:0px 0px 10px 0px;
+}
+
+.asit_drilldown
+{
+    margin:0px 0px 20px 0px;
+}
+/***/
+
+.related_records
+{
+    width:77em;
+    height:100%;
+    overflow-x:visible;
+}
+
+.related_records caption{
+    display: none;
+}
+
+#tableCapTreeList
+{
+    border:0px;
+    width:77em;
+    border-collapse:collapse;
+}
+
+.contactaddressform
+{
+    margin:8px 0px 5px 0px;
+    width: 74em;
+}
+
+.RegisterLicense_RowEven
+{
+    background: #E5FFFF;
+    color: #666666;
+    font-family: Arial, sans-serif;	
+    padding-left:4px;
+    padding-bottom:4px;
+    padding-top:4px;
+}
+
+.RegisterLicense_RowOdd
+{
+    background: #FFFFFF;
+    color: #666666;
+    font-family: Arial, sans-serif;	
+    padding-bottom:4px;
+    padding-top:4px;	
+    width:100%;
+}
+
+/*****reCAPTCHA UI begin*****/
+.recaptcha
+{
+    border:1px solid #dfdfdf;
+    width:35em;
+    padding:5px;
+    margin-top:10px;
+    clear:both;
+}
+
+.recaptcha input
+{
+    width:29.7em;
+}
+
+.ACA_LoginBox .recaptcha
+{
+    border:0px;
+    width:22em;
+    padding:0px;
+    margin-top:0px;
+}
+
+.recaptcha_buttons
+{
+    margin-left:2px;
+}
+
+.recaptcha_buttons a
+{
+    line-height:0px;
+}
+
+.recaptcha_buttons img
+{
+    width:25px; 
+    height:17px;
+    border:0px;
+}
+
+#recaptcha_image
+{
+    border:1px solid #dfdfdf;
+}
+
+.ACA_LoginBox #recaptcha_image,
+.ACA_LoginBox #recaptcha_image img
+{
+    width:19em !important;
+    height:5.3em !important;
+}
+/*****reCAPTCHA UI end*****/
+
+.dependent_cap_type
+{
+}
+
+.dependent_cap_type .desc
+{
+    height:2.1em;
+}
+
+.dependent_cap_type .item
+{
+    height:21px; 
+    padding-left:16px;
+}
+
+.contact_duplicate_dialog
+{
+    width:30em;
+}
+
+/* Style definition for AKA(Also Known As) fields*/
+.aka_list
+{}
+
+.aka_list caption
+{
+    display: none;
+}
+
+.aka_list .ACA_Label
+{
+    font-size:1.1em;
+}
+
+.aka_list input[type=text]
+{
+    margin:2px 2px 0px 0px;
+}
+
+.aka_list .data
+{}
+
+.aka_list .action
+{
+    vertical-align:middle;
+    font-size:1.1em;
+}
+
+.aka_list .add_button
+{
+    margin:3px 0px 0px 0px;
+}
+
+.aka_list .del_button
+{}
+/* Style definition for AKA(Also Known As) fields*/
+
+/* Template table styles in record detail page*/
+.capdetail_template_table H2 {
+    font-size: 1.3em;
+    font-family: Arial, sans-serif;
+}
+
+.capdetail_template_table .Header_h2 {
+    font-size: 1.3em;
+    font-family: Arial, sans-serif;
+}
+
+.capdetail_template_table P {
+    font-size: 1.1em;
+}
+.capdetail_template_table .ACA_Title_Text {
+    font-size: 1.2em;
+}
+
+.dialog_message {
+    padding-left:15px;
+    margin-left:0px;
+    padding-top:0px;
+    padding-bottom: 10px;
+}
+
+.aca_admin_fieldset {
+    padding: 8px;
+    width: 96%;
+}
+
+.aca_admin_fieldset .header_outer {
+    border-width: 2px; 
+    border-style: solid;
+    border-color: #B6D2E5; 
+    background-color: #ECF5FE;
+    width: 99.5%; 
+    margin-top:5px;
+    margin-right:2px;
+    overflow:hidden;
+    clear:both;
+}
+
+.aca_admin_fieldset .header_inner {
+    float:left;
+    width:99%;
+    margin-top:5px;
+    margin-left:15px;
+    margin-right:15px;
+    padding-bottom:8px;
+}
+
+.aca_admin_fieldset .header_innertext {
+    float: left;
+    clear: left;
+    color: #666666;
+    font-family: Arial, sans-serif;
+    font-size:1.1em;
+    margin-right: 15px;
+    margin-bottom: 2px;
+}
+
+.aca_admin_fieldset .body {
+    float:left;
+    width:99%;
+    margin-top:8px;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.inspection_attchment {
+    float:left;
+    clear:both; 
+    width: 100%;
+    color: #666666;
+    font-family: Arial,sans-serif;
+    font-size: 1.1em;
+    margin-top:5px;
+    margin-right:10px;
+    margin-bottom:5px;
+}
+
+.inspection_attchment .upload_section {
+    float:left; 
+    margin-left:15px;
+}
+
+.inspection_attchment .file_section {
+    float:left;
+    width: 83%;
+    margin-left:15px;
+}
+
+.inspection_attchment .file_section a {
+    float: left;
+    margin-right:5px;
+}
+
+.inspection_attchment .file_section .space {
+    float: left;
+    margin-right:5px;
+}
+
+.inspection_attchment div {
+    float:left;
+}
+
+.ACA_Area_CapEdit .asset_section {
+    margin: 0px 0px 25px 0px;
+}
+
+.ACA_Area_CapConfirm .asset_section {
+    margin: 0px 0px 5px 0px;
+}
+
+.ACA_Area_CapConfirm .section_body {
+    margin: 0px 0px 7px 0px;
+}
+
+.asset_detail .detailfield
+{
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.asset_detail .detailfield .fieldlabel
+{
+    white-space: normal;
+}
+
+.asset_detail .detailfield .templatetable 
+{
+    clear: both;
+}
+
+.asset_detail .detailfield .templatetable tr td,
+.asset_detail .detailfield .templatetable tr th
+{
+    padding-right: 2px;
+    vertical-align: top;
+}
+
+.asset_detail .addresslist
+{
+    float: left;
+    padding-bottom: 10px;
+}
+
+.asset_searchresult
+{
+     margin: 0px 0px 15px 0px;
+}
+
+.popaction_ico_img {
+    border: none;
+}
+
+.caphome {
+    
+}
+
+.caphome .mypermitlist
+{
+  
+}
+
+.caphome .mypermitlist .introduce 
+{
+    margin-top: 15px;
+}
+
+.caphome .searchsection
+{
+    margin-top: 15px;
+}
+
+.caphome_search_icon
+{
+    border-width:0px;
+    cursor: hand;
+    cursor: pointer;
+    float: left;
+    height: 11px;
+    margin-left: 2px;
+    width: 1.2em;
+    outline-style:none;
+}

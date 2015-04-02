@@ -1,0 +1,21 @@
+/*
+Split Button
+*/
+
+/* Main button of Split button */
+.splitbutton .mainbtn A
+{
+    background:url(assets/button_sm256.gif) right 0;
+}
+
+.splitbutton .mainbtn A:hover{background:url(assets/button_sm256.gif) right -16px;}
+.splitbutton .mainbtn A:active{background:url(assets/button_sm256.gif) right -32px;}
+
+/* Drop button of Split button */
+.splitbutton .dropbtn A
+{
+    background:url(assets/button_split.gif) left 0;
+    border-left: 0px;
+    border-right: solid 1px #cccccc;
+}
+.splitbutton .dropbtn A:hover{background:url(assets/button_split.gif) right -16px;}

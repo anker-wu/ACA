@@ -1,0 +1,2 @@
+.ajax__calendar_next {cursor:pointer;width:15px;height:15px;float:left;background-repeat:no-repeat;background-position:50% 50%;background-image:url(assets/arrow-left.gif);}
+.ajax__calendar_prev {cursor:pointer;width:15px;height:15px;float:right;background-repeat:no-repeat;background-position:50% 50%;background-image:url(assets/arrow-right.gif);}

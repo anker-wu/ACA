@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParamMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Adapter AdapterName="Config">
+      <Parameter MappingName="AgencyCode"          ACA="AgencyCode"          ThirdParty=""></Parameter>
+      <Parameter MappingName="ApplicationID"       ACA="ApplicationID"       ThirdParty="applicationID"></Parameter>
+      <Parameter MappingName="TransactionID"       ACA="TransactionID"       ThirdParty="transactionID"></Parameter>
+      <Parameter MappingName="PostbackURL"         ACA="PostbackURL"         ThirdParty=""></Parameter>
+      <Parameter MappingName="RedirectURL"         ACA="RedirectURL"         ThirdParty=""></Parameter>
+      <Parameter MappingName="PaymentAmount"       ACA="PaymentAmount"       ThirdParty="payAmount"></Parameter>
+      <Parameter MappingName="ConvFee"             ACA="ConvFee"             ThirdParty="convFee"></Parameter>
+      <Parameter MappingName="UserID"              ACA="UserID"              ThirdParty=""></Parameter>
+      <Parameter MappingName="UserEmail"           ACA="UserEmail"           ThirdParty=""></Parameter>
+      <Parameter MappingName="FullName"            ACA="FullName"            ThirdParty=""></Parameter>
+      <Parameter MappingName="PaymentType"         ACA="PaymentType"         ThirdParty="paymentMethod"></Parameter>
+      <Parameter MappingName="CCType"              ACA="ccType"              ThirdParty=""></Parameter>
+      <Parameter MappingName="CCNumber"            ACA=""                    ThirdParty=""></Parameter>
+      <Parameter MappingName="ACATransSuccess"     ACA="success"             ThirdParty=""></Parameter>
+      <Parameter MappingName="UserMessage"         ACA="UserMessage"         ThirdParty=""></Parameter>
+      <Parameter MappingName="ProcTransactionID"   ACA="ProcTransactionID"   ThirdParty="paymentProviderTransId"></Parameter>
+      <Parameter MappingName="ProcTransactionType" ACA="ProcTransactionType" ThirdParty=""></Parameter>
+      <Parameter MappingName="MerchantAccountID"   ACA="MerchantAccountID"   ThirdParty=""></Parameter>
+  </Adapter>
+</ParamMapping>

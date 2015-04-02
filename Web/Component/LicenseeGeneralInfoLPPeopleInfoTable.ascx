@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="Accela.ACA.Web.Component.LicenseeGeneralInfoLPPeopleInfoTable" Codebehind="LicenseeGeneralInfoLPPeopleInfoTable.ascx.cs" %>
+<asp:PlaceHolder ID="phLPPeopleInfoTable" runat="server" EnableTheming="true"></asp:PlaceHolder>

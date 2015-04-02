@@ -1,0 +1,319 @@
+﻿.ACA_TabRow_Comment_Even
+{
+	float: right;
+}
+.ACA_TabRow_Comment_Odd
+{
+	float: right;
+}
+.ACA_TabRow_Header th
+{
+    padding-right:2px;
+}
+
+th
+{
+     text-align:right;
+}
+
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_40 {
+	width: 64em;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20,
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24,
+.grid_25,
+.grid_26,
+.grid_27,
+.grid_28,
+.grid_29,
+.grid_30,
+.grid_31,
+.grid_32,
+.grid_33,
+.grid_34,
+.grid_35,
+.grid_36,
+.grid_37,
+.grid_38,
+.grid_39,
+.grid_40,
+.grid_41,
+.grid_42,
+.grid_43,
+.grid_44,
+.grid_45,
+.grid_46,
+.grid_47,
+.grid_48 {
+	display:inline;
+	float:  right;
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Prefix Extra Space >> 40 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.suffix_1 {
+	margin-left:1.6em;
+}
+
+.suffix_2 {
+	margin-left:3.2em;
+}
+
+.suffix_3 {
+	margin-left:4.8em;
+}
+
+.suffix_4 {
+	margin-left:6.4em;
+}
+
+.suffix_5 {
+	margin-left:8.0em;
+}
+
+.suffix_6 {
+	margin-left:9.6em;
+}
+
+.suffix_7 {
+	margin-left:11.2em;
+}
+
+.suffix_8 {
+	margin-left:12.8em;
+}
+
+.suffix_9 {
+	margin-left:14.4em;
+}
+
+.suffix_10 {
+	margin-left:16.0em;
+}
+
+.suffix_11 {
+	margin-left:17.6em;
+}
+
+.suffix_12 {
+	margin-left:19.2em;
+}
+
+.suffix_13 {
+	margin-left:20.8em;
+}
+
+.suffix_14 {
+	margin-left:22.4em;
+}
+
+.suffix_15 {
+	margin-left:24.0em;
+}
+
+.suffix_16 {
+	margin-left:25.6em;
+}
+
+.suffix_17 {
+	margin-left:27.2em;
+}
+
+.suffix_18 {
+	margin-left:28.8em;
+}
+
+.suffix_19 {
+	margin-left:30.4em;
+}
+
+.suffix_20 {
+	margin-left:32.0em;
+}
+
+.suffix_21 {
+	margin-left:33.6em;
+}
+
+.suffix_22 {
+	margin-left:35.2em;
+}
+
+.suffix_23 {
+	margin-left:36.8em;
+}
+
+.suffix_24 {
+	margin-left:38.4em;
+}
+
+.suffix_25 {
+	margin-left:40.0em;
+}
+
+.suffix_26 {
+	margin-left:41.6em;
+}
+
+.suffix_27 {
+	margin-left:43.2em;
+}
+
+.suffix_28 {
+	margin-left:44.8em;
+}
+
+.suffix_29 {
+	margin-left:46.4em;
+}
+
+.suffix_30 {
+	margin-left:48.0em;
+}
+
+.suffix_31 {
+	margin-left:49.6em;
+}
+
+.suffix_32 {
+	margin-left:51.2em;
+}
+
+.suffix_33 {
+	margin-left:52.8em;
+}
+
+.suffix_34 {
+	margin-left:54.4em;
+}
+
+.suffix_35 {
+	margin-left:56.0em;
+}
+
+.suffix_36 {
+	margin-left:57.6em;
+}
+
+.suffix_37 {
+	margin-left:59.2em;
+}
+
+.suffix_38 {
+	margin-left:60.8em;
+}
+
+.suffix_39 {
+	margin-left:62.4em;
+}
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+.container_40 .aca_checkbox label 
+{
+    color: #666666;
+	font-family: Arial, sans-serif;
+	display:inline-block;	
+	margin-right: 0.5em;
+}
+
+.container_40 .ACA_Label
+{
+    margin:0;
+    margin-top:0.2em;
+    padding:0;
+    padding-right:0.2em;
+}
+
+.container_40 .ACA_RTLDropDownList
+{
+    margin-bottom: 2px;
+    padding:0;
+    float:none;
+}
+
+.ACA_TabRow_SmallOdd, .ACA_TabRow_SmallEven
+{
+    float: right;
+}

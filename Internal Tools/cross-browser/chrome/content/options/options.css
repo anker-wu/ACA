@@ -1,0 +1,44 @@
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+hbox > label
+{
+    margin-left: 0 !important;
+}
+
+#cross-browser-options-dialog
+{
+    height: 40em !important;
+    width: 60em !important;
+}
+
+#cross-browser-options-page-list
+{
+    width: 11em !important;
+}
+
+#cross-browser-options-page-list listitem
+{
+    padding: 0.25em !important;
+}
+
+spacer.large-spacer
+{
+    width: 20px !important;
+}
+
+spacer.small-spacer
+{
+    width: 10px !important;
+}
+
+.indent
+{
+    margin-left: 25px !important;
+}
+
+.scroll
+{
+    height: 25em !important;
+	overflow: auto !important;
+}

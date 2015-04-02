@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://cross-browser/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://cross-browser/locale/overlay.dtd">
+<overlay id="cross-browser-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+			xmlns:html="http://www.w3.org/1999/xhtml">
+  <script type="application/x-javascript" src="chrome://cross-browser/content/overlay.js"/>
+  <script type="application/x-javascript" src="chrome://cross-browser/content/fulin-file.js"/>
+  <script type="application/x-javascript" src="chrome://cross-browser/content/common/preferences.js"/>
+  <script type="application/x-javascript" src="chrome://cross-browser/content/common/handlevalue.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="cross-browser-strings" src="chrome://cross-browser/locale/overlay.properties"/>
+  </stringbundleset>
+
+
+  <toolbox id="navigator-toolbox">
+    <toolbar class="chromeclass-toolbar" toolbarname="&cross-browserToolbar.name;" customizable="true" id="cross-browser-toolbar">
+	  <toolbarbutton crossbrowser-tag="ALL" label="&cross-browserToolbarButton.button.label;" tooltiptext="&cross-browserToolbarButton.button.label;" oncommand="DoAllCommand();"/>
+	  <toolbarbutton crossbrowser-tag="IE7" id="CrossBrowser_IETester_IE7" label="&cross-browserToolbarButton.buttonie7.label;" tooltiptext="&cross-browserToolbarButton.buttonie7.label;" oncommand="DoCommand('IE7');"/>
+	  <toolbarbutton crossbrowser-tag="IE8" id="CrossBrowser_IETester_IE8" label="&cross-browserToolbarButton.buttonie8.label;" tooltiptext="&cross-browserToolbarButton.buttonie8.label;" oncommand="DoCommand('IE8');"/>
+	  <toolbarbutton crossbrowser-tag="IE9" id="CrossBrowser_IETester_IE9" label="&cross-browserToolbarButton.buttonie9.label;" tooltiptext="&cross-browserToolbarButton.buttonie9.label;" oncommand="DoCommand('IE9');"/>
+	  <!--<toolbarbutton id="CrossBrowser_firefox" label="&cross-browserToolbarButton.buttonfirefox.label;" tooltiptext="&cross-browserToolbarButton.buttonfirefox.label;" oncommand="DoCommand('FireFox');"/>-->
+	  <toolbarbutton crossbrowser-tag="Safari" id="CrossBrowser_safari" label="&cross-browserToolbarButton.buttonsafari.label;" tooltiptext="&cross-browserToolbarButton.buttonsafari.label;" oncommand="DoCommand('Safari');"/>
+	  <toolbarbutton crossbrowser-tag="Chrome" id="CrossBrowser_chrome" label="&cross-browserToolbarButton.buttonchrome.label;" tooltiptext="&cross-browserToolbarButton.buttonchrome.label;" oncommand="DoCommand('Chrome')"/>
+	  <toolbarbutton crossbrowser-tag="options" id="CrossBrowser_options" label="&cross-browserToolbarButton.buttonoptions.label;" tooltiptext="&cross-browserToolbarButton.buttonoptions.label;" oncommand="open_options()"/>
+    </toolbar>
+  </toolbox>
+
+
+</overlay>

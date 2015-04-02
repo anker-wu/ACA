@@ -1,0 +1,99 @@
+<!-- Options -->
+<!ENTITY cross-browser.options.add "Add...">
+<!ENTITY cross-browser.options.delete "Delete...">
+<!ENTITY cross-browser.options.edit "Edit...">
+<!ENTITY cross-browser.options.move.down "Move Down">
+<!ENTITY cross-browser.options.move.up "Move Up">
+<!ENTITY cross-browser.options.new.separator "New Separator">
+<!ENTITY cross-browser.options.title "Web Developer Options">
+
+<!-- Pages -->
+<!ENTITY cross-browser.options.colors.fonts.label "Colors &amp; Fonts">
+<!ENTITY cross-browser.options.dashboard.label "Dashboard">
+<!ENTITY cross-browser.options.general.label "General">
+<!ENTITY cross-browser.options.keys.label "Keys">
+<!ENTITY cross-browser.options.miscellaneous.label "Miscellaneous">
+<!ENTITY cross-browser.options.resize.label "Resize">
+<!ENTITY cross-browser.options.tools.label "Tools">
+<!ENTITY cross-browser.options.validation.label "Validation">
+<!ENTITY cross-browser.options.view.source.label "View Source">
+
+<!-- Colors & Fonts -->
+<!ENTITY cross-browser.background.color.label "Background Color:">
+<!ENTITY cross-browser.border.color.label "Border Color:">
+<!ENTITY cross-browser.feature.tooltip.colors.caption "Feature Tooltip Colors">
+<!ENTITY cross-browser.font.size.label "Font Size (pixels):">
+<!ENTITY cross-browser.generated.content.caption "Generated Content">
+<!ENTITY cross-browser.opacity.label "Opacity:">
+<!ENTITY cross-browser.text.color.label "Text Color:">
+
+<!-- Dashboard -->
+<!ENTITY cross-browser.dom.inspector.dashboard "Open the DOM Inspector in the dashboard">
+<!ENTITY cross-browser.edit.features "Edit Features">
+<!ENTITY cross-browser.edit.font "Font Size (pixels):">
+<!ENTITY cross-browser.edit.update.service "Local service:">
+<!ENTITY cross-browser.edit.update.frequency "Local service port:">
+<!ENTITY cross-browser.edit.wrap "Wrap textarea">
+<!ENTITY cross-browser.error.console.dashboard "Open the Error Console in the dashboard">
+<!ENTITY cross-browser.open.dashboard "Open In Dashboard">
+<!ENTITY cross-browser.style.information.dashboard "Display style information results in the dashboard">
+
+<!-- General -->
+<!ENTITY cross-browser.confirmation.dialogs.hide "Hide the Web Developer confirmation dialogs">
+<!ENTITY cross-browser.context.hide "Hide the Web Developer context menu">
+<!ENTITY cross-browser.general.caption "General">
+<!ENTITY cross-browser.icons "Icons">
+<!ENTITY cross-browser.icons.text "Icons &amp; Text">
+<!ENTITY cross-browser.informational.dialogs.hide "Hide the Web Developer informational dialogs">
+<!ENTITY cross-browser.menu.hide "Hide the Web Developer Tools menu">
+<!ENTITY cross-browser.open.tabs "Open generated pages in tabs instead of windows">
+<!ENTITY cross-browser.open.tabs.background "Open generated tabs in the background">
+<!ENTITY cross-browser.options.reset "Reset Options...">
+<!ENTITY cross-browser.tabs.windows.caption "Tabs v Windows">
+<!ENTITY cross-browser.text "Text">
+<!ENTITY cross-browser.toolbar.icons "Display Toolbar With:">
+
+<!-- Keys -->
+<!ENTITY cross-browser.keyboard.shortcuts.caption "Keyboard Shortcuts">
+<!ENTITY cross-browser.keyboard.shortcuts.label "Any changes to keyboard shortcuts require a restart of the browser.">
+<!ENTITY cross-browser.tools.shortcuts.label "The tools keyboard shortcuts can be changed in the tools options pane.">
+
+<!-- Miscellaneous -->
+<!ENTITY cross-browser.forms.caption "Forms">
+<!ENTITY cross-browser.populate.form.fields.email.label "Email address to use for populating email form fields:">
+<!ENTITY cross-browser.information.caption "Information">
+<!ENTITY cross-browser.information.tidy "Remove duplicates and sort the anchor, image and link information results">
+<!ENTITY cross-browser.open.css.console.error "Open the Error Console when the current page generates a CSS error">
+<!ENTITY cross-browser.open.javascript.console.warning "Open the Error Console when the current page generates a JavaScript warning">
+<!ENTITY cross-browser.open.javascript.console.error "Open the Error Console when the current page generates a JavaScript error">
+<!ENTITY cross-browser.warnings.errors.caption "Warnings &amp; Errors">
+
+<!-- Resize -->
+<!ENTITY cross-browser.description.header "Description">
+<!ENTITY cross-browser.height.header "Height">
+<!ENTITY cross-browser.viewport.header "Viewport">
+<!ENTITY cross-browser.width.header "Width">
+
+<!-- Tools -->
+<!ENTITY cross-browser.key.header "Key">
+<!ENTITY cross-browser.tool.header "Application/URL">
+
+<!-- Validation -->
+<!ENTITY cross-browser.profile.label "Profile:">
+<!ENTITY cross-browser.validate.local.accessibility.caption "Validate Local Accessibility">
+<!ENTITY cross-browser.validate.local.accessibility.section508 "Section 508">
+<!ENTITY cross-browser.validate.local.accessibility.wai.priority1 "Priority 1">
+<!ENTITY cross-browser.validate.local.accessibility.wai.priority2 "Priority 2">
+<!ENTITY cross-browser.validate.local.accessibility.wai.priority3 "Priority 3">
+<!ENTITY cross-browser.validate.local.css.caption "Validate Local CSS">
+<!ENTITY cross-browser.validate.local.html.caption "Validate Local HTML">
+<!ENTITY cross-browser.validate.local.html.show.outline "Show Outline">
+<!ENTITY cross-browser.validate.local.html.show.parse.tree "Show Parse Tree">
+<!ENTITY cross-browser.validate.local.html.show.source "Show Source">
+<!ENTITY cross-browser.wai.label "WAI">
+
+<!-- View Source -->
+<!ENTITY cross-browser.application.header "Application">
+<!ENTITY cross-browser.view.source.caption "View Source">
+<!ENTITY cross-browser.view.source.tab "View source in a tab instead of a window (the source is not loaded from the cache)">
+<!ENTITY cross-browser.view.source.with.label "View Source With">

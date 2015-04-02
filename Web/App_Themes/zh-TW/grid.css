@@ -1,0 +1,395 @@
+.ACA_TabRow_Header_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_TabRow_Odd_FontSize
+{
+    font-size:1.2em;
+}
+
+.ACA_TabRow_Odd_Auto_FontSize
+{
+    font-size: 1.2em;
+}
+
+.ACA_TabRow_Even_FontSize
+{
+    font-size: 1.2em;
+}
+
+.ACA_TabRow_Even_Auto_FontSize
+{
+    font-size: 1.2em;
+}
+
+.ACA_Table_Pages_FontSize
+{
+    font-size: 1.2em;
+}
+
+.ACA_TabRow_SmallOdd_FontSize
+{
+    font-size: 1.15em;
+}
+
+.ACA_TabRow_SmallOdd_FontSize_Restore
+{
+    font-size:1em;
+}
+
+.ACA_TabRow_SmallEven_FontSize
+{
+    font-size: 1.15em;
+}
+
+.ACA_TabRow_SmallEven_FontSize_Restore
+{
+    font-size:1em;
+}
+
+.ACA_Footer_Result_Message
+{
+    font-size: 1.2em;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_40 {
+	width: 73.6em;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Grid >> 48 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1 {
+	width:1.84em;
+}
+
+.grid_2 {
+	width:3.68em;
+}
+
+.grid_3 {
+	width:5.52em;
+}
+
+.grid_4 {
+	width:7.36em;
+}
+
+.grid_5 {
+	width:9.2em;
+}
+
+.grid_6 {
+	width:11.04em;
+}
+
+.grid_7 {
+	width:12.88em;
+}
+
+.grid_8 {
+	width:14.72em;
+}
+
+.grid_9 {
+	width:16.56em;
+}
+
+.grid_10 {
+	width:18.4em;
+}
+
+.grid_11 {
+	width:20.24em;
+}
+
+.grid_12 {
+	width:22.08em;
+}
+
+.grid_13 {
+	width:23.92em;
+}
+
+.grid_14 {
+	width:25.76em;
+}
+
+.grid_15 {
+	width:27.6em;
+}
+
+.grid_16 {
+	width:29.44em;
+}
+
+.grid_17 {
+	width:31.28em;
+}
+
+.grid_18 {
+	width:33.12em;
+}
+
+.grid_19 {
+	width:34.96em;
+}
+
+.grid_20 {
+	width:36.8em;
+}
+
+.grid_21 {
+	width:38.64em;
+}
+
+.grid_22 {
+	width:40.48em;
+}
+
+.grid_23 {
+	width:42.32em;
+}
+
+.grid_24 {
+	width:44.16em;
+}
+
+.grid_25 {
+	width:46em;
+}
+
+.grid_26 {
+	width:47.84em;
+}
+
+.grid_27 {
+	width:49.68em;
+}
+
+.grid_28 {
+	width:51.52em;
+}
+
+.grid_29 {
+	width:53.36em;
+}
+
+.grid_30 {
+	width:55.2em;
+}
+
+.grid_31 {
+	width:57.04em;
+}
+
+.grid_32 {
+	width:58.88em;
+}
+
+.grid_33 {
+	width:60.72em;
+}
+
+.grid_34 {
+	width:62.56em;
+}
+
+.grid_35 {
+	width:64.4em;
+}
+
+.grid_36 {
+	width:66.24em;
+}
+
+.grid_37 {
+	width:68.08em;
+}
+
+.grid_38 {
+	width:69.92em;
+}
+
+.grid_39 {
+	width:71.76em;
+}
+
+.grid_40 {
+	width:73.6em;
+}
+
+
+/* Prefix Extra Space >> 40 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.suffix_1 {
+	margin-right:1.84em;
+}
+
+.suffix_2 {
+	margin-right:3.68em;
+}
+
+.suffix_3 {
+	margin-right:5.52em;
+}
+
+.suffix_4 {
+	margin-right:7.36em;
+}
+
+.suffix_5 {
+	margin-right:9.2em;
+}
+
+.suffix_6 {
+	margin-right:11.04em;
+}
+
+.suffix_7 {
+	margin-right:12.88em;
+}
+
+.suffix_8 {
+	margin-right:14.72em;
+}
+
+.suffix_9 {
+	margin-right:16.56em;
+}
+
+.suffix_10 {
+	margin-right:18.4em;
+}
+
+.suffix_11 {
+	margin-right:20.24em;
+}
+
+.suffix_12 {
+	margin-right:22.08em;
+}
+
+.suffix_13 {
+	margin-right:23.92em;
+}
+
+.suffix_14 {
+	margin-right:25.76em;
+}
+
+.suffix_15 {
+	margin-right:27.6em;
+}
+
+.suffix_16 {
+	margin-right:29.44em;
+}
+
+.suffix_17 {
+	margin-right:31.28em;
+}
+
+.suffix_18 {
+	margin-right:33.12em;
+}
+
+.suffix_19 {
+	margin-right:34.96em;
+}
+
+.suffix_20 {
+	margin-right:36.8em;
+}
+
+.suffix_21 {
+	margin-right:38.64em;
+}
+
+.suffix_22 {
+	margin-right:40.48em;
+}
+
+.suffix_23 {
+	margin-right:42.32em;
+}
+
+.suffix_24 {
+	margin-right:44.16em;
+}
+
+.suffix_25 {
+	margin-right:46em;
+}
+
+.suffix_26 {
+	margin-right:47.84em;
+}
+
+.suffix_27 {
+	margin-right:49.68em;
+}
+
+.suffix_28 {
+	margin-right:51.52em;
+}
+
+.suffix_29 {
+	margin-right:53.36em;
+}
+
+.suffix_30 {
+	margin-right:55.2em;
+}
+
+.suffix_31 {
+	margin-right:57.04em;
+}
+
+.suffix_32 {
+	margin-right:58.88em;
+}
+
+.suffix_33 {
+	margin-right:60.72em;
+}
+
+.suffix_34 {
+	margin-right:62.56em;
+}
+
+.suffix_35 {
+	margin-right:64.4em;
+}
+
+.suffix_36 {
+	margin-right:66.24em;
+}
+
+.suffix_37 {
+	margin-right:68.08em;
+}
+
+.suffix_38 {
+	margin-right:69.92em;
+}
+
+.suffix_39 {
+	margin-right:71.76em;
+}
+
+.suffix_40 {
+	margin-right:73.6em;
+}
+
+
+

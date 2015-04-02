@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Theme - ACA Facelift Theme Designer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="karjmohan">
+    <meta name="viewport" id="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../Content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/animation.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/font-icon.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/override.css" />
+        
+
+    <!--Color Picker-->
+    <link rel="stylesheet" type="text/css" href="../Scripts/plugin/colorpicker/spectrum.css" />
+    <link href="../Scripts/plugin/switchery/switchery.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../Content/ThemeDesigner.css" />
+    <link href='../Content/theme/default.css' rel='stylesheet' type='text/css' media='all' id='theme-switcher-stylesheet'>
+
+</head>
+<body class="fixed-layout">
+   
+    <section id="main" class="main-container" role="main">
+        <div class="switcher">
+
+            <ul id="switcher-tab" class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#theme" role="tab" data-toggle="tab">Theme</a></li>
+                <li style="display:none;"><a href="#color" role="tab" data-toggle="tab">Color</a></li>
+                <li style="float:right;">
+                    <div class="holder" id="viewport-switcher">
+                        <img src="../Images/icon1.png" id="desktop_scale" data-width="100%" data-height="100%" class="active">
+                        <img src="../Images/icon2.png" id="tablet_scale" data-width="768px" data-height="1024px" class="">
+                        <img src="../Images/icon3.png" id="mobile_scale" data-width="320px" data-height="568px" class="">
+                    </div>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id="theme">
+                </div>
+                <div class="tab-pane fade" id="color">
+                    <div class="panel-group" id="accordion1">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                                        <span class="arrow mr5"></span> Change Styles
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" style="height: auto;">
+                                <div class="panel-body">
+                                    <div class="color-sec" id="theme-Banner">
+                                        Banner :
+                                        <input class="color-cont" type="text" maxlength="7" />
+                                        <input class="color-text" type="text" />
+                                    </div>
+                                    <div class="color-sec" id="theme-BannerText">
+                                        Banner Text :
+                                        <input class="color-cont" type="text" maxlength="7" />
+                                        <input class="color-text" type="text" />
+                                    </div>
+                                    <div class="color-sec" id="theme-BannerSecondary">
+                                        Banner line :
+                                        <input class="color-cont" type="text" maxlength="7" />
+                                        <input class="color-text" type="text" />
+                                    </div>
+                                    <div class="color-sec" id="theme-Headlines">
+                                        Headlines :
+                                        <input class="color-cont" type="text" maxlength="7" />
+                                        <input class="color-text" type="text" />
+                                    </div>
+                                    <div class="color-sec" id="theme-HeadlinesText">
+                                        Headlines Text:
+                                        <input class="color-cont" type="text" maxlength="7" />
+                                        <input class="color-text" type="text" />
+                                    </div>
+                                    <div class="color-sec" id="theme-PrimaryButton">
+                                        Primary Button :
+                                        <input class="color-cont" type="text" maxlength="7" />
+                                        <input class="color-text" type="text" />
+                                    </div>
+
+                                    <div class="color-sec" id="theme-Footer">
+                                        Footer :
+                                        <input class="color-cont" type="text" maxlength="7" />
+                                        <input class="color-text" type="text" />
+                                    </div>
+
+                                    <div class="color-sec" id="theme-FooterText">
+                                        Footer Text :
+                                        <input class="color-cont" type="text" maxlength="7" />
+                                        <input class="color-text" type="text" />
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo" class="collapsed">
+                                        <span class="arrow mr5"></span> Change Background
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" style="height: 0;">
+                                <div class="panel-body">
+                                    <div class="color-sec" id="theme-Background">
+                                        Background :
+                                        <input class="color-cont" type="text" maxlength="7" />
+                                        <input class="color-text" type="text" />
+                                    </div>
+                                    <hr />
+                                    <span class="switchery-label">Background Pattern :</span>
+                                    <input type="checkbox" class="js-switch js-check-change" />
+                                    <div class="color-sec pattern-scroller" id="theme-BackgroundImage">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color-sec-button text-right" id="theme-action-sec">
+                        <button class="btn btn-default btn-sm btn-theme-cancel">Cancel</button>
+                        <button class="btn btn-primary btn-sm btn-theme-apply" data-loading-text="Saving..." data-themeid="">Save & Apply</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="theme-website-continer">
+            <div id="tc_theme">
+                <iframe src="../LaunchPad.html" id="iframe-website"> </iframe>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time) -->
+    <!-- Library script : mandatory -->
+    <script type="text/javascript" src="../Scripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery-cookie.js"></script>
+    <script type="text/javascript" src="../Scripts/fastclick.min.js"></script>
+    <script type="text/javascript" src="../Scripts/handlebars-v1.3.0.js"></script>
+
+    <!--/ Library script -->
+
+    <!-- App and page level script -->
+    <!--Color Picker-->
+    <script type="text/javascript" src="~/Scripts/plugin/colorpicker/spectrum.js"></script>
+    <script type="text/javascript" src="~/Scripts/plugin/switchery/switchery.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/app/styleswitcher.js"></script>
+    <!--/ App and page level scrip -->
+
+
+    <script id="theme-imagebg-template" type="text/x-handlebars-template">
+        <input class="color-cont" type="text" style="display:none;" />
+        {{#each ImageBg}}
+        <div class="color-image-background" data-bgurl="url({{ImageUrl}})" style="background-image: url({{ImageUrl}});"> &nbsp;</div>
+        {{/each}}
+    </script>
+
+    <script id="theme-tile-template" type="text/x-handlebars-template">
+        {{#each theme}}
+        <div class="theme-style" id="{{ThemeId}}">
+            <div class="t-welcome" style="background-color:{{Headlines}}">
+                <div class="t-welcome-text" style="background-color:{{HeadlinesText}}"></div>
+            </div>
+            <div class="t-banner" style="background-color:{{Banner}};border-bottom: Solid 2px {{BannerSecondary}}">
+                <div class="t-logo" style="background-color:{{BannerText}}"></div>
+                <div class="t-logo-text">
+                    <div class="text1" style="background-color:{{BannerText}}"></div>
+                    <div class="text2" style="background-color:{{BannerText}}"></div>
+                </div>
+                <div class="t-profile" style="background-color:{{BannerSecondary}}">
+                </div>
+                <div class="t-profile-dot" style="background-color:{{PrimaryButton}}">
+                </div>
+            </div>
+            <div class="t-content" style="background-color:{{Background}}">
+                <div class="t-row">
+                    <div class="t-tile" style="background-color:{{BannerSecondary}}">
+                        <div class="t-ico" style="background-color:{{PrimaryButton}}"></div>
+                        <div class="t-txt" style="background-color:{{BannerText}}"></div>
+                    </div>
+                    <div class="t-tile" style="background-color:{{BannerSecondary}}">
+                        <div class="t-ico" style="background-color:{{PrimaryButton}}"></div>
+                        <div class="t-txt" style="background-color:{{BannerText}}"></div>
+                    </div>
+                    <div class="t-tile" style="background-color:{{BannerSecondary}}">
+                        <div class="t-ico" style="background-color:{{PrimaryButton}}"></div>
+                        <div class="t-txt" style="background-color:{{BannerText}}"></div>
+                    </div>
+                    <div class="t-tile" style="background-color:{{BannerSecondary}}">
+                        <div class="t-ico" style="background-color:{{PrimaryButton}}"></div>
+                        <div class="t-txt" style="background-color:{{BannerText}}"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-footer" style="background-color:{{Footer}}">
+                <div class="t-footer-left" style="background-color:{{FooterText}}">
+                </div>
+                <div class="t-footer-right" style="background-color:{{FooterText}}">
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</body>
+</html>

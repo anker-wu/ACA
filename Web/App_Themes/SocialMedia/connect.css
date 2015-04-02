@@ -1,0 +1,413 @@
+div {
+    background-repeat: no-repeat;
+}
+
+.raw_image {
+    width: 100%;
+    height: 100%;
+}
+
+.preload {
+    display: none;
+}
+
+.form_sketch {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+#fb_div_container {
+    width:750px;
+    height:auto;
+    margin: 0px auto;
+    border:solid 1px #cccccc;
+}
+
+#fb_div_bottom {
+    width:1024px;
+    height:153px;
+    /*background: none repeat scroll 0 0 #E4E4E4;*/
+}
+
+#fb_div_title {
+    width:1024px;
+    height:106px;
+    /* background: none repeat scroll 0 0 #666666;*/
+}
+
+#fb_div_bottom_fblogo {
+    width:61px;
+    height:60px;
+    float:left;
+    margin-left:48px;
+    margin-top:10px;
+    background-image: url('../default/assets/ico_facebook.png');
+}
+
+
+#fb_div_bottom_applogo {
+    width:60px;
+    height:60px;
+    background-image: url('../default/assets/ico_ACA.png');
+    float:left;
+    margin-top:10px;
+}
+
+#fb_div_bottom_connectlogo {
+    width:221px;
+    height:50px;
+    float:left;
+    margin-top:22px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+
+.fb_div_bottom_label {
+    width:443px;
+    height:19px;
+    text-align:center;
+    word-wrap:break-word;
+    margin:0px auto;
+}
+
+.fb_div_bottom_label_layout
+{
+    margin:0 auto;
+    padding-top:25px;
+}
+
+.fb_div_title_people {
+    height:33px;
+    text-align:right;
+    word-wrap:break-word;
+    width:485px;
+    float:left;
+    padding-top:35px;   
+    padding-right:15px
+}
+
+.fb_div_title_appname {
+    width:290px;
+    height:19px;
+    text-align:left;
+    word-wrap:break-word;
+    float:left;
+    padding-top:15px;
+    padding-left:20px;
+}
+
+.fb_div_title_desc {
+    width:290px;
+    height:28px;
+    text-align:left;
+    word-wrap:break-word;
+    float:left;
+    padding-top:5px;
+    padding-left:20px;
+}
+
+.fb_div_title_app {
+    height:80px;
+    padding-top:8px;
+    padding-left:8px;
+    width:500px;
+    float:left
+}
+
+#fb_app_logo {
+    width:60px;
+    height:60px;
+    background-image: url('../default/assets/ico_ACA.png');
+    float:left;
+    margin-left:23px;
+} 
+
+.fb_div_btnconnect {
+    width:288px;
+    height:56px;
+    margin:0px auto;
+    text-align:center;
+    word-wrap:break-word;
+    line-height:56px;
+}
+
+.fb_div_btnconnect a
+{
+    float:left;
+    width:288px;
+    height:56px;
+    background-image: url('../default/assets/connectbutton.png');
+    text-decoration:none;
+}
+
+.fb_div_btnconnect a:hover
+{
+    text-decoration:none;
+    color:#ffffff;
+}
+
+.fb_div_btncreate {
+    width:288px;
+    height:56px;
+    margin:0px auto;
+    text-align:center;
+    word-wrap:break-word;
+    line-height:56px;
+}
+
+.fb_div_btncreate a 
+{
+    width:288px;
+    height:56px;
+    line-height:56px;
+    float:left;
+    background-image: url('../default/assets/createbutton.png');
+}
+
+.fb_div_btncreate a:hover
+{
+    text-decoration:none;
+    color:#ffffff;
+}
+
+.fb_div_haveaccount {
+    width:274px;
+    line-height:16px;
+    text-align:left;
+    word-wrap:break-word;
+    margin:0px auto
+}
+
+.fb_div_havenotaccount {
+    width:274px;
+    line-height:16px;
+    text-align:left;
+    word-wrap:break-word;
+    padding-top:15px;
+    margin:0px auto;
+}
+
+#fb_div_login_bg {
+    width:440px;
+    margin:0px auto;
+    background:#FFFFFF;
+}
+
+.fb_div_login
+{
+    margin:0px auto;
+    width:100%;
+    padding-top:15px;
+}
+
+.fb_div_login label
+{
+    font-size:13px;
+    font-weight:normal;
+}
+
+.fb_div_login input
+{
+    padding:6px;
+    font-size:13px;
+}
+
+.fb_div_login_btn {
+    width:100%;
+    height:37px;
+    margin:0px auto;
+    margin-top:30px;
+    border-top: 1px solid #C5C5C5;
+    background:#F3F3F3;
+}
+
+#fb_div_login_btnlogin {
+    padding-top: 7px;
+}
+
+#fb_div_login_btncancel {
+    padding-top: 7px;
+    padding-right: 5px;
+    padding-left: 15px;
+}
+
+#fb_div_login_btncancel a:hover
+{
+    color:#333333;
+}
+
+.fb_div_login_title {
+    text-align:left;
+    word-wrap:break-word;
+    margin:0px auto;
+    padding-left:10px;
+    line-height:35px;
+    background: none repeat scroll 0 0 #4A6EA9;
+}
+
+.fb_connect_button
+{
+    font-size:16px;
+    color:#FFFFFF;
+    font-weight:normal;
+}
+
+
+.fb_connect_bottom_desc
+{
+    font-size:16px;
+    color:#666666;
+}
+
+.fb_connect_title
+{
+    font-size:16px;
+    color:#333333;
+    font-weight:bold;
+}
+
+
+.fb_connect_count
+{
+    font-size:20px;
+    color:#333333;
+    font-weight:bold;
+}
+
+.fb_connect_lbtn
+{
+    font-size:13px;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+.font_13px_blod_dark
+{
+    font-size:13px;
+    color:#999999;
+    font-weight:bold;
+}
+
+.fb_connect_body_text
+{
+    font-size:13px;
+    color:#666666;
+}
+
+.fb_connect_count_desc
+{
+    font-size:13px;
+    color:#333333;
+    font-weight:bold;
+}
+
+.fb_connect_title_desc
+{
+    font-size:11px;
+    color:#666666;
+}
+
+.align_span
+{
+    display:block;
+    width:100%;
+    text-align:center;
+}
+
+.ACA_TDAlignLeftOrRightTop 
+{
+    margin: 0px auto;
+}
+
+.fb_connect_body_button
+{
+    color:#FFFFFF;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#ACA_Dialog_Header
+{
+    background: none repeat scroll 0 0 #4A6EA9;
+}
+
+.ACA_Dialog_Title
+{
+    color:#FFFFFF;
+    height:20px;
+    padding-top:5px;
+}
+
+.ACA_Dialog_Content_Padding
+{
+    padding-left:0px;
+}
+
+.ACA_NLonger
+{
+    height:2.1em;
+}
+
+#ACA_Dialog_Bottom
+{
+    border-top: 1px solid #C5C5C5;
+    margin-top: 30px;
+}
+
+.fb_home_frame .ACA_Control_HighLight,
+.fb_connect_frame .ACA_Control_HighLight
+{
+    color:#000000;
+}
+
+.ACA_Dialog_Close_Div
+{
+    padding-top:4px;
+}
+
+.divloginbox
+{
+    height: 244px; 
+    margin: 0px auto; 
+}
+
+.fb_connect_frame
+{
+    padding-top:5px;
+}
+
+.fb_connect_message_div
+{
+    margin: 0px auto; width: 94%; padding-bottom:5px
+}
+
+.fb_connect_div_connect
+{
+    background: none repeat scroll 0 0 #F5F5F5; border: solid 1px #E9E9E9;width: 94%; margin: 0px auto;height:450px
+}
+
+.fb_connect_desc_div
+{
+    height: 170px;
+}
+
+#divBox
+{
+    height: 180px;
+}
+
+#divConnect
+{
+    margin: 0px auto; height: 244px; width: 100%;
+}
+
+.fb_connect_div_connect_close
+{
+    padding-top:5px; padding-right:5px
+}
+
+.fb_connect_div_error_in_login
+{
+    margin: 0px auto; width: 96%; padding-top:5px
+}

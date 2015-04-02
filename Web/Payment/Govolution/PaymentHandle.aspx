@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="Accela.ACA.Web.Payment.Govolution.Payment_Govolution_PaymentHandle" Codebehind="PaymentHandle.aspx.cs" %>

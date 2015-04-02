@@ -1,0 +1,873 @@
+﻿/* label */
+/* Html label and Common label */
+body
+{
+	font-family: Arial, sans-serif;
+	font-size:62.5%;
+	margin:0px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.ACA_RightItem
+{
+	width: 77em; padding-right: 15px; float: right; margin-bottom: 16px;padding-left: 0px;
+}
+
+.ACA_RightItem_Popup
+{
+    float: right;
+}
+
+.ACA_RightContent
+{
+	width: 48.6em; padding-right: 15px; float: right; margin-bottom: 16px; font-family: arial, sans-serif;
+}
+
+.ACA_CapCompletion_Content
+{
+	padding-right: 15px; float: right;
+}
+
+.ACA_Content .ACA_RightContent
+{
+    padding-right:0px;
+}
+
+.ACA_ALeft
+{
+	text-align:right;
+}
+.ACA_ARight
+{
+	text-align:left;
+}
+
+.Proxy_PopupColseButton
+{
+	margin-left:3px;
+}
+
+.ACA_ProxyUser_SaveButton
+{
+	 margin-right:-3px;
+}
+.ACA_DataListStyle
+{
+	padding-right:0px;
+	margin-right:0px;
+}
+
+.ACA_FLeft
+{
+	float:right;
+}
+.PopUpDlg
+{
+    padding-right:15px;
+    padding-left:30px;
+}
+.ACA_FLeftForStyle
+{
+	margin-right:0px
+}
+.ACA_FRight
+{
+	float:left;
+}
+
+.ACA_TabRow_AutoFill
+{
+	 margin-right:-3px;
+}
+.ACA_TabRow i
+{ 
+	margin-left:8px
+}
+
+.ACA_DivPadding10Margin2
+{
+    padding-right:10px;
+    padding-left:0px;
+    margin-right:2px;
+    margin-left:0px;
+}
+.ACA_DivMargin6
+{
+    margin-left:6px;	
+    margin-right:0px;
+}
+.ACA_DivPadding0
+{
+	padding-right:0px;	
+}
+
+/*add by levin*/
+.ACA_NewDiv_Head
+{
+	 float:right;
+	 margin-left:3px;
+	 margin-left:5px;
+}
+
+.ACA_NewDiv_Text
+{
+    margin-left:2px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Top_3
+{
+	 float:right;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Top_5
+{
+	 float:right;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Top_8
+{
+	 float:right;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Top_10
+{
+	 float:right;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Top_15
+{
+	 float:right;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Left_8
+{
+	 float:right;
+	 margin-right:8px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Left_15
+{
+	 float:right;
+	 margin-right:15px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Right_8
+{
+	 float:right;
+	 margin-left:8px;
+}
+
+.ACA_NewDiv_Text_TabRow_Margin_Right_15
+{
+	 float:right;
+	 margin-left:15px;
+}
+
+
+.ACA_NewDiv_Text_TabRow_Padding_Bottom_2
+{
+	 float:right;
+}
+
+.ACA_NewDiv_Text_TabRow_Padding_Bottom_8
+{
+	 float:right;
+}
+
+.ACA_New_Head_Label_Bold
+{
+	clear: right;
+	float: right;
+}
+
+.ACA_New_Head_Label_Bold_11
+{
+    clear: right;
+}
+
+.ACA_New_Head_Label_Width_90
+{
+	clear: right;
+	float: right;
+}
+
+.ACA_New_Head_Label_Width_100
+{
+	clear: right;
+	float: right;
+	margin-left: 15px;
+}
+
+.ACA_Form
+{
+	margin-left: 8px;
+	margin-right: 0px;
+	display:block;
+}
+
+.Proxy_ViewRecord_Margin
+{
+	margin-left: 12px;
+}
+
+.ACA_Sub_Label
+{
+	clear: both;
+	/*float:right;*/
+}
+
+.ACA_Message_Label /*6.6i*/
+{
+    margin-right: 8px;
+    margin-left: 0px;
+}
+
+.ACA_LiLeft li
+{
+	float:right;
+	margin-left:8px;
+	margin-right:0px;
+}
+
+.ACA_ShoppingAccountHeader
+{
+    padding-left: 230px;
+}
+
+.ACA_ShoppingAccountItem
+{
+    padding-left: 231px;
+}
+
+.ACA_Super_ShoppingAccountHeader
+{
+    padding-left: 377px;
+}
+
+.ACA_Super_ShoppingAccountItem
+{
+    padding-left: 378px;
+}
+
+.ACA_Column_Short
+{
+	float: right;
+}
+
+.ACA_RightColumn_Short{
+	float: left;
+}
+.ACA_Column_Medium
+{
+	float: right;
+}
+.ACA_Column_XLong
+{
+	float: right;
+}
+.ACA_Float_Base
+{
+	float: right;
+}
+.ACA_Error_Indicator
+{
+	float: right;
+	margin-right: 2px;
+	margin-left: 4px;
+}	
+
+.ACA_PhoneNumberLTR
+{
+	text-align:left;
+}
+
+.ACA_List
+{
+    text-align:right;
+}
+
+.ACA_List_OverFlow
+{
+    float:right;
+}
+
+.ServiceListContainer {
+    margin-right: 5px;
+}
+
+.ServiceListContainer .ServiceItemList
+{
+    margin-right: 12px;
+}
+
+/*inspection list start */
+
+.ACA_Arrow
+{
+	text-align:right;
+    padding-left:2px;
+    width:17px;
+}
+
+.ACA_Comments
+{
+	padding-left:2px;
+	float:right;
+}
+
+.ActionMenus
+{
+	direction:ltr;
+ 
+	z-index:2;
+}
+
+.ACA_Reschedule_Cancel
+{
+	margin-right:8px;
+}
+/*inspection list end */
+
+.nav_more_arrow
+{
+	background-position:left;
+	margin-left:0px;
+	margin-right:1px;
+	/*For IE7 as below:*/
+	*margin-left:1px;
+	*margin-right:0px;
+}
+
+.ACA_Add2CollectionForm
+{
+	padding-right:8px;
+}
+.ACA_CapDetail_Add2CollectionLink
+{
+	text-align:left;
+}
+.ShoppingCart_FeeItem
+{
+	word-break:break-all; 
+}
+.ACA_RenameCollectionForm
+{
+	padding-left:1px;
+	padding-right:10px;
+}
+
+.ACA_RefEducation_Font
+{
+	font-weight: bold;
+}
+
+.aca_error_message
+{
+    padding-right:3px;
+}
+
+.aca_expression_label
+{
+    padding-right:2px;
+}
+
+.ACA_Required_Indicator
+{
+	padding-left:2px;
+}
+
+/* password security */
+UL.password_list
+{
+    padding-right: 30px;
+    padding-left: 5px;
+}
+
+.ACA_Body_Text UL, .ACA_Section_Instruction UL, .ACA_Page_Instruction UL
+{
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.ACA_Help_Frame UL 
+{
+   margin-right:20px;
+}
+.ACA_ValuatonTotal_Left
+{
+    float:right; 
+    width:20em;
+}
+
+.ACA_ValuatonTotal_Right
+{
+    padding-left:10px;
+    float:left; 	
+}
+
+.ACA_Clear_Left
+{
+    width:35em;
+    clear:both;
+    float:left;    
+}
+
+.ACA_ValCal_Img
+{
+    float:right;     
+    padding-left:15px; 
+    padding-bottom:5px;
+}
+.ACA_ValCal_Title
+{
+    float:right; 	 
+    padding-top:8px;  
+    padding-bottom:10px; 
+}
+
+.ACA_Logo
+{
+    float:right;     
+    padding-left:15px; 
+}
+
+.ACA_Area_CapFees .ACA_Logo
+{
+	 padding-left:0px;
+}
+
+.ACA_Padding_Top_5
+{
+    padding-top:5px;
+}
+.ACA_Unit
+{
+	margin-right: 5px;
+}
+.ACA_Upload_Button_Width
+{
+    *width:42.4em !important;/*for IE7*/
+}
+
+.ACA_CountryCode
+{
+	margin-left:0.2em;
+}
+
+.ACA_RTLDropDownList
+{
+    margin-bottom: 2px;
+    float: right;
+    padding-right: 1px;
+}
+
+.Map_Container
+{
+    height:53em;
+    width:76.5em;
+    overflow: hidden;
+}
+
+.MiniMap_Container
+{
+    margin-top:3px;
+    height:30em;
+    width:35em;
+    overflow: hidden;
+}
+
+.Map_Top
+{
+    margin-top:3px;
+    margin-bottom: 3px;
+}
+
+.Map_Bottom
+{
+    margin-top: 3px
+}
+
+.Map_Label
+{
+    padding-right:3px;
+}
+
+.InspectionChangeContactItem
+{
+	padding-left:0px;
+	padding-right:18px;
+}
+
+.PopUpDlg
+{
+    padding-left:30px;
+    padding-right:15px;
+}
+
+.PopUpDlg .CloseImage
+{
+	margin-left: -20px;
+	margin-right: 0px;
+}
+
+.ACA_ASIButtonContainer
+{	
+	padding-left:13px;
+	padding-right:0px;
+}
+
+.ACA_ASITButtonContainer
+{	
+	padding-left:13px;
+	padding-right:0px;
+}
+
+.Soundex_Icon
+{
+    margin-bottom: -1px;
+    margin-right: 5px;
+}
+
+.td_mini_map_left
+{
+    float:right;
+    vertical-align:top;
+    width:40.4em;
+}
+
+.ACA_Address_Detail_Info
+{
+    width:10em; 
+    margin-bottom:8px;
+}
+
+.td_mini_map_right
+{
+    float:left;
+    vertical-align:top;
+}
+
+.ACA_Dialog
+{
+    background-color:#ffffff;
+    position:absolute;
+    border-style:solid;            
+    border-color:Gray;
+    border-width:1px;
+    z-index:1000;
+    display:block;
+}
+
+.ACA_Dialog_Title
+{
+    padding-right:15px;
+    padding-top:5px;
+    float:right;
+}
+
+.ACA_Dialog_Instruction
+{
+    padding-right:15px;
+}
+
+.ACA_Dialog_Close_Div
+{
+    padding-top:5px;
+    padding-left:5px;
+    z-index:1001;
+    float:left;
+}
+
+.ACA_Dialog_Frame_DIV
+{
+    z-index:1000;   
+    width:100%;
+    padding:0px 0px 0px 0px;
+    clear:both;
+}
+
+.ACA_Dialog_Form
+{
+    padding-left:15px;
+    padding-right:0px;
+}
+
+.ACA_Dialog_Frame
+{
+    padding-right:0px;
+}
+
+.ACA_TwoColumnTable
+{
+	float:right;
+	padding-right:0px;
+	padding-left:15px;
+}
+
+.ACA_Margin_ContactRelationShips
+{
+	margin-right:15px;
+}
+
+.ACA_Global_Loading_Title
+{
+    margin-right:10px;
+}
+
+.documenttype_margin
+{
+    margin-right:-5px;
+}
+.documenttype_button
+{
+    margin-right:-3px;
+}
+
+.ACA_DrillDown_Search
+{
+    float:left;
+    padding-left:40px;
+    padding-right:0px;
+}
+
+.ACA_NIGPTree_Button
+{
+	float:right;
+}
+
+.ACA_NIGPTree_ThreeDigitalClass
+{
+	float:right;
+}
+
+.ACA_NIGPTree_FiveDigitalClass
+{
+	float:right;
+}
+
+.aca_shoppingcartlist_payment
+{
+    padding-left:0px;
+    padding-right:18px;
+}
+
+.aca_imagebutton_label
+{
+    margin-right:0px;
+    margin-left:3px;
+}
+
+.ACA_TotalFee_Expand
+{
+	padding-left:0px;
+    padding-right:15px;
+}
+
+.MoreDetail_BlockTitle
+{
+    width: 72em;
+    text-align: right;
+}
+
+.MoreDetail_BlockContent
+{
+    width: 72em;
+    text-align: right;
+    vertical-align:top;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.MoreDetail_BlockContent4TradeName
+{
+    width: 72em;
+    padding-right: 17px;
+    text-align: right;
+}
+
+.MoreDetail_ItemTitle
+{
+    clear: both;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.MoreDetail_ItemCol
+{
+    float: right;
+}
+
+.MoreDetail_ItemColASI
+{
+    float: right;
+    vertical-align:top;
+    padding-bottom: 5px;
+}
+
+.MoreDetail_ItemCol1
+{
+    padding-right: 14px;
+    clear: both;
+}
+
+.MoreDetail_ItemCol2
+{
+    padding-right: 8px;
+}
+
+.asset_detail_left_column
+{
+    float:right;
+}
+
+.asset_detail_right_column
+{
+    float:left;
+}
+
+.asset_attach_result_notice
+{
+    padding-left: 0px;
+    padding-right: 3px;
+}
+
+.licenses_certification_notice_list {   
+	padding-left:0px;
+	padding-right:3px;
+	float: right;
+}
+
+.asset_list_lookupbutton
+{
+    margin: 2px 0px 0px 25px;
+}
+
+.RequiredContactType_Indicator .Header {
+    padding-left: 15px;
+    padding-right: 0px;
+}
+
+.ACA_Notice {
+    float: right;
+    padding-left:0px;
+    padding-right:3px;
+}
+
+.servicelist .search_filter_button {
+    float: right;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.servicelist .searchbox_service_group {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.searchbox_service_group .service_group_header, .searchbox_service_group .service_group_title {
+    float: right;
+}
+
+.searchbox_service_group .service_group_foot {
+    float: right;
+    margin-left: 0px;
+    margin-right: -12px;
+}
+
+.searchbox_service_group .service_group_foot div {
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.actionbar_bottom 
+{
+    float: right;
+}
+
+.RegistrationSetting_Section .RegistrationSetting_Section_Disclaimer 
+{
+     float:right;
+}
+
+.RegistrationSetting_Section .RegistrationSetting_Section_Item 
+{
+     float:right;
+}
+
+.module_setting_section_item, .module_setting_section_title
+{
+    float: right;
+}
+
+.ASIReview2Columns
+{
+    padding-right: 14px;
+    padding-left: 0px;
+}
+
+.ASIReview2EvenColumn 
+{
+    padding-left: 0px;
+    padding-right: 14px;
+}
+
+.conditiondetailpage ul {
+    padding-right: 15px;
+    padding-left: 0px;
+}
+
+.RangeNumberText_Control_Layout {
+    float: right;
+}
+
+.RangeNumberText_SubControl1_Layout {
+    float: right;
+}
+
+.RangeNumberText_Split_Layout {
+    float: right;
+    padding-right: 6%;
+    padding-left: 0%;
+}
+
+.RangeNumberText_SubControl2_Layout {
+    float: left;
+}
+
+.MultipleControl_Vertical .SubLabel,
+.MultipleControl_Horizontal .SubLabel {
+    float:right;
+}
+
+.divSessionTimeoutDialog .boxTitle .titleText{
+    padding-right: 1em;
+    padding-left: 0em;
+}
+
+.FileSelect .removeInfo
+{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.existing_account_register_buttons, .existing_account_register_buttons li {
+    float: right;
+}
+
+.fileList .fileRow .fileRowLeft, .fileList .fileRow .fileRowRight 
+{
+    float: right;
+}
+
+.caphome_asitsearchform_norecord
+{
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.document_status_left 
+{
+    margin-left: 0px;
+    margin-right: 22px;
+}

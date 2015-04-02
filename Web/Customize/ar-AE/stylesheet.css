@@ -1,0 +1,23 @@
+.inputsearch {
+	border: 1px solid #666666;
+	width: 100px;
+	height: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	vertical-align: top;
+}
+
+.inputsearch_fontsize
+{
+    font-size:0.625em;
+}
+
+.inputshort_fontsize
+{
+    font-size:0.625em;
+}
+
+.ACA_LanguageText_FontSize
+{
+    font-size:0.813em;
+}

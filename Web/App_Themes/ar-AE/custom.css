@@ -1,0 +1,165 @@
+﻿/*this file is used to support I18n*/
+
+html 
+{
+    direction:rtl;
+}
+
+.ACA_LeftOrRightPadding34px 
+{
+    padding-right: 34px
+}
+
+.ACA_LeftOrRightPadding28px 
+{
+    padding-right: 28px
+}
+
+.ACA_AlignLeftOrRight 
+{
+    text-align:right;
+}
+
+.ACA_MyCollapseChkBox 
+{
+    text-align:right;
+}
+
+.ACA_AlignLeftOrRightNoBreakLine 
+{
+    text-align:right;
+    padding-right:2px;
+}
+
+.ACA_AlignRightOrLeft 
+{
+    text-align:left;
+}
+
+.ACA_AlignLeftOrRightTop
+{
+    text-align:right;
+    padding-right:2px;
+}
+
+.ACA_TDAlignLeftOrRightTop TD
+{
+    text-align:right;
+}
+
+.ACA_TDAlignLeftOrRightTopNoBorder
+{
+	margin-right:2px;
+}
+
+.ACA_TDAlignLeftOrRightTopNoBorder TD
+{
+    text-align:right;
+}
+
+.ACA_AlignLeftOrRightUpdatePanel /*6.6i*/
+{
+    float: right;
+}
+.ACA_InspectionHistory_Position_1
+{
+    right:-2px; 
+}
+.ACA_InspectionHistory_Position_2
+{
+    right:-3px;
+}
+.ACA_LeftOrRightForParcel
+{
+	float:right; 
+}
+
+.ACA_LeftOrRightForParcelWithMiniMap
+{
+	float:right;
+	width:100%;
+}
+
+.ACA_ForLeft
+{
+	float:right;
+}
+.ACA_ForRight
+{
+	float:left;
+}
+.ACA_ForPrint
+{
+	float: left;
+}
+/* Button for right */
+.ACA_LgButton A,
+.ACA_LgButtonDisable A,
+.ACA_LgButtonHighLight A
+{
+	float:right;
+	*float:left;
+}
+
+.DisclaimerContainerStyle
+{
+    padding-right:10px; 
+    padding-left:20px
+}
+.CertificationContentContainer
+{
+    padding-right: 10px; 
+    padding-left: 20px
+}
+.CertificationContainer .CheckContainer {
+    float: right; 
+}
+.CertificationContainer .DateContainer {
+    float: left;
+}
+.CertificationContainer .DateContainer .DateLabelContainer
+{
+    text-align: left;
+}
+.ACA_PaddingStyle
+{
+	padding-right: 16px;
+}
+.ACA_PaddingStyle20
+{
+	padding-right: 20px;
+}
+.ACA_CapFeesStyle
+{
+	padding-right:15px;
+}
+
+.ACA_CapListStyle
+{
+	padding-right:5px;	
+}
+.ACA_ParcelDetailStyle
+{
+	float:right; 
+}
+
+.ACA_ParcelDetailStyleWithMinaMap
+{
+    float:right; 
+	width:100%;	
+}
+
+.ACA_SearchVEMapStyle
+{
+	right: 0px; 
+}
+.ACA_InspectionListStyle
+{
+	right:-3px;	
+}
+
+.ACA_NoticeChangedFee
+{
+	margin-right:30px;
+	margin-left:0px;
+}

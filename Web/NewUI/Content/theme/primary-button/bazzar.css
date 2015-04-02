@@ -1,0 +1,56 @@
+﻿.btn-custom {
+  background-color: #98777b;
+  border-color: #947175;
+}
+.btn-custom .badge {
+  color: #98777b;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #8c6a6e;
+  border-color: #89686c;
+}
+.btn-custom.disabled,
+.btn-custom[disabled],
+fieldset[disabled] .btn-custom,
+.btn-custom.disabled:hover,
+.btn-custom[disabled]:hover,
+fieldset[disabled] .btn-custom:hover,
+.btn-custom.disabled:focus,
+.btn-custom[disabled]:focus,
+fieldset[disabled] .btn-custom:focus,
+.btn-custom.disabled:active,
+.btn-custom[disabled]:active,
+fieldset[disabled] .btn-custom:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #433335;
+  border-color: #261d1e;
+}
+.res-icon,
+.res-title {
+  color: #98777b;
+}
+.res-sec .res-content .res-count {
+  color: #98777b;
+}
+.res-sec .res-content .res-status {
+  color: #98777b;
+}
+.activity .act-header .ico-plus {
+  color: #98777b;
+}
+.activity .act-c-header .ico-folder-open,
+.activity .act-c-header .ico-warning-sign {
+  color: #98777b;
+}
+.activity .act-content.left-selected .ico-angle-left {
+  color: #98777b;
+}
+.activity .act-content.left-selected .ico-angle-right {
+  color: #98777b;
+}
+/*# sourceMappingURL=bazzar.css.map */

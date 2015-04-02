@@ -1,0 +1,129 @@
+.ACA_ProgressDisplay {
+	
+}
+
+.ACA_ProgressDisplay .StatusMessage {
+	margin: 0px;
+	height: 16px;
+	color:#666666;
+	border-color:#666666;
+}
+
+.ACA_ProgressDisplay_FontSize .StatusMessage .StatusMessage
+{
+    font-size:0.625em;
+}
+
+.ACA_ProgressDisplay .ProgressBar {
+	background-color: #bfe1f9;
+}
+
+.ProgressBar {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	height: 16px;
+}
+		
+
+body, form, table, tr, td 
+{
+	margin: 0px;
+	border: 0px none;
+	padding: 0px;
+}
+
+#ACA_ProgressDisplayCenterer {
+	vertical-align: middle;
+	width: 250px;
+	height: 16px;
+}
+
+#ACA_ProgressDisplay {
+	vertical-align: middle;
+	width: 100%;
+}
+.ACA_Label
+{
+	color: #666666;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#barTd {
+	width: 100%;
+}
+
+#statusDiv {
+	border-width: 1px;
+	border-style: solid;
+	padding: 0px;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	z-index: 1; 
+}
+
+#barDiv,#barDetailsDiv {
+	border: 0px none ; 
+	margin: 0px; 
+	padding: 0px; 
+	position: absolute; 
+	top: 0pt; 
+	left: 0pt; 
+	z-index: -1; 
+	width: 75%;
+}
+
+div.fileinputs {
+	position: relative;
+}
+
+div.fakefile {
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    z-index: 1;
+}
+
+input.file {
+    position: relative;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+    cursor:pointer;
+}
+
+.transparent {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.ACA_UploadButton_Hover A
+{
+    background:url(assets/button_sm256.gif) left -16px;
+	cursor: pointer;
+	vertical-align:middle;
+	text-align:center;
+	text-decoration:none;
+	font-weight: bold;
+	float:left;
+	line-height:1.6em;
+}
+
+.ACA_UploadButton_Hover_FontSize A
+{
+    font-size:1em;
+}
+
+.ACA_UploadButton_Hover A span
+{
+    background:url(assets/button_sm256.gif) right -16px; 
+    margin:0 0 0 8px; 
+    padding: 0 8px 0 0;
+    color:#003366;
+    float:right;
+    height:1.6em;
+}

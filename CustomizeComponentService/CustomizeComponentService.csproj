@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{841891B8-C574-4947-B4EC-C0DB7411EBFD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accela.ACA.ComponentService</RootNamespace>
+    <AssemblyName>Accela.ACA.ComponentService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Web\Properties\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Model\ASITColumnWrapperModel.cs" />
+    <Compile Include="Model\ASITWrapperModel.cs" />
+    <Compile Include="Model\CapDetailWrapperModel.cs" />
+    <Compile Include="Model\CapIDWrapperModel.cs" />
+    <Compile Include="Model\CapTypeWrapperModel.cs" />
+    <Compile Include="Model\CapWrapperModel.cs" />
+    <Compile Include="Model\DrillDownItemWrapperModel.cs" />
+    <Compile Include="Model\DrillDownSeriesWrapperModel.cs" />
+    <Compile Include="Model\LicenseProfessionalWrapperModel.cs" />
+    <Compile Include="Model\SimpleCapWrapperModel.cs" />
+    <Compile Include="Model\SimpleEMSEOnLoginResultModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ASITDrillDownService.cs" />
+    <Compile Include="Service\BaseService.cs" />
+    <Compile Include="Service\CapService.cs" />
+    <Compile Include="Service\EMSEService.cs" />
+    <Compile Include="Service\FeeService.cs" />
+    <Compile Include="Service\I18NService.cs" />
+    <Compile Include="Service\LabelService.cs" />
+    <Compile Include="Service\LicenseProfessionalService.cs" />
+    <Compile Include="Service\LogService.cs" />
+    <Compile Include="Service\WorkflowService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLLInterface\BLLInterface.csproj">
+      <Project>{69AE03AF-313E-4B26-BF02-B263682AB0F8}</Project>
+      <Name>BLLInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{83D0F8CA-5844-43A6-874E-F529D1FE07BF}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomizeAPI\CustomizeAPI.csproj">
+      <Project>{4A50FB9E-FE89-4775-9A35-15914CB1D809}</Project>
+      <Name>CustomizeAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web\ACAWeb.csproj">
+      <Project>{E6EB91ED-C196-459C-B3DB-714F6886FFCE}</Project>
+      <Name>ACAWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSModel\WSModel.csproj">
+      <Project>{2574E894-BCF0-429C-A7D8-09C022041A81}</Project>
+      <Name>WSModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSProxy\WSProxy.csproj">
+      <Project>{26BDD206-B122-42C2-9B6B-E3E2A1A0F333}</Project>
+      <Name>WSProxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

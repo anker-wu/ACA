@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3074C1FB-8DA1-482E-9E90-7E32B768F50F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accela.Web.Controls</RootNamespace>
+    <AssemblyName>Accela.Web.Controls</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Design#CA1020;-Microsoft.Design#CA1031;-Microsoft.Design#CA1002;-Microsoft.Design#CA1032;-Microsoft.Design#CA1024;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1711;-Microsoft.Performance#CA1822</CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.20315, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Recaptcha">
+      <HintPath>..\Lib\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Web\Properties\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AccelaAKA.cs" />
+    <Compile Include="AccelaCalendarText.cs" />
+    <Compile Include="AccelaCheckBox.cs" />
+    <Compile Include="AccelaCheckBoxList.cs" />
+    <Compile Include="AccelaCompositeControl.cs" />
+    <Compile Include="AccelaControlRender.cs" />
+    <Compile Include="AccelaCountryDropDownList.cs" />
+    <Compile Include="AccelaDateLabel.cs" />
+    <Compile Include="AccelaDiv.cs" />
+    <Compile Include="AccelaDropDownList.cs" />
+    <Compile Include="AccelaEmailText.cs" />
+    <Compile Include="AccelaFormDesignerPlaceHolder.cs" />
+    <Compile Include="AccelaGridView\AccelaGridView.cs" />
+    <Compile Include="AccelaGridView\AccelaGridViewSortEventArgs.cs" />
+    <Compile Include="AccelaGridView\ColumnProperty.cs" />
+    <Compile Include="AccelaGridView\ExportParameter.cs" />
+    <Compile Include="AccelaGridView\GridViewDownloadEventArgs.cs" />
+    <Compile Include="AccelaGridView\InputCheckBoxField.cs" />
+    <Compile Include="AccelaGridView\RadioButtonField.cs" />
+    <Compile Include="AccelaHideLink\AccelaHideLink.cs" />
+    <Compile Include="AccelaImageButton.cs" />
+    <Compile Include="AccelaInlineScript.cs" />
+    <Compile Include="AccelaLabel.cs" />
+    <Compile Include="AccelaLinkButton.cs" />
+    <Compile Include="AccelaListBox.cs" />
+    <Compile Include="AccelaMaskText.cs" />
+    <Compile Include="AccelaMultipleControl.cs" />
+    <Compile Include="AccelaNameValueLabel.cs" />
+    <Compile Include="AccelaNonInputCompositeControl.cs" />
+    <Compile Include="AccelaNumberLabel.cs" />
+    <Compile Include="AccelaNumberText.cs" />
+    <Compile Include="AccelaPasswordText.cs" />
+    <Compile Include="AccelaPhoneText.cs" />
+    <Compile Include="AccelaRadioButtionList.cs" />
+    <Compile Include="AccelaRadioButton.cs" />
+    <Compile Include="AccelaHeightSeparate.cs" />
+    <Compile Include="AccelaRangeNumberText.cs" />
+    <Compile Include="AccelaRecaptcha.cs" />
+    <Compile Include="AccelaSectionTitleBar.cs" />
+    <Compile Include="AccelaSeparatorLine.cs" />
+    <Compile Include="AccelaSplitButton.cs" />
+    <Compile Include="AccelaSSNText.cs" />
+    <Compile Include="AccelaStateControl.cs" />
+    <Compile Include="AccelaTextBox.cs" />
+    <Compile Include="AccelaTextBoxWithImageButton.cs" />
+    <Compile Include="AccelaTimeSelection.cs" />
+    <Compile Include="AccelaTimeText.cs" />
+    <Compile Include="AccelaWatermarkText.cs" />
+    <Compile Include="AccelaWebControlExtender\AccelaWebControlExtenderDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccelaZipText.cs" />
+    <Compile Include="Assets\AssetsExtender.cs" />
+    <Compile Include="BreadCrump\BreadCrumbParmsInfo.cs" />
+    <Compile Include="BreadCrump\BreadCrumpDesigner.cs" />
+    <Compile Include="BreadCrump\BreadCrumpInfo.cs" />
+    <Compile Include="BreadCrump\BreadCrumpToolBar.cs" />
+    <Compile Include="BreadCrump\BreadCrumpType.cs" />
+    <Compile Include="BreadCrump\StepChangedEventArgs.cs" />
+    <Compile Include="Calendar\CalendarExtender.cs" />
+    <Compile Include="CheckBoxListRequiredFieldValidator.cs" />
+    <Compile Include="CheckBoxRequiredFieldValidator.cs" />
+    <Compile Include="ControlConfigureProvider.cs" />
+    <Compile Include="ControlLayoutType.cs" />
+    <Compile Include="ControlRender\AdminRender.cs" />
+    <Compile Include="ControlRender\ControlRenderUtil.cs" />
+    <Compile Include="ControlRender\DailyRender.cs" />
+    <Compile Include="ControlRender\HorizontalControlRender.cs" />
+    <Compile Include="ControlRender\IAccelaControlRender.cs" />
+    <Compile Include="AccelaButton.cs" />
+    <Compile Include="ControlRender\ImageButtonRender.cs" />
+    <Compile Include="ControlRender\VerticalControlRender.cs" />
+    <Compile Include="AccelaFeinText.cs" />
+    <Compile Include="AccelaTemplateField.cs" />
+    <Compile Include="GridViewHeaderLabel.cs" />
+    <Compile Include="GridViewColumn.cs" />
+    <Compile Include="GridViewHyperlinkTemplate.cs" />
+    <Compile Include="GridViewLabelTemplate.cs" />
+    <Compile Include="Helper\HelperExtender.cs" />
+    <Compile Include="IAccelaControl.cs" />
+    <Compile Include="ILabelConvertor.cs" />
+    <Compile Include="LabelConvertorFactory.cs" />
+    <Compile Include="LabelConvertUtil.cs" />
+    <Compile Include="MaskedEdit\MaskedEditCommon.cs" />
+    <Compile Include="MaskedEdit\MaskedEditExtender.cs" />
+    <Compile Include="MaskedEdit\MaskedEditValidator.cs" />
+    <Compile Include="TabBar\ServerTemplate.cs" />
+    <Compile Include="TabBar\ServerTemplateContainer.cs" />
+    <Compile Include="TabBar\TabTemplate.cs" />
+    <Compile Include="TabBar\Utilities.cs" />
+    <Compile Include="TabBar\TabBar.cs" />
+    <Compile Include="NextPrevNumbericPagerTemplate.cs" />
+    <Compile Include="NumberRequiredValidator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadioButtonListRequiredFieldValidator.cs" />
+    <Compile Include="TextboxWatermark\TextBoxWatermarkExtender.cs" />
+    <Compile Include="TextboxWatermark\TextBoxWatermarkExtenderDesigner.cs" />
+    <Compile Include="TextLengthValidator.cs" />
+    <Compile Include="ValidatorCallback\ValidatorCallbackExtender.cs" />
+    <Compile Include="WebControlConstant.cs" />
+    <Compile Include="AccelaWebControlExtender\AccelaWebControlExtenderExtender.cs" />
+    <Compile Include="ZipCodeValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{83D0F8CA-5844-43A6-874E-F529D1FE07BF}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSModel\WSModel.csproj">
+      <Project>{2574E894-BCF0-429C-A7D8-09C022041A81}</Project>
+      <Name>WSModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ValidatorCallback\ValidatorCallbackBehavior.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Calendar\arrow-left.gif" />
+    <EmbeddedResource Include="Calendar\arrow-right.gif" />
+    <EmbeddedResource Include="Calendar\CalendarBehavior.js" />
+    <EmbeddedResource Include="MaskedEdit\MaskedEditBehavior.js" />
+    <EmbeddedResource Include="MaskedEdit\MaskedEditValidator.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccelaWebControlExtender\AccelaWebControlExtenderBehavior.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Calendar\HijriDate.js" />
+    <EmbeddedResource Include="AccelaHideLink\onepixel.gif" />
+    <EmbeddedResource Include="Assets\error_16.gif" />
+    <EmbeddedResource Include="AccelaAKA.js" />
+    <EmbeddedResource Include="Assets\soundex.png" />
+    <EmbeddedResource Include="AccelaRangeNumberText.js" />
+    <EmbeddedResource Include="AccelaCompositeControl.js" />
+    <EmbeddedResource Include="AccelaMultipleControl.js" />
+    <Content Include="Calendar\Calendar.css" />
+    <EmbeddedResource Include="TextboxWatermark\TextboxWatermark.js" />
+    <EmbeddedResource Include="TextboxWatermark\TextboxWatermark.ico" />
+    <EmbeddedResource Include="Helper\helper.css" />
+    <EmbeddedResource Include="Helper\help-bg-bl.png" />
+    <EmbeddedResource Include="Helper\help-bg-bm.png" />
+    <EmbeddedResource Include="Helper\help-bg-br.png" />
+    <EmbeddedResource Include="Helper\help-bg-ml.png" />
+    <EmbeddedResource Include="Helper\help-bg-mr.png" />
+    <EmbeddedResource Include="Helper\help-bg-pl.png" />
+    <EmbeddedResource Include="Helper\help-bg-pr.png" />
+    <EmbeddedResource Include="Helper\help-bg-tl.png" />
+    <EmbeddedResource Include="Helper\help-bg-tm.png" />
+    <EmbeddedResource Include="Helper\help-bg-tr.png" />
+    <EmbeddedResource Include="Helper\help-close.png" />
+    <EmbeddedResource Include="Helper\HelperBehavior.js" />
+    <EmbeddedResource Include="Helper\help_icon.png" />
+    <EmbeddedResource Include="TabBar\menu.js" />
+    <EmbeddedResource Include="TabBar\TabUtil.js" />
+    <EmbeddedResource Include="TabBar\TabBar.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

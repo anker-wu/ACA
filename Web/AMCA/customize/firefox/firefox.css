@@ -1,0 +1,827 @@
+﻿/* Note - Blank lines added to help keep all css files in synch. */
+/*        Please do not remove them. */
+
+/* Docmented */
+body
+{
+	width:320px;
+	margin-top:0px; 
+	margin-left:10px; 
+	margin-right:10px; 
+	margin-bottom:0px;  
+	padding:0 0 0 0px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:10pt; 
+	color:#000000;
+}
+
+
+/* Docmented */
+hr 
+{
+	margin: 8px 0 8px 0;
+	line-height:8px;
+}
+
+form 
+{
+	margin: -4px 0 0 0;
+}
+
+/* Docmented */
+#backlink 
+{
+	margin: 10px 0px 10px 5px;
+}
+
+
+
+
+
+
+/* Docmented */
+#backlink a 
+{
+	text-decoration:underline; 
+	color:#040478; 
+	font-size:10pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Docmented */
+#breadcrumbs {
+	margin: 5px 0px 10px 0px
+}
+
+/* Docmented */
+#breadcrumbs a 
+{
+	text-decoration:underline; 
+        line-height: 20px;
+	color:#040478; 
+	font-size:10pt;
+        margin: 0px 2px 0px 0px;
+}
+
+/* Docmented */
+#breadcrumbElipse
+{
+	text-decoration:underline; 
+	line-height: 20px;
+	color:#040478; 
+	font-size:11pt;
+}
+
+/* Docmented */
+#collectionActions
+{
+	margin: 10px 0px 10px 0px;
+
+}
+
+/* Docmented */
+#collectionActions input
+{
+	margin:0px 0px 0px 0px;
+	font-size:10pt; 
+	color:#040478; 
+	text-decoration:underline; 
+	background-color:transparent; 
+	border:none; 
+	cursor:hand;
+}
+
+
+
+
+
+/* Docmented */
+.collectionActionLink
+{
+	margin:0px 0px 0px 0px;
+	font-size:10pt; 
+	color:#040478; 
+	white-space: nowrap;
+	text-decoration:underline; 
+	background-color:transparent; 
+	border:none; 
+	cursor:hand;
+}
+
+
+/* Docmented */
+#errorMessage
+{
+	margin: 10px 0px 0px 0px;
+	color:#FF6600; 
+	font-weight:bold;
+	font-size: 10pt;
+}
+
+/* Docmented */
+#globalSearchSection
+{
+	margin: 0 0 10px 0;
+}
+
+/* Docmented */
+#globalSearchTextInput
+{
+	width:95%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+}
+
+
+
+
+
+/* Docmented */
+#inspectionLine
+{
+    margin: 0px 0px 10px 0px;
+}
+
+
+
+
+
+
+
+/* Docmented */
+#inspectionLineComment
+{
+    font-size:10pt; 
+    font-weight:normal; 
+    margin: 5px 0px 0px 5px;
+    font-style:italic;
+}
+
+
+/* Docmented */
+#inspectionLineCommentLink
+{
+    font-weight: normal;
+    font-size:10pt;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+    margin: 0px 0px 0px 0px;
+}
+
+/* Docmented */
+#inspectionLineHistory
+{
+    font-size:10pt; 
+    font-weight:normal; 
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+/* Docmented */
+#inspectionLineLink
+{
+    color:#040478; 
+    font-size:10pt; 
+    text-decoration:underline;
+    white-space: nowrap;
+    margin: 0px 10px 0px 0px;
+}
+
+/* Docmented */
+#inspectionLineTitle
+{
+    font-size:10pt; 
+    font-weight:bold; 
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px px;
+}
+
+/* NOT Docmented */
+#inspectionListBottom
+{
+    font-size:10pt; 
+    font-weight:normal;
+    min-height:40px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* NOT Docmented */
+#inspectionListBottomEven
+{
+    font-size:10pt; 
+    font-weight:normal;
+    min-height:40px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 10px;
+    background-color: #e5f3fd;
+}
+
+/* NOT Docmented */
+#inspectionListBottomOdd
+{
+    font-size:10pt; 
+    font-weight:normal;
+    min-height:40px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 10px;
+}
+
+/* NOT Docmented */
+#inspectionListMiddle
+{
+    font-size:10pt; 
+    font-weight:normal;
+    min-height:40px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+}
+/* NOT Docmented */
+#inspectionListMiddleEven
+{
+    font-size:10pt; 
+    font-weight:normal;
+    min-height:40px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 10px;
+    background-color: #e5f3fd;
+}
+
+/* NOT Docmented */
+#inspectionListMiddleOdd
+{
+    font-size:10pt; 
+    font-weight:normal;
+    min-height:40px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 10px;
+}
+
+/* NOT Docmented */
+#inspectionListSingleRow
+{
+    font-size:10pt; 
+    font-weight:normal;
+    min-height:40px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* NOT Docmented */
+#inspectionListTop
+{
+    font-size:10pt; 
+    font-weight:normal;
+    min-height:40px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* NOT Docmented */
+#inspectionListTopEven
+{
+    font-size:10pt; 
+    font-weight:normal;
+    min-height:40px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 10px;
+    background-color: #e5f3fd;
+}
+
+/* NOT Docmented */
+#inspectionListTopOdd
+{
+    font-size:10pt; 
+    font-weight:normal;
+    min-height:40px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 10px;
+}
+
+
+
+/* Docmented */
+.loginPageAgencyName
+{
+	padding:10px 0px 0px 10px; 
+	font-weight:bold; 
+	font-size:10pt; 
+	text-align:left;
+	color:#37addf;
+}
+
+/* Docmented */
+.loginPageAppName
+{
+	padding:0px 0px 10px 10px; 
+	font-weight:bold; 
+	font-size:12pt; 
+	text-align:left;
+	color:#37addf;
+}
+
+/* Docmented */
+.loginPageGreeting
+{
+	font-size:10pt; 
+	font-weight:normal; 
+	color:#000000; 
+	font-style:italic;
+	margin: 5px 0px 10px 0px;
+	text-align:center;
+}
+
+/* Docmented */
+.loginPageInput
+{
+	width:95%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+}
+
+
+
+
+
+
+
+
+/* Docmented */
+.loginPageLinks
+{
+    text-align:right;
+    padding:0px 0px 10px 0px; 
+}
+
+/* Not Docmented */
+.loginPageLinks
+{
+    color:#040478;
+    text-decoration:underline;
+    font-weight: normal;
+    font-size:10pt;
+}
+
+/* Docmented */ 
+.pageFooter
+{
+	padding:10px 0px 0px 0px; 
+	font-size:09pt; 
+	text-align:center; 
+	color:#838383;
+}
+
+
+
+
+
+
+
+/* Docmented */
+#pageLineLink
+{
+	color:#040478; 
+    line-height: 20px;
+	font-size:10pt; 
+	text-decoration:underline;
+    white-space: nowrap;
+    margin: 0px 10px 0px 0px;
+}
+
+
+
+/* Docmented */
+#pageLineText
+{
+	 font-size:10pt; 
+	 font-weight:normal; 
+	 color:#000000; 
+	 margin: 0px 0px 10px 0px;
+}
+
+
+
+
+
+/* Docmented */
+#pageListBottom
+{
+    font-size:10pt; 
+    font-weight:normal;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+/* Docmented */
+#pageListBottomEven
+{
+    font-size:10pt; 
+    font-weight:normal;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 10px;
+    background-color: #e5f3fd;
+}
+
+
+
+
+/* Docmented */
+#pageListBottomOdd
+{
+    font-size:10pt; 
+    font-weight:normal;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 10px;
+}
+
+
+
+
+
+
+
+/* Not used for IE7
+#pageListCellTable
+#pageListCellTableLeft
+#pageListCellBoldText
+#pageListCellTableMiddle
+#pageListCellTableRight
+*/
+
+/* Docmented */
+.pageListLink 
+{
+   color:#040478;
+   font-weight:bold;
+   text-decoration: underline;
+   text-align:left;
+   font-size:10pt; 
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 5px 0px;
+}
+
+.pageListLinkBold 
+{
+   color:#040478;
+   font-weight:bold;
+   text-decoration: underline;
+   text-align:left;
+   font-size:10pt; 
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 5px 0px;
+}
+
+/* Docmented */
+#pageListMiddle
+{
+    font-size:10pt; 
+    font-weight:normal;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+/* Docmented */
+#pageListMiddleEven
+{
+    font-size:10pt; 
+    font-weight:normal;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 10px;
+    background-color: #e5f3fd;
+}
+
+
+/* Docmented */
+#pageListMiddleOdd
+{
+    font-size:10pt; 
+    font-weight:normal;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 10px;
+}
+
+
+
+/* Docmented */
+.pageListNoLink 
+{
+   color:#040478;
+   font-weight:bold;
+   text-decoration: none;
+   font-size:10pt; 
+   margin: 10px 0px 0px 0px;
+   padding: 10px 0px 0px 0px;
+}
+
+/* Docmented */
+#pageListSingleRow
+{
+    font-size:10pt; 
+    font-weight:normal;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+/* Docmented */
+#pageListTop
+{
+    font-size:10pt; 
+    font-weight:normal;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+/* Docmented */
+#pageListTopEven
+{
+    font-size:10pt; 
+    font-weight:normal;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 10px;
+    background-color: #e5f3fd;
+}
+
+
+
+/* Docmented */
+#pageListTopOdd
+{
+    font-size:10pt; 
+    font-weight:normal;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 10px;
+}
+
+
+
+
+/* Docmented */
+#pageNavigation
+{
+}
+
+/* Docmented */
+#pageNavigationButton
+{
+	color:#040478; 
+	font-weight:normal;  
+	text-decoration:underline
+}
+
+
+
+
+
+
+
+
+/* Docmented */
+#pageNavigationSelected
+{
+	color:#040478; 
+	font-weight:bold;  
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+
+/* Docmented */
+#pageSectionTitle
+{
+	 font-size:10pt; 
+	 font-weight:bold; 
+	 margin: 5px 0px 0px 0px;
+	 color:#000000; 
+}
+
+/* Docmented */
+#pageSubmitButton
+{
+    margin: 0px 0px 0px 0px;
+}
+
+/* Docmented */
+#pageSubmitButton input
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 10pt;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    border:none;
+    cursor:hand;
+}
+
+
+
+
+
+
+
+
+/* Docmented */
+#pageText
+{
+	 font-size:10pt; 
+	 font-weight:normal; 
+	 color:#000000; 
+	 margin: 10px 0  15px;
+}
+
+/* Docmented */
+.pageTextAreaInput
+{
+	height: 41px;
+	width:95%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+}
+
+/* Docmented */
+#pageTextHR 
+{
+    margin: 4px 0px 10px 0px;
+    line-height:4px;
+}
+
+/* Docmented */
+#pageTextIndented
+{
+	font-size:10pt; 
+	font-weight:normal; 
+	color:#000000; 
+	margin: 0px 0px 10px  15px;
+}
+
+/* Docmented */
+.pageTextInput
+{
+	width:95%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+}
+
+/* Docmented */
+.pageTextInput100
+{
+	width:100%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+}
+
+/* Docmented */
+.pageTextLink
+{
+	font-size:10pt; 
+	font-weight:Bold; 
+	text-decoration: underline;
+    color:#040478; 
+	margin: 0px 0px 10px 0px;
+}
+
+/* Docmented */
+#pageTextSectionName
+{
+	 font-size:11pt; 
+	 font-weight:normal; 
+	 color:#000000; 
+	 margin: 0px 0px 10px 0px;
+}
+
+/* Docmented */
+#pageTitle
+{
+	 font-size:11pt; 
+	 font-weight:bold; 
+	 color:#000000; 
+	 margin: 0px 0 0px 0;
+}
+
+/* Docmented */
+#pageTitleButton
+{
+    color:#040478; 
+    font-size:10pt; 
+    text-decoration:underline;
+    white-space: nowrap;
+}
+
+
+
+
+/* Docmented */
+#pageWithNoFormForm
+{
+    margin: 10px 0px 0px 0px;
+}
+
+/* Docmented */
+#sortSection
+{
+    margin:0px 0px 10px 0px;
+}
+
+
+/* Docmented */
+#sortSection input
+{
+    margin:0px -2px 0px -2px;
+    font-size:10pt; 
+    font-weight:normal; 
+    color:#040478; 
+    text-decoration:underline; 
+    background-color:transparent; 
+    border:none; 
+    cursor:hand;
+}
+
+/* Version 7.0.5 - patch release */
+.pageTextInputTimeValue
+{
+	width:55px;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+}
+
+/* NEW - 7.1 not Docmented */
+.contactTextInput
+{
+	width:90%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+}
+
+
+/* NEW - 7.1 not Docmented */
+.contactPhonePrefixInput
+{
+	width:70%;  
+	padding: 0px 0px 0px 0px;
+	margin:0px 0px 10px 2px; 
+	font-size:10pt;
+}
+
+/* NEW - 7.1 not Docmented */
+.contactPhoneNumberInput
+{
+
+	width:57%;  
+	margin:0px 0px 10px 5px; 
+	font-size:10pt;
+}
+
+/* NEW - 7.1 not Docmented */
+.contactTableLiteralCharacters
+{
+	width:2%;  
+	margin:0px 0px 0px 0px; 
+	font-size:10pt;
+	vertical-align:top;
+	
+}
+
+/* NEW - 7.1 not Docmented */
+.pageListText 
+{
+   color:#040478;
+   font-weight:normal;
+   text-decoration: none;
+   font-size:10pt; 
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+}

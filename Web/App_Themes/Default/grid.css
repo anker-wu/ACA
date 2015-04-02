@@ -1,0 +1,837 @@
+﻿.ACA_Grid_OverFlow .ACA_GridView
+{
+    border:0px;
+    border-collapse:collapse;
+}
+
+.ACA_SmallTable_Row_Reset
+{
+	clear: both;
+    color: #666666;
+    font-family: Arial, sans-serif;
+    background: #FFFFFF;	        
+    height: 30px;
+}
+.ACA_TabRow_Header
+{
+	background: #ECE9D8;
+	color: #666666;
+	font-family: Arial, sans-serif;
+	padding-bottom:4px;
+	padding-top:4px;
+	width: 99%;
+	height:1.6em;
+}
+
+.ACA_TabRow_Header_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_TabRow_Header th
+{
+    padding-left:2px;
+}
+
+.ACA_Header_Row
+{
+	margin: 0px; 
+	margin-bottom:2px; 
+	padding-bottom: 0px; 
+	color: #666666; 
+	padding-top: 0px; 
+	vertical-align:middle
+}
+
+.aca_gridview_checkbox
+{
+    width:1.4em;
+    height:1.4em;
+}
+*+html .aca_gridview_checkbox
+{
+    width:1.3em;
+    height:1.3em;
+    margin:1px;
+}
+
+.ACA_TabRow_AutoHeader
+{
+	background: #ECE9D8;
+	border-bottom: 1px solid #999999;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	padding: 4px;
+	width: auto;
+}
+
+.ACA_TabRow_Header2
+{
+	background: #ECE9D8;
+	border-bottom: 1px solid #999999;
+	color: #666666;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	padding: 4px;
+}
+.ACA_TabRow_Odd 
+{
+	background: #FFFFFF;
+	color: #666666;
+	font-family: Arial, sans-serif;
+	width: 99%;
+}
+
+.ACA_TabRow_Odd_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_TabRow_LongOdd
+{
+	background: #E5FFFF;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	width: 100%; 
+}
+.ACA_TabRow_Odd_Auto 
+{
+	background: #FFFFFF;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	padding: 4px;
+	width: auto;
+}
+
+.ACA_TabRow_Odd_Auto_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_TabRow_Even
+{
+	background: #E5FFFF;
+	color: #666666;
+	font-family: Arial, sans-serif;
+	width: 99%;
+} 
+
+.ACA_TabRow_Even_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_TabRow_EvenSmallWidth
+{
+	background: #E5FFFF;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	width:478px;
+	padding-left: 6px; 
+	padding-top:4px;
+	padding-right:4px;
+}
+.ACA_TabRow_LongEven
+{
+	background: #FFFFFF;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	width: 100%;
+}
+.ACA_TabRow_Even_Auto
+{
+	background: #E5FFFF;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	padding: 4px;
+	width: auto;
+}
+
+.ACA_TabRow_Even_Auto_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_TabRow_NoScoll
+{
+	clear: both;
+	margin-bottom: 8px;
+	overflow-x: hidden; 
+	overflow-y: hidden;
+}
+
+.ACA_Table_Pages
+{
+	color: #666666;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+.ACA_Table_Pages_FontSize
+{
+    font-size:1em;
+}
+
+.ACA_TabRow_SmallOdd
+{
+	background: #FFFFFF;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	padding: 4px;
+	width: 478px;
+}
+
+.ACA_TabRow_SmallOdd_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_TabRow_SmallOdd_FontSize_Restore
+{
+    font-size:1em;
+}
+
+.ACA_TabRow_SmallEven
+{
+	background: #E5FFFF;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	padding: 4px;
+	width: 478px;
+}
+
+.ACA_TabRow_SmallEven_FontSize
+{
+    font-size:1.1em;
+}
+
+.ACA_TabRow_SmallEven_FontSize_Restore
+{
+    font-size:1em;
+}
+
+.ACA_TabRow_SmallEven2
+{
+	background: #F9F9F9;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	padding: 4px;
+	width: 478px;
+}
+.ACA_TabRow_Bold
+{
+	font-weight :bold;
+}
+.ACA_TabRow_Italic
+{
+	font-style:italic;
+}
+.ACA_TabRow_Comment_Even
+{
+	background: #E5FFFF;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	width:100%;
+}
+.ACA_TabRow_Comment_Odd
+{
+	background: #FFFFFF;
+	color: #666666;
+	float: left;
+	font-family: Arial, sans-serif;
+	width:100%;
+}
+
+.ACA_TabRow_Single_Line
+{
+    background: #FFFFFF;
+    color: #666666;
+    float: left;
+    font-family: Arial, sans-serif;
+    cursor:pointer;
+    padding: 1px;
+    width: 22.8em;
+}
+
+.ACA_TabRow_Double_Line
+{
+    background: #E5FFFF;
+    color: #666666;
+    float: left;
+    font-family: Arial, sans-serif;
+    cursor:pointer;
+    padding: 1px;
+    width: 22.8em;
+}
+
+.ACA_Grid_OverFlow
+{
+    width: 77em;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    height: auto;
+    padding-bottom:10px; 
+    +padding-bottom: 18px;
+}
+.asset_searchresult .ACA_Grid_OverFlow,
+.asit_drilldown .ACA_Grid_OverFlow
+{
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    height: auto;
+    padding-bottom:10px; 
+    +padding-bottom: 18px;
+}
+
+/* For the special bug#38640 */
+.ACA_Grid_OverFlow:hover
+{
+    height:100%;
+}
+
+.ACA_Grid_OverFlow_None_Width
+{
+    overflow-x: auto;
+    overflow-y: hidden; 
+    height: auto;
+    padding-bottom:10px; 
+    +padding-bottom: 18px;
+    width:100%;
+}
+
+/* For the special bug#38640 */
+.ACA_Grid_OverFlow_None_Width:hover
+{
+    height:100%;
+}
+
+.PopupDialogGridWidth
+{
+    width:100%;
+}
+
+.aca_gridview_caption{
+    margin-bottom:3px;
+}
+th
+{
+     text-align:left;
+}
+
+.ACA_Control_Display
+{
+    overflow:visible;
+    display:table-cell;
+    vertical-align:top;
+    text-align:left;
+}
+
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_40 {
+	width: 64em;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20,
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24,
+.grid_25,
+.grid_26,
+.grid_27,
+.grid_28,
+.grid_29,
+.grid_30,
+.grid_31,
+.grid_32,
+.grid_33,
+.grid_34,
+.grid_35,
+.grid_36,
+.grid_37,
+.grid_38,
+.grid_39,
+.grid_40,
+.grid_41,
+.grid_42,
+.grid_43,
+.grid_44,
+.grid_45,
+.grid_46,
+.grid_47,
+.grid_48 {
+	display:inline;
+	float: left;
+	padding-right:0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-bottom:0.5em;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 48 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1 {
+	width:1.6em;
+}
+
+.grid_2 {
+	width:3.2em;
+}
+
+.grid_3 {
+	width:4.8em;
+}
+
+.grid_4 {
+	width:6.4em;
+}
+
+.grid_5 {
+	width:8.0em;
+}
+
+.grid_6 {
+	width:9.6em;
+}
+
+.grid_7 {
+	width:11.2em;
+}
+
+.grid_8 {
+	width:12.8em;
+}
+
+.grid_9 {
+	width:14.4em;
+}
+
+.grid_10 {
+	width:16.0em;
+}
+
+.grid_11 {
+	width:17.6em;
+}
+
+.grid_12 {
+	width:19.2em;
+}
+
+.grid_13 {
+	width:20.8em;
+}
+
+.grid_14 {
+	width:22.4em;
+}
+
+.grid_15 {
+	width:24.0em;
+}
+
+.grid_16 {
+	width:25.6em;
+}
+
+.grid_17 {
+	width:27.2em;
+}
+
+.grid_18 {
+	width:28.8em;
+}
+
+.grid_19 {
+	width:30.4em;
+}
+
+.grid_20 {
+	width:32.0em;
+}
+
+.grid_21 {
+	width:33.6em;
+}
+
+.grid_22 {
+	width:35.2em;
+}
+
+.grid_23 {
+	width:36.8em;
+}
+
+.grid_24 {
+	width:38.4em;
+}
+
+.grid_25 {
+	width:40.0em;
+}
+
+.grid_26 {
+	width:41.6em;
+}
+
+.grid_27 {
+	width:43.2em;
+}
+
+.grid_28 {
+	width:44.8em;
+}
+
+.grid_29 {
+	width:46.4em;
+}
+
+.grid_30 {
+	width:48.0em;
+}
+
+.grid_31 {
+	width:49.6em;
+}
+
+.grid_32 {
+	width:51.2em;
+}
+
+.grid_33 {
+	width:52.8em;
+}
+
+.grid_34 {
+	width:54.4em;
+}
+
+.grid_35 {
+	width:56.0em;
+}
+
+.grid_36 {
+	width:57.6em;
+}
+
+.grid_37 {
+	width:59.2em;
+}
+
+.grid_38 {
+	width:60.8em;
+}
+
+.grid_39 {
+	width:62.4em;
+}
+
+.grid_40 {
+	width:64.0em;
+}
+
+
+/* Prefix Extra Space >> 40 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.suffix_1 {
+	margin-right:1.6em;
+}
+
+.suffix_2 {
+	margin-right:3.2em;
+}
+
+.suffix_3 {
+	margin-right:4.8em;
+}
+
+.suffix_4 {
+	margin-right:6.4em;
+}
+
+.suffix_5 {
+	margin-right:8.0em;
+}
+
+.suffix_6 {
+	margin-right:9.6em;
+}
+
+.suffix_7 {
+	margin-right:11.2em;
+}
+
+.suffix_8 {
+	margin-right:12.8em;
+}
+
+.suffix_9 {
+	margin-right:14.4em;
+}
+
+.suffix_10 {
+	margin-right:16.0em;
+}
+
+.suffix_11 {
+	margin-right:17.6em;
+}
+
+.suffix_12 {
+	margin-right:19.2em;
+}
+
+.suffix_13 {
+	margin-right:20.8em;
+}
+
+.suffix_14 {
+	margin-right:22.4em;
+}
+
+.suffix_15 {
+	margin-right:24.0em;
+}
+
+.suffix_16 {
+	margin-right:25.6em;
+}
+
+.suffix_17 {
+	margin-right:27.2em;
+}
+
+.suffix_18 {
+	margin-right:28.8em;
+}
+
+.suffix_19 {
+	margin-right:30.4em;
+}
+
+.suffix_20 {
+	margin-right:32.0em;
+}
+
+.suffix_21 {
+	margin-right:33.6em;
+}
+
+.suffix_22 {
+	margin-right:35.2em;
+}
+
+.suffix_23 {
+	margin-right:36.8em;
+}
+
+.suffix_24 {
+	margin-right:38.4em;
+}
+
+.suffix_25 {
+	margin-right:40.0em;
+}
+
+.suffix_26 {
+	margin-right:41.6em;
+}
+
+.suffix_27 {
+	margin-right:43.2em;
+}
+
+.suffix_28 {
+	margin-right:44.8em;
+}
+
+.suffix_29 {
+	margin-right:46.4em;
+}
+
+.suffix_30 {
+	margin-right:48.0em;
+}
+
+.suffix_31 {
+	margin-right:49.6em;
+}
+
+.suffix_32 {
+	margin-right:51.2em;
+}
+
+.suffix_33 {
+	margin-right:52.8em;
+}
+
+.suffix_34 {
+	margin-right:54.4em;
+}
+
+.suffix_35 {
+	margin-right:56.0em;
+}
+
+.suffix_36 {
+	margin-right:57.6em;
+}
+
+.suffix_37 {
+	margin-right:59.2em;
+}
+
+.suffix_38 {
+	margin-right:60.8em;
+}
+
+.suffix_39 {
+	margin-right:62.4em;
+}
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+.container_40 .aca_checkbox label 
+{
+    color: #666666;
+	font-family: Arial, sans-serif;
+	display:inline-block;	
+	margin-left: 0.5em;
+}
+
+.container_40 .ACA_TDAlignLeftOrRightTop
+{
+    width: 100%;
+}
+
+.container_40 .ACA_Label
+{
+    margin:0;
+    margin-top:0.2em;
+    padding:0;
+    padding-left:0.2em;
+}
+
+.container_40 .ACA_Form
+{
+    width:100%;
+    margin:0;
+}
+
+.container_40 .ACA_ErrorMessageLabel
+{
+    white-space:normal;
+}
+
+.ACA_Table_Layou
+{
+    table-layout:fixed;
+}
+.ACA_TabRow_Top
+{
+    vertical-align: top;
+}
+
+.ACA_TabRow_Width
+{
+    width:50%;
+}
+
+.ACA_TabRow_White
+{
+    white-space:nowrap;
+}
+
+.ACA_Grid_Caption {
+    
+}
+
+table.ACA_Grid_Caption caption{
+    display: none;
+}
